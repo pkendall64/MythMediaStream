@@ -1,0 +1,90 @@
+        <action>PLUGIN mythnews</action>
+        <action>JUMP MythTwitter_Timeline</action>
+        <action>PLUGIN mythweather</action>
+        <action>PLUGIN mythwstation</action>
+        <action>PLUGIN mythbrowser</action>
+        <action>PLUGIN mythRecipe</action>
+        <action>TV_STATUS</action>
+        <action>PLUGIN mythzoneminder</action>
+        <action>PLUGIN mythsmolt</action>
+        <action>CONFIGPLUGIN mythweather</action>
+      <action>CONFIGPLUGIN mythwstation</action>
+        <action>CONFIGPLUGIN mythnews</action>
+        <action>CONFIGPLUGIN mythbrowser</action>
+        <action>CONFIGPLUGIN mythrecipe</action>
+        <action>TV_WATCH_RECORDING</action>
+        <action>JUMP MythVideo</action>
+        <action>JUMP Play music</action>
+        <action>JUMP MythNetSearch</action>
+        <action>JUMP MythNetTree</action>
+        <action>PLUGIN mythstream</action>
+        <action>PLUGIN mythgallery</action>
+        <action>PLUGIN mythgame</action>
+        <action>MENU library.xml</action>
+        <action>MENU manage_recordings.xml</action>
+        <action>MENU info_menu.xml</action>
+        <action>MENU optical_menu.xml</action>
+        <action>TV_WATCH_LIVE</action>
+        <action>MENU util_menu.xml</action>
+        <action>SETTINGS MAINGENERAL</action>
+        <action>SETTINGS APPEARANCE</action>
+        <action>SETTINGS THEMECHOOSER</action>
+        <action>SCREENSETUPWIZARD</action>
+        <action>MENU tv_settings.xml</action>
+        <action>MENU media_settings.xml</action>
+        <action>MENU info_settings.xml</action>
+        <action>CONFIGPLUGIN mythzoneminder</action>
+        <action>SYSTEM_EVENTS</action>
+        <action>MENU tv_schedule.xml</action>
+        <action>TV_MANAGE_RECORDING_RULES</action>
+        <action>TV_FIX_CONFLICTS</action>
+        <action>TV_DELETE</action>
+        <action>TV_PREVIOUS</action>
+        <action>TV_SET_RECPRIORITIES</action>
+        <action>CONFIGPLUGIN mythmusic</action>
+        <action>CONFIGPLUGIN mythvideo</action>
+        <action>CONFIGPLUGIN mythgallery</action>
+        <action>CONFIGPLUGIN mythgame</action>
+        <action>CONFIGPLUGIN mythstream</action>
+        <action>CONFIGPLUGIN mytharchive</action>
+        <action>JUMP Play DVD</action>
+        <action>JUMP Play VCD</action>
+        <action>PLUGIN mytharchive</action>
+        <action>JUMP Rip CD</action>
+        <action>EJECT</action>
+        <action>SETTINGS GENERALRECPRIORITIES</action>
+        <action>SETTINGS CHANNELRECPRIORITIES</action>
+        <action>SETTINGS CUSTOMPRIORITY</action>
+        <action>TV_SEARCH_NEW</action>
+        <action>TV_SEARCH_MOVIE</action>
+        <action>TV_SEARCH_CATEGORY</action>
+        <action>TV_SEARCH_CHANNEL</action>
+        <action>TV_SEARCH_TIME</action>
+        <action>TV_WATCH_LIVE</action>
+        <action>MENU tv_schedule.xml</action>
+        <action>TV_WATCH_RECORDING</action>
+        <action>TV_DELETE</action>
+        <action>EXECTV xawtv -f -device %s -dspdev %s -vbidev %s</action>
+        <action>TV_STATUS</action>
+        <action>TV_SCHEDULE</action>
+        <action>TV_PROGFIND</action>
+        <action>MENU tv_search.xml</action>
+        <action>MENU tv_lists.xml</action>
+        <action>TV_CUSTOM_RECORD</action>
+        <action>TV_MANUALSCHEDULE</action>
+        <action>TV_SEARCH_TITLE</action>
+        <action>TV_SEARCH_KEYWORD</action>
+        <action>TV_SEARCH_PEOPLE</action>
+        <action>TV_SEARCH_POWER</action>
+        <action>TV_SEARCH_STORED</action>
+        <action>SETTINGS GENERAL</action>
+        <action>SETTINGS EPG</action>
+        <action>SETTINGS PLAYBACK</action>
+        <action>SETTINGS OSD</action>
+        <action>SETTINGS PLAYGROUP</action>
+      <action>SETTINGS CHANNELGROUPS</action>
+        <action>SETTINGS RECORDING</action>
+        <action>MENU recpriorities_settings.xml</action>
+        <action>PLUGIN mythmusic</action>
+        <action>SETUP_KEYS</action>
+        <action>MENU main_settings.xml</action>

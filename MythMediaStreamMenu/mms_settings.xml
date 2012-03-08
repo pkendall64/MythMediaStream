@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mythmenu name="ADVANCED">
+
+    <button>
+        <type>MUSIC_PLAYLIST</type>
+        <text>Tools</text>
+        <description>Use music</description>
+        <action>PLUGIN mythmusic</action>
+        <depends>mythmusic</depends>
+    </button>
+
+    <button>
+        <type>ARCHIVE</type>
+        <text>Videos</text>
+        <description>Import and Export</description>
+        <action>PLUGIN mytharchive</action>
+        <depends>mytharchive</depends>
+    </button>
+
+    <button>
+        <type>SETUP_KEYS</type>
+        <text>Keys</text>
+        <description>Edit your</description>
+        <action>SETUP_KEYS</action>
+    </button>
+
+    <button>
+        <type>TV_STATUS</type>
+        <text>System</text>
+        <description>Info about your</description>
+        <action>TV_STATUS</action>
+    </button>
+
+    <button>
+        <type>SETUP_MENU</type>
+        <text>Setup</text>
+        <description>MythTV</description>
+        <action>MENU main_settings.xml</action>
+        <password>SetupPinCode</password>
+    </button>
+
+</mythmenu>

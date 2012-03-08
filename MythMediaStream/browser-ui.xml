@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="browser">
+        <imagetype name="browserbgd" from="image_wallpaper_base">
+            <filename>images/backgrounds/web.jpg</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleRecordings" from="screentitle">
+            <value>WEB BROWSER</value>
+        </textarea>
+
+        <buttonlist name="pagelist" from="selector_base">
+            <position>600,5</position>
+        </buttonlist>
+
+        <textarea name="status" from="textarea_base">
+            <area>950,5,320,25</area>
+            <case>small</case>
+            <alpha>128</alpha>
+        </textarea>
+
+        <progressbar name="progressbar" from="progressbar_base">
+            <area>950,30,320,10</area>
+            <imagetype name="background">
+                <area>0,0,320,10</area>
+                <filename>images/shared/progressbar/progressbar_background.png</filename>
+                <preserveaspect>false</preserveaspect>
+            </imagetype>
+            <imagetype name="progressimage">
+                <area>0,0,320,10</area>
+                <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
+                <preserveaspect>false</preserveaspect>
+            </imagetype>
+        </progressbar>
+
+        <webbrowser name="webbrowser">
+            <area>0,49,1280,671</area>
+            <zoom>1.4</zoom>
+        </webbrowser>
+
+    </window>
+
+    <window name="bookmarkmanager">
+        <imagetype name="browserbgd" from="image_wallpaper_base">
+            <filename>images/backgrounds/web.jpg</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleRecordings" from="screentitle">
+            <value>BOOKMARK MANAGER</value>
+        </textarea>
+
+        <buttonlist name="grouplist" from="buttonlist_menu">
+            <position>740,260</position>
+        </buttonlist>
+
+        <buttonlist name="bookmarklist" from="buttonlist_menu_details">
+            <position>740,260</position>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="name" from="textarea_base">
+                        <area>10,0,350,40</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <textarea name="name" from="textarea_base">
+                        <area>10,0,350,40</area>
+                    </textarea>
+                    <textarea name="url" from="textarea_base">
+                        <area>375,7,155,33</area>
+                        <font>verysmall</font>
+                        <case>normal</case>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <imagetype name="NetworkImage">
+            <area>25,260,275,415</area>
+            <filename>images/shared/DefaultNetworkLong.png</filename>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+
+        <textarea name="infotext" from="textarea_base">
+            <area>25,660,720,50</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>left,vcenter</align>
+            <multiline>yes</multiline>
+            <value>Choose a bookmark to show in the web browser</value>
+        </textarea>
+
+        <textarea name="messagetext" from="infotext"/>
+
+    </window>
+
+    <window name="bookmarkeditor">
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/web.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- content of the window                              -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Browse the web</value> 
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+<!--            <value>Add bookmark</value>-->
+        </textarea>
+
+        <textarea name="categorylbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Category:</value>
+        </textarea>
+
+        <textedit name="category" from="textedit_menu_wide">
+            <position>250,210</position>
+        </textedit>
+
+        <button name="findcategory" from="button_base_menu">
+            <position>790,175</position>
+            <value>Search</value>
+        </button>
+
+        <textarea name="namelbl" from="categorylbl">
+            <position>250,280</position>
+            <value>URL Name:</value>
+        </textarea>
+
+        <textedit name="name" from="textedit_menu_wide">
+            <position>250,315</position>
+        </textedit>
+
+        <textarea name="urllbl" from="categorylbl">
+            <position>250,385</position>
+            <value>URL:</value>
+        </textarea>
+
+        <textedit name="url" from="textedit_menu_wide">
+            <position>250,420</position>
+        </textedit>
+
+        <button name="ok" from="button_base_menu">
+            <position>790,210</position>
+            <value>Ok</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,245</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="browserconfig">
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/web.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- content of the window                              -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Browse the web</value> 
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+<!--            <value>Add bookmark</value>-->
+        </textarea>
+
+        <textarea name="commandlbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Browser Command:</value>
+        </textarea>
+
+        <textedit name="command" from="textedit_menu_wide">
+            <position>250,210</position>
+        </textedit>
+
+        <textarea name="zoomlabel" from="commandlbl">
+            <position>250,280</position>
+            <value>Text Size:</value>
+        </textarea>
+
+        <textedit name="zoom" from="textedit_menu">
+           <position>420,280</position>
+        </textedit>
+
+        <textarea name="pluginlabel" from="commandlbl">
+            <position>250,315</position>
+            <value>Enable plugins:</value>
+        </textarea>
+
+        <checkbox name="enablepluginscheck" from="checkbox_menu">
+            <position>420,315</position>
+        </checkbox>
+
+        <textarea name="description" from="textarea_base">
+            <area>250,590,510,120</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>left,bottom</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="ok" from="button_base_menu">
+            <position>790,175</position>
+            <value>Ok</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+</mythuitheme>

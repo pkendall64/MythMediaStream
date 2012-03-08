@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+  <window name="netsearch">
+        <imagetype name="netsearchbgd" from="image_wallpaper_base">
+            <filename>images/backgrounds/app-store.jpg</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleRecordings" from="screentitle">
+            <value>SEARCH INTERNET VIDEO</value>
+        </textarea>
+
+        <imagetype name="MediaCountBackground">
+            <area>1110,5,160,40</area>
+            <filename>images/shared/MediaCountBackgroundLong.png</filename>
+        </imagetype>
+
+        <textarea name="page" from="textarea_base">
+            <area>1112,8,146,40</area>
+            <font>normal</font>
+            <case>lower</case>
+            <align>allcenter</align>
+            <multiline>no</multiline>
+            <cutdown>no</cutdown>
+        </textarea>
+
+        <textarea name="searchlbl" from="textarea_base">
+            <area>750,260,510,35</area>
+            <value>Search for:</value>
+        </textarea>
+
+        <textedit name="search" from="textedit_menu">
+            <position>910,260</position>
+        </textedit>
+
+        <buttonlist name="sites" from="buttonlist_menu">
+            <area>740,295,540,420</area>
+            <buttonarea>0,0,540,400</buttonarea>
+            <statetype name="upscrollarrow">
+                <position>10,404</position>	
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>30,404</position>	
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="results" from="buttonlist_menu">
+            <area>740,295,540,420</area>
+            <buttonarea>0,0,540,400</buttonarea>
+            <statetype name="upscrollarrow">
+                <position>10,404</position>	
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>30,404</position>	
+            </statetype>
+        </buttonlist>
+
+        <imagetype name="preview">
+            <area>25,260,400,225</area>
+            <preserveaspect>no</preserveaspect>
+            <filename>images/shared/defaultNetworkBigWide.png</filename>
+            <reflection shear="0" scale="65" length="15"/>
+        </imagetype>
+
+        <textarea name="author" from="textarea_base">
+            <area>450,260,275,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>128</alpha>
+            <case>upper</case>
+            <align>left,top</align>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>450,285,275,90</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,top</align>
+        </textarea>
+
+        <textarea name="lengthlbl">
+            <area>450,395,150,25</area>
+            <font>title_verysmall_blue</font>
+            <align>left,vcenter</align>
+            <value>Length</value>
+        </textarea>
+
+        <textarea name="length">
+            <area>555,395,200,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="resolutionlbl" from="lengthlbl">
+            <position>450,420</position>
+            <value>Resolution</value>
+        </textarea>
+
+        <textarea name="resolution" from="length">
+            <position>555,420</position>
+        </textarea>
+
+        <textarea name="filesize_strlbl" from="lengthlbl">
+            <position>450,445</position>
+            <value>Size</value>
+        </textarea>
+
+        <textarea name="filesize_str" from="length">
+            <position>555,445</position>
+        </textarea>
+
+        <textarea name="downloadablelbl" from="lengthlbl">
+            <position>450,470</position>
+            <value>Download</value>
+        </textarea>
+
+        <statetype name="downloadable">
+            <area>555,470,200,25</area>
+            <state name="yes">
+                <textarea name="yestext">
+                    <area>0,0,200,25</area>
+                    <font>small</font>
+                    <case>normal</case>
+                    <align>left,vcenter</align>
+                    <value>Yes</value>
+                </textarea>
+            </state>
+            <state name="no">
+                <textarea name="notext">
+                    <area>0,0,200,25</area>
+                    <font>small</font>
+                    <case>normal</case>
+                    <align>left,vcenter</align>
+                    <value>No</value>
+                </textarea>
+            </state>
+        </statetype>
+
+        <textarea name="description" from="textarea_base">
+            <area>25,540,695,120</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="nosites" from="description">
+            <value>Can't find any search scripts! This usually indicates missing search script prerequisites. Try running a script from the command line.</value>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!--   INFO ICONS                                          -->
+        <!-- ===================================================== -->
+        <imagetype name="autoexpire_icon_off">
+            <area>25,670,30,30</area>
+            <preserveaspect>no</preserveaspect>
+            <filename>images/shared/OSDRepeatNF.png</filename>
+        </imagetype>
+        <imagetype name="commflagged_icon_off" from="autoexpire_icon_off">
+            <area>70,670,30,30</area>
+            <filename>images/shared/OSDPresetSettingsNF.png</filename>
+        </imagetype>
+        <imagetype name="bookmark_icon_off" from="autoexpire_icon_off">
+            <area>115,670,30,30</area>
+            <filename>images/shared/OSDBookmarksNF.png</filename>
+        </imagetype>
+        <imagetype name="cutlist_icon_off" from="autoexpire_icon_off">
+            <area>160,670,30,30</area>
+            <filename>images/shared/OSDVideoNF.png</filename>
+        </imagetype>
+        <imagetype name="playlist_icon_off" from="autoexpire_icon_off">
+            <area>205,670,30,30</area>
+            <filename>images/shared/OSDPlaylistNF.png</filename>
+        </imagetype>
+
+  </window>
+
+  <window name="treeeditor">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/app-store.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+<!--        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>-->
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- content of the window                              -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Browse Internet video</value> 
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Manage Site Subscriptions</value>
+        </textarea>
+
+        <buttonlist name="grabbers" from="buttonlist_dialog_wide_check">
+            <position>250,175</position>
+        </buttonlist>
+
+  </window>
+
+  <window name="rsseditor">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/app-store.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- content of the window                              -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Browse Internet video</value> 
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Manage Site Subscriptions</value>
+        </textarea>
+
+        <button name="new" from="button_base_menu">
+            <position>790,175</position>
+            <value>New</value>
+        </button>
+
+        <button name="edit" from="button_base_menu">
+            <position>790,210</position>
+            <value>Edit</value>
+        </button>
+
+        <button name="delete" from="button_base_menu">
+            <position>790,245</position>
+            <value>Delete</value>
+        </button>
+
+        <buttonlist name="sites" from="buttonlist_dialog_wide_check">
+            <position>250,175</position>
+        </buttonlist>
+
+        <textarea name="description" from="textarea_base">
+            <area>250,640,510,70</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+<!--      <imagetype name="preview">
+          <area>38,330,150,240</area>
+          <preserveaspect>true</preserveaspect>
+      </imagetype>-->
+
+  </window>
+
+  <window name="rsseditpopup">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/app-store.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- content of the window                              -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Browse Internet video</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Manage RSS Subscriptions</value>
+        </textarea>
+
+        <textarea name="titlelbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Feed Name:</value>
+        </textarea>
+
+        <textedit name="title" from="textedit_menu">
+            <position>420,175</position>
+        </textedit>
+
+        <textarea name="authorlbl" from="titlelbl">
+            <position>250,210</position>
+            <value>Feed Author:</value>
+        </textarea>
+
+        <textedit name="author" from="textedit_menu">
+            <position>420,210</position>
+        </textedit>
+
+        <textarea name="urllabel" from="titlelbl">
+            <position>250,280</position>
+            <value>Feed URL:</value>
+        </textarea>
+
+        <textedit name="url" from="textedit_menu_wide">
+            <position>250,315</position>
+        </textedit>
+
+        <textarea name="desclabel" from="titlelbl">
+            <position>250,385</position>
+            <value>Site Description:</value>
+        </textarea>
+
+        <textedit name="description" from="textedit_menu_wide">
+            <position>250,420</position>
+        </textedit>
+
+        <textarea name="downloadlbl" from="titlelbl">
+            <position>250,490</position>
+            <value>Download this feed automatically</value>
+        </textarea>
+
+        <checkbox name="download" from="checkbox_base">
+            <position>730,490</position>
+        </checkbox>
+
+        <imagetype name="preview">
+            <area>372,560,267,150</area>
+        </imagetype>
+
+        <button name="preview_browse" from="button_base_menu">
+            <position>790,175</position>
+            <value>Preview</value>
+        </button>
+
+        <button name="ok" from="button_base_menu">
+            <position>790,210</position>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,245</position>
+            <value>Cancel</value>
+        </button>
+
+  </window>
+
+  <window name="tree">
+        <imagetype name="treebgd" from="image_wallpaper_base">
+            <filename>images/backgrounds/app-store.jpg</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleRecordings" from="screentitle">
+            <value>BROWSE INTERNET VIDEO</value>
+        </textarea>
+
+        <imagetype name="MediaCountBackground">
+            <area>1110,5,160,40</area>
+            <filename>images/shared/MediaCountBackgroundLong.png</filename>
+        </imagetype>
+
+        <textarea name="childcount" from="textarea_base">
+            <area>1112,5,146,40</area>
+            <font>normal</font>
+            <case>lower</case>
+            <align>allcenter</align>
+            <multiline>no</multiline>
+            <cutdown>no</cutdown>
+        </textarea>
+
+        <buttontree name="videos"from="buttontree_menu">
+            <position>740,260</position>
+        </buttontree>
+
+        <imagetype name="preview">
+            <area>25,260,400,225</area>
+            <preserveaspect>no</preserveaspect>
+            <filename>images/shared/Take2RaspberryWide.png</filename>
+            <reflection shear="0" scale="65" length="15"/>
+        </imagetype>
+
+ from="image_wallpaper_base"        <textarea name="author" from="textarea_base">
+            <area>450,260,275,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>128</alpha>
+            <case>upper</case>
+            <align>left,top</align>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>450,285,275,90</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,top</align>
+        </textarea>
+
+        <textarea name="lengthlbl">
+            <area>450,395,150,25</area>
+            <font>title_verysmall_blue</font>
+            <align>left,vcenter</align>
+            <value>Length</value>
+        </textarea>
+
+        <textarea name="length">
+            <area>555,395,200,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="resolutionlbl" from="lengthlbl">
+            <position>450,420</position>
+            <value>Resolution</value>
+        </textarea>
+
+        <textarea name="resolution" from="length">
+            <position>555,420</position>
+        </textarea>
+
+        <textarea name="filesize_strlbl" from="lengthlbl">
+            <position>450,445</position>
+            <value>Size</value>
+        </textarea>
+
+        <textarea name="filesize_str" from="length">
+            <position>555,445</position>
+        </textarea>
+
+        <textarea name="downloadablelbl" from="lengthlbl">
+            <position>450,470</position>
+            <value>Download</value>
+        </textarea>
+
+        <statetype name="downloadable">
+            <area>555,470,200,25</area>
+            <state name="yes">
+                <textarea name="yestext">
+                    <area>0,0,200,25</area>
+                    <font>small</font>
+                    <case>normal</case>
+                    <align>left,vcenter</align>
+                    <value>Yes</value>
+                </textarea>
+            </state>
+            <state name="no">
+                <textarea name="notext">
+                    <area>0,0,200,25</area>
+                    <font>small</font>
+                    <case>normal</case>
+                    <align>left,vcenter</align>
+                    <value>No</value>
+                </textarea>
+            </state>
+        </statetype>
+
+        <textarea name="description" from="textarea_base">
+            <area>25,540,695,120</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="nosites" from="description">
+            <value>Can't find any search scripts! This usually indicates missing search script prerequisites. Try running a script from the command line.</value>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!--   INFO ICONS                                          -->
+        <!-- ===================================================== -->
+        <imagetype name="autoexpire_icon_off">
+            <area>25,670,30,30</area>
+            <preserveaspect>no</preserveaspect>
+            <filename>images/shared/OSDRepeatNF.png</filename>
+        </imagetype>
+        <imagetype name="commflagged_icon_off" from="autoexpire_icon_off">
+            <area>70,670,30,30</area>
+            <filename>images/shared/OSDPresetSettingsNF.png</filename>
+        </imagetype>
+        <imagetype name="bookmark_icon_off" from="autoexpire_icon_off">
+            <area>115,670,30,30</area>
+            <filename>images/shared/OSDBookmarksNF.png</filename>
+        </imagetype>
+        <imagetype name="cutlist_icon_off" from="autoexpire_icon_off">
+            <area>160,670,30,30</area>
+            <filename>images/shared/OSDVideoNF.png</filename>
+        </imagetype>
+        <imagetype name="playlist_icon_off" from="autoexpire_icon_off">
+            <area>205,670,30,30</area>
+            <filename>images/shared/OSDPlaylistNF.png</filename>
+        </imagetype>
+
+    </window>
+
+    <window name="browser">
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/app-store.jpg</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/MovieViewBG.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleVideoBrowser" from="screentitle">
+            <value>BROWSE INTERNET VIDEO</value>
+        </textarea>
+
+        <imagetype name="MediaCountBackground">
+            <area>1110,5,160,40</area>
+            <filename>images/shared/MediaCountBackgroundLong.png</filename>
+        </imagetype>
+
+        <textarea name="childcount" from="textarea_base">
+            <area>1112,5,146,40</area>
+            <font>normal</font>
+            <case>lower</case>
+            <align>allcenter</align>
+            <multiline>no</multiline>
+            <cutdown>no</cutdown>
+        </textarea>
+
+        <buttonlist name="videos" from="buttonlist_browse">
+            <position>0,505</position>
+        </buttonlist>
+
+        <!-- ===================================================== -->
+        <!--     VIDEO DETAILS                                     -->
+        <!-- ===================================================== -->
+        <imagetype name="preview">
+            <area>25,70,290,410</area>
+            <filename>images/shared/Take2RaspberryLong.png</filename>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+
+        <textarea name="title" from="textarea_base">
+            <area>345,80,915,40</area>
+            <font>title_big</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <template>%TITLE% %SUBTITLE%</template>
+        </textarea>
+
+        <textarea name="description" from="textarea_base">
+            <area>345,125,915,125</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>-->
+        </textarea>
+
+        <textarea name="nosites" from="description">
+            <value>You haven't added any Sites/RSS Feeds yet! To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
+        </textarea>
+
+        <textarea name="MovieDetailslbl" from="textarea_base">
+            <area>345,275,400,25</area>
+            <font>title_small</font>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <value>Movie Details</value>
+        </textarea>
+
+        <textarea name="resolution" from="textarea_base">
+            <area>345,300,495,25</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>left,vcenter</align>
+            <value>None</value>
+        </textarea>
+
+        <textarea name="date" from="resolution">
+            <position>345,325</position>
+            <value>N/A</value>
+        </textarea>
+
+        <textarea name="length" from="resolution">
+            <position>345,350</position>
+            <value>N/A</value>resolution
+        </textarea>
+
+        <textarea name="rating" from="resolution">
+            <position>345,375</position>
+            <value>N/A</value>
+        </textarea>
+
+        <textarea name="Urllbl" from="MovieDetailslbl">
+            <position>345,425</position>
+            <value>Movie URL</value>
+        </textarea>
+
+       <textarea name="mediaurl" from="resolution">
+            <position>345,450</position>
+        </textarea>
+
+
+        <textarea name="Directorlbl" from="MovieDetailslbl">
+            <position>850,275</position>
+            <value>Author</value>
+        </textarea>
+
+        <textarea name="author" from="resolution">
+            <position>850,300</position>
+            <value>N/A</value>
+        </textarea>
+
+        <textarea name="Seasonlbl" from="MovieDetailslbl">
+            <position>850,425</position>
+            <value>Season and Episode</value>
+        </textarea>
+
+        <textarea name="s##e##" from="resolution">
+            <position>850,450</position>
+            <value>s00e00</value>
+        </textarea>
+
+    </window>
+
+    <window name="gallery">
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/app-store.jpg</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleVideoGallery" from="screentitle">
+            <value>VIDEO INTERNET GALLERY</value>
+        </textarea>
+
+        <imagetype name="MediaCountBackground">
+            <area>1110,5,160,40</area>
+            <filename>images/shared/MediaCountBackgroundLong.png</filename>
+        </imagetype>
+
+        <textarea name="childcount" from="textarea_base">
+            <area>1112,5,146,40</area>
+            <font>normal</font>
+            <case>lower</case>
+            <align>allcenter</align>
+            <multiline>no</multiline>
+            <cutdown>no</cutdown>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!--     VIDEO GALLERY                                     -->
+        <!-- ===================================================== -->
+        <buttonlist name="videos" from="buttonlist_gallery">
+            <position>0,260</position>
+        </buttonlist>
+
+        <!-- ===================================================== -->
+        <!--     VIDEO DETAILS                                     -->
+        <!-- ===================================================== -->
+        <textarea name="title" from="textarea_base">
+            <area>820,260,440,35</area>
+            <font>title</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+<!--            <template>%TITLE% %SUBTITLE%</template>-->
+        </textarea>
+
+        <textarea name="description" from="textarea_base">
+            <area>820,295,440,355</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>-->
+<!--            <template>%DESCRIPTION% - %YEAR% - %STARS%</template>-->
+        </textarea>
+
+        <textarea name="nosites" from="basetextarea">
+            <value>You haven't added any Sites/RSS Feeds yet!  To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
+        </textarea>
+
+        <textarea name="authorlbl" from="textarea_base">
+            <area>820,680,120,25</area>
+            <font>normal</font>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <value>Author:</value>
+        </textarea>
+
+       <textarea name="author" from="textarea_base">
+            <area>900,680,370,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+    </window>
+
+</mythuitheme>

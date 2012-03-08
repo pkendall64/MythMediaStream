@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="status">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- CUSTOM EDIT POPUP                                  -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>See what your system is doing</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>System status</value>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!--     STATUS GROUPS                                     -->
+        <!-- ===================================================== -->
+        <buttonlist name="category" from="buttonlist_menu_2">
+            <position>790,175</position>
+        </buttonlist>
+
+        <buttonlist name="log" from="buttonlist_dialog_wide_permanent">
+            <position>250,175</position>
+        </buttonlist>
+
+        <textarea name="helptext" from="textarea_base">
+            <area>250,610,510,100</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>left,bottom</align>
+            <value>This screen displays the status of various system components</value>
+            <multiline>yes</multiline>
+        </textarea>
+
+    </window>
+
+</mythuitheme>
+

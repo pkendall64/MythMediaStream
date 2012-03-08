@@ -1,0 +1,27 @@
+<themeinfo>
+    <name>MythMediaStream</name>
+
+    <aspect>16:9</aspect>
+
+    <author>
+        <name>Ted Verhagen</name>
+        <email>ted.verhagen@gmail.com</email>
+    </author>
+    <types>
+        <type>UI</type>
+        <type>OSD</type>
+    </types>
+
+    <baseres>1280x720</baseres>
+
+    <version>
+        <major>24</major>
+        <minor>1</minor>
+    </version>
+
+    <detail>
+        <thumbnail name="preview">preview.png</thumbnail>
+        <description>Port of the XBMC MediaStream skin: MediaStream was first developed by what became known as Team Razorfish. This team was originally put together by Mike Beecham who posted in the xbmc forums, looking for people interested in collaborating on a new skin. The development of the skin took about a year with the skin finally unveiled to the public on 08/08/08 (8th August 2008). MythMediaStream has been made to look like the original theme were posible using its native graphics and art design.</description>
+        <errata>Set included menus in mediacentermenu as your menu to make this theme complete</errata>
+    </detail>
+</themeinfo>

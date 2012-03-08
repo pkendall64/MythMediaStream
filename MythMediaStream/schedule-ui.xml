@@ -1,0 +1,3053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="programguide">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/MovieViewBG.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleProgramGuide" from="screentitle">
+            <value>PROGRAM GUIDE</value>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!-- PROGRAM GUIDE                                         -->
+        <!-- ===================================================== -->
+
+        <guidegrid name="guidegrid">
+            <area>200,106,1040,385</area>
+            <layout>horizontal</layout>
+            <channels>10</channels>
+            <timeslots>3</timeslots>
+            <solidcolor>#000000</solidcolor>
+            <selector type="box" linecolor="#105B8F" fillcolor="#105B8F"/>
+            <showcategories>no</showcategories>
+<!--            <showcategorycolors>no</showcategorycolors>-->
+            <categoryalpha>60</categoryalpha>
+            <recordingcolor>#00aa00</recordingcolor>
+            <conflictingcolor>#ff6600</conflictingcolor>
+            <cutdown>yes</cutdown>
+            <multiline>no</multiline>
+            <textoffset>5,10</textoffset>
+            <recordstatus type="SingleRecord" image="images/tv-recordings/gg-rs-single.png" />
+            <recordstatus type="TimeslotRecord" image="images/tv-recordings/gg-rs-timeslot.png" />
+            <recordstatus type="ChannelRecord" image="images/tv-recordings/gg-rs-channel.png" />
+            <recordstatus type="AllRecord" image="images/tv-recordings/gg-rs-all.png" />
+            <recordstatus type="WeekslotRecord" image="images/tv-recordings/gg-rs-weekslot.png" />
+            <recordstatus type="FindOneRecord" image="images/tv-recordings/gg-rs-findone.png" />
+            <recordstatus type="OverrideRecord" image="images/tv-recordings/gg-rs-override.png" />
+            <arrow direction="left" image="images/shared/ArrowLeftFO.png" />
+            <arrow direction="right" image="images/shared/ArrowRightFO.png" />
+            <font>small</font>
+        </guidegrid>
+
+        <buttonlist name="timelist">
+            <area>200,80,1040,20</area>
+            <layout>horizontal</layout>
+            <spacing>0</spacing>
+            <buttonarea>0,0,1040,20</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>0,0,346,20</area>
+                        <font>verysmall</font>
+                        <align>left,bottom</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <state type="off">
+                    <imagetype name="upon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="channelgroup" from="basetextarea">
+            <area>8,80,90,20</area>
+            <align>left,vcenter</align>
+            <font>verysmall</font>
+            <case>upper</case>
+        </textarea>
+
+	<imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
+
+        <textarea name="datetext" from="screentitle2"/>
+
+        <buttonlist name="channellist">
+            <area>0,104,1280,400</area>
+            <layout>vertical</layout>
+            <spacing>0</spacing>
+            <buttonarea>0,0,1280,400</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,1280,39</area>
+                <state name="active">
+		    <imagetype name="MenuItemNFMid">
+			<area>0,0,1280,39</area>
+			<filename>images/shared/MenuItemNF.png</filename>
+		    </imagetype>
+                    <imagetype name="channelicon">
+                        <area>8,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                    </imagetype>
+                    <imagetype name="glasoverlay">
+                        <area>8,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                        <filename>images/shared/ButtonMenuGlass.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext" from="textarea_base">
+                         <area>50,10,140,26</area>
+                         <align>left,bottom</align>
+                         <font>small</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <state type="off">
+                    <imagetype name="upon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+       <imagetype name="channelicon">
+            <area>20,525,180,180</area>
+            <preserveaspect>no</preserveaspect>
+            <reflection shear="0" scale="75" length="35"/>
+        </imagetype>
+
+        <textarea name="title" from="textarea_base">
+            <area>220,520,1020,40</area>
+            <align>left,vcenter</align>
+            <font>title</font>
+            <case>upper</case>
+            <template>%longchannel% - %titlesubtitle%</template>
+        </textarea>
+
+        <textarea name="description" from="textarea_base">
+            <area>220,560,1020,150</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <template>%timedate% - %description%</template>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+    </window>
+
+    <window name="programguide-video">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/MovieViewBG.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleProgramGuide" from="screentitle">
+            <value>PROGRAM GUIDE</value>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!-- PROGRAM GUIDE                                         -->
+        <!-- ===================================================== -->
+
+        <guidegrid name="guidegrid">
+            <area>200,106,1040,385</area>
+            <layout>horizontal</layout>
+            <channels>10</channels>
+            <timeslots>3</timeslots>
+            <solidcolor>#000000</solidcolor>
+            <selector type="box" linecolor="#105B8F" fillcolor="#105B8F"/>
+            <showcategories>no</showcategories>
+<!--            <showcategorycolors>no</showcategorycolors>-->
+            <categoryalpha>60</categoryalpha>
+            <recordingcolor>#00aa00</recordingcolor>
+            <conflictingcolor>#ff6600</conflictingcolor>
+            <cutdown>yes</cutdown>
+            <multiline>no</multiline>
+            <textoffset>5,10</textoffset>
+            <recordstatus type="SingleRecord" image="images/tv-recordings/gg-rs-single.png" />
+            <recordstatus type="TimeslotRecord" image="images/tv-recordings/gg-rs-timeslot.png" />
+            <recordstatus type="ChannelRecord" image="images/tv-recordings/gg-rs-channel.png" />
+            <recordstatus type="AllRecord" image="images/tv-recordings/gg-rs-all.png" />
+            <recordstatus type="WeekslotRecord" image="images/tv-recordings/gg-rs-weekslot.png" />
+            <recordstatus type="FindOneRecord" image="images/tv-recordings/gg-rs-findone.png" />
+            <recordstatus type="OverrideRecord" image="images/tv-recordings/gg-rs-override.png" />
+            <arrow direction="left" image="images/shared/ArrowLeftFO.png" />
+            <arrow direction="right" image="images/shared/ArrowRightFO.png" />
+            <font>small</font>
+        </guidegrid>
+
+        <buttonlist name="timelist">
+            <area>200,80,1040,20</area>
+            <layout>horizontal</layout>
+            <spacing>0</spacing>
+            <buttonarea>0,0,1040,20</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>0,0,346,20</area>
+                        <font>verysmall</font>
+                        <align>left,bottom</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <state type="off">
+                    <imagetype name="upon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="channelgroup" from="basetextarea">
+            <area>8,80,90,20</area>
+            <align>left,vcenter</align>
+            <font>verysmall</font>
+            <case>upper</case>
+        </textarea>
+
+	<imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
+
+        <textarea name="datetext" from="screentitle2"/>
+
+        <buttonlist name="channellist">
+            <area>0,104,1280,400</area>
+            <layout>vertical</layout>
+            <spacing>0</spacing>
+            <buttonarea>0,0,1280,400</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,1280,39</area>
+                <state name="active">
+		    <imagetype name="MenuItemNFMid">
+			<area>0,0,1280,39</area>
+			<filename>images/shared/MenuItemNF.png</filename>
+		    </imagetype>
+                    <imagetype name="channelicon">
+                        <area>8,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                    </imagetype>
+                    <imagetype name="glasoverlay">
+                        <area>8,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                        <filename>images/shared/ButtonMenuGlass.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext" from="textarea_base">
+                         <area>50,10,140,26</area>
+                         <align>left,bottom</align>
+                         <font>small</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <state type="off">
+                    <imagetype name="upon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+       <imagetype name="video">
+            <area>20,525,320,180</area>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
+        <textarea name="title" from="textarea_base">
+            <area>360,520,880,40</area>
+            <align>left,vcenter</align>
+            <font>title</font>
+            <case>upper</case>
+            <template>%longchannel% - %titlesubtitle%</template>
+        </textarea>
+
+        <textarea name="description" from="textarea_base">
+            <area>360,560,880,150</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <template>%timedate% - %description%</template>
+            <cutdown>yes</cutdown>
+        </textarea>
+    </window>
+
+    <window name="manualschedule">
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype> 
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- MANUAL RECORDING INPUT                             -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>VRC-Like recording scheduler</value>
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Manual Schedule</value>
+        </textarea>
+
+        <textarea name="titlelabel" from="textarea_base">
+            <area>250,175,150,35</area>
+            <value>Title (Optional):</value>
+        </textarea>
+
+        <textedit name="title" from="textedit_menu">
+           <position>420,175</position>
+        </textedit>
+
+        <textarea name="channellabel" from="titlelabel">
+            <position>250,240</position>
+            <value>Channel:</value>
+        </textarea>
+
+        <buttonlist name="channel" from="selector_base">
+            <position>420,240</position>
+        </buttonlist>
+
+        <textarea name="datelabel" from="titlelabel">
+            <position>250,305</position>
+            <value>Start Date:</value>
+        </textarea>
+
+        <buttonlist name="startdate" from="channel">
+            <position>420,305</position>
+        </buttonlist>
+
+        <textarea name="timelabel" from="titlelabel">
+            <position>250,380</position>
+            <value>Start Time:</value>
+        </textarea>
+
+        <spinbox name="starthour" from="spinbox_menu">
+            <position>420,380</position>
+        </spinbox>
+
+        <textarea name="hourlabel" from="titlelabel">
+            <position>520,380</position>
+            <value>Hour</value>
+        </textarea>
+
+        <spinbox name="startminute" from="spinbox_base">
+            <position>565,380</position>
+        </spinbox>
+
+        <textarea name="minutelabel" from="titlelabel">
+            <position>665,380</position>
+            <value>Minutes</value>
+        </textarea>
+
+        <textarea name="durationlabel" from="titlelabel">
+            <position>250,445</position>
+            <value>Duration:</value>
+        </textarea>
+
+        <spinbox name="duration" from="starthour">
+            <position>420,445</position>
+        </spinbox>
+
+        <button name="next" from="button_base_menu">
+            <position>790,175</position>
+            <value>Next</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="viewscheduled">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleProgramList" from="screentitle">
+            <value>upcoming recordings</value>
+        </textarea>
+
+	<imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
+
+        <textarea name="status" from="screentitle2">
+            <font state="warning">normal_warning</font>
+        </textarea>
+
+        <buttonlist name="groups" from="buttonlist_wide">
+            <position>620,260</position>
+        </buttonlist>
+
+
+        <buttonlist name="schedules" from="buttonlist_wide">
+            <position>620,260</position>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="shortstarttimedate" from="textarea_base">
+                        <area>10,0,570,40</area>
+                        <alpha>255</alpha>
+                        <font>normal</font>
+                        <alpha>128</alpha>
+                        <font state="error">normal_red</font>
+                        <font state="running">normal_amber</font>
+                        <align>left,vcenter</align>
+                        <template>%title%  -  %timedate%</template>
+                    </textarea>
+                    <textarea name="card" from="shortstarttimedate">
+                        <area>600,0,35,40</area>
+                        <alpha>128</alpha>
+                        <font>normal</font>
+                        <font state="error">normal_red</font>
+                        <font state="running">normal_amber</font>
+                        <align>right,vcenter</align>
+                        <template>(%card%)</template>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <textarea name="title" from="textarea_base">
+                        <area>10,0,270,40</area>
+                        <alpha>255</alpha>
+                        <font state="error">normal_red</font>
+                        <font state="running">normal_amber</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <imagetype name="statusimagedefault">
+                        <area>290,9,22,22</area>
+                        <filename>images/tv-recordings/schedule/schedule_mark.png</filename>
+                    </imagetype>
+                    <statetype name="status">
+                        <area>290,9,22,22</area>
+                        <state name="disabled">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_disabled.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="error">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_conflict.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="warning">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_other.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="normal">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_record.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="running">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_recording.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="marked">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_mark.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="shortstarttimedate" from="textarea_base">
+                        <area>320,7,320,33</area>
+                        <alpha>255</alpha>
+                        <case>normal</case>
+                        <font>verysmall</font>
+                        <font state="error">verysmall_red</font>
+                        <font state="running">verysmall_amber</font>
+                        <align>left,vcenter</align>
+                        <template>Input %card%:  %shorttimedate% on %longchannel%</template>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="textarea_base">
+            <area>20,260,560,40</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="longchannel" from="textarea_base">
+            <area>20,300,560,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <alpha>192</alpha>
+            <template>%longchannel% - %timedate%</template>
+        </textarea>
+
+        <textarea name="description" from="textarea_base">
+            <area>20,340,560,235</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="rectypestatuslbl" from="textarea_base">
+            <area>20,605,250,25</area>
+            <font>title_verysmall_blue</font>
+            <align>left,vcenter</align>
+            <value>Recording Status</value>
+        </textarea>
+
+        <textarea name="rectypestatus" from="textarea_base">
+            <area>190,605,420,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="recgrouplbl" from="rectypestatuslbl">
+            <position>20,630</position>
+            <value>Recording Group</value>
+        </textarea>
+
+        <textarea name="recgroup" from="rectypestatus">
+            <position>190,630</position>
+        </textarea>
+
+        <textarea name="lenminslbl" from="rectypestatuslbl">
+            <position>20,655</position>
+            <value>Lenght</value>
+        </textarea>
+
+        <textarea name="lenmins" from="rectypestatus">
+            <position>190,655</position>
+        </textarea>
+
+        <textarea name="filterlbl" from="rectypestatuslbl">
+            <position>20,680</position>
+            <value>Filter (1/2)</value>
+        </textarea>
+
+        <textarea name="filter" from="rectypestatus">
+            <position>190,680</position>
+        </textarea>
+
+        <textarea name="norecordings_info" from="description">
+            <value>You Haven't Scheduled Any Programs To Be Recorded.\n
+                To schedule a recording, exit this screen and
+                select 'Program Guide' or 'Program Finder'.</value>
+        </textarea>
+
+<!--        <imagetype name="icon">
+            <area>510,610,100,100</area>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
+        <imagetype name="glasoverlay">
+             <area>510,610,100,100</area>
+             <preserveaspect>no</preserveaspect>
+             <filename>images/shared/ButtonMenuGlass.png</filename>
+        </imagetype>-->
+
+    </window>
+
+    <window name="channelrecpriority">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/podium.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+<!--        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>-->
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- CHANNEL RECORING PRIORITY                          -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Prioritize some channels over others</value>
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Channel Rec Priority</value>
+        </textarea>
+
+        <buttonlist name="channels" from="buttonlist_dialog_wide_check">
+            <position>250,175</position>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <imagetype name="icon">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                    </imagetype>
+                    <imagetype name="glasoverlay">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                        <filename>images/shared/ButtonMenuGlass.png</filename>
+                    </imagetype>
+                    <textarea name="channum" from="textarea_base">
+                        <area>40,0,50,40</area>
+                        <alpha>128</alpha>
+                    </textarea>
+                    <textarea name="name" from="channum">
+                        <area>100,0,340,40</area>
+                        <template>%name% (%callsign%)</template>
+                    </textarea>
+                    <textarea name="priority" from="channum">
+                        <area>450,0,25,40</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+		    <imagetype name="MediaItemDetailBG">
+			<area>100,5,410,30</area>
+			<filename>images/shared/MediaItemDetailBG.png</filename>
+		    </imagetype>
+                    <imagetype name="icon">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                    </imagetype>
+                    <imagetype name="glasoverlay">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                        <filename>images/shared/ButtonMenuGlass.png</filename>
+                    </imagetype>
+                    <textarea name="channum" from="textarea_base">
+                        <area>40,0,50,40</area>
+                        <alpha>255</alpha>
+                    </textarea>
+                    <textarea name="name" from="textarea_base">
+                        <area>120,7,379,33</area>
+                        <font>verysmall</font>
+                        <alpha>255</alpha>
+                        <align>left,vcenter</align>
+                        <template>%name% / %callsign%  (Priority: %priority%)</template>
+                    </textarea>
+<!--                    <textarea name="priority" from="textarea_base">
+                        <area>120,7,100,33</area>
+                        <font>verysmall</font>
+                        <align>left,vcenter</align>
+                        <alpha>255</alpha>
+                        <template>Priority: %priority%</template>
+                    </textarea>-->
+                </state>         
+            </statetype>
+        </buttonlist>
+
+        <imagetype name="icon">
+            <area>250,590,100,100</area>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
+        <imagetype name="glasoverlay">
+             <area>250,590,100,100</area>
+             <preserveaspect>no</preserveaspect>
+             <filename>images/shared/ButtonMenuGlass.png</filename>
+        </imagetype>
+
+        <textarea name="channamelabel" from="textarea_base">
+            <area>370,590,100,25</area>
+            <font>title_verysmall_blue</font>
+            <value>Name</value>
+        </textarea>
+
+        <textarea name="channame" from="textarea_base">
+            <area>470,590,295,25</area>
+            <font>small</font>
+        </textarea>
+
+        <textarea name="sourcelabel" from="channamelabel">
+            <position>370,615</position>
+            <value>Source</value>
+        </textarea>
+
+        <textarea name="sourcename" from="channame">
+            <position>470,615</position>
+        </textarea>
+
+        <textarea name="callsignlabel" from="channamelabel">
+            <position>370,640</position>
+            <value>Callsign</value>
+        </textarea>
+
+        <textarea name="callsign" from="sourcename">
+            <position>470,640</position>
+        </textarea>
+
+        <textarea name="recprioritylabel" from="channamelabel">
+            <position>370,665</position>
+            <value>Priority</value>
+        </textarea>
+
+        <textarea name="priority" from="sourcename">
+            <position>470,665</position>
+        </textarea>
+
+<!--        <textarea name="norecordings_info">
+            <area>0,210,1280,70</area>
+            <font>basemedium</font>
+            <value>You Haven't Scheduled Any Programs To Be Recorded\n
+                To schedule a recording, exit this screen and
+                select 'Program Guide' or 'Program Finder'</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>0,670,1280,30</area>
+            <value>(1) Channel (2) Priority</value>
+            <align>center</align>
+        </textarea>-->
+
+    </window>
+
+    <window name="programrecpriority">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/podium.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+<!--        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>-->
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- CHANNEL RECORING PRIORITY                          -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Prioritize some shows over others</value>
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Recording Priority</value>
+        </textarea>
+
+        <buttonlist name="programs" from="buttonlist_dialog_wide_check">
+            <position>250,175</position>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="rectypechar" from="textarea_base">
+                        <area>10,0,430,40</area>
+                        <alpha>128</alpha>
+                        <template>%rectypechar% - %titlesubtitle%</template>
+                    </textarea>
+                    <textarea name="progpriority" from="rectypechar">
+                        <area>450,0,55,40</area>
+                        <align>right,vcenter</align>
+                        <template>%progpriority% / %finalpriority%</template>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+		    <imagetype name="MediaItemDetailBG">
+			<area>50,5,460,30</area>
+			<filename>images/shared/MediaItemDetailBG.png</filename>
+		    </imagetype>
+                    <textarea name="rectypechar" from="textarea_base">
+                        <area>10,0,50,40</area>
+                        <alpha>255</alpha>
+                    </textarea>
+                    <textarea name="titlesubtitle" from="textarea_base">
+                        <area>70,7,420,33</area>
+                        <font>verysmall</font>
+                        <alpha>255</alpha>
+                        <align>left,vcenter</align>
+                        <template>%titlesubtitle%  (Priority: %progpriority% / %finalpriority%)</template>
+                    </textarea>
+<!--                    <textarea name="finalpriority" from="textarea_base">
+                        <area>70,7,140,33</area>
+                        <font>verysmall</font>
+                        <align>left,vcenter</align>
+                        <alpha>255</alpha>
+                        <template>Priority: %progpriority% / %finalpriority%</template>
+                    </textarea>-->
+                </state>         
+            </statetype>
+        </buttonlist>
+
+<!--        <textarea name="title" from="textarea_base">
+            <area>250,575,515,35</area>
+            <font>title</font>
+        </textarea>
+
+        <textarea name="scheduleinfo" from="textarea_base">
+            <area>250,610,515,25</area>
+            <font>title_small</font>
+            <alpha>128</alpha>
+        </textarea>-->
+
+        <textarea name="recprioritylbl" from="basetextarea">
+            <area>250,635,170,25</area>
+            <font>title_verysmall_blue</font>
+            <value>Recording Priority</value>
+        </textarea>
+
+        <textarea name="recpriority" from="textarea_base">
+             <area>430,635,200,25</area>
+             <font>small</font>
+        </textarea>
+
+        <textarea name="finalprioritylbl" from="recprioritylbl">
+            <position>250,660</position>
+            <value>Final Priority</value>
+        </textarea>
+
+        <textarea name="finalpriority" from="recpriority">
+             <position>430,660</position>
+        </textarea>
+
+        <textarea name="rectypelbl" from="recprioritylbl">
+            <position>250,685</position>
+            <value>Recording Type</value>
+        </textarea>
+
+        <textarea name="rectype" from="recpriority">
+            <position>430,685</position>
+        </textarea>
+
+    </window>
+
+    <window name="custompriority">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/podium.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- Custom  RECORING PRIORITY                          -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Prioritize some recordings over others</value>
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Custom Priority</value>
+        </textarea>
+
+        <textarea name="ruleslabel" from="textarea_base">
+            <area>250,175,150,35</area>
+            <value>Existing Rules:</value>
+        </textarea>
+
+        <buttonlist name="rules" from="selector_base">
+            <position>420,175</position>
+        </buttonlist>
+
+        <textarea name="titlelabel" from="ruleslabel">
+            <position>250,210</position>
+            <value>Rule Name:</value>
+        </textarea>
+
+        <textedit name="title" from="textedit_menu">
+            <position>420,210</position>
+        </textedit>
+
+        <textarea name="prioritylabel" from="ruleslabel">
+            <position>250,245</position>
+            <value>Priority Change:</value>
+        </textarea>
+
+        <spinbox name="priority" from="spinbox_menu">
+            <position>420,245</position>
+        </spinbox>
+
+        <textarea name="clauseslabel" from="ruleslabel">
+            <area>250,315,510,35</area>
+            <value>Select a clause from the list:</value>
+        </textarea>
+
+        <buttonlist name="clauses" from="selector_base_wide">
+            <position>250,350</position>
+        </buttonlist>
+
+        <textarea name="rulephraselabel" from="ruleslabel">
+            <area>250,420,510,35</area>
+            <value>Current Rule Phrase:</value>
+        </textarea>
+
+        <textedit name="description" from="textedit_menu_wide">
+            <position>250,455</position>
+        </textedit>
+
+        <button name="add" from="button_base_menu">
+            <position>790,175</position>
+            <value>Add Clause</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="delete" from="button_base_menu">
+            <position>790,245</position>
+            <value>Delete</value>
+        </button>
+
+        <button name="test" from="button_base_menu">
+            <position>790,280</position>
+            <value>Test</value>
+        </button>
+
+        <button name="install" from="button_base_menu">
+            <position>790,315</position>
+            <value>Install</value>
+        </button>
+
+    </window>
+
+    <window name="phrasepopup">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- Custom  RECORING PRIORITY                          -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Combine more than one word search</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Advanced</value>
+        </textarea>
+
+        <textarea name="title_text" from="textarea_base">
+            <area>250,175,150,35</area>
+        </textarea>
+
+        <buttonlist name="phrase_list" from="selector_base">
+            <position>420,175</position>
+        </buttonlist>
+
+        <textarea name="phrase_editlabel" from="textarea_base">
+            <area>250,245,510,35</area>
+            <value>Current phrase to search for:</value>
+        </textarea>
+
+        <textedit name="phrase_edit" from="textedit_menu_wide">
+            <position>250,280</position>
+        </textedit>
+
+        <button name="ok_button" from="button_base_menu">
+            <position>790,175</position>
+            <value>Search</value>
+        </button>
+
+        <button name="delete_button" from="button_base_menu">
+            <position>790,210</position>
+            <value>Delete</value>
+        </button>
+
+        <button name="record_button" from="button_base_menu">
+            <position>790,245</position>
+            <value>Record</value>
+        </button>
+
+        <button name="cancel_button" from="button_base_menu">
+            <position>790,280</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="timepopup">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- Custom  RECORING PRIORITY                          -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Pick a program based on time</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Time</value>
+        </textarea>
+
+        <textarea name="datelabel" from="textarea_base">
+            <area>250,175,515,35</area>
+            <value>Select Date:</value>
+        </textarea>
+
+        <buttonlist name="date_list" from="selector_base">
+            <position>420,173</position>
+        </buttonlist>
+
+        <textarea name="timelabel" from="datelabel">
+            <position>250,245</position>
+            <value>Select Time:</value>
+        </textarea>
+
+        <buttonlist name="time_list" from="selector_base">
+            <position>420,243</position>
+        </buttonlist>
+
+        <button name="ok_button" from="button_base_menu">
+            <position>790,175</position>
+            <value>Search</value>
+        </button>
+
+    </window>
+
+    <window name="powersearchpopup">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- Custom  RECORING PRIORITY                          -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Combine more than one word search</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Powersearch</value>
+        </textarea>
+
+        <textarea name="title_text" from="textarea_base">
+            <area>250,175,510,35</area>
+        </textarea>
+
+        <buttonlist name="phrase_list" from="selector_base_wide">
+            <position>250,210</position>
+        </buttonlist>
+
+        <button name="edit_button" from="button_base_menu">
+            <position>790,175</position>
+            <value>Edit</value>
+        </button>
+
+        <button name="delete_button" from="button_base_menu">
+            <position>790,210</position>
+            <value>Delete</value>
+        </button>
+
+        <button name="record_button" from="button_base_menu">
+            <position>790,245</position>
+            <value>Record</value>
+        </button>
+
+    </window>
+
+    <window name="editpowersearchpopup">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- Custom  RECORING PRIORITY                          -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Combine more than one word search</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Edit Powersearch</value>
+        </textarea>
+
+        <textarea name="titlelbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Optional title phrase:</value>
+        </textarea>
+
+        <textedit name="title_edit" from="textedit_menu_wide">
+            <position>250,210</position>
+        </textedit>
+
+        <textarea name="subtitlelbl" from="titlelbl">
+            <position>250,245</position>
+            <value>Optional subtitle phrase:</value>
+        </textarea>
+
+        <textedit name="subtitle_edit" from="textedit_menu_wide">
+            <position>250,280</position>
+        </textedit>
+
+        <textarea name="desclbl" from="titlelbl">
+            <position>250,315</position>
+            <value>Optional description phrase:</value>
+        </textarea>
+
+        <textedit name="desc_edit" from="textedit_menu_wide">
+            <position>250,350</position>
+        </textedit>
+
+        <textarea name="category_listlbl" from="titlelbl">
+            <position>250,420</position>
+            <value>Optional category:</value>
+        </textarea>
+
+        <buttonlist name="category_list" from="selector_base">
+            <position>420,420</position>
+        </buttonlist>
+
+        <textarea name="genre_listlbl" from="titlelbl">
+            <position>250,455</position>
+            <value>Optional genre:</value>
+        </textarea>
+
+        <buttonlist name="genre_list" from="selector_base">
+            <position>420,455</position>
+        </buttonlist>
+
+        <textarea name="channel_listlbl" from="titlelbl">
+            <position>250,490</position>
+            <value>Optional channel:</value>
+        </textarea>
+
+        <buttonlist name="channel_list" from="selector_base">
+            <position>420,490</position>
+        </buttonlist>
+
+        <button name="ok_button" from="button_base_menu">
+            <position>790,175</position>
+            <value>Ok</value>
+        </button>
+
+    </window>
+
+    <window name="programlist">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleProgramList" from="screentitle">
+            <value>PROGRAM LIST</value>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!-- PROGRAM LIST                                          -->
+        <!-- ===================================================== -->
+
+	<imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
+
+        <textarea name="curview" from="screentitle2"/>
+
+        <buttonlist name="proglist" from="buttonlist_wide">
+            <position>620,260</position>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="shortstarttimedate" from="textarea_base">
+                        <area>10,0,570,40</area>
+                        <alpha>255</alpha>
+                        <font>normal</font>
+                        <alpha>128</alpha>
+                        <font state="error">normal_red</font>
+                        <font state="running">normal_amber</font>
+                        <align>left,vcenter</align>
+                        <template>%shorttimedate% - %title%</template>
+                    </textarea>
+                    <textarea name="card" from="shortstarttimedate">
+                        <area>600,0,35,40</area>
+                        <alpha>128</alpha>
+                        <font>normal</font>
+                        <font state="error">normal_red</font>
+                        <font state="running">normal_amber</font>
+                        <align>right,vcenter</align>
+                        <template>(%card%)</template>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <textarea name="title" from="textarea_base">
+                        <area>10,0,270,40</area>
+                        <alpha>255</alpha>
+                        <font state="error">normal_red</font>
+                        <font state="running">normal_amber</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <imagetype name="statusimagedefault">
+                        <area>290,9,22,22</area>
+                        <filename>images/tv-recordings/schedule/schedule_mark.png</filename>
+                    </imagetype>
+                    <statetype name="status">
+                        <area>290,9,22,22</area>
+                        <state name="disabled">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_disabled.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="error">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_conflict.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="warning">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_other.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="normal">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_record.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="running">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_recording.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="marked">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_mark.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="shortstarttimedate" from="textarea_base">
+                        <area>320,7,320,33</area>
+                        <alpha>255</alpha>
+                        <font>verysmall</font>
+                        <case>normal</case>
+                        <font state="error">verysmall_red</font>
+                        <font state="running">verysmall_amber</font>
+                        <align>left,vcenter</align>
+                        <template>Input %card%:  %shorttimedate% on %longchannel%</template>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+<!--        <textarea name="keyinstr" from="textarea_base">
+            <area>900,695,370,25</area>
+            <font>verysmall</font>
+            <multiline>no</multiline>
+            <case>normal</case>
+            <align>right,vcenter</align>
+            <value>Press 1 to sort on date, press 2 to sort on time</value>
+        </textarea>-->
+
+        <textarea name="title" from="textarea_base">
+            <area>20,260,560,40</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="longchannel" from="textarea_base">
+            <area>20,300,560,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <alpha>192</alpha>
+            <template>%longchannel% - %timedate%</template>
+        </textarea>
+
+        <textarea name="description" from="textarea_base">
+            <area>20,340,560,235</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="rectypestatuslbl" from="textarea_base">
+            <area>20,605,250,25</area>
+            <font>title_verysmall_blue</font>
+            <align>left,vcenter</align>
+            <value>Recording Status</value>
+        </textarea>
+
+        <textarea name="rectypestatus" from="textarea_base">
+            <area>190,605,420,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="recgrouplbl" from="rectypestatuslbl">
+            <position>20,630</position>
+            <value>Recording Group</value>
+        </textarea>
+
+        <textarea name="recgroup" from="rectypestatus">
+            <position>190,630</position>
+        </textarea>
+
+        <textarea name="lenminslbl" from="rectypestatuslbl">
+            <position>20,655</position>
+            <value>Lenght</value>
+        </textarea>
+
+        <textarea name="lenmins" from="rectypestatus">
+            <position>190,655</position>
+        </textarea>
+
+        <textarea name="programidlbl" from="rectypestatuslbl">
+            <position>20,680</position>
+            <value>Programid</value>
+        </textarea>
+
+        <textarea name="programid" from="rectypestatus">
+            <position>190,680</position>
+        </textarea>
+
+        <textarea name="msg" from="description">
+            <value>No listings found for this program search</value>
+            <multiline>yes</multiline>
+        </textarea>
+    </window>
+
+    <window name="progdetails">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleProgramList" from="screentitle">
+            <value>PROGRAM DETAILS</value>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!-- PROGRAM DETAILS                                       -->
+        <!-- ===================================================== -->
+
+        <webbrowser name="browser">
+            <area>10,250,1260,460</area>
+            <zoom>3.0</zoom>
+            <background color="#000000" alpha="1"/>
+        </webbrowser>
+
+    </window>
+
+    <window name="searchpopup">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- SEARCH POPUP                                       -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Not sure which screen this is:</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>SEARCH</value>
+        </textarea>
+
+        <textarea name="message" from="textarea_base">
+            <area>250,175,170,35</area>
+            <value>Enter Search Text</value>
+        </textarea>
+
+        <textedit name="input" from="textedit_menu">
+            <position>420,175</position>
+        </textedit>
+
+        <button name="ok" from="button_base_menu">
+            <position>790,175</position>
+            <value>Search</value>
+        </button>
+
+    </window>
+
+    <window name="programfind">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleProgramList" from="screentitle">
+            <value>PROGRAM SEARCH</value>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!-- PROGRAM SEARCH                                        -->
+        <!-- ===================================================== -->
+
+        <buttonlist name="alphabet" from="buttonlist_menu">
+            <position>740,260</position>
+        </buttonlist>
+
+        <buttonlist name="shows" from="alphabet">
+            <position>740,260</position>
+        </buttonlist>
+
+        <buttonlist name="times" from="buttonlist_menu_details">
+            <position>740,260</position>
+            <statetype name="buttonitem">
+                <state name="selectedactive">
+                    <textarea name="channel" from="textarea_base">
+                        <area>410,7,120,33</area>
+                        <font>verysmall</font>
+                        <case>normal</case>
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="textarea_base">
+            <area>20,260,560,40</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="longchannel" from="textarea_base">
+            <area>20,300,560,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <alpha>192</alpha>
+            <template>%longchannel% - %timedate%</template>
+        </textarea>
+
+        <textarea name="description" from="textarea_base">
+            <area>20,340,560,255</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="rectypestatuslbl" from="textarea_base">
+            <area>20,605,250,25</area>
+            <font>title_verysmall_blue</font>
+            <align>left,vcenter</align>
+            <value>Recording Status</value>
+        </textarea>
+
+        <textarea name="rectypestatus" from="textarea_base">
+            <area>190,605,420,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="recgrouplbl" from="rectypestatuslbl">
+            <position>20,630</position>
+            <value>Recording Group</value>
+        </textarea>
+
+        <textarea name="recgroup" from="rectypestatus">
+            <position>190,630</position>
+        </textarea>
+
+        <textarea name="lenminslbl" from="rectypestatuslbl">
+            <position>20,655</position>
+            <value>Lenght</value>
+        </textarea>
+
+        <textarea name="lenmins" from="rectypestatus">
+            <position>190,655</position>
+        </textarea>
+
+        <textarea name="programidlbl" from="rectypestatuslbl">
+            <position>20,680</position>
+            <value>Programid</value>
+        </textarea>
+
+        <textarea name="programid" from="rectypestatus">
+            <position>190,680</position>
+        </textarea>
+
+        <textarea name="help1text" from="description">
+            <template>%help1text% \n %help2text%</template>
+        </textarea>
+
+    </window>
+
+    <window name="managerecrules">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleProgramList" from="screentitle">
+            <value>MANAGE RECORDING RULES</value>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!-- PROGRAM LIST                                          -->
+        <!-- ===================================================== -->
+
+        <buttonlist name="programs" from="buttonlist_wide">
+            <position>620,260</position>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="title" from="textarea_base">
+                        <area>10,0,640,40</area>
+                        <alpha>128</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <textarea name="title" from="textarea_base">
+                        <area>10,0,260,40</area>
+                    </textarea>
+                    <imagetype name="statusimagedefault">
+                        <area>290,9,22,22</area>
+                        <filename>images/tv-recordings/schedule/schedule_mark.png</filename>
+                    </imagetype>
+                    <statetype name="status">
+                        <area>290,9,22,22</area>
+                        <state name="disabled">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_disabled.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="error">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_conflict.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="warning">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_other.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="normal">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_record.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="running">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_recording.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="marked">
+                            <imagetype name="statusimage">
+                                <area>0,0,22,22</area>
+                                <filename>images/tv-recordings/schedule/schedule_mark.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="callsign" from="textarea_base">
+                        <area>320,7,320,33</area>
+                        <font>verysmall</font>
+                        <case>normal</case>
+                        <template>%callsign%, last recorded on %lastrecorded%</template>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="textarea_base">
+            <area>20,260,560,40</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="longchannel" from="textarea_base">
+            <area>20,300,560,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <alpha>192</alpha>
+            <template>(%category%) %longchannel% - %timedate%</template>
+        </textarea>
+
+        <textarea name="description" from="textarea_base">
+            <area>20,340,560,200</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="rectypestatuslbl" from="textarea_base">
+            <area>20,605,250,25</area>
+            <font>title_verysmall_blue</font>
+            <align>left,vcenter</align>
+            <value>Recording Status</value>
+        </textarea>
+
+        <textarea name="rectypestatus" from="textarea_base">
+            <area>190,605,420,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="recgrouplbl" from="rectypestatuslbl">
+            <position>20,630</position>
+            <value>Recording Group</value>
+        </textarea>
+
+        <textarea name="recgroup" from="rectypestatus">
+            <position>190,630</position>
+        </textarea>
+
+        <textarea name="prioritylbl" from="rectypestatuslbl">
+            <position>20,680</position>
+            <value>Priority</value>
+        </textarea>
+
+        <textarea name="finalpriority" from="rectypestatus">
+            <position>190,680</position>
+        </textarea>
+
+        <textarea name="recordingprofilelbl" from="rectypestatuslbl">
+            <position>20,655</position>
+            <value>Recording Profile</value>
+        </textarea>
+
+        <textarea name="recordingprofile" from="rectypestatus">
+            <position>190,655</position>
+        </textarea>
+
+        <textarea name="recordinggrouplbl" from="rectypestatuslbl">
+            <position>20,580</position>
+            <value>Storage Group</value>
+        </textarea>
+
+        <textarea name="storagegroup" from="rectypestatus">
+            <position>190,580</position>
+        </textarea>
+
+        <textarea name="scheduleinfolbl" from="rectypestatuslbl">
+            <position>20,555</position>
+            <value>Schedule Info</value>
+        </textarea>
+
+        <textarea name="scheduleinfo" from="rectypestatus">
+            <position>190,555</position>
+        </textarea>
+
+
+<!--    <textarea name="category" from="basetextarea">
+            <area>230,580,160,30</area>
+        </textarea>
+
+        <textarea name="keyinstr">
+            <area>0,660,1280,30</area>
+            <value>(1) Title (2) Priority (4) Type</value>
+            <align>allcenter</align>
+        </textarea>-->
+
+    </window>
+
+    <window name="customedit">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- CUSTOM EDIT POPUP                                  -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Create advanced recording rules</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Custom Edit</value>
+        </textarea>
+
+        <textarea name="ruleslabel" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Existing Rules:</value>
+        </textarea>
+
+        <buttonlist name="rules" from="selector_base">
+            <position>420,175</position>
+        </buttonlist>
+
+        <textarea name="titlelabel" from="ruleslabel">
+            <position>250,210</position>
+            <value>Rule Name:</value>
+        </textarea>
+
+        <textedit name="title" from="textedit_menu">
+            <position>420,210</position>
+        </textedit>
+
+        <textarea name="sampleslabel" from="ruleslabel">
+            <position>250,280</position>
+            <value>Sample Clauses:</value>
+        </textarea>
+
+        <buttonlist name="clauses" from="selector_base_wide">
+            <position>250,315</position>
+        </buttonlist>
+
+        <textarea name="clausetext" from="ruleslabel">
+            <area>250,385,510,70</area>
+            <case>normal</case>
+            <font>verysmall</font>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="descriptionlabel" from="ruleslabel">
+            <position>250,490</position>
+            <value>Clause:</value>
+        </textarea>
+
+        <textedit name="description" from="textedit_menu_wide">
+            <position>250,525</position>
+        </textedit>
+
+        <textarea name="subtitlelabel" from="ruleslabel">
+            <position>250,595</position>
+            <value>Additional Tables:</value>
+        </textarea>
+
+        <textedit name="subtitle"from="textedit_menu_wide">
+            <position>250,630</position>
+        </textedit>
+
+        <button name="test" from="button_base_menu">
+            <position>790,175</position>
+            <value>Test</value>
+        </button>
+
+        <button name="record" from="button_base_menu">
+            <position>790,210</position>
+            <value>Record</value>
+        </button>
+
+        <button name="store" from="button_base_menu">
+            <position>790,245</position>
+            <value>Store</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,280</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="scheduleeditor">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- SCHEDULE EDITOR                                    -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Customize your recording schedule</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>SCHEDULE EDITOR</value>
+        </textarea>
+
+        <textarea name="ruleslbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Select recording rule:</value>
+        </textarea>
+
+        <buttonlist name="rules" from="selector_base_wide">
+            <position>250,210</position>
+        </buttonlist>
+
+        <button name="schedoptions" from="button_base_menu">
+            <position>790,175</position>
+            <value>Schedule Options</value>
+        </button>
+
+        <button name="storeoptions" from="button_base_menu">
+            <position>790,210</position>
+            <value>Storage Options</value>
+        </button>
+
+        <button name="postprocessing" from="button_base_menu">
+            <position>790,245</position>
+            <value>Post processing</value>
+        </button>
+
+        <button name="schedinfo" from="button_base_menu">
+            <position>790,280</position>
+            <value>Schedule info</value>
+        </button>
+
+        <button name="preview" from="button_base_menu">
+            <position>790,315</position>
+            <value>Preview</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,350</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="save" from="button_base_menu">
+            <position>790,385</position>
+            <value>Save</value>
+        </button>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,280,510,40</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="longchannel" from="textarea_base">
+            <area>250,320,510,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <alpha>192</alpha>
+            <template>%longchannel% - %timedate%</template>
+        </textarea>
+
+        <textarea name="description" from="textarea_base">
+            <area>250,370,510,225</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>
+
+
+        <textarea name="rectypestatuslbl" from="textarea_base">
+            <area>250,605,170,25</area>
+            <font>title_verysmall_blue</font>
+            <align>left,vcenter</align>
+            <value>Recording Status</value>
+        </textarea>
+
+        <textarea name="rectypestatus" from="textarea_base">
+            <area>420,605,340,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="recgrouplbl" from="rectypestatuslbl">
+            <position>250,630</position>
+            <value>Recording Group</value>
+        </textarea>
+
+        <textarea name="recgroup" from="rectypestatus">
+            <position>420,630</position>
+        </textarea>
+
+        <textarea name="lenminslbl" from="rectypestatuslbl">
+            <position>250,655</position>
+            <value>Lenght</value>
+        </textarea>
+
+        <textarea name="lenmins" from="rectypestatus">
+            <position>420,655</position>
+        </textarea>
+
+        <textarea name="programidlbl" from="rectypestatuslbl">
+            <position>250,680</position>
+            <value>Programid</value>
+        </textarea>
+
+        <textarea name="programid" from="rectypestatus">
+            <position>420,680</position>
+        </textarea>
+    </window>
+
+    <window name="scheduleoptionseditor">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- SCHEDULE EDITOR                                    -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Customize your recording schedule</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>SCHEDULE OPTIONS</value>
+        </textarea>
+
+        <textarea name="prioritylbl" from="textarea_base">
+            <area>250,175,170,35</area>
+            <value>Priority:</value>
+        </textarea>
+
+        <spinbox name="priority" from="spinbox_menu">
+            <position>420,175</position>
+        </spinbox>
+
+        <textarea name="ruleactivelbl" from="prioritylbl">
+            <position>560,175</position>
+            <value>Rule active:</value>
+        </textarea>
+
+        <checkbox name="ruleactive" from="checkbox_base">
+            <position>735,175</position>
+        </checkbox>
+
+        <textarea name="inputlbl" from="prioritylbl">
+            <position>250,210</position>
+            <value>Input:</value>
+        </textarea>
+
+        <buttonlist name="input" from="selector_base">
+            <position>420,210</position>
+        </buttonlist>
+
+        <textarea name="startoffsetlbl" from="prioritylbl">
+            <position>250,245</position>
+            <value>Start early:</value>
+        </textarea>
+
+        <spinbox name="startoffset" from="spinbox_menu">
+            <position>420,245</position>
+        </spinbox>
+
+        <textarea name="endoffsetlbl" from="prioritylbl">
+            <position>560,245</position>
+            <value>End late:</value>
+        </textarea>
+
+        <spinbox name="endoffset" from="spinbox_base">
+            <position>670,245</position>
+        </spinbox>
+
+        <textarea name="dupmethodlbl" from="prioritylbl">
+            <area>250,315,510,35</area>
+            <value>Duplication Methode:</value>
+        </textarea>
+
+        <buttonlist name="dupmethod" from="selector_base_wide">
+            <position>250,350</position>
+        </buttonlist>
+
+        <textarea name="dupscopelbl" from="prioritylbl">
+            <area>250,420,510,35</area>
+            <value>Duplication Scope:</value>
+        </textarea>
+
+        <buttonlist name="dupscope" from="selector_base_wide">
+            <position>250,455</position>
+        </buttonlist>
+
+        <button name="back" from="button_base_menu">
+            <position>790,175</position>
+            <value>Back</value>
+        </button>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,515,510,40</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="longchannel" from="textarea_base">
+            <area>250,555,510,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <alpha>192</alpha>
+            <template>%longchannel% - %timedate%</template>
+        </textarea>
+
+<!--        <textarea name="description" from="textarea_base">
+            <area>250,545,510,50</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>-->
+
+
+        <textarea name="rectypestatuslbl" from="textarea_base">
+            <area>250,605,170,25</area>
+            <font>title_verysmall_blue</font>
+            <align>left,vcenter</align>
+            <value>Recording Status</value>
+        </textarea>
+
+        <textarea name="rectypestatus" from="textarea_base">
+            <area>420,605,340,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="recgrouplbl" from="rectypestatuslbl">
+            <position>250,630</position>
+            <value>Recording Group</value>
+        </textarea>
+
+        <textarea name="recgroup" from="rectypestatus">
+            <position>420,630</position>
+        </textarea>
+
+        <textarea name="lenminslbl" from="rectypestatuslbl">
+            <position>250,655</position>
+            <value>Lenght</value>
+        </textarea>
+
+        <textarea name="lenmins" from="rectypestatus">
+            <position>420,655</position>
+        </textarea>
+
+        <textarea name="programidlbl" from="rectypestatuslbl">
+            <position>250,680</position>
+            <value>Programid</value>
+        </textarea>
+
+        <textarea name="programid" from="rectypestatus">
+            <position>420,680</position>
+        </textarea>
+    </window>
+
+    <window name="storageoptionseditor">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- STORAGE  EDITOR                                    -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Customize your recording schedule</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>STORAGE OPTIONS</value>
+        </textarea>
+
+        <textarea name="recgroeplbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Recording group:</value>
+        </textarea>
+
+        <buttonlist name="recgroup" from="selector_base_wide">
+            <position>250,210</position>
+        </buttonlist>
+
+        <textarea name="recprofilelbl" from="textarea_base">
+            <area>250,280,170,35</area>
+            <value>Profile:</value>
+        </textarea>
+
+        <buttonlist name="recprofile" from="selector_base">
+            <position>420,280</position>
+        </buttonlist>
+
+        <textarea name="storagegrouplbl" from="recprofilelbl">
+            <position>250,315</position>
+            <value>Storage group:</value>
+        </textarea>
+
+        <buttonlist name="storagegroup" from="selector_base">
+            <position>420,315</position>
+        </buttonlist>
+
+        <textarea name="playgrouplbl" from="recprofilelbl">
+            <position>250,350</position>
+            <value>Play group:</value>
+        </textarea>
+
+        <buttonlist name="playgroup" from="selector_base">
+            <position>420,350</position>
+        </buttonlist>
+
+        <textarea name="maxepisodeslbl" from="recprofilelbl">
+            <position>250,420</position>
+            <value>Max episodes:</value>
+        </textarea>
+
+        <spinbox name="maxepisodes" from="spinbox_menu">
+            <position>420,420</position>
+        </spinbox>
+
+        <textarea name="autoexpirelbl" from="recprofilelbl">
+            <position>560,420</position>
+            <value>Auto expire:</value>
+        </textarea>
+
+        <checkbox name="autoexpire" from="checkbox_base">
+            <position>735,420</position>
+        </checkbox>
+
+        <buttonlist name="maxnewest" from="selector_base_wide">
+            <position>250,455</position>
+        </buttonlist>
+
+        <button name="back" from="button_base_menu">
+            <position>790,175</position>
+            <value>Back</value>
+        </button>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,515,510,40</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="longchannel" from="textarea_base">
+            <area>250,555,510,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <alpha>192</alpha>
+            <template>%longchannel% - %timedate%</template>
+        </textarea>
+
+<!--        <textarea name="description" from="textarea_base">
+            <area>250,545,510,50</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>-->
+
+
+        <textarea name="rectypestatuslbl" from="textarea_base">
+            <area>250,605,170,25</area>
+            <font>title_verysmall_blue</font>
+            <align>left,vcenter</align>
+            <value>Recording Status</value>
+        </textarea>
+
+        <textarea name="rectypestatus" from="textarea_base">
+            <area>420,605,340,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="recgrouplbl2" from="rectypestatuslbl">
+            <position>250,630</position>
+            <value>Recording Group</value>
+        </textarea>
+
+        <textarea name="recgrouptext" from="textarea_base">
+            <area>420,630,340,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+            <value>To be determined</value>
+        </textarea>
+
+        <textarea name="lenminslbl" from="rectypestatuslbl">
+            <position>250,655</position>
+            <value>Lenght</value>
+        </textarea>
+
+        <textarea name="lenmins" from="rectypestatus">
+            <position>420,655</position>
+        </textarea>
+
+        <textarea name="programidlbl" from="rectypestatuslbl">
+            <position>250,680</position>
+            <value>Programid</value>
+        </textarea>
+
+        <textarea name="programid" from="rectypestatus">
+            <position>420,680</position>
+        </textarea>
+
+    </window>
+
+    <window name="postproceditor">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+
+        <!-- ================================================== -->
+        <!-- STORAGE  EDITOR                                    -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Customize your recording schedule</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>POSTPROCESSING OPTIONS</value>
+        </textarea>
+
+        <textarea name="autocommflaglbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Commercial Flag new recordings</value>
+        </textarea>
+
+        <checkbox name="autocommflag" from="checkbox_base">
+            <position>735,175</position>
+        </checkbox>
+
+        <textarea name="autotranscodelbl" from="autocommflaglbl">
+            <position>250,210</position>
+            <value>Transcode new recordings</value>
+        </textarea>
+
+         <checkbox name="autotranscode" from="checkbox_base">
+            <position>735,210</position>
+        </checkbox>
+
+        <textarea name="transcodeprofilelbl" from="autocommflaglbl">
+            <position>250,245</position>
+            <value>Profile:</value>
+        </textarea>
+
+        <buttonlist name="transcodeprofile" from="selector_base">
+            <position>420,245</position>
+        </buttonlist>
+
+        <textarea name="userjob1label" from="autocommflaglbl">
+            <position>250,315</position>
+            <value>Run user job one</value>
+        </textarea>
+
+        <checkbox name="userjob1" from="checkbox_base">
+            <position>735,315</position>
+        </checkbox>
+
+        <textarea name="userjob2label" from="autocommflaglbl">
+            <position>250,350</position>
+            <value>Run user job two</value>
+        </textarea>
+
+        <checkbox name="userjob2" from="checkbox_base">
+            <position>735,350</position>
+        </checkbox>
+
+        <textarea name="userjob3label" from="autocommflaglbl">
+            <position>250,385</position>
+            <value>Run user job three</value>
+        </textarea>
+
+        <checkbox name="userjob3" from="checkbox_base">
+            <position>735,385</position>
+        </checkbox>
+
+        <textarea name="userjob4label" from="autocommflaglbl">
+            <position>250,420</position>
+            <value>Run user job four</value>
+        </textarea>
+
+        <checkbox name="userjob4" from="checkbox_base">
+            <position>735,420</position>
+        </checkbox>
+
+        <button name="back" from="button_base_menu">
+            <position>790,175</position>
+            <value>Back</value>
+        </button>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,515,510,40</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="longchannel" from="textarea_base">
+            <area>250,555,510,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <alpha>192</alpha>
+            <template>%longchannel% - %timedate%</template>
+        </textarea>
+
+<!--        <textarea name="description" from="textarea_base">
+            <area>250,545,510,50</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>-->
+
+
+        <textarea name="rectypestatuslbl" from="textarea_base">
+            <area>250,605,170,25</area>
+            <font>title_verysmall_blue</font>
+            <align>left,vcenter</align>
+            <value>Recording Status</value>
+        </textarea>
+
+        <textarea name="rectypestatus" from="textarea_base">
+            <area>420,605,340,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="recgrouplbl" from="rectypestatuslbl">
+            <position>250,630</position>
+            <value>Recording Group</value>
+        </textarea>
+
+        <textarea name="recgroup" from="rectypestatus">
+            <position>420,630</position>
+        </textarea>
+
+        <textarea name="lenminslbl" from="rectypestatuslbl">
+            <position>250,655</position>
+            <value>Lenght</value>
+        </textarea>
+
+        <textarea name="lenmins" from="rectypestatus">
+            <position>420,655</position>
+        </textarea>
+
+        <textarea name="programidlbl" from="rectypestatuslbl">
+            <position>250,680</position>
+            <value>Programid</value>
+        </textarea>
+
+        <textarea name="programid" from="rectypestatus">
+            <position>420,680</position>
+        </textarea>
+    </window>
+    
+<!-- to do-->
+    <window name="schedulediff">
+
+        <textarea name="sched" from="basetextarea">
+            <area>20,5,700,40</area>
+            <font>baselarge</font>
+            <align>left,bottom</align>
+            <value>Preview Schedule Changes</value>
+        </textarea>
+
+        <shape name="list_background" from="basebackground">
+            <area>20,49,1240,390</area>
+        </shape>
+
+        <textarea name="titletext" from="basetextarea">
+            <area>800,5,440,40</area>
+            <align>right,bottom</align>
+        </textarea>
+
+        <buttonlist name="conflictlist" from="basebuttonlist2">
+            <area>30,57,1220,380</area>
+            <buttonarea>0,0,1200,380</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,1200,25</area>
+                <state name="active">
+                    <textarea name="shortstarttimedate" from="buttontext">
+                        <area>32,1,220,24</area>
+                    </textarea>
+                    <textarea name="channel" from="shortstarttimedate">
+                        <area>260,1,170,24</area>
+                    </textarea>
+                    <textarea name="titlesubtitle" from="shortstarttimedate">
+                        <area>440,1,640,24</area>
+                    </textarea>
+                    <textarea name="statusbefore" from="shortstarttimedate">
+                        <area>1125,1,30,24</area>
+                    </textarea>
+                    <textarea name="statusafter" from="shortstarttimedate">
+                        <area>1160,1,30,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active" />
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1190,5</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1190,350</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>30,455,1200,50</area>
+            <font>baselarge</font>
+        </textarea>
+        <textarea name="channel" from="basetextarea">
+            <area>30,495,360,30</area>
+        </textarea>
+        <textarea name="timedate" from="basetextarea">
+            <area>410,495,520,30</area>
+        </textarea>
+        <textarea name="description" from="basetextarea">
+            <area>30,525,1200,150</area>
+            <multiline>yes</multiline>
+            <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>
+        <textarea name="type" from="basetextarea">
+            <area>30,670,560,30</area>
+            <font>basemediumyellow</font>
+        </textarea>
+        <textarea name="programid" from="basetextarea">
+            <area>800,670,440,30</area>
+            <align>right</align>
+        </textarea>
+        <textarea name="nochanges" from="basetextarea">
+            <area>0,210,1280,70</area>
+            <align>allcenter</align>
+            <value>You Haven't Scheduled Any Programs To Be Recorded</value>
+            <multiline>yes</multiline>
+        </textarea>
+
+    </window>
+
+</mythuitheme>

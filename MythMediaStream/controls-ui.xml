@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="keygrabpopup">
+       <area>-1,-1,520,205</area>
+       <imagetype name="DialogProgressBG">
+           <area>0,0,520,205</area>
+           <filename>images/shared/DialogProgressBG.png</filename>
+       </imagetype>
+       <textarea name="message" from="textarea_base">
+           <area>20,35,480,70</area>
+           <font>normal</font>
+           <align>allcenter</align>
+           <multiline>yes</multiline>
+       </textarea>
+       <button name="cancel" from="button_base">
+           <position>240,140</position>
+           <value>Cancel</value>
+       </button>
+       <button name="ok" from="button_base">
+           <position>380,140</position>
+           <value>Ok</value>
+       </button>
+    </window>
+
+    <window name="controls">
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/keys.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype> 
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- Key bindings input                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Change mythtv key bindings</value>
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Edit keys</value>
+        </textarea>
+
+        <textarea name="leftdesc" from="textarea_base">
+            <area>790,90,180,25</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <value>Contexts</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="bylbl" from="leftdesc">
+            <position>790,115</position>
+            <value>By</value>
+        </textarea>
+
+        <textarea name="rightdesc" from="leftdesc">
+            <position>790,140</position>
+            <value>Actions</value>
+        </textarea>
+
+
+        <buttonlist name="leftlist" from="buttonlist_dialog_wide">
+            <position>250,175</position>
+            <showarrow>no</showarrow>
+        </buttonlist>
+
+
+        <buttonlist name="rightlist" from="leftlist"/>
+
+        <button name="action_0" from="button_base_menu">
+            <position>790,175</position>
+        </button>
+
+        <button name="action_1" from="action_0">
+            <position>790,210</position>
+        </button>
+
+        <button name="action_2" from="action_0">
+            <position>790,245</position>
+        </button>
+
+        <button name="action_3" from="action_0">
+            <position>790,280</position>
+        </button>
+
+        <textarea name="description" from="textarea_base">
+            <area>250,640,510,70</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+    </window>
+</mythuitheme>

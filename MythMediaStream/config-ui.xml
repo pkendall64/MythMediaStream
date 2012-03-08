@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="iconimport">
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/settings.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype> 
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="name" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Customize your channel icons</value>
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Select Icons</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+
+        <buttonlist name="icons" from="buttonlist_dialog_wide">
+            <position>250,175</position>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <imagetype name="icon">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                    </imagetype>
+                    <imagetype name="glasoverlay">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                        <filename>images/shared/ButtonMenuGlass.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext" from="textarea_base">
+                        <area>40,0,460,40</area>
+                        <align>left,vcenter</align>
+                        <alpha>128</alpha>
+                        <font>normal</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <imagetype name="icon">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                    </imagetype>
+                    <imagetype name="glasoverlay">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                        <filename>images/shared/ButtonMenuGlass.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext" from="textarea_base">
+                        <area>40,0,460,40</area>
+                        <align>left,vcenter</align>
+                        <alpha>255</alpha>
+                        <font>normal</font>
+                    </textarea>
+                </state>         
+           <!--INACTIVE-->
+           <state name="inactive" from="active">
+               <alpha>255</alpha>
+           </state>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="active">
+               <alpha>255</alpha>
+           </state>
+            </statetype>
+        </buttonlist>
+
+       <textarea name="status" from="textarea_base">
+            <area>250,575,510,35</area>
+        </textarea>
+
+        <textarea name="manuallabel" from="status">
+            <position>250,610</position>
+            <value>Search terms:</value>
+        </textarea>
+
+        <textedit name="manualsearch" from="textedit_menu">
+            <position>420,610</position>
+        </textedit>
+
+        <button name="search" from="button_base_menu">
+            <position>790,175</position>
+            <value>Search</value>
+        </button>
+
+        <button name="skip" from="button_base_menu">
+            <position>790,210</position>
+            <value>Skip</value>
+        </button>
+
+    </window>
+
+    <window name="channeloverview">
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/settings.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype> 
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Customize your channels settings</value>
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Channel Editor</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+
+        <textarea name="sortlabel" from="textarea_base">
+            <area>250,175,515,35</area>
+            <value>Sort Mode:</value>
+        </textarea>
+
+        <buttonlist name="sorting" from="selector_base">
+            <position>420,175</position>
+        </buttonlist>
+
+        <textarea name="sourcelabel" from="sortlabel">
+            <position>250,210</position>
+            <value>Video Source:</value>
+        </textarea>
+
+        <buttonlist name="source" from="selector_base">
+            <position>420,210</position>
+        </buttonlist>
+
+        <textarea name="nochannumlabel" from="sortlabel">
+            <position>250,245</position>
+            <value>Hide Channels without channel number</value>
+        </textarea>
+
+        <checkbox name="nochannum" from="checkbox_base">
+            <position>735,245</position>
+        </checkbox>
+
+        <buttonlist name="channels" from="buttonlist_dialog_wide">
+            <position>250,315</position>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <imagetype name="icon">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                    </imagetype>
+                    <imagetype name="glasoverlay">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                        <filename>images/shared/ButtonMenuGlass.png</filename>
+                    </imagetype>
+                    <textarea name="channum" from="textarea_base">
+                        <area>40,0,50,40</area>
+                        <alpha>128</alpha>
+                    </textarea>
+                    <textarea name="name" from="channum">
+                        <area>100,0,200,40</area>
+                        <template>%name% (%callsign%)</template>
+                    </textarea>
+                    <textarea name="sourcename" from="channum">
+                        <area>300,0,200,40</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+		    <imagetype name="MediaItemDetailBG">
+			<area>100,5,410,30</area>
+			<filename>images/shared/MediaItemDetailBG.png</filename>
+		    </imagetype>
+                    <imagetype name="icon">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                    </imagetype>
+                    <imagetype name="glasoverlay">
+                        <area>0,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                        <filename>images/shared/ButtonMenuGlass.png</filename>
+                    </imagetype>
+                    <textarea name="channum" from="textarea_base">
+                        <area>40,0,50,40</area>
+                        <alpha>255</alpha>
+                    </textarea>
+                    <textarea name="name" from="textarea_base">
+                        <area>120,7,379,33</area>
+                        <font>verysmall</font>
+                        <alpha>255</alpha>
+                        <align>left,vcenter</align>
+                        <template>%name% / %callsign%  (Source: %sourcename%)</template>
+                    </textarea>
+                </state>         
+                <!--INACTIVE-->
+                <state name="inactive" from="active">
+                    <alpha>255</alpha>
+                </state>
+                <!--SELECTED INACTIVE-->
+                <state name="selectedinactive" from="active">
+                    <alpha>255</alpha>
+                    <textarea name="channum" from="textarea_base">
+                        <area>40,0,50,40</area>
+                        <font>normal_blue</font>
+                    </textarea>
+                    <textarea name="name" from="channum">
+                        <area>100,0,200,40</area>
+                        <template>%name% (%callsign%)</template>
+                    </textarea>
+                    <textarea name="sourcename" from="channum">
+                        <area>300,0,200,40</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <button name="delete" from="button_base_menu">
+            <position>790,175</position>
+            <value>Delete</value>
+        </button>
+
+        <button name="scan" from="button_base_menu">
+            <position>790,210</position>
+            <value>Channel Scan</value>
+        </button>
+
+        <button name="importicons" from="button_base_menu">
+            <position>790,245</position>
+            <value>Icon Import</value>
+        </button>
+
+        <button name="edittransport" from="button_base_menu">
+            <position>790,280</position>
+            <value>Transports</value>
+        </button>
+
+    </window>
+
+    <window name="languageselection">
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/settings.jpg</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype> 
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Customize your country settings</value>
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Choose Country and Language</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+
+        <buttonlist name="countries" from="buttonlist_dialog_wide">
+            <position>250,175</position>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <imagetype name="buttonimage">
+                        <area>0,0,60,40</area>
+                    </imagetype>
+                    <textarea name="buttontext" from="textarea_base">
+                        <area>70,0,430,40</area>
+                        <alpha>128</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <imagetype name="buttonimage">
+                        <area>0,0,60,40</area>
+                    </imagetype>
+                    <textarea name="buttontext" from="textarea_base">
+                        <area>70,0,430,40</area>
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+            <helptext>Select the country in which you currently reside</helptext>
+        </buttonlist>
+
+        <textarea name="helptext" from="textarea_base">
+            <area>250,630,510,60</area>
+            <align>allcenter</align>
+            <font>normal</font>
+            <multiline>true</multiline>
+        </textarea>-->
+
+        <buttonlist name="languages" from="countries">
+            <helptext>Select your preferred language</helptext>
+        </buttonlist>
+
+        <button name="save" from="button_base_menu">
+            <position>790,175</position>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+</mythuitheme>

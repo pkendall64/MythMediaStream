@@ -1,0 +1,2331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "../mythuitheme.dtd">
+<mythuitheme>
+
+<!-- ===================================================== -->
+<!-- SHAPES & IMAGES                                       -->
+<!-- ===================================================== -->
+   <shape name="shape_darken_base">
+       <area>0,0,1280,720</area>
+       <type>box</type>
+       <fill color="#000000" alpha="128" />
+   </shape>
+
+   <imagetype name="titlebackground">
+       <area>150,5,300,45</area>
+       <filename>images/shared/TVTitleBG.png</filename>
+   </imagetype>
+
+   <imagetype name="titlebackground2" from="titlebackground">
+       <area>410,5,300,50</area>
+   </imagetype>
+
+   <imagetype name="titlebackground3" from="titlebackground">
+       <area>670,5,300,55</area>
+   </imagetype>
+
+   <imagetype name="image_wallpaper_base">
+       <area>0,0,1280,720</area>
+   </imagetype>
+
+
+<!-- ===================================================== -->
+<!--     FONT                                              -->
+<!-- ===================================================== -->
+
+   <fontdef name="mediastreamalt" face="MediaStreamALT">
+       <pixelsize>22</pixelsize>
+   </fontdef>
+
+   <fontdef name="dejavulgcsans" face="DejaVu LGC Sans">
+       <pixelsize>22</pixelsize>
+   </fontdef>
+
+   <fontdef name="fluid" face="Fluid">
+       <pixelsize>22</pixelsize>
+   </fontdef>
+
+   <fontdef name="fluidbodycaps" face="Fluid Body Caps">
+       <pixelsize>22</pixelsize>
+   </fontdef>
+
+   <fontdef name="fluidtitlecaps" face="Fluid Title Caps">
+       <pixelsize>22</pixelsize>
+   </fontdef>
+
+   <fontdef name="normal" from="mediastreamalt">
+       <color>#FFFFFF</color>
+       <pixelsize>25</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>normal</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+
+   <fontdef name="normal_bold" from="normal">
+       <weight>bold</weight>
+   </fontdef>
+
+   <fontdef name="normal_selected" from="normal">
+       <color>#105B8F</color>
+   </fontdef>
+
+   <fontdef name="normal_blue" from="normal">
+       <color>#105B8F</color>
+   </fontdef>
+
+   <fontdef name="normal_blue_bold" from="normal_blue">
+       <weight>bold</weight>
+   </fontdef>
+
+   <fontdef name="normal_red" from="normal">
+       <color>#F92626</color>
+   </fontdef>
+
+   <fontdef name="normal_amber" from="normal">
+       <color>#E0991A</color>   
+   </fontdef>
+
+   <fontdef name="normal_green" from="normal">
+       <color>#2ABF2A</color>
+   </fontdef>
+
+   <fontdef name="title" from="fluid">
+       <color>#FFFFFF</color>
+       <pixelsize>29</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>normal</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="title_stretched" from="fluid">
+       <color>#FFFFFF</color>
+       <pixelsize>29</pixelsize>
+       <stretch>ultraexpanded</stretch>
+       <weight>normal</weight>
+   </fontdef>
+
+   <fontdef name="title_big" from="title">
+       <pixelsize>33</pixelsize>
+   </fontdef>
+
+   <fontdef name="title_small" from="title">
+       <pixelsize>25</pixelsize>
+   </fontdef>
+
+   <fontdef name="title_small_blue" from="title">
+       <color>#105B8F</color>
+  </fontdef>
+
+   <fontdef name="title_verysmall_blue" from="title">
+       <pixelsize>22</pixelsize>
+       <color>#105B8F</color>
+  </fontdef>
+
+   <fontdef name="small" from="mediastreamalt">
+       <color>#FFFFFF</color>
+       <pixelsize>23</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>light</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="small_blue" from="small">
+       <color>#105B8F</color>
+       <weight>bold</weight>
+   </fontdef>
+
+   <fontdef name="small_amber" from="small">
+       <color>#E0991A</color>
+   </fontdef>
+
+   <fontdef name="smaller" from="normal">
+       <pixelsize>21</pixelsize>
+       <weight>light</weight>
+       <weight>bold</weight>
+   </fontdef>
+
+   <fontdef name="verysmall" from="normal">
+       <pixelsize>19</pixelsize>
+       <letterspacing>0</letterspacing>
+   </fontdef>
+
+   <fontdef name="verysmall_blue" from="verysmall">
+       <color>#105B8F</color>
+   </fontdef>
+
+   <fontdef name="verysmall_grey" from="verysmall">
+       <color>#818181</color>
+   </fontdef>
+
+   <fontdef name="verysmall_red" from="verysmall">
+       <color>#F92626</color>
+   </fontdef>
+
+   <fontdef name="verysmall_amber" from="verysmall">
+       <color>#E0991A</color>
+   </fontdef>
+
+   <fontdef name="tiny" from="normal">
+       <pixelsize>16</pixelsize>
+       <letterspacing>0</letterspacing>
+   </fontdef>
+
+   <fontdef name="tiny_amber" from="tiny">
+       <color>#E0991A</color>
+   </fontdef>
+
+   <fontdef name="tiny_blue" from="tiny">
+       <color>#105B8F</color>
+   </fontdef>
+
+   <fontdef name="tiny_red" from="tiny">
+       <color>#F92626</color>
+   </fontdef>
+
+   <fontdef name="normal_osd" from="normal">
+       <pixelsize>16</pixelsize>
+       <letterspacing>0</letterspacing>
+   </fontdef>
+
+   <fontdef name="normal_inactive" from="normal">
+       <color>#999999</color>
+   </fontdef>
+
+   <fontdef name="normal_error" from="normal">
+      <color>#FE0000</color>
+   </fontdef>
+
+   <fontdef name="normal_warning" from="normal">
+      <color>#FFFF00</color>
+   </fontdef>
+
+   <fontdef name="verysmall_shadow" from="verysmall">
+      <shadowcolor>#000000</shadowcolor>
+      <shadowoffset>2,2</shadowoffset>
+      <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="small_shadow" from="small">
+      <shadowcolor>#000000</shadowcolor>
+      <shadowoffset>2,2</shadowoffset>
+      <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="menu" from="title">
+      <pixelsize>35</pixelsize>
+      <weight>normal</weight>
+      <color>#FFFFFF</color>
+      <shadowcolor>#000000</shadowcolor>
+      <letterspacing>0</letterspacing>
+      <wordspacing>0</wordspacing>
+   </fontdef>
+
+   <fontdef name="menu_active" from="menu">
+      <pixelsize>50</pixelsize>
+   </fontdef>
+
+   <fontdef name="menu_description" from="normal">
+      <pixelsize>30</pixelsize>
+      <color>#CCCCCC</color>
+      <letterspacing>0</letterspacing>
+   </fontdef>
+
+   <fontdef name="menumain" from="title">
+      <pixelsize>28</pixelsize>
+      <stretch>normal</stretch>
+      <weight>normal</weight>
+      <color>#FFFFFF</color>
+      <shadowcolor>#000000</shadowcolor>
+      <letterspacing>0</letterspacing>
+      <wordspacing>0</wordspacing>
+   </fontdef>
+
+   <fontdef name="menumain_active" from="menumain">
+      <pixelsize>50</pixelsize>
+   </fontdef>
+
+   <fontdef name="menumain_description" from="normal">
+      <pixelsize>28</pixelsize>
+      <stretch>condensed</stretch>
+      <color>#FFFFFF</color>
+      <letterspacing>0</letterspacing>
+   </fontdef>
+
+<!-- ===================================================== -->
+<!-- KEYBOARD FONTS                                        -->
+<!-- ===================================================== -->
+
+   <fontdef name="key_base" from="normal">
+      <pixelsize>25</pixelsize>
+      <color>#FFFFFF</color>
+      <stretch>extracondensed</stretch>
+      <weight>normal</weight>
+      <shadowcolor>#000000</shadowcolor>
+      <shadowoffset>1,1</shadowoffset>
+      <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="key_grey" from="key_base">
+      <color>#CCCCCC</color>
+   </fontdef>
+
+   <fontdef name="key_blue" from="key_base">
+      <color>#105B8F</color>
+   </fontdef>
+
+   <fontdef name="key_amber" from="key_base">
+      <color>#E0991A</color>
+   </fontdef>
+
+<!-- ===================================================== -->
+<!-- MYTHMUSIC FONTS                                       -->
+<!-- ===================================================== -->
+
+   <fontdef name="normalalt" from="fluidbodycaps">
+       <color>#FFFFFF</color>
+       <pixelsize>25</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>normal</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="normal_greyalt" from="fluidbodycaps">
+       <color>#818181</color>
+       <pixelsize>25</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>normal</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="normal_amberalt" from="fluidbodycaps">
+       <color>#E0991A</color>
+       <pixelsize>25</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>normal</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="smallmusic" from="mediastreamalt">
+       <color>#FFFFFF</color>
+       <pixelsize>23</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>light</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="small_greymusic" from="mediastreamalt">
+       <color>#818181</color>
+       <pixelsize>23</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>light</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="tinyalt" from="fluidbodycaps">
+       <color>#FFFFFF</color>
+       <pixelsize>16</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>normal</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="tinymusic_grey" from="mediastreamalt">
+       <color>#818181</color>
+       <pixelsize>16</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>normal</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="titlealt" from="fluidtitlecaps">
+       <color>#FFFFFF</color>
+       <pixelsize>29</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>normal</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="title_greyalt" from="fluidtitlecaps">
+       <color>#818181</color>
+       <pixelsize>29</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>normal</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="title_smallalt" from="fluidtitlecaps">
+       <color>#FFFFFF</color>
+       <pixelsize>25</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>normal</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="title_small_greyalt" from="fluidtitlecaps">
+       <color>#818181</color>
+       <pixelsize>25</pixelsize>
+       <stretch>extracondensed</stretch>
+       <weight>normal</weight>
+       <shadowcolor>#000000</shadowcolor>
+       <shadowoffset>1,1</shadowoffset>
+       <shadowalpha>255</shadowalpha>
+   </fontdef>
+
+   <fontdef name="menu_activealt" from="titlealt">
+      <pixelsize>50</pixelsize>
+      <weight>normal</weight>
+      <color>#FFFFFF</color>
+      <shadowcolor>#000000</shadowcolor>
+      <letterspacing>0</letterspacing>
+      <wordspacing>0</wordspacing>
+   </fontdef>
+
+   <fontdef name="menu_descriptionalt" from="normalalt">
+      <pixelsize>30</pixelsize>
+      <color>#CCCCCC</color>
+      <letterspacing>0</letterspacing>
+   </fontdef>
+
+<!-- ===================================================== -->
+<!-- TEXTAREA                                              -->
+<!-- ===================================================== -->
+   <textarea name="textarea_base">
+       <area>0,0,100,35</area>
+       <font>normal</font>
+       <multiline>no</multiline>
+       <cutdown>yes</cutdown>
+       <case>upper</case>
+       <align>left,vcenter</align>
+   </textarea>
+
+   <!-- The clock -->
+   <textarea name="textarea_clock_base">
+       <area>10,5,160,40</area> 
+       <imagetype name="ClockBackground">
+           <filename>images/shared/ClockBackgroundLong.png</filename>
+           <area>0,0,160,40</area>
+       </imagetype>
+       <clock name="texthours">
+           <area>30,0,75,40</area>
+           <font>normal</font>
+           <template>hh:mm</template>
+           <align>right,vcenter</align>
+           <multiline>no</multiline>
+           <cutdown>no</cutdown>
+       </clock>
+       <clock name="textdaypart">
+           <area>110,0,30,40</area>
+           <font>normal_blue_bold</font>
+           <template>AP</template>
+           <align>hcenter,vcenter</align>
+           <multiline>no</multiline>
+           <cutdown>no</cutdown>
+       </clock>
+   </textarea>
+
+   <textarea name="screentitle">
+       <area>150,5,280,40</area>
+       <font>normal</font>
+       <multiline>no</multiline>
+       <align>right,vcenter</align>
+       <cutdown>yes</cutdown>
+       <case>upper</case>
+       <value>Screen Title</value>
+   </textarea>
+
+   <textarea name="screentitle2" from="screentitle">
+       <area>410,5,280,45</area>
+       <value>Screen Title 2</value>
+   </textarea>
+
+   <textarea name="screentitle3" from="screentitle">
+       <area>730,5,220,50</area>
+       <value>Screen Title 3</value>
+   </textarea>
+
+<!-- ===================================================== -->
+<!--     TEXTEDIT                                          -->
+<!-- ===================================================== -->
+        <textedit name="textedit_base">
+           <area>0,0,340,35</area>
+           <statetype name="background">
+               <state name="active">
+                    <imagetype name="backgroundactive">
+                        <area>0,0,340,35</area>
+                        <filename>images/shared/MenuItemNF.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selected">
+                    <imagetype name="backgroundactive">
+                        <area>0,0,340,35</area>
+                        <filename>images/shared/MenuItemNF.png</filename>
+                    </imagetype>
+                    <imagetype name="backgroundselected">
+                        <area>0,0,330,35</area>
+                        <filename>images/shared/MenuItemFO.png</filename>
+                    </imagetype>
+                </state>
+                <state name="inactive" from="active"/>
+           </statetype>
+           <imagetype name="cursor">
+               <filename>images/shared/cursor.png</filename>
+               <alpha>192</alpha>
+           </imagetype>
+           <textarea name="text">
+                <area>10,0,320,35</area>
+                <font>normal</font>
+                <alpha>128</alpha>
+                <align>left,vcenter</align>
+           </textarea>
+        </textedit>
+
+        <textedit name="textedit_menu">
+           <area>0,0,340,35</area>
+           <statetype name="background">
+               <state name="active">
+                    <imagetype name="backgroundactive">
+                        <area>-170,0,510,35</area>
+                        <filename>images/shared/MenuItemNF.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selected">
+                    <imagetype name="backgroundactive">
+                        <area>-170,0,510,35</area>
+                        <filename>images/shared/MenuItemNF.png</filename>
+                    </imagetype>
+                    <imagetype name="backgroundselected">
+                        <area>0,0,330,35</area>
+                        <filename>images/shared/MenuItemFO.png</filename>
+                    </imagetype>
+                </state>
+                <state name="inactive" from="active"/>
+           </statetype>
+           <imagetype name="cursor">
+               <filename>images/shared/cursor.png</filename>
+               <alpha>192</alpha>
+           </imagetype>
+           <textarea name="text">
+                <area>10,0,320,35</area>
+                <font>normal</font>
+                <alpha>128</alpha>
+                <align>left,vcenter</align>
+           </textarea>
+        </textedit>
+
+        <textedit name="textedit_menu_wide">
+           <area>0,0,510,35</area>
+           <statetype name="background">
+               <state name="active">
+                    <imagetype name="backgroundactive">
+                        <area>0,0,510,35</area>
+                        <filename>images/shared/MenuItemNF.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selected">
+                    <imagetype name="backgroundactive">
+                        <area>0,0,510,35</area>
+                        <filename>images/shared/MenuItemNF.png</filename>
+                    </imagetype>
+                    <imagetype name="backgroundselected">
+                        <area>10,0,490,35</area>
+                        <filename>images/shared/MenuItemFO.png</filename>
+                    </imagetype>
+                </state>
+                <state name="inactive" from="active"/>
+           </statetype>
+           <imagetype name="cursor">
+               <filename>images/shared/cursor.png</filename>
+               <alpha>192</alpha>
+           </imagetype>
+           <textarea name="text">
+                <area>10,0,490,35</area>
+                <font>normal</font>
+                <alpha>128</alpha>
+                <align>left,vcenter</align>
+           </textarea>
+        </textedit>
+
+<!-- ===================================================== -->
+<!-- CHECKBOX                                              -->
+<!-- ===================================================== -->
+   <checkbox name="checkbox_base">
+       <area>0,0,30,35</area>
+       <statetype name="background">
+           <state name="active">
+               <imagetype name="LedOff">
+                   <area>0,2,30,30</area>
+                   <filename>images/shared/LEDOff.png</filename>
+               </imagetype>
+           </state>
+           <state name="selected">
+               <imagetype name="LedBlue">
+                   <area>0,2,30,30</area>
+                   <filename>images/shared/LEDBlue.png</filename>
+               </imagetype>
+           </state>
+           <state name="disabled"/>
+       </statetype>
+       <statetype name="checkstate">
+           <state type="off">
+               <imagetype name="LedOff">
+                   <area>0,2,30,30</area>
+                   <filename>images/shared/LEDOff.png</filename>
+               </imagetype>
+           </state>
+           <state type="half">
+               <imagetype name="LEDOn">
+                   <area>0,2,30,30</area>
+                   <filename>images/shared/LEDOn.png</filename>
+                   <alpha>128</alpha>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="LEDOn">
+                   <area>0,2,30,30</area>
+                   <filename>images/shared/LEDOn.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </checkbox>
+
+   <checkbox name="checkbox_menu">
+       <area>0,0,30,35</area>
+       <statetype name="background">
+           <state name="active">
+               <imagetype name="backgroundactive">
+                   <area>-170,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="LedOff">
+                   <area>0,2,30,30</area>
+                   <filename>images/shared/LEDOff.png</filename>
+               </imagetype>
+           </state>
+           <state name="selected">
+               <imagetype name="backgroundactive">
+                   <area>-170,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="LedBlue">
+                   <area>0,2,30,30</area>
+                   <filename>images/shared/LEDBlue.png</filename>
+               </imagetype>
+           </state>
+           <state name="disabled"/>
+       </statetype>
+       <statetype name="checkstate">
+           <state type="off"/>
+           <state type="half">
+               <imagetype name="backgroundactive">
+                   <area>-170,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="LEDOn">
+                   <area>0,2,30,30</area>
+                   <filename>images/shared/LEDOn.png</filename>
+                   <alpha>128</alpha>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="backgroundactive">
+                   <area>-170,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="LEDOn">
+                   <area>0,2,30,30</area>
+                   <filename>images/shared/LEDOn.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </checkbox>
+
+<!-- ====================================================== -->
+<!--     BUTTON                                             -->
+<!-- ====================================================== -->
+   <button name="button_base">
+       <statetype name="buttonstate">
+           <!--ACTIVE-->
+           <state name="active">
+               <imagetype name="ButtonMenuBack">
+                   <area>0,0,120,34</area>
+                   <filename>images/shared/ButtonMenuBack.png</filename>
+               </imagetype>
+               <textarea name="text" from="textarea_base">
+                   <area>0,0,120,34</area>
+                   <align>allcenter</align>
+                   <font>small</font>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selected" from="active">
+               <textarea name="text" from="textarea_base">
+                   <area>0,0,120,34</area>
+                   <align>allcenter</align>
+                   <font>small_blue</font>
+               </textarea>
+           </state>
+           <!--DISABLED-->
+           <state name="disabled" from="active" />
+           <!--PUSHED-->
+           <state name="pushed" from="selected">
+               <alpha>128</alpha>
+           </state>
+       </statetype>
+   </button>
+
+   <button name="button_base_menu">
+       <statetype name="buttonstate">
+           <!--ACTIVE-->
+           <state name="active">
+               <imagetype name="ButtonMenuBack">
+                   <area>0,0,190,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <textarea name="text" from="textarea_base">
+                   <area>10,0,180,35</area>
+                   <align>left,vcenter</align>
+                   <alpha>128</alpha>
+                   <font>normal</font>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selected">
+               <imagetype name="ButtonMenuBack">
+                   <area>0,0,190,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="ButtonMenuFront">
+                   <area>0,0,190,35</area>
+                   <filename>images/shared/HomeBladeSubFO2.png</filename>
+               </imagetype>
+               <textarea name="text" from="textarea_base">
+                   <area>10,0,180,35</area>
+                   <align>left,vcenter</align>
+                   <font>normal</font>
+               </textarea>
+           </state>
+           <!--DISABLED-->
+           <state name="disabled" from="active" />
+           <!--PUSHED-->
+           <state name="pushed" from="active">
+               <alpha>128</alpha>
+               <textarea name="text" from="textarea_base">
+                   <area>10,0,180,35</area>
+                   <align>left,vcenter</align>
+                   <font>normal_amber</font>
+               </textarea>
+           </state>
+       </statetype>
+   </button>
+
+<!-- ===================================================== -->
+<!--     BUTTONLIST MENU                                   -->
+<!-- ===================================================== -->
+   <buttonlist name="buttonlist_popup">
+       <area>0,0,300,580</area>
+       <align>top,hcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,300,560</buttonarea>
+       <statetype name="buttonitem">
+           <!--ACTIVE-->
+           <state name="active">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,300,40</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <textarea name="buttontext" from="textarea_base">
+                   <area>20,0,275,40</area>
+                   <alpha>128</alpha>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selectedactive">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,300,40</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="MenuItemFO">
+                   <area>0,0,300,40</area>
+                   <filename>images/shared/MenuItemFO.png</filename>
+               </imagetype>
+               <textarea name="buttontext" from="textarea_base">
+                   <area>20,0,275,40</area>
+                   <alpha>255</alpha>
+               </textarea>
+           </state>
+           <!--INACTIVE-->
+           <state name="inactive" from="active">
+               <alpha>0</alpha>
+           </state>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="selectedactive">
+               <alpha>0</alpha>
+           </state>
+       </statetype>
+       <!--ARROWS-->
+       <statetype name="upscrollarrow">
+           <position>10,564</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowUpNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                    <filename>images/shared/ArrowUpFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+       <statetype name="downscrollarrow">
+           <position>30,564</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowDownNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowDownFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_menu">
+       <area>0,0,540,420</area>
+       <align>top,hcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,540,400</buttonarea>
+       <statetype name="buttonitem">
+           <!--ACTIVE-->
+           <state name="active">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,540,40</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <textarea name="buttontext" from="textarea_base">
+                   <area>10,0,520,40</area>
+                   <alpha>128</alpha>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selectedactive">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,540,40</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="MenuItemFO">
+                   <area>0,0,540,40</area>
+                   <filename>images/shared/MenuItemFO.png</filename>
+               </imagetype>
+               <textarea name="buttontext" from="textarea_base">
+                   <area>10,0,520,40</area>
+                   <alpha>255</alpha>
+               </textarea>
+           </state>
+           <!--INACTIVE-->
+           <state name="inactive" from="active">
+               <alpha>0</alpha>
+           </state>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="selectedactive">
+               <alpha>0</alpha>
+           </state>
+       </statetype>
+       <!--ARROWS-->
+       <statetype name="upscrollarrow">
+           <position>10,404</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowUpNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                    <filename>images/shared/ArrowUpFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+       <statetype name="downscrollarrow">
+           <position>30,404</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowDownNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowDownFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_menu_details" from="buttonlist_menu">
+       <statetype name="buttonitem">
+           <state name="selectedactive">
+               <imagetype name="MediaItemDetailBG">
+                   <area>370,5,170,30</area>
+                   <filename>images/shared/MediaItemDetailBG.png</filename>
+               </imagetype>
+               <textarea name="buttontext" from="textarea_base">
+                   <area>10,0,350,40</area>
+                   <alpha>255</alpha>
+               </textarea>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_wide">
+       <area>0,0,660,420</area>
+       <align>top,hcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,660,400</buttonarea>
+       <statetype name="buttonitem">
+           <!--ACTIVE-->
+           <state name="active">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,660,40</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <textarea name="buttontext" from="textarea_base">
+                   <area>10,0,640,40</area>
+                   <alpha>128</alpha>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selectedactive">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,660,40</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="MenuItemFO">
+                   <area>0,0,660,40</area>
+                   <filename>images/shared/MenuItemFO.png</filename>
+               </imagetype>
+               <textarea name="buttontext" from="textarea_base">
+                   <area>10,0,260,40</area>
+                   <alpha>255</alpha>
+               </textarea>
+               <imagetype name="MediaItemDetailBG">
+                   <area>280,5,380,30</area>
+                   <filename>images/shared/MediaItemDetailBG.png</filename>
+               </imagetype>
+           </state>
+           <!--INACTIVE-->
+           <state name="inactive" from="active">
+               <alpha>0</alpha>
+           </state>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="selectedactive">
+               <alpha>0</alpha>
+           </state>
+       </statetype>
+       <!--ARROWS-->
+       <statetype name="upscrollarrow">
+           <position>10,404</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowUpNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                    <filename>images/shared/ArrowUpFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+       <statetype name="downscrollarrow">
+           <position>30,404</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowDownNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowDownFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_menu_2">
+       <area>0,0,190,520</area>
+       <align>top,left</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,190,520</buttonarea>
+       <statetype name="buttonitem">
+           <!--ACTIVE-->
+           <state name="active">
+               <imagetype name="ButtonMenuBack">
+                   <area>0,0,190,40</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <textarea name="buttontext" from="textarea_base">
+                   <area>10,0,180,40</area>
+                   <align>left,vcenter</align>
+                   <alpha>128</alpha>
+                   <font>normal</font>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selectedactive">
+               <imagetype name="ButtonMenuBack">
+                   <area>0,0,190,40</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="ButtonMenuFront">
+                   <area>0,0,190,40</area>
+                   <filename>images/shared/HomeBladeSubFO2.png</filename>
+               </imagetype>
+               <textarea name="buttontext" from="textarea_base">
+                   <area>10,0,180,40</area>
+                   <align>left,vcenter</align>
+                   <font>normal</font>
+               </textarea>
+           </state>
+           <!--INACTIVE-->
+           <state name="inactive" from="active"/>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="selectedactive"/>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_browse">
+       <spacing>25</spacing>
+       <area>0,0,1280,215</area>
+       <layout>horizontal</layout>
+       <scrollstyle>center</scrollstyle>
+       <arrange>stack</arrange>
+       <align>hcenter</align>
+       <wrapstyle>items</wrapstyle>
+       <showarrow>no</showarrow>
+       <buttonarea>0,0,1275,215</buttonarea>
+       <statetype name="buttonitem">
+           <state name="active">
+               <area>0,32,110,215</area>
+               <imagetype name="buttonimage">
+                   <area>0,0,110,150</area>
+                   <alpha>128</alpha>
+                   <filename>images/shared/Take2RaspberryLong.png</filename>
+                   <preserveaspect>yes</preserveaspect>
+                   <reflection shear="0" scale="75" length="50"/>
+               </imagetype>
+               <statetype name="nodetype">
+                   <area>0,0,110,150</area>
+                   <state name="subfolder">
+                       <imagetype name="icon">
+                           <area>85,125,25,25</area>
+                           <alpha>128</alpha>
+                           <filename>images/shared/DefaultFolderTransparent.png</filename>
+                           <preserveaspect>yes</preserveaspect>
+                       </imagetype>
+                   </state>
+                   <state name="upfolder">
+                       <imagetype name="icon">
+                           <area>0,0,110,150</area>
+                           <alpha>255</alpha>
+                           <filename>images/shared/DefaultFolderBack.png</filename>
+                           <preserveaspect>no</preserveaspect>
+                       </imagetype>
+                   </state>
+               </statetype>
+           </state>
+           <state name="inactive" from ="active">
+               <alpha>0</alpha>
+           </state>
+           <state name="selectedactive">
+               <area>0,0,150,215</area>
+               <imagetype name="buttonimage">
+                   <area>0,0,150,205</area>
+                   <alpha>255</alpha>
+                   <preserveaspect>no</preserveaspect>
+                   <filename>images/shared/Take2RaspberryLong.png</filename>
+               </imagetype>
+               <statetype name="nodetype">
+                   <area>0,0,150,215</area>
+                   <state name="subfolder">
+                       <imagetype name="icon">
+                           <area>110,165,30,30</area>
+                           <alpha>255</alpha>
+                           <filename>images/shared/DefaultFolderTransparent.png</filename>
+                           <preserveaspect>yes</preserveaspect>
+                       </imagetype>
+                   </state>
+                   <state name="upfolder">
+                       <imagetype name="icon">
+                           <area>0,0,150,205</area>
+                           <alpha>255</alpha>
+                           <filename>images/shared/DefaultFolderBack.png</filename>
+                           <preserveaspect>no</preserveaspect>
+                       </imagetype>
+                   </state>
+               </statetype>
+               <imagetype name="coverartoverlay">
+                   <area>0,0,150,205</area>
+                   <alpha>64</alpha>
+                   <preserveaspect>no</preserveaspect>
+                   <filename>images/shared/ButtonMenuGlass.png</filename>
+               </imagetype>
+               <imagetype name="coverartframe">
+                   <area>-5,-5,160,215</area>
+                   <alpha>192</alpha>
+                   <filename>images/shared/MovieFocusFrame.png</filename>
+                   <preserveaspect>no</preserveaspect>
+               </imagetype>
+           </state>
+           <state name="selectedinactive" from="selectedactive">
+               <alpha>0</alpha>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_gallery">
+       <spacing>0</spacing>
+       <area>0,0,800,450</area>
+       <layout>grid</layout>
+       <scrollstyle>free</scrollstyle>
+       <arrange>stack</arrange>
+       <align>left,top</align>
+       <wrapstyle>items</wrapstyle>
+       <showarrow>no</showarrow>
+       <buttonarea>0,0,800,450</buttonarea>
+       <statetype name="buttonitem">
+           <state name="active">
+               <area>0,0,110,150</area> 
+               <imagetype name="buttonimage">
+                   <area>10,19,90,122</area>
+                   <alpha>128</alpha>
+                   <preserveaspect>yes</preserveaspect>
+                   <filename>images/shared/Take2RaspberryLong.png</filename>
+               </imagetype>
+               <statetype name="nodetype">
+                   <area>0,0,110,150</area>
+                   <state name="subfolder">
+                       <imagetype name="icon">
+                           <area>75,116,25,25</area>
+                           <alpha>128</alpha>
+                           <filename>images/shared/DefaultFolderTransparent.png</filename>
+                           <preserveaspect>yes</preserveaspect>
+                       </imagetype>
+                   </state>
+                   <state name="upfolder">
+                       <imagetype name="icon">
+                           <area>10,19,90,122</area>
+                           <alpha>255</alpha>
+                           <filename>images/shared/DefaultFolderBack.png</filename>
+                           <preserveaspect>no</preserveaspect>
+                       </imagetype>
+                   </state>
+               </statetype>
+           </state>
+           <state name="inactive" from ="active">
+               <alpha>0</alpha>
+           </state>
+           <state name="selectedactive">
+               <area>-5,-7,120,164</area> 
+               <imagetype name="buttonimage">
+                   <area>0,0,120,164</area>
+                   <alpha>255</alpha>
+                   <preserveaspect>no</preserveaspect>
+                   <filename>images/shared/Take2RaspberryLong.png</filename>
+               </imagetype>
+               <statetype name="nodetype">
+                   <area>0,0,120,164</area>
+                   <state name="subfolder">
+                       <imagetype name="icon">
+                           <area>90,134,30,30</area>
+                           <alpha>255</alpha>
+                           <filename>images/shared/DefaultFolderTransparent.png</filename>
+                           <preserveaspect>yes</preserveaspect>
+                       </imagetype>
+                  </state>
+                  <state name="upfolder">
+                       <imagetype name="icon">
+                           <area>0,0,110,154</area>
+                           <alpha>255</alpha>
+                           <filename>images/shared/DefaultFolderBack.png</filename>
+                           <preserveaspect>no</preserveaspect>
+                       </imagetype>
+                   </state>
+               </statetype>
+               <imagetype name="coverartoverlay">
+                   <area>0,0,120,160</area>
+                   <alpha>64</alpha>
+                   <!--<preserveaspect>no</preserveaspect>-->
+                   <filename>images/shared/ButtonMenuGlass.png</filename>
+               </imagetype>
+           </state>
+           <state name="selectedinactive" from="selectedactive">
+               <alpha>0</alpha>
+           </state>
+       </statetype>
+   </buttonlist>
+
+<!-- ===================================================== -->
+<!--     BUTTONLIST DIALOG                                 -->
+<!-- ===================================================== -->
+   <buttonlist name="selector_base">
+       <area>0,0,340,35</area>
+       <align>left,vcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,340,35</buttonarea>
+       <statetype name="buttonitem">
+           <area>0,0,350,35</area>
+           <!--ACTIVE-->
+           <state name="active">
+               <imagetype name="MenuItemNF">
+                   <area>-170,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,320,35</area>
+                   <font>normal</font>
+                   <alpha>128</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selectedactive">
+               <imagetype name="MenuItemNF">
+                   <area>-170,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="MenuItemFO">
+                   <area>0,0,330,35</area>
+                   <filename>images/shared/MenuItemFO.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,320,35</area>
+                   <font>normal</font>
+                   <alpha>255</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <!--INACTIVE-->
+           <state name="inactive" from="active">
+           <!--    <alpha>0</alpha>-->
+           </state>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="active">
+           <!--    <alpha>0</alpha>-->
+           </state>
+       </statetype>
+       <!--ARROWS-->
+       <statetype name="upscrollarrow">
+           <position>324,5</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowRightNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                    <filename>images/shared/ArrowRightFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+       <statetype name="downscrollarrow">
+           <position>324,20</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowLeftNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowLeftFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="selector_base_wide">
+       <area>0,0,510,35</area>
+       <align>left,vcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,510,35</buttonarea>
+       <statetype name="buttonitem">
+           <area>0,0,510,35</area>
+           <!--ACTIVE-->
+           <state name="active">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,490,35</area>
+                   <font>normal</font>
+                   <alpha>128</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selectedactive">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="MenuItemFO">
+                   <area>0,0,490,35</area>
+                   <filename>images/shared/MenuItemFO.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,490,35</area>
+                   <font>normal</font>
+                   <alpha>255</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <!--INACTIVE-->
+           <state name="inactive" from="active">
+           <!--    <alpha>0</alpha>-->
+           </state>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="active">
+           <!--    <alpha>0</alpha>-->
+           </state>
+       </statetype>
+       <!--ARROWS-->
+       <statetype name="upscrollarrow">
+           <position>494,5</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowRightNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                    <filename>images/shared/ArrowRightFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+       <statetype name="downscrollarrow">
+           <position>494,20</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowLeftNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowLeftFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_dialog_wide">
+       <area>0,0,510,380</area>
+       <align>top,hcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,510,360</buttonarea>
+       <statetype name="buttonitem">
+           <area>0,0,510,35</area>
+           <!--ACTIVE-->
+           <state name="active">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,510,40</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,470,40</area>
+                   <font>normal</font>
+                   <alpha>128</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selectedactive">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,510,40</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="MenuItemFO">
+                   <area>0,0,490,40</area>
+                   <filename>images/shared/MenuItemFO.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,470,40</area>
+                   <font>normal</font>
+                   <alpha>255</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <!--INACTIVE-->
+           <state name="inactive" from="active">
+               <alpha>0</alpha>
+           </state>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="active">
+               <alpha>0</alpha>
+           </state>
+       </statetype>
+       <!--ARROWS-->
+       <statetype name="upscrollarrow">
+           <position>10,364</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowUpNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                    <filename>images/shared/ArrowUpFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+       <statetype name="downscrollarrow">
+           <position>30,364</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowDownNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowDownFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_dialog_wide_permanent" from="buttonlist_dialog_wide">
+       <statetype name="buttonitem">
+           <state name="inactive" from="active">
+               <alpha>255</alpha>
+           </state>
+           <state name="selectedinactive" from="selectedactive">
+               <alpha>128</alpha>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_dialog_wide_details_permanent" from="buttonlist_dialog_wide_permanent">
+       <statetype name="buttonitem">
+           <state name="selectedactive">
+               <imagetype name="MediaItemDetailBG">
+                   <area>340,5,170,30</area>
+                   <filename>images/shared/MediaItemDetailBG.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,320,40</area>
+                   <font>normal</font>
+                   <alpha>255</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <state name="selectedinactive">
+               <imagetype name="MediaItemDetailBG">
+                   <area>340,5,170,30</area>
+                   <filename>images/shared/MediaItemDetailBG.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,320,40</area>
+                   <font>normal</font>
+                   <alpha>255</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_dialog_wide_details_check_permanent" from="buttonlist_dialog_wide_details_permanent">
+       <statetype name="buttonitem">
+           <state name="active">
+               <statetype name="buttoncheck">
+                   <state type="off">
+                       <imagetype name="LedOff">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOff.png</filename>
+                       </imagetype>
+                   </state>
+                   <state type="half">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                           <alpha>128</alpha>
+                       </imagetype>
+                   </state>
+                   <state type="full">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                       </imagetype>
+                   </state>
+               </statetype>
+           </state>
+           <state name="selectedactive">
+               <statetype name="buttoncheck">
+                   <state type="off">
+                       <imagetype name="LedOff">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOff.png</filename>
+                       </imagetype>
+                   </state>
+                   <state type="half">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                           <alpha>128</alpha>
+                       </imagetype>
+                   </state>
+                   <state type="full">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                       </imagetype>
+                   </state>
+               </statetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_dialog_wide_check" from="buttonlist_dialog_wide">
+       <statetype name="buttonitem">
+           <!--ACTIVE-->
+           <state name="active">
+               <statetype name="buttoncheck">
+                   <state type="off">
+                       <imagetype name="LedOff">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOff.png</filename>
+                       </imagetype>
+                   </state>
+                   <state type="half">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                           <alpha>128</alpha>
+                       </imagetype>
+                   </state>
+                   <state type="full">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                       </imagetype>
+                   </state>
+               </statetype>
+           </state>
+           <state name="selectedactive">
+               <statetype name="buttoncheck">
+                   <state type="off">
+                       <imagetype name="LedOff">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOff.png</filename>
+                       </imagetype>
+                   </state>
+                   <state type="half">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                           <alpha>128</alpha>
+                       </imagetype>
+                   </state>
+                   <state type="full">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                       </imagetype>
+                   </state>
+               </statetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="buttonlist_dialog_wide_check_permanent" from="buttonlist_dialog_wide_check">
+       <statetype name="buttonitem">
+           <state name="inactive" from="active">
+               <alpha>255</alpha>
+           </state>
+           <state name="selectedinactive" from="active">
+               <alpha>255</alpha>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="filelist_base">
+       <area>0,0,510,470</area>
+       <align>top,hcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,510,450</buttonarea>
+       <statetype name="buttonitem">
+           <area>0,0,510,50</area>
+           <state name="active">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,510,50</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="buttonimage">
+                   <area>0,0,89,50</area>
+                   <alpha>128</alpha>
+                   <preserveaspect>yes</preserveaspect>
+               </imagetype>
+               <statetype name="nodetype">
+                   <state name="folder">
+                       <imagetype name="icon">
+                           <area>0,0,89,50</area>
+                           <preserveaspect>true</preserveaspect>
+                           <filename>images/shared/DefaultFolder.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="upfolder" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/DefaultFolderBack.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="executable" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/file-exec.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="file" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/file.png</filename>
+                       </imagetype>
+                   </state>
+               </statetype>
+               <textarea name="buttontext">
+                   <area>100,0,400,50</area>
+                   <font>normal</font>
+                   <alpha>128</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <state name="selectedactive">
+               <imagetype name="MenuItemNF">
+                   <area>0,0,510,50</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="MenuItemFO">
+                   <area>100,0,400,50</area>
+                   <filename>images/shared/MenuItemFO.png</filename>
+               </imagetype>
+               <imagetype name="buttonimage">
+                   <area>0,0,89,50</area>
+                   <alpha>255</alpha>
+                   <preserveaspect>yes</preserveaspect>
+               </imagetype>
+               <statetype name="nodetype">
+                   <state name="folder">
+                       <imagetype name="icon">
+                           <area>0,0,89,50</area>
+                           <preserveaspect>true</preserveaspect>
+                           <filename>images/shared/DefaultFolder.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="upfolder" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/DefaultFolderBack.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="executable" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/file-exec.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="file" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/file.png</filename>
+                       </imagetype>
+                   </state>
+               </statetype>
+               <textarea name="buttontext">
+                   <area>100,0,400,50</area>
+                   <font>normal</font>
+                   <alpha>255</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <state name="inactive" from="active"/>
+           <state name="selectedinactive" from="selectedactive">
+               <alpha>128</alpha>
+           </state>
+       </statetype>
+       <statetype name="upscrollarrow">
+           <position>10,454</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowUpNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowUpFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+       <statetype name="downscrollarrow">
+           <position>30,454</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowDownNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowDownFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="filelist_base_check" from="filelist_base">
+       <statetype name="buttonitem">
+           <!--ACTIVE-->
+           <state name="active">
+               <statetype name="buttoncheck">
+                   <state type="off">
+                       <imagetype name="LedOff">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOff.png</filename>
+                       </imagetype>
+                   </state>
+                   <state type="half">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                           <alpha>128</alpha>
+                       </imagetype>
+                   </state>
+                   <state type="full">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                       </imagetype>
+                   </state>
+               </statetype>
+               <textarea name="buttontext">
+                   <area>100,0,380,50</area>
+                   <font>normal</font>
+                   <alpha>128</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <state name="selectedactive">
+               <statetype name="buttoncheck">
+                   <state type="off">
+                       <imagetype name="LedOff">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOff.png</filename>
+                       </imagetype>
+                   </state>
+                   <state type="half">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                           <alpha>128</alpha>
+                       </imagetype>
+                   </state>
+                   <state type="full">
+                       <imagetype name="LEDOn">
+                           <area>480,5,30,30</area>
+                           <filename>images/shared/LEDOn.png</filename>
+                       </imagetype>
+                   </state>
+               </statetype>
+               <textarea name="buttontext">
+                   <area>100,0,380,50</area>
+                   <font>normal</font>
+                   <alpha>255</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+       </statetype>
+   </buttonlist>
+
+<!-- ===================================================== -->
+<!--     BUTTONTREE                                        -->
+<!-- ===================================================== -->
+   <buttontree name="buttontree_menu">
+       <area>0,0,540,440</area>
+       <numlists>1</numlists>
+       <spacing>0</spacing>
+       <buttonlist name="listtemplate" from="buttonlist_menu"/>
+    </buttontree>
+
+<!-- ===================================================== -->
+<!--     SPINBOX                                           -->
+<!-- ===================================================== -->
+    <spinbox name="spinbox_base">
+        <area>0,0,340,35</area>
+        <statetype name="buttonitem">
+            <state name="active">
+                <textarea name="buttontext">
+                    <area>5,0,55,35</area>
+                    <font>normal</font>
+                    <alpha>128</alpha>
+                    <cutdown>yes</cutdown>
+                    <align>hcenter,vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedactive">
+                <imagetype name="MenuItemFO">
+                    <area>0,0,70,35</area>
+                    <filename>images/shared/MenuItemFO.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <area>5,0,55,35</area>
+                    <font>normal</font>
+                    <alpha>255</alpha>
+                    <cutdown>yes</cutdown>
+                    <align>hcenter,vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>75,5</position>
+            <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowRightNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                    <filename>images/shared/ArrowRightFO.png</filename>
+               </imagetype>
+           </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>75,20</position>
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowLeftNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowLeftFO.png</filename>
+               </imagetype>
+           </state>
+        </statetype>
+    </spinbox>
+
+    <spinbox name="spinbox_menu">
+        <area>0,0,340,35</area>
+        <statetype name="buttonitem">
+            <state name="active">
+                <imagetype name="MenuItemNF">
+                    <area>-170,3,510,35</area>
+                    <filename>images/shared/MenuItemNF.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <area>5,0,55,35</area>
+                    <font>normal</font>
+                    <alpha>128</alpha>
+                    <cutdown>yes</cutdown>
+                    <align>hcenter,vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedactive">
+                <imagetype name="MenuItemNF">
+                    <area>-170,3,510,35</area>
+                    <filename>images/shared/MenuItemNF.png</filename>
+                </imagetype>
+                <imagetype name="MenuItemFO">
+                    <area>0,0,70,35</area>
+                    <filename>images/shared/MenuItemFO.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <area>5,0,55,35</area>
+                    <font>normal</font>
+                    <alpha>255</alpha>
+                    <cutdown>yes</cutdown>
+                    <align>hcenter,vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>75,5</position>
+            <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowRightNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                    <filename>images/shared/ArrowRightFO.png</filename>
+               </imagetype>
+           </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>75,20</position>
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowLeftNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowLeftFO.png</filename>
+               </imagetype>
+           </state>
+        </statetype>
+    </spinbox>
+
+<!-- ===================================================== -->
+<!-- PROGRESSBAR                                            -->
+<!-- ===================================================== -->
+   <progressbar name="progressbar_base">
+       <area>0,0,700,10</area>
+       <layout>horizontal</layout>
+       <style>reveal</style>
+       <imagetype name="background">
+           <area>0,0,700,10</area>
+           <filename>images/shared/progressbar/progressbar_background.png</filename>
+           <preserveaspect>false</preserveaspect>
+       </imagetype>
+       <imagetype name="progressimage">
+           <area>0,0,700,10</area>
+           <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
+           <preserveaspect>false</preserveaspect>
+       </imagetype>
+   </progressbar>
+
+
+<!-- ===================================================== -->
+<!-- STAR RATING                                           -->
+<!-- ===================================================== -->
+    <statetype name="rating_base">
+        <area>0,0,80,20</area>
+        <showempty>yes</showempty>
+        <state name="0">
+            <imagetype name="0">
+                <area>,0,80,20</area>
+                <filename>images/shared/rating0.png</filename>
+            </imagetype>
+        </state>
+        <state name="1">
+            <imagetype name="1">
+                <area>,0,80,20</area>
+                <filename>images/shared/rating1.png</filename>
+            </imagetype>
+        </state>
+        <state name="2">
+            <imagetype name="2">
+                <area>,0,80,20</area>
+                <filename>images/shared/rating1.png</filename>
+            </imagetype>
+        </state>
+        <state name="3">
+            <imagetype name="3">
+                <area>,0,80,20</area>
+                <filename>images/shared/rating2.png</filename>
+            </imagetype>
+        </state>
+        <state name="4">
+            <imagetype name="4">
+                <area>,0,80,20</area>
+                <filename>images/shared/rating2.png</filename>
+            </imagetype>
+        </state>
+        <state name="5">
+            <imagetype name="5">
+                <area>,0,80,20</area>
+                <filename>images/shared/rating3.png</filename>
+            </imagetype>
+        </state>
+        <state name="6">
+            <imagetype name="6">
+                <area>,0,80,20</area>
+                <filename>images/shared/rating3.png</filename>
+            </imagetype>
+        </state>
+        <state name="7">
+            <imagetype name="7">
+                <area>,0,80,20</area>
+                <filename>images/shared/rating4.png</filename>
+            </imagetype>
+        </state>
+        <state name="8">
+            <imagetype name="8">
+                <area>,0,80,20</area>
+                <filename>images/shared/rating4.png</filename>
+            </imagetype>
+        </state>
+        <state name="9">
+            <imagetype name="9">
+                <area>,0,80,20</area>
+                <filename>images/shared/rating5.png</filename>
+            </imagetype>
+        </state>
+        <state name="10" from="9" />
+    </statetype>
+
+
+<!-- ===================================================== -->
+<!-- WINDOWS & DIALOGS                                     -->
+<!-- ===================================================== -->
+   <window name="dialog_left_base">
+<!--       <shape name="shape_darken_background" from="shape_darken_base"/>-->
+       <imagetype name="popup_background">
+           <area>974,0,308,720</area>	
+           <filename>images/shared/HomeBladeSubRight.png</filename>
+       </imagetype>
+   </window>
+
+   <window name="dialog_base">
+       <area>-1,-1,520,205</area>
+       <!--Darken background
+       <shape name="shape_dark" from="shape_darken_base"/>-->
+       <imagetype name="DialogProgressBG">
+           <area>0,0,520,205</area>
+           <filename>images/shared/DialogProgressBG.png</filename>
+       </imagetype>
+       <textarea name="message" from="textarea_base">
+           <area>20,35,480,135</area>
+           <font>normal</font>
+           <align>allcenter</align>
+           <cutdown>yes</cutdown>
+           <multiline>yes</multiline>
+       </textarea>
+   </window>
+
+   <window name="MythBusyDialog" from="dialog_base">
+       <imagetype name="animation">
+           <position>20,98</position>
+           <filepattern low="1" high="29">images/shared/busy/busy-%1.png</filepattern>
+           <delay>80</delay>
+       </imagetype>
+       <textarea name="message" from="textarea_base">
+           <area>120,35,380,135</area>
+           <font>normal</font>
+           <align>allcenter</align>
+           <cutdown>yes</cutdown>
+           <multiline>yes</multiline>
+       </textarea>
+   </window>
+
+   <window name="MythConfirmationDialog" from="dialog_base">
+       <textarea name="message">
+           <area>20,35,480,70</area>
+           <font>normal</font>
+           <align>allcenter</align>
+           <multiline>yes</multiline>
+       </textarea>
+       <button name="cancel" from="button_base">
+           <position>240,140</position>
+           <value>Cancel</value>
+       </button>
+       <button name="ok" from="button_base">
+           <position>380,140</position>
+           <value>Ok</value>
+       </button>
+   </window>
+
+   <window name="MythTextInputDialog" from="dialog_base">
+       <textarea name="message" from="textarea_base">
+           <area>20,35,480,35</area>
+           <value>Enter Search Text:</value>
+       </textarea>
+       <textedit name="input" from="textedit_menu_wide">
+           <position>10,70</position>
+       </textedit>
+       <button name="ok" from="button_base">
+           <position>380,140</position>
+           <value>Ok</value>
+       </button>
+   </window>
+
+   <window name="MythPopupBox" from="dialog_left_base">
+       <textarea name="messagearea">
+           <area>990,20,290,100</area>
+           <font>title_small</font>
+           <case>upper</case>
+           <multiline>yes</multiline>
+           <align>left,bottom</align>
+           <cutdown>yes</cutdown>
+       </textarea>
+
+       <buttonlist name="list" from="buttonlist_popup">
+           <position>980,130</position>
+       </buttonlist>
+   </window>
+
+    <window name="MythDialogBox" from="dialog_left_base">
+       <textarea name="messagearea">
+           <area>990,20,290,100</area>
+           <font>title_small</font>
+           <case>upper</case>
+           <multiline>yes</multiline>
+           <align>left,bottom</align>
+           <cutdown>yes</cutdown>
+       </textarea>
+
+       <buttonlist name="list" from="buttonlist_popup">
+           <position>980,130</position>
+       </buttonlist>
+    </window>
+
+
+   <window name="MythProgressDialog" from="dialog_base">
+       <textarea name="message" from="textarea_base">
+           <area>20,35,480,35</area>
+           <font>popup_title</font>
+       </textarea>
+       <textarea name="progresstext" from="textarea_base">
+            <area>20,105,480,35</area>
+            <font>small</font>
+            <align>allcenter</align>
+            <value>0%</value>
+       </textarea>
+       <progressbar name="progressbar" from="progressbar_base">
+           <area>20,140,480,10</area>
+           <imagetype name="background">
+               <area>0,0,480,10</area>
+           </imagetype>
+           <imagetype name="progressimage">
+               <area>0,0,480,10</area>
+           </imagetype>
+       </progressbar>
+   </window>
+
+    <window name="MythFileBrowser">
+        <area>0,0,1280,720</area>
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- Custom  RECORING PRIORITY                          -->
+        <!-- ================================================== -->
+        <textarea name="info" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Search files on your harddisk</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>File Manager</value>
+        </textarea>
+
+        <buttonlist name="filelist" from="filelist_base">
+            <position>250,175</position>
+        </buttonlist>
+
+        <textedit name="location" from="textedit_menu_wide">
+            <position>250,675</position>
+        </textedit>
+
+        <button name="back" from="button_base_menu">
+            <position>790,175</position>
+            <value>Up Level</value>
+        </button>
+
+        <button name="home" from="button_base_menu">
+            <position>790,210</position>
+            <value>Home</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,245</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="button_base_menu">
+            <position>790,280</position>
+            <value>Ok</value>
+        </button>
+
+   </window>
+
+    <window name="MythSearchDialog">
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/MediaStreamProgramsBGD.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- Search dialog content                              -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Pick a program from a set of lists</value> 
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+<!--            <value>Search Lists</value>-->
+        </textarea>
+
+        <textarea name="titlelbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Select item to be searched for from the list:</value>
+        </textarea>
+
+        <buttonlist name="itemlist" from="selector_base_wide">
+            <position>250,210</position>
+        </buttonlist>
+
+        <textarea name="inputlbl" from="textarea_base">
+            <area>250,280,510,35</area>
+            <value>Edit search item:</value>
+        </textarea>
+
+        <textedit name="input" from="textedit_menu_wide">
+            <position>250,315</position>
+        </textedit>
+
+        <button name="ok" from="button_base_menu">
+            <position>790,175</position>
+            <value>Search</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+
+   <window name="backgroundwindow">
+       <area>0,0,1280,720</area>
+<!--       <shape name="shape_black">
+           <area>0,0,1280,720</area>
+           <type>box</type>
+           <fill color="#000000"/>
+       </shape>-->
+   </window>
+
+</mythuitheme>

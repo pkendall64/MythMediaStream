@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="gallery">
+        <imagetype name="picturesbgd" from="image_wallpaper_base">
+            <filename>images/backgrounds/MediaStreamPicturesBGD.png</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleVideoGallery" from="screentitle">
+            <value>PICTURE GALLERY</value>
+        </textarea>
+
+        <imagetype name="MediaCountBackground">
+            <area>1110,5,160,40</area>
+            <filename>images/shared/MediaCountBackgroundLong.png</filename>
+        </imagetype>
+
+        <textarea name="position" from="textarea_base">
+            <area>1112,5,146,40</area>
+            <font>normal</font>
+            <case>lower</case>
+            <align>allcenter</align>
+            <multiline>no</multiline>
+            <cutdown>no</cutdown>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!--     IMAGE GALLERY                                     -->
+        <!-- ===================================================== -->
+        <buttonlist name="images" from="buttonlist_menu">
+            <position>740,260</position>
+        </buttonlist>
+
+        <!-- ===================================================== -->
+        <!--     IMAGE DETAILS                                     -->
+        <!-- ===================================================== -->
+        <imagetype name="selectedimagebgd">
+            <area>37,257,666,377</area>
+            <alpha>255</alpha>
+            <preserveaspect>no</preserveaspect>
+            <filename>images/shared/BlackTransparent.png</filename>
+        </imagetype>
+        <imagetype name="selectedimage">
+            <area>40,260,660,371</area>
+            <alpha>255</alpha>
+            <preserveaspect>no</preserveaspect>
+            <filename>images/backgrounds/images.jpg</filename>
+            <reflection shear="0" scale="65" length="15"/>
+        </imagetype>
+
+        <textarea name="breadcrumbs" from="textarea_base">
+            <area>40,690,660,25</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="noimages" from="breadcrumbs"/>
+
+    </window>
+
+</mythuitheme>
