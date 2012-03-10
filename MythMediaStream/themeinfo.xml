@@ -21,7 +21,7 @@
 
     <detail>
         <thumbnail name="preview">preview.png</thumbnail>
-        <description>Port of the XBMC MediaStream skin: MediaStream was first developed by what became known as Team Razorfish. This team was originally put together by Mike Beecham who posted in the xbmc forums, looking for people interested in collaborating on a new skin. The development of the skin took about a year with the skin finally unveiled to the public on 08/08/08 (8th August 2008). MythMediaStream has been made to look like the original theme were posible using its native graphics and art design.</description>
-        <errata>Set included menus in mediacentermenu as your menu to make this theme complete</errata>
+        <description>Port of the XBMC MediaStream skin: The theme has been made to look like the original XBMC skin were posible using its native graphics and art design. Please use the matching MythTV menu structure in the MythMediaStreamMenu folder as this theme its menu lay-out is custom tailored for this particular menu (other menus in MythTV will give you unreadable menu items.</description>
+        <errata></errata>
     </detail>
 </themeinfo>
