@@ -1,0 +1,24 @@
+<mythmenu name="MUSIC_SETTINGS">
+
+   <button>
+      <type>MUSIC_SETTINGS_GENERAL</type>
+      <text>Settings</text>
+      <action>MUSIC_SET_GENERAL</action>
+      <description>General music</description>
+   </button>
+
+   <button>
+      <type>MUSIC_SETTINGS_PLAYER</type>
+      <text>Player</text>
+      <action>MUSIC_SET_PLAYER</action>
+      <description>Setup your Music</description>
+   </button>
+
+   <button>
+      <type>MUSIC_SETTINGS_RIP</type>
+      <text>Ripper</text>
+      <action>MUSIC_SET_RIPPER</action>
+      <description>Configure your CD</description>
+   </button>
+
+</mythmenu>
