@@ -507,9 +507,15 @@
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
-           <state name="SETTINGS_GAME">
+           <state name="SETTINGS_ARCHIVE">
                <imagetype name="watermark">
                    <filename>images/backgrounds/dvd-settings.jpg</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
+           <state name="SETTINGS_GAME">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/game.jpg</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
@@ -680,6 +686,12 @@
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
+           <state name="VIDEO_SETTINGS_METADATA">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/video-settings.jpg</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
            <state name="VIDEO_FILE_TYPES">
                <imagetype name="watermark">
                    <filename>images/backgrounds/video-settings.jpg</filename>
@@ -725,6 +737,12 @@
                </imagetype>
            </state>
            <state name="SETTINGS_INFO_CENTER">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
+           <state name="SETTINGS_SYSTEM_EVENTS">
                <imagetype name="watermark">
                    <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
                    <area>0,0,1280,720</area>

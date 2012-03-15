@@ -2,9 +2,17 @@
 <mythmenu name="WEB">
 
     <button>
+        <type>WEBPAGE</type>
+        <text>Web</text>
+        <description>Browse the</description>
+        <action>PLUGIN mythbrowser</action>
+        <depends>mythbrowser</depends>
+    </button>
+
+    <button>
         <type>NET_VIDEO_SEARCH</type>
         <text>Search</text>
-        <description>Internet video sites</description>
+        <description>Video sites you can</description>
         <action>JUMP MythNetSearch</action>
         <depends>mythnetvision</depends>
     </button>
@@ -12,17 +20,9 @@
     <button>
         <type>NET_VIDEO_TREE</type>
         <text>Browse</text>
-        <description>Internet video sites</description>
+        <description>Video sites you can</description>
         <action>JUMP MythNetTree</action>
         <depends>mythnetvision</depends>
-    </button>
-
-    <button>
-        <type>WEBPAGE</type>
-        <text>Web</text>
-        <description>Browse the</description>
-        <action>PLUGIN mythbrowser</action>
-        <depends>mythbrowser</depends>
     </button>
 
     <button>

@@ -4,7 +4,7 @@
 
     <window name="rawsettingseditor">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/settings.jpg</filename>
+            <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
             <filename>images/shared/HomeBladeLeft.png</filename>
@@ -92,7 +92,7 @@
 
     <window name="themechooser">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/settings.jpg</filename>
+            <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
             <filename>images/shared/HomeBladeLeft.png</filename>
