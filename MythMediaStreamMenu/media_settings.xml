@@ -28,14 +28,14 @@
     <button>
         <type>SETTINGS_GAME</type>
         <text>Games</text>
-        <description>Configure playback of</description>
+        <description>Configure playing of</description>
         <action>CONFIGPLUGIN mythgame</action>
         <depends>mythgame</depends>
     </button>
 
     <button>
         <type>SETTINGS_STREAM</type>
-        <text>MythStream</text>
+        <text>Streams</text>
         <description>Configure playback of</description>
         <action>CONFIGPLUGIN mythstream</action>
         <depends>mythstream</depends>

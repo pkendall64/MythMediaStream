@@ -9,7 +9,7 @@
 
    <button>
        <type>MUSIC_IMPORT</type>
-       <text>Files</text>
+       <text>Files</text>      
        <description>Import your Music</description>
        <action>MUSIC_IMPORT</action>
    </button>

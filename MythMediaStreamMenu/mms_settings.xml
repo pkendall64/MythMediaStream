@@ -20,7 +20,7 @@
     <button>
         <type>SETUP_KEYS</type>
         <text>Keys</text>
-        <description>Edit your</description>
+        <description>Setup your</description>
         <action>SETUP_KEYS</action>
     </button>
 

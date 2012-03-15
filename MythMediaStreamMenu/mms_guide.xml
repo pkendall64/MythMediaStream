@@ -32,7 +32,7 @@
     <button>
         <type>TV_MANUAL_SCHEDULE</type>
         <text>Manual</text>
-        <description>Schedule</description>
+        <description>Schedule programs</description>
         <action>TV_MANUALSCHEDULE</action>
     </button>
 
