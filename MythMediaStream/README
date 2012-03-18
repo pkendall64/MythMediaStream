@@ -1,0 +1,10 @@
+To use this theme, copy the folders MythMediaStream and MythMediaStreamMenu to your local mythtv theme directory.
+
+command:
+
+cd mythmediastream
+cp -a MythMediaStream* ~/.mythtv/themes/
+
+This theme is designed to work with a custom menu called MythMediaStreamMenu. To select this menu, go to the 'theme & screensettings' menu in your frontend and set your Menu theme to 'MythMediaStream'.
+
+If you want to use this theme with any of the other menus available in mythtv, please edit the base.xml in the folder MythMediaStream and set the <stretch></stretch> tag in the "mainmenu" fontdefinition to "extracondensed" to make your menu items readable with this theme.
