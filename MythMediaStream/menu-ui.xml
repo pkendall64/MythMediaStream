@@ -206,6 +206,12 @@
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
+           <state name="TV_SEARCH_STORED">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
            <!-- ########  tv_lists.xml  ########-->
            <state name="TV_SEARCH_NEW_TITLES">
                <imagetype name="watermark">
