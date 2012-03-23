@@ -19,8 +19,7 @@
         <type>VIDEO_BROWSER</type>
         <text>Movies</text>
         <description>Watch your</description>
-        <action>JUMP MythVideo</action>
-        <depends>mythvideo</depends>
+        <action>JUMP Video Default</action>
     </button>
 
     <button>
