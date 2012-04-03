@@ -907,6 +907,17 @@
        </statetype>
    </buttonlist>
 
+   <buttonlist name="buttonlist_menu_details_permanent" from="buttonlist_menu_details" >
+       <statetype name="buttonitem">
+           <state name="inactive" from="active">
+               <alpha>255</alpha>
+           </state>
+           <state name="selectedinactive" from="selectedactive">
+               <alpha>128</alpha>
+           </state>
+       </statetype>
+   </buttonlist>
+
    <buttonlist name="buttonlist_wide">
        <area>0,0,660,420</area>
        <align>top,hcenter</align>
