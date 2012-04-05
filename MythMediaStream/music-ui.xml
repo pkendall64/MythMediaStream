@@ -190,50 +190,78 @@
         <!--     MUSIC LIST                                        -->
         <!-- ===================================================== -->
 
- <!--       <statetype name="movingtracksstate" from="basemovingtracksstate">
-            <position>1165,367</position>
-        </statetype>-->
-
-        <buttonlist name="currentplaylist" from="buttonlist_menu_details_permanent">
+        <buttonlist name="currentplaylist" from="basecurrentplaylist">
             <position>740,260</position>
-            <searchposition>-1,100</searchposition>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <textarea name="title" from="textarea_base">
-                        <area>10,0,490,40</area>
-                        <alpha>128</alpha>
-                        <font state="error">normal_red</font>
-                        <font state="running">normal_amber</font>
-                        <align>left,vcenter</align>
-                        <template>%title% - %artist%</template>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <textarea name="title" from="textarea_base">
-                        <area>10,0,350,40</area>
-                        <font state="error">normal_red</font>
-                        <font state="running">normal_amber</font>
-                        <align>left,vcenter</align>
-                        <template>%title% - %artist%</template>
-                    </textarea>
-                    <textarea name="length" from="title">
-                        <area>410,7,110,33</area>
-                        <font>verysmall</font>
-                        <font state="error">verysmall_red</font>
-                        <font state="running">verysmall_amber</font>
-                        <case>Normal</case>
-                        <align>left,vcenter</align>
-                        <template>%length%</template>
-                    </textarea>
-                </state>
-		          <state name="inactive" from="active">
-		              <alpha>192</alpha>
-		          </state>
-		          <state name="selectedinactive" from="selectedactive">
-		              <alpha>128</alpha>
-                </state>
-            </statetype>
         </buttonlist>
+
+        <imagetype name="coverart">
+            <area>25,260,275,275</area>
+            <filename>images/shared/DefaultNetwork.png</filename>
+            <reflection shear="0" scale="65" length="15"/>
+        </imagetype>
+        
+        <textarea name="notracks" from="textarea_base">
+            <area>345,260,355,60</area>
+            <multiline>yes</multiline>
+            <font>small</font>
+            <case>Normal</case>
+            <value>You haven't selected any tracks to play</value>
+        </textarea>
+
+        <group name="infopanel" from="baseinfopanel">
+            <position>345,260</position>>
+        </group>
+
+       <group name="playliststatusgroup" from="baseplayliststatusgroup">
+            <position>345,600</position>
+       </group>
+
+    </window>
+
+    <window name="playlisteditorview_tree" include="music-base.xml">
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/MediaStreamMusicBGD.png</filename>
+        </imagetype>
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+        <imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <textarea name="ScreenTitleVideoManager" from="screentitle">
+            <value>Playlist Editor Tree</value>
+        </textarea>
+        <imagetype name="MediaCountBackground">
+            <area>1110,5,160,40</area>
+            <filename>images/shared/MediaCountBackgroundLong.png</filename>
+        </imagetype>
+
+        <textarea name="position" from="textarea_base">
+            <area>1112,5,146,40</area>
+            <font>normal</font>
+            <case>lower</case>
+            <align>allcenter</align>
+            <multiline>no</multiline>
+            <cutdown>no</cutdown>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!--     MUSIC LIST                                        -->
+        <!-- ===================================================== -->
+
+        <!-- optional - shows path to current item -->
+        <textarea name="breadcrumbs" from="textarea_base">
+            <area>450,5,650,45</area>
+            <case>normal</case>
+            <font>verysmall</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <buttontree name="playlist_tree">
+		      <area>740,260,540,440</area>
+		      <numlists>1</numlists>
+		      <spacing>0</spacing>
+            <buttonlist name="listtemplate" from="buttonlist_menu_check"/>
+        </buttontree>
 
         <imagetype name="coverart">
             <area>25,260,275,275</area>
@@ -245,57 +273,8 @@
             <position>345,260</position>>
         </group>
 
-       <group name="playliststatusgroup" from="baseplayliststatusgroup">
+        <group name="playliststatusgroup" from="baseplayliststatusgroup">
             <position>345,600</position>
-        </group>
-        
-<!--
-        <imagetype name="animation">
-            <area>40,40,105,105</area>
-            <filepattern low="0" high="24">busyimages/%1.png</filepattern>
-            <delay>250</delay>
-        </imagetype>
--->
-    </window>
-
-    <window name="playlisteditorview_tree" include="music-base.xml">
-
-        <shape name="browser_background" from="basebackground">
-            <area>15,15,1250,370</area>
-            <fill color="#000000" alpha="50" />
-        </shape>
-
-        <!-- optional - shows path to current item -->
-        <textarea name="breadcrumbs" from="basetextarea">
-            <area>30,15,930,40</area>
-            <font>basemedium</font>
-            <align>left,vcenter</align>
-        </textarea>
-
-         <!-- optional - shows current position in grid eg '1 of 123' -->
-        <textarea name="position" from="basetextarea">
-            <area>1050,15,200,40</area>
-            <align>right,vcenter</align>
-            <font>basemedium</font>
-        </textarea>
-
-        <buttontree name="playlist_tree">
-            <area>30,60,1220,310</area>
-            <numlists>3</numlists>
-            <spacing>10</spacing>
-            <buttonlist name="listtemplate" from="basetreebuttonlist" />
-        </buttontree>
-
-        <statetype name="movingtracksstate" from="basemovingtracksstate">
-            <position>1243,395</position>
-        </statetype>
-
-        <group name="playlistpanel" from="baseplaylistpanel">
-            <position>0,390</position>
-        </group>
-
-        <group name="smallinfopanel" from="basesmallinfopanel">
-            <position>0,660</position>
         </group>
 
     </window>

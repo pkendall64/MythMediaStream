@@ -165,17 +165,18 @@
 
     <!-- moving track statetype -->
     <statetype name="basemovingtracksstate">
-        <position>1220,380</position>
+        <position>0,0</position>
         <state name="off"></state>
         <state name="on">
             <imagetype name="statusimage">
-                <filename>mm_updown.png</filename>
+                <area>0,0,16,32</area>
+                <filename>images/shared/ArrowUpDownFO.png</filename>
             </imagetype>
         </state>
     </statetype>
 
     <!-- current playlist button list -->
-    <buttonlist name="basecurrentplaylist" from="basebuttonlist2">
+<!--    <buttonlist name="basecurrentplaylist" from="basebuttonlist2">
         <area>35,20,1210,340</area>
         <spacing>4</spacing>
         <layout>vertical</layout>
@@ -364,7 +365,49 @@
         <statetype name="downscrollarrow">
             <position>1180,345</position>
         </statetype>
-    </buttonlist>
+    </buttonlist>-->
+
+     <buttonlist name="basecurrentplaylist" from="buttonlist_menu_details_permanent">
+         <position>740,260</position>
+         <searchposition>-1,100</searchposition>
+         <statetype name="buttonitem">
+             <state name="active">
+                 <textarea name="title" from="textarea_base">
+                     <area>10,0,490,40</area>
+                     <alpha>128</alpha>
+                     <font state="error">normal_red</font>
+                     <font state="running">normal_amber</font>
+                     <align>left,vcenter</align>
+                     <template>%title% - %artist%</template>
+                 </textarea>
+             </state>
+             <state name="selectedactive">
+                 <textarea name="title" from="textarea_base">
+                     <area>10,0,350,40</area>
+                     <font state="error">normal_red</font>
+                     <font state="running">normal_amber</font>
+                     <align>left,vcenter</align>
+                     <template>%title% - %artist%</template>
+                 </textarea>
+                 <textarea name="length" from="title">
+                     <area>385,7,110,33</area>
+                     <font>verysmall</font>
+                     <font state="error">verysmall_red</font>
+                     <font state="running">verysmall_amber</font>
+                     <case>Normal</case>
+                     <align>left,vcenter</align>
+                     <template>%length%</template>
+                 </textarea>
+             </state>
+	          <state name="inactive" from="active">
+	              <alpha>192</alpha>
+	          </state>
+	          <state name="selectedinactive" from="selectedactive">
+	              <alpha>128</alpha>
+             </state>
+         </statetype>
+     </buttonlist>
+
 
     <!-- playlist progress bar  -->
     <progressbar name="baseplaylistprogress" from="progressbar_base">
@@ -694,7 +737,9 @@
         <statetype name="shufflestate" from="baseshufflestate">
             <position>100,0</position>
         </statetype>
-
+        <statetype name="movingtracksstate" from="basemovingtracksstate">
+		      <position>167,9</position>
+		  </statetype>
     </group>
 
     <group name="baseinfopanel">
@@ -712,12 +757,6 @@
         <textarea name="artist" from="textarea_base">
             <area>0,40,355,30</area>
             <font>small</font>
-        </textarea>
-
-        <textarea name="notracks" from="artist">
-            <multiline>yes</multiline>
-            <case>Normal</case>
-            <value>You haven't selected any tracks to play</value>
         </textarea>
 
         <textarea name="album" from="artist">
