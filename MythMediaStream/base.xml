@@ -2024,61 +2024,61 @@
         <state name="0">
             <imagetype name="0">
                 <area>,0,80,20</area>
-                <filename>images/shared/rating0.png</filename>
+                <filename>images/shared/rating/songrating0.png</filename>
             </imagetype>
         </state>
         <state name="1">
             <imagetype name="1">
                 <area>,0,80,20</area>
-                <filename>images/shared/rating1.png</filename>
+                <filename>images/shared/rating/songrating1.png</filename>
             </imagetype>
         </state>
         <state name="2">
             <imagetype name="2">
                 <area>,0,80,20</area>
-                <filename>images/shared/rating1.png</filename>
+                <filename>images/shared/rating/songrating1.png</filename>
             </imagetype>
         </state>
         <state name="3">
             <imagetype name="3">
                 <area>,0,80,20</area>
-                <filename>images/shared/rating2.png</filename>
+                <filename>images/shared/rating/songrating2.png</filename>
             </imagetype>
         </state>
         <state name="4">
             <imagetype name="4">
                 <area>,0,80,20</area>
-                <filename>images/shared/rating2.png</filename>
+                <filename>images/shared/rating/songrating2.png</filename>
             </imagetype>
         </state>
         <state name="5">
             <imagetype name="5">
                 <area>,0,80,20</area>
-                <filename>images/shared/rating3.png</filename>
+                <filename>images/shared/rating/songrating3.png</filename>
             </imagetype>
         </state>
         <state name="6">
             <imagetype name="6">
                 <area>,0,80,20</area>
-                <filename>images/shared/rating3.png</filename>
+                <filename>images/shared/rating/songrating3.png</filename>
             </imagetype>
         </state>
         <state name="7">
             <imagetype name="7">
                 <area>,0,80,20</area>
-                <filename>images/shared/rating4.png</filename>
+                <filename>images/shared/rating/songrating4.png</filename>
             </imagetype>
         </state>
         <state name="8">
             <imagetype name="8">
                 <area>,0,80,20</area>
-                <filename>images/shared/rating4.png</filename>
+                <filename>images/shared/rating/songrating4.png</filename>
             </imagetype>
         </state>
         <state name="9">
             <imagetype name="9">
                 <area>,0,80,20</area>
-                <filename>images/shared/rating5.png</filename>
+                <filename>images/shared/rating/songrating5.png</filename>
             </imagetype>
         </state>
         <state name="10" from="9" />

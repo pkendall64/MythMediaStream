@@ -408,7 +408,6 @@
          </statetype>
      </buttonlist>
 
-
     <!-- playlist progress bar  -->
     <progressbar name="baseplaylistprogress" from="progressbar_base">
         <position>0,0</position>
@@ -544,151 +543,185 @@
     </buttonlist>
 
     <buttonlist name="basegallerybuttonlist">
-        <area>0,0,1225,380</area>
+        <area>0,0,800,450</area>
         <layout>grid</layout>
-        <spacing>10</spacing>
+        <spacing>0</spacing>
         <searchposition>-1,430</searchposition>
-        <buttonarea>0,0,1225,380</buttonarea>
+        <scrollstyle>free</scrollstyle>
+        <arrange>stack</arrange>
+        <align>left,top</align>
+        <wrapstyle>items</wrapstyle>
+        <showarrow>no</showarrow>
+        <buttonarea>0,0,800,450</buttonarea>
         <statetype name="buttonitem">
-            <area>0,0,195,150</area>
             <state name="active">
-                <shape name="buttonbackground">
-                    <area>0,0,195,150</area>
-                    <type>roundbox</type> 
-                    <cornerradius>3</cornerradius>
-                    <fill style="gradient">
-                        <gradient start="#e8e262" end="#fe9735" alpha="50"/>
-                    </fill>
-                </shape>
-
+                <area>0,0,150,150</area>
                 <imagetype name="buttonimage">
-                    <area>42,10,110,110</area>
+                    <alpha>128</alpha>
+                    <area>20,20,110,110</area>
                     <filename>mm_nothumb.png</filename>
                 </imagetype>
-
                 <statetype name="nodetype">
-                    <position>42,10</position>
                     <state name="default" />
                     <state name="alltracks">
                         <imagetype name="alltracks">
-                            <area>0,0,110,110</area>
+                            <area>20,20,110,110</area>
                             <filename>mm_alltracks.png</filename>
                         </imagetype>
                     </state>
                     <state name="genres">
                         <imagetype name="genres">
-                            <area>0,0,110,110</area>
+                            <area>20,20,110,110</area>
                             <filename>mm_genres.png</filename>
                         </imagetype>
                     </state>
                     <state name="albums">
                         <imagetype name="albums">
-                            <area>0,0,110,110</area>
+                            <area>20,20,110,110</area>
                             <filename>mm_albums.png</filename>
                         </imagetype>
                     </state>
                     <state name="artists">
                         <imagetype name="artists">
-                            <area>0,0,110,110</area>
+                            <area>20,20,110,110</area>
                             <filename>mm_artists.png</filename>
                         </imagetype>
                     </state>
                     <state name="compartists">
                         <imagetype name="compartists">
-                            <area>0,0,110,110</area>
+                            <area>20,20,110,110</area>
                             <filename>mm_compartists.png</filename>
                         </imagetype>
                     </state>
                     <state name="ratings">
                         <imagetype name="ratings">
-                            <area>0,0,110,110</area>
+                            <area>20,20,110,110</area>
                             <filename>mm_ratings.png</filename>
                         </imagetype>
                     </state>
                     <state name="years">
                         <imagetype name="years">
-                            <area>0,0,110,110</area>
+                            <area>20,20,110,110</area>
                             <filename>mm_years.png</filename>
                         </imagetype>
                     </state>
                     <state name="compilations">
                         <imagetype name="compilations">
-                            <area>0,0,110,110</area>
+                            <area>20,20,110,110</area>
                             <filename>mm_compilations.png</filename>
                         </imagetype>
                     </state>
                     <state name="playlists">
                         <imagetype name="playlists">
-                            <area>0,0,110,110</area>
+                            <area>20,20,110,110</area>
                             <filename>mm_playlists.png</filename>
                         </imagetype>
                     </state>
                     <state name="smartplaylists">
                         <imagetype name="smartplaylists">
-                            <area>0,0,110,110</area>
+                            <area>20,20,110,110</area>
                             <filename>mm_smartplaylists.png</filename>
                         </imagetype>
                     </state>
                 </statetype>
-
                 <statetype name="buttoncheck">
                     <position>15,100</position>
                     <showempty>yes</showempty>
                     <state type="full">
                         <imagetype name="marked">
-                            <filename>playlist_yes.png</filename>
+                            <filename>images/music/playlist_yes.png</filename>
                         </imagetype>
                     </state>
                 </statetype>
-
-                <textarea name="buttontext" from="basetextarea">
-                    <area>5,120,184,30</area>
-                    <align>hcenter,bottom</align>
-                    <font>basesmall</font>
+                <textarea name="buttontext" from="textarea_base">
+                    <area>5,130,140,20</area>
+                    <align>hcenter,vcenter</align>
+                    <font>tiny</font>
                 </textarea>
             </state>
-            <state name="selectedactive" from="active">
-                <shape name="buttonbackground">
-                    <area>0,0,195,150</area>
-                    <type>roundbox</type> 
-                    <cornerradius>3</cornerradius>
-                    <fill style="gradient">
-                        <gradient start="#e8e262" end="#fe9735" alpha="255" />
-                    </fill>
-                </shape>
-                <textarea name="buttontext">
-                    <font>basesmall</font>
-                </textarea>
-            </state>
-            <state name="selectedinactive" from="active">
-                <shape name="buttonbackground">
-                    <area>0,0,195,150</area>
-                    <type>roundbox</type> 
-                    <cornerradius>3</cornerradius>
-                    <fill style="gradient">
-                        <gradient start="#e8e262" end="#fe9735" alpha="150" />
-                    </fill>
-                </shape>
-
-                <textarea name="buttontext">
-                    <font>basesmallgrey</font>
-                </textarea>
-            </state>
-        </statetype>
-        <statetype name="upscrollarrow">
-            <position>240,270</position>
-            <state type="on">
-                <imagetype name="upon">
-                    <filename>up_arrow.png</filename>
+            <state name="selectedactive">
+                <area>0,0,150,150</area>
+                <imagetype name="buttonimage">
+                    <area>0,0,150,150</area>
+                    <filename>mm_nothumb.png</filename>
                 </imagetype>
-            </state>
-        </statetype>
-        <statetype name="downscrollarrow">
-            <position>456,270</position>
-            <state type="on">
-                <imagetype name="dnon">
-                    <filename>down_arrow.png</filename>
-                </imagetype>
+                <statetype name="nodetype">
+                    <state name="default" />
+                    <state name="alltracks">
+                        <imagetype name="alltracks">
+                            <area>0,0,150,150</area>
+                            <filename>mm_alltracks.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="genres">
+                        <imagetype name="genres">
+                            <area>0,0,150,150</area>
+                            <filename>mm_genres.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="albums">
+                        <imagetype name="albums">
+                            <area>0,0,150,150</area>
+                            <filename>mm_albums.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="artists">
+                        <imagetype name="artists">
+                            <area>0,0,150,150</area>
+                            <filename>mm_artists.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="compartists">
+                        <imagetype name="compartists">
+                            <area>0,0,150,150</area>
+                            <filename>mm_compartists.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="ratings">
+                        <imagetype name="ratings">
+                            <area>0,0,150,150</area>
+                            <filename>mm_ratings.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="years">
+                        <imagetype name="years">
+                            <area>0,0,150,150</area>
+                            <filename>mm_years.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="compilations">
+                        <imagetype name="compilations">
+                            <area>0,0,150,150</area>
+                            <filename>mm_compilations.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="playlists">
+                        <imagetype name="playlists">
+                            <area>0,0,150,150</area>
+                            <filename>mm_playlists.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="smartplaylists">
+                        <imagetype name="smartplaylists">
+                            <area>0,0,150,150</area>
+                            <filename>mm_smartplaylists.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <statetype name="buttoncheck">
+                    <position>15,100</position>
+                    <showempty>yes</showempty>
+                    <state type="full">
+                        <imagetype name="marked">
+                            <filename>images/music/playlist_yes.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+<!--                <textarea name="buttontext" from="textarea_base">
+                    <area>5,130,140,20</area>
+                    <align>hcenter,vcenter</align>
+                    <font>tiny</font>
+                </textarea>-->
             </state>
         </statetype>
     </buttonlist>
@@ -743,10 +776,16 @@
     </group>
 
     <group name="baseinfopanel">
-        <area>0,0,360,275</area>
+        <area>0,0,360,300</area>
 
-        <textarea name="title" from="textarea_base">
-            <area>0,0,355,40</area>
+         <textarea name="infolbl" from="textarea_base">
+            <area>0,0,355,30</area>
+            <alpha>128</alpha>
+            <value>Now playing</value>
+        </textarea>
+
+       <textarea name="title" from="textarea_base">
+            <area>0,25,355,40</area>
             <font>title</font>
             <multiline>no</multiline>
             <cutdown>yes</cutdown>
@@ -755,29 +794,30 @@
         </textarea>
 
         <textarea name="artist" from="textarea_base">
-            <area>0,40,355,30</area>
+            <area>0,60,355,30</area>
+            <case>upper</case>
             <font>small</font>
         </textarea>
 
         <textarea name="album" from="artist">
-            <position>0,70</position>
+            <position>0,85</position>
         </textarea>
 
         <textarea name="genre" from="artist">
-            <position>0,100</position>
+            <position>0,110</position>
         </textarea>
 
         <textarea name="ratingslbl" from="artist">
-            <position>0,130</position>
+            <position>0,135</position>
             <value>Rating</value>
         </textarea>
         
        <statetype name="ratingstate" from="rating_base">
-            <position>60,125</position>
+            <position>60,130</position>
         </statetype>
 
         <textarea name="lastplayed" from="artist">
-            <position>0,160</position>
+            <position>0,190</position>
             <font>verysmall</font>
             <case>Normal</case>
             <alpha>128</alpha>
@@ -785,28 +825,20 @@
         </textarea>
         
         <textarea name="nexttitle" from="lastplayed">
-            <position>0,185</position>
+            <position>0,215</position>
             <case>Normal</case>
             <template>Next: %NEXTTITLE% by %NEXTARTIST%</template>
         </textarea>
 
         <group name="statusicons" from="basestatusicons">
-            <position>0,225</position>
+            <position>0,250</position>
         </group>
 
-<!--        <progressbar name="progress" from="basetrackprogress">
-            <position>230,230</position>
-        </progressbar>
-
+<!--
         <textarea name="time" from="basetextarea">
             <area>230,205,185,35</area>
             <font>basesmall</font>
         </textarea>
-
-        <imagetype name="visualizer_border">
-            <filename>mm_blackhole_border.png</filename>
-            <area>1082,19,162,162,</area>
-        </imagetype>
 
         <video name="visualizer">
             <area>1085,23,156,155,</area>
@@ -818,23 +850,11 @@
             <align>center</align>
         </textarea>
 
-        <statetype name="mutestate" from="basemutestate">
-            <position>30,230</position>
-        </statetype>
-
         <textarea name="volume" from="basevolume">
             <position>70,227</position>
         </textarea>
 
-        <imagetype name="mm_blackhole_border">
-            <filename>mm_blackhole_border.png</filename>
-            <area>32,19,162,162</area>
-        </imagetype>
-
-        <imagetype name="coverart">
-            <filename>mm_nothumb.png</filename>
-            <area>35,23,156,155</area>
-        </imagetype>-->
+-->
 
     </group>
 
