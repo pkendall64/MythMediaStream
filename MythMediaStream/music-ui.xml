@@ -216,6 +216,10 @@
             <position>345,600</position>
        </group>
 
+       <group name="playlistvisualizergroup" from="baseplaylistvisualizergroup">
+            <position>25,600</position>
+       </group>
+
     </window>
 
     <window name="playlisteditorview_tree" include="music-base.xml">
@@ -276,6 +280,10 @@
         <group name="playliststatusgroup" from="baseplayliststatusgroup">
             <position>345,600</position>
         </group>
+
+       <group name="playlistvisualizergroup" from="baseplaylistvisualizergroup">
+            <position>25,600</position>
+       </group>
 
     </window>
 
