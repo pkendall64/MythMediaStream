@@ -13,6 +13,7 @@
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
+                    <alpha>128</alpha>
                     <filename>images/shared/OSDPrevTrackFO.png</filename>
                 </imagetype>
             </state>
@@ -36,6 +37,7 @@
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
+                    <alpha>128</alpha>
                     <filename>images/shared/OSDRewindFO.png</filename>
                 </imagetype>
             </state>
@@ -59,6 +61,7 @@
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
+                    <alpha>128</alpha>
                     <filename>images/shared/OSDPauseFO.png</filename>
                 </imagetype>
             </state>
@@ -82,6 +85,7 @@
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
+                    <alpha>128</alpha>
                     <filename>images/shared/OSDPlayFO.png</filename>
                 </imagetype>
             </state>
@@ -105,6 +109,7 @@
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
+                    <alpha>128</alpha>
                     <filename>images/shared/OSDStopFO.png</filename>
                 </imagetype>
             </state>
@@ -128,6 +133,7 @@
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
+                    <alpha>128</alpha>
                     <filename>images/shared/OSDForwardFO.png</filename>
                 </imagetype>
             </state>
@@ -151,6 +157,7 @@
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
+                    <alpha>128</alpha>
                     <filename>images/shared/OSDNextTrackFO.png</filename>
                 </imagetype>
             </state>
@@ -409,7 +416,7 @@
      </buttonlist>
 
     <!-- playlist progress bar  -->
-    <progressbar name="baseplaylistprogress" from="progressbar_base">
+    <progressbar name="baseplaylistprogress">
         <position>0,0</position>
         <layout>horizontal</layout>
         <style>reveal</style>
@@ -425,6 +432,21 @@
            </imagetype>
     </progressbar>
 
+    <!-- track progress bar -->
+    <progressbar name="basetrackprogress">
+        <position>0,0</position>
+        <layout>horizontal</layout>
+        <style>reveal</style>
+        <imagetype name="background">
+            <area>0,0,150,5</area>
+            <filename>images/shared/progressbar/progressbar_background.png</filename>
+        </imagetype>
+        <imagetype name="progressimage">
+            <area>0,0,150,5</area>
+            <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
+        </imagetype>
+    </progressbar>
+    
     <!-- repeat statetype -->
     <statetype name="baserepeatstate">
         <area>0,0,50,50</area>
@@ -500,23 +522,6 @@
             </textarea>
         </state>
     </statetype>
-
-    <!-- track progress bar -->
-    <progressbar name="basetrackprogress"  from="progressbar_base">
-        <position>0,0</position>
-        <layout>horizontal</layout>
-        <style>reveal</style>
-           <imagetype name="background">
-               <area>0,0,150,5</area>
-               <filename>images/shared/progressbar/progressbar_background.png</filename>
-               <preserveaspect>false</preserveaspect>
-           </imagetype>
-           <imagetype name="progressimage">
-               <area>0,0,150,5</area>
-               <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
-               <preserveaspect>false</preserveaspect>
-           </imagetype>
-    </progressbar>
 
     <!-- mute statetype -->
     <statetype name="basemutestate">
@@ -839,7 +844,7 @@
         </group>
 
 <!--
-        <textarea name="time" from="basetextarea">
+        <textabaseinfopanelrea name="time" from="basetextarea">
             <area>230,205,185,35</area>
             <font>basesmall</font>
         </textarea>
@@ -932,10 +937,9 @@
             <align>allcenter</align>
         </textarea>
 
-        <progressbar name="trackprogress" from="basetrackprogress">
+        <progressbar name="progress" from="basetrackprogress">
             <position>0,100</position>
         </progressbar>
-
 
     </group>
 
