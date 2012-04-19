@@ -540,6 +540,7 @@
         </state>
     </statetype>
 
+    <!-- To Do -->
     <!-- volume text -->
     <textarea name="basevolume" from="basetextarea">
         <area>70,667,250,25</area>
@@ -634,24 +635,26 @@
                     </state>
                 </statetype>
                 <statetype name="buttoncheck">
-                    <position>15,100</position>
+                    <position>0,0</position>
                     <showempty>yes</showempty>
                     <state type="full">
                         <imagetype name="marked">
-                            <filename>images/music/playlist_yes.png</filename>
+                            <filename>images/shared/LEDOn.png</filename>
                         </imagetype>
                     </state>
                 </statetype>
                 <textarea name="buttontext" from="textarea_base">
                     <area>5,130,140,20</area>
                     <align>hcenter,vcenter</align>
-                    <font>tiny</font>
-                </textarea>
+                    <font state="default">tiny</font>
+                    <font state="error">tiny_red</font>
+                    <font state="running">tiny_amber</font>
+                </textarea>		              
             </state>
             <state name="selectedactive">
                 <area>0,0,150,150</area>
                 <imagetype name="buttonimage">
-                    <area>10,10,130,130</area>
+                    <area>5,5,140,140</area>
                     <filename>images/music/MM_Music.png</filename>
                 </imagetype>
                 <statetype name="nodetype">
@@ -718,11 +721,11 @@
                     </state>
                 </statetype>
                 <statetype name="buttoncheck">
-                    <position>15,100</position>
+                    <position>0,0</position>
                     <showempty>yes</showempty>
                     <state type="full">
                         <imagetype name="marked">
-                            <filename>images/music/playlist_yes.png</filename>
+                            <filename>images/shared/LEDOn.png</filename>
                         </imagetype>
                     </state>
                 </statetype>
