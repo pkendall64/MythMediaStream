@@ -138,7 +138,7 @@
 
    <fontdef name="small_blue" from="small">
        <color>#105B8F</color>
-       <weight>bold</weight>
+<!--       <weight>bold</weight>-->
    </fontdef>
 
    <fontdef name="small_amber" from="small">
@@ -750,6 +750,7 @@
 <!-- ===================================================== -->
    <buttonlist name="buttonlist_popup">
        <area>0,0,300,580</area>
+       <searchposition>758,55</searchposition>
        <align>top,hcenter</align>
        <layout>vertical</layout>
        <wrapstyle>selection</wrapstyle>
@@ -822,6 +823,7 @@
 
    <buttonlist name="buttonlist_menu">
        <area>0,0,540,420</area>
+       <searchposition>758,55</searchposition>
        <align>top,hcenter</align>
        <layout>vertical</layout>
        <wrapstyle>selection</wrapstyle>
@@ -972,6 +974,7 @@
    <buttonlist name="buttonlist_wide">
        <area>0,0,660,420</area>
        <align>top,hcenter</align>
+       <searchposition>758,55</searchposition>
        <layout>vertical</layout>
        <wrapstyle>selection</wrapstyle>
        <arrange>stack</arrange>
@@ -1048,6 +1051,7 @@
    <buttonlist name="buttonlist_menu_2">
        <area>0,0,190,520</area>
        <align>top,left</align>
+       <searchposition>758,55</searchposition>
        <layout>vertical</layout>
        <wrapstyle>selection</wrapstyle>
        <arrange>stack</arrange>
@@ -1092,6 +1096,7 @@
    <buttonlist name="buttonlist_browse">
        <spacing>25</spacing>
        <area>0,0,1280,215</area>
+       <searchposition>758,55</searchposition>
        <layout>horizontal</layout>
        <scrollstyle>center</scrollstyle>
        <arrange>stack</arrange>
@@ -1181,6 +1186,7 @@
    <buttonlist name="buttonlist_gallery">
        <spacing>0</spacing>
        <area>0,0,800,450</area>
+       <searchposition>758,55</searchposition>
        <layout>grid</layout>
        <scrollstyle>free</scrollstyle>
        <arrange>stack</arrange>
@@ -2378,6 +2384,50 @@
             <position>790,210</position>
             <value>Cancel</value>
         </button>
+    </window>
+
+    <!-- Popup search dialog used to search button lists -->
+    <window name="MythSearchListDialog" from="dialog_base">
+       <area>758,55,512,152</area>
+       <imagetype name="DialogProgressBG">
+           <area>0,0,512,152</area>
+           <filename>images/shared/DialogProgressBG.png</filename>
+       </imagetype>
+        <textarea name="title" from="textarea_base">
+            <area>0,10,512,40</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+            <value>Search List</value>
+        </textarea>
+       <textedit name="searchedit" from="textedit_menu_wide">
+           <position>10,50</position>
+       </textedit>
+       <button name="prevbutton" from="button_base">
+           <position>240,95</position>
+           <value>Previous</value>
+       </button>
+       <button name="nextbutton" from="button_base">
+           <position>370,95</position>
+           <value>Next</value>
+       </button>
+
+        <statetype name="searchstate">
+            <area>30,100,200,35</area>
+            <state name="found">
+                <textarea name="statustext" from="textarea_base">
+                    <area>0,0,200,30</area>
+                    <font>normal_amber</font>
+                    <value>Found</value>
+                </textarea>
+            </state>
+            <state name="notfound">
+                <textarea name="statustext" from="textarea_base">
+                    <area>0,0,200,30</area>
+                    <font>normal_red</font>
+                    <value>Not Found</value>
+                </textarea>
+            </state>
+        </statetype>
     </window>
 
 

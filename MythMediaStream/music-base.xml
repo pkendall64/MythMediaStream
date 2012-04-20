@@ -376,7 +376,7 @@
 
      <buttonlist name="basecurrentplaylist" from="buttonlist_menu_details_permanent">
          <position>740,260</position>
-         <searchposition>-1,100</searchposition>
+         <searchposition>758,55</searchposition>
          <statetype name="buttonitem">
              <state name="active">
                  <textarea name="title" from="textarea_base">
@@ -549,14 +549,14 @@
     </textarea>
 
     <buttonlist name="basetreebuttonlist" from="basebuttonlist">
-        <searchposition>-1,430</searchposition>
+        <searchposition>758,55</searchposition>
     </buttonlist>
 
     <buttonlist name="basegallerybuttonlist">
         <area>0,0,800,450</area>
         <layout>grid</layout>
         <spacing>0</spacing>
-        <searchposition>-1,430</searchposition>
+        <searchposition>758,55</searchposition>
         <scrollstyle>free</scrollstyle>
         <arrange>stack</arrange>
         <align>left,top</align>

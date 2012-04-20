@@ -12,23 +12,23 @@ MythArchive GUI theme
             <filename>images/backgrounds/harddisk.jpg</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
-            <filename>Media/HomeBladeLeft.png</filename>
+            <filename>images/shared/HomeBladeLeft.png</filename>
             <area>-600,0,846,720</area>
         </imagetype> 
         <imagetype name="Menu_Overlay">
             <area>1045,0,235,720</area> 
-            <filename>Media/HomeRightOverlay.png</filename>
+            <filename>images/shared/HomeRightOverlay.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub3">
-            <filename>Media/BlackTransparent.png</filename>
+            <filename>images/shared/BlackTransparent.png</filename>
             <area>238,0,550,720</area>
         </imagetype> 
         <imagetype name="Menu_background_Sub4">
-            <filename>Media/HomeBladeSub.png</filename>
+            <filename>images/shared/HomeBladeSub.png</filename>
             <area>240,0,560,720</area>
         </imagetype> 
         <imagetype name="Menu_background_Sub5">
-            <filename>Media/HomeBladeSub.png</filename>
+            <filename>images/shared/HomeBladeSub.png</filename>
             <area>788,0,200,720</area>
         </imagetype>
 
@@ -124,23 +124,23 @@ MythArchive GUI theme
             <filename>images/backgrounds/harddisk.jpg</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
-            <filename>Media/HomeBladeLeft.png</filename>
+            <filename>images/shared/HomeBladeLeft.png</filename>
             <area>-600,0,846,720</area>
         </imagetype> 
         <imagetype name="Menu_Overlay">
             <area>1045,0,235,720</area> 
-            <filename>Media/HomeRightOverlay.png</filename>
+            <filename>images/shared/HomeRightOverlay.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub3">
-            <filename>Media/BlackTransparent.png</filename>
+            <filename>images/shared/BlackTransparent.png</filename>
             <area>238,0,550,720</area>
         </imagetype> 
         <imagetype name="Menu_background_Sub4">
-            <filename>Media/HomeBladeSub.png</filename>
+            <filename>images/shared/HomeBladeSub.png</filename>
             <area>240,0,560,720</area>
         </imagetype> 
         <imagetype name="Menu_background_Sub5">
-            <filename>Media/HomeBladeSub.png</filename>
+            <filename>images/shared/HomeBladeSub.png</filename>
             <area>788,0,200,720</area>
         </imagetype>
 
@@ -201,7 +201,7 @@ MythArchive GUI theme
         </imagetype>
 
         <imagetype name="intro_image_cover" from="intro_image">
-            <filename>Media/ButtonMenuGlass.png</filename>
+            <filename>images/shared/ButtonMenuGlass.png</filename>
             <alpha>128</alpha>
         </imagetype>
 
@@ -222,7 +222,7 @@ MythArchive GUI theme
         </imagetype>
 
         <imagetype name="mainmenu_image_cover" from="mainmenu_image">
-            <filename>Media/ButtonMenuGlass.png</filename>
+            <filename>images/shared/ButtonMenuGlass.png</filename>
             <alpha>128</alpha>
         </imagetype>
 
@@ -240,7 +240,7 @@ MythArchive GUI theme
         </imagetype>
 
         <imagetype name="chapter_image_cover" from="chapter_image">
-            <filename>Media/ButtonMenuGlass.png</filename>
+            <filename>images/shared/ButtonMenuGlass.png</filename>
             <alpha>128</alpha>
         </imagetype>
 
@@ -258,7 +258,7 @@ MythArchive GUI theme
         </imagetype>
 
         <imagetype name="details_image_cover" from="details_image">
-            <filename>Media/ButtonMenuGlass.png</filename>
+            <filename>images/shared/ButtonMenuGlass.png</filename>
             <alpha>128</alpha>
         </imagetype>
 
@@ -320,23 +320,23 @@ MythArchive GUI theme
             <filename>images/backgrounds/harddisk.jpg</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
-            <filename>Media/HomeBladeLeft.png</filename>
+            <filename>images/shared/HomeBladeLeft.png</filename>
             <area>-600,0,846,720</area>
         </imagetype> 
         <imagetype name="Menu_Overlay">
             <area>1045,0,235,720</area> 
-            <filename>Media/HomeRightOverlay.png</filename>
+            <filename>images/shared/HomeRightOverlay.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub3">
-            <filename>Media/BlackTransparent.png</filename>
+            <filename>images/shared/BlackTransparent.png</filename>
             <area>238,0,550,720</area>
         </imagetype> 
         <imagetype name="Menu_background_Sub4">
-            <filename>Media/HomeBladeSub.png</filename>
+            <filename>images/shared/HomeBladeSub.png</filename>
             <area>240,0,560,720</area>
         </imagetype> 
         <imagetype name="Menu_background_Sub5">
-            <filename>Media/HomeBladeSub.png</filename>
+            <filename>images/shared/HomeBladeSub.png</filename>
             <area>788,0,200,720</area>
         </imagetype>
 
@@ -380,15 +380,15 @@ MythArchive GUI theme
                     <area>0,0,510,80</area>
                     <imagetype name="MenuItemNF">
                         <area>0,0,510,40</area>
-                        <filename>Media/MenuItemNF.png</filename>
+                        <filename>images/shared/MenuItemNF.png</filename>
                     </imagetype>
                     <imagetype name="MenuItemFO">
                         <area>0,0,490,40</area>
-                        <filename>Media/MenuItemFO.png</filename>
+                        <filename>images/shared/MenuItemFO.png</filename>
                     </imagetype>
                    <imagetype name="MediaItemDetailBG">
                         <area>350,5,160,30</area>
-                        <filename>Media/MediaItemDetailBG.png</filename>
+                        <filename>images/shared/MediaItemDetailBG.png</filename>
                     </imagetype>
                     <textarea name="buttontext">
                         <area>10,0,335,40</area>
@@ -403,20 +403,20 @@ MythArchive GUI theme
                         <state name="none">
                             <imagetype name="statusimage">
                                 <area>0,0,22,22</area>
-                                <filename>Media/OSDVideoNF.png</filename>
+                                <filename>images/shared/OSDVideoNF.png</filename>
                             </imagetype>
                         </state>
                         <state name="using">
                             <imagetype name="statusimage">
                                 <area>0,0,22,22</area>
-                                <filename>Media/OSDVideoFO.png</filename>
+                                <filename>images/shared/OSDVideoFO.png</filename>
                             </imagetype>
                         </state>
                         <state name="notusing">
                             <area>0,9,22,22</area>
                             <imagetype name="statusimage">
                                 <area>0,0,22,22</area>
-                                <filename>Media/OSDVideoNF.png</filename>
+                                <filename>images/shared/OSDVideoNF.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
@@ -432,11 +432,11 @@ MythArchive GUI theme
                         <state name="on">
                             <imagetype name="statusimageup">
                                 <area>0,0,11,11</area>
-                                <filename>Media/ArrowUpFO.png</filename>
+                                <filename>images/shared/ArrowUpFO.png</filename>
                             </imagetype>
                             <imagetype name="statusimagedown">
                                 <area>0,11,11,11</area>
-                                <filename>Media/ArrowDownFO.png</filename>
+                                <filename>images/shared/ArrowDownFO.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
@@ -565,23 +565,23 @@ MythArchive GUI theme
             <filename>images/backgrounds/harddisk.jpg</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
-            <filename>Media/HomeBladeLeft.png</filename>
+            <filename>images/shared/HomeBladeLeft.png</filename>
             <area>-600,0,846,720</area>
         </imagetype> 
         <imagetype name="Menu_Overlay">
             <area>1045,0,235,720</area> 
-            <filename>Media/HomeRightOverlay.png</filename>
+            <filename>images/shared/HomeRightOverlay.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub3">
-            <filename>Media/BlackTransparent.png</filename>
+            <filename>images/shared/BlackTransparent.png</filename>
             <area>238,0,550,720</area>
         </imagetype> 
         <imagetype name="Menu_background_Sub4">
-            <filename>Media/HomeBladeSub.png</filename>
+            <filename>images/shared/HomeBladeSub.png</filename>
             <area>240,0,560,720</area>
         </imagetype> 
         <imagetype name="Menu_background_Sub5">
-            <filename>Media/HomeBladeSub.png</filename>
+            <filename>images/shared/HomeBladeSub.png</filename>
             <area>788,0,200,720</area>
         </imagetype>
 
@@ -678,23 +678,23 @@ MythArchive GUI theme
             <filename>images/backgrounds/harddisk.jpg</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
-            <filename>Media/HomeBladeLeft.png</filename>
+            <filename>images/shared/HomeBladeLeft.png</filename>
             <area>-600,0,846,720</area>
         </imagetype> 
         <imagetype name="Menu_Overlay">
             <area>1045,0,235,720</area> 
-            <filename>Media/HomeRightOverlay.png</filename>
+            <filename>images/shared/HomeRightOverlay.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub3">
-            <filename>Media/BlackTransparent.png</filename>
+            <filename>images/shared/BlackTransparent.png</filename>
             <area>238,0,550,720</area>
         </imagetype> 
         <imagetype name="Menu_background_Sub4">
-            <filename>Media/HomeBladeSub.png</filename>
+            <filename>images/shared/HomeBladeSub.png</filename>
             <area>240,0,560,720</area>
         </imagetype> 
         <imagetype name="Menu_background_Sub5">
-            <filename>Media/HomeBladeSub.png</filename>
+            <filename>images/shared/HomeBladeSub.png</filename>
             <area>788,0,200,720</area>
         </imagetype>
 
@@ -797,7 +797,7 @@ MythArchive GUI theme
 
         <imagetype name="arrowup">
             <area>495,270,20,20</area>
-            <filename>Media/ArrowUpFO.png</filename>
+            <filename>images/shared/ArrowUpFO.png</filename>
         </imagetype>
 
         <textarea name="arrowdownlbl" from="textarea_base">
@@ -810,7 +810,7 @@ MythArchive GUI theme
 
         <imagetype name="arrowdown" from="arrowup">
             <position>495,450</position>
-            <filename>Media/ArrowDownFO.png</filename>
+            <filename>images/shared/ArrowDownFO.png</filename>
         </imagetype>
 
         <textarea name="arrowleftlbl" from="textarea_base">
@@ -823,7 +823,7 @@ MythArchive GUI theme
 
         <imagetype name="arrowleft" from="arrowup">
             <position>345,362</position>
-            <filename>Media/ArrowLeftFO.png</filename>
+            <filename>images/shared/ArrowLeftFO.png</filename>
         </imagetype>
 
         <textarea name="arrowrightlbl" from="textarea_base">
@@ -836,7 +836,7 @@ MythArchive GUI theme
 
         <imagetype name="arrowright" from="arrowup">
             <position>643,362</position>
-            <filename>Media/ArrowRightFO.png</filename>
+            <filename>images/shared/ArrowRightFO.png</filename>
         </imagetype>
 
         <imagetype name="positionimage">
