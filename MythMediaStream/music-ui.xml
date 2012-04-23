@@ -1400,202 +1400,239 @@
     </window>
 
     <window name="editmetadata">
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/MediaStreamMusicBGD.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
 
-        <textarea name="title" from="basetextarea">
-            <area>15,5,800,50</area>
-            <font>baselarge</font>
-            <value>Edit Track Information</value>
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Edit meta data of your music</value>
         </textarea>
 
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Track Information</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
         <!-- Labels -->
 
-        <textarea name="compilation_label" >
-            <area>164,106,250,30</area>
-            <font>basemedium</font>
-            <align>right</align>
+        <textarea name="compilation_label" from="textarea_base">
+            <area>250,175,510,35</area>
             <value>Compilation:</value>
         </textarea>
 
         <textarea name="compilation_artist_label" from="compilation_label">
-            <area>164,156,250,30</area>
+            <position>250,210</position>
             <value>Comp. Artist:</value>
         </textarea>
 
         <textarea name="artist_label" from="compilation_label">
-            <area>164,211,250,30</area>
+            <position>250,245</position>
             <value>Artist:</value>
         </textarea>
 
         <textarea name="album_label" from="compilation_label">
-            <area>164,266,250,30</area>
+            <position>250,280</position>
             <value>Album:</value>
         </textarea>
 
+        <textarea name="genre_label" from="compilation_label">
+            <position>250,315</position>
+            <value>Genre:</value>
+        </textarea>
+
         <textarea name="title_text" from="compilation_label">
-            <area>164,321,250,30</area>
+            <position>250,350</position>
             <value>Title:</value>
         </textarea>
 
         <textarea name="track_label" from="compilation_label">
-            <area>164,376,250,30</area>
-            <value>Track No.:</value>
-        </textarea>
-
-        <textarea name="genre_label" from="compilation_label">
-            <area>164,431,250,30</area>
-            <value>Genre:</value>
+            <position>250,385</position>
+            <value>Track Number:</value>
         </textarea>
 
         <textarea name="year_label" from="compilation_label">
-            <area>164,486,250,30</area>
+            <position>250,420</position>
             <value>Year:</value>
         </textarea>
 
         <textarea name="rating_label" from="compilation_label">
-            <area>164,541,250,30</area>
+            <position>250,455</position>
             <value>Rating:</value>
+        </textarea>
+
+        <textarea name="artisticon_label" from="compilation_label">
+            <area>250,675,150,25</area>
+            <align>allcenter</align>
+            <font>tiny</font>
+            <value>Artist Art</value>
+        </textarea>
+
+        <textarea name="albumicon_label" from="artisticon_label">
+            <position>430,675</position>
+            <value>Album Art</value>
+        </textarea>
+
+        <textarea name="genreicon_label" from="artisticon_label">
+            <position>610,675</position>
+            <value>Genre Art</value>
         </textarea>
 
         <!-- edits -->
 
-        <checkbox name="compilationcheck" from="basecheckbox">
-            <position>424,106</position>
+        <checkbox name="compilationcheck" from="checkbox_menu">
+            <position>420,175</position>
         </checkbox>
 
-        <textedit name="compartistedit" from="basetextedit">
-            <position>424,146</position>
+        <textedit name="compartistedit" from="textedit_menu">
+            <position>420,210</position>
         </textedit>
 
-        <button name="searchcompartistbutton">
-            <area>820,156,32,32</area>
-            <statetype name="buttonstate">
-                <state name="active">
-                    <imagetype name="background">
-                        <filename>blankbutton_off.png</filename>
-                    </imagetype>
-                </state>
-                <state name="selected" from="active">
-                    <imagetype name="background">
-                        <filename>blankbutton_on.png</filename>
-                    </imagetype>
-                </state>
-                <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <imagetype name="background">
-                        <filename>blankbutton_pushed.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
+        <textarea name="searchlbl" from="textarea_base">
+            <area>790,175,180,35</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <align>right,bottom</align>
+            <value>Search</value>
+        </textarea>
+
+        <button name="searchcompartistbutton" from="button_base_menu">
+            <position>790,210</position>
+            <value>Comp. Artist</value>
         </button>
 
-        <textedit name="artistedit" from="basetextedit">
-            <position>424,201</position>
+        <textedit name="artistedit" from="textedit_menu">
+            <position>420,245</position>
         </textedit>
 
-        <button name="searchartistbutton" from="searchcompartistbutton">
-            <position>820,211</position>
+        <button name="searchartistbutton" from="button_base_menu">
+            <position>790,245</position>
+            <value>Artist</value>
+        </button>
+
+        <textedit name="albumedit" from="textedit_base">
+            <position>420,280</position>
+        </textedit>
+
+        <button name="searchalbumbutton" from="button_base_menu">
+            <position>790,280</position>
+            <value>Album</value>
+        </button>
+
+        <textedit name="genreedit" from="textedit_menu">
+            <position>420,315</position>
+        </textedit>
+
+        <button name="searchgenrebutton" from="button_base_menu">
+            <position>790,315</position>
+            <value>Genre</value>
+        </button>
+
+        <textedit name="titleedit" from="textedit_menu">
+            <position>420,350</position>
+        </textedit>
+
+        <spinbox name="tracknumspin" from="spinbox_menu">
+            <position>420,385</position>
+        </spinbox>
+
+        <spinbox name="yearspin" from="spinbox_menu">
+            <position>420,420</position>
+        </spinbox>
+
+        <statetype name="ratingstate" from="rating_base">
+            <position>420,455</position>
+        </statetype>
+
+        <textarea name="ratingchangelbl" from="textarea_base">
+            <area>790,385,180,35</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <align>right,bottom</align>
+            <value>Rating</value>
+        </textarea>
+
+        <button name="decratingbutton" from="button_base_menu">
+            <position>790,420</position>
+            <value>Decrease</value>
+        </button>
+
+        <button name="incratingbutton" from="button_base_menu">
+            <position>790,455</position>
+            <value>Increase</value>
         </button>
 
         <imagetype name="artisticon">
-            <area>870,201,50,50</area>
-            <filename>mm_artists.png</filename>
+            <area>250,525,150,150</area>
+            <filename>images/music/MM_Artists.png</filename>
         </imagetype>
 
-        <textedit name="albumedit" from="basetextedit">
-            <position>424,256</position>
-        </textedit>
-
-        <button name="searchalbumbutton" from="searchcompartistbutton">
-            <position>820,266</position>
-        </button>
-
-        <imagetype name="albumicon">
-            <area>870,256,50,50</area>
-            <filename>mm_albums.png</filename>
+        <imagetype name="albumicon" from="artisticon">
+            <position>430,525</position>
+            <filename>images/music/MM_Albums.png</filename>
         </imagetype>
 
-        <textedit name="titleedit" from="basetextedit">
-            <position>424,311</position>
-        </textedit>
-
-        <spinbox name="tracknumspin" from="basespinbox">
-            <position>424,371</position>
-            <template type="zero">N/A</template>
-        </spinbox>
-
-        <textedit name="genreedit" from="basetextedit">
-            <position>424,421</position>
-        </textedit>
-
-        <button name="searchgenrebutton" from="searchcompartistbutton">
-            <position>820,431</position>
-        </button>
-
-        <imagetype name="genreicon">
-            <area>870,421,50,50</area>
-            <filename>mm_genres.png</filename>
+        <imagetype name="genreicon" from="artisticon">
+            <position>610,525</position>
+            <filename>images/music/MM_Genres.png</filename>
         </imagetype>
 
-        <spinbox name="yearspin" from="basespinbox">
-            <position>424,481</position>
-            <template type="zero">N/A</template>
-        </spinbox>
+        <textarea name="navigatelbl" from="textarea_base">
+            <area>790,525,180,35</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <align>right,bottom</align>
+            <value>Navigation</value>
+        </textarea>
 
-        <statetype name="ratingstate" from="baseratingstate">
-            <position>504,546</position>
-        </statetype>
-
-        <button name="decratingbutton">
-            <area>455,526,60,60</area>
-            <statetype name="buttonstate">
-                <state name="active">
-                    <imagetype name="background">
-                        <filename>mm_prev_off.png</filename>
-                    </imagetype>
-                </state>
-                <state name="selected" from="active">
-                    <imagetype name="background">
-                        <filename>mm_prev_on.png</filename>
-                    </imagetype>
-                </state>
-                <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <imagetype name="background">
-                        <filename>mm_prev_pushed.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
-        </button>
-
-        <button name="incratingbutton">
-            <area>705,526,60,60</area>
-            <statetype name="buttonstate">
-                <state name="active">
-                    <imagetype name="background">
-                        <filename>mm_next_off.png</filename>
-                    </imagetype>
-                </state>
-                <state name="selected" from="active">
-                    <imagetype name="background">
-                        <filename>mm_next_on.png</filename>
-                    </imagetype>
-                </state>
-                <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <imagetype name="background">
-                        <filename>mm_next_pushed.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
-        </button>
-
-        <button name="albumartbutton" from="basebutton">
-            <position>100,650</position>
+        <button name="albumartbutton" from="button_base_menu">
+            <position>790,560</position>
             <value>Album Art</value>
         </button>
 
-        <button name="donebutton" from="basebutton">
-            <position>1000,650</position>
+        <button name="donebutton" from="button_base_menu">
+            <position>790,595</position>
             <value>Done</value>
         </button>
 
