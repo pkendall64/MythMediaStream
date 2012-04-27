@@ -1350,6 +1350,168 @@
        </statetype>
    </buttonlist>
 
+   <buttonlist name="selector_base_small">
+       <area>0,0,170,35</area>
+       <align>left,vcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,170,35</buttonarea>
+       <statetype name="buttonitem">
+           <area>0,0,175,35</area>
+           <!--ACTIVE-->
+           <state name="active">
+               <imagetype name="MenuItemNF">
+                   <area>-170,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,160,35</area>
+                   <font>normal</font>
+                   <alpha>128</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selectedactive">
+               <imagetype name="MenuItemNF">
+                   <area>-170,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="MenuItemFO">
+                   <area>0,0,165,35</area>
+                   <filename>images/shared/MenuItemFO.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,160,35</area>
+                   <font>normal</font>
+                   <alpha>255</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <!--INACTIVE-->
+           <state name="inactive" from="active">
+           <!--    <alpha>0</alpha>-->
+           </state>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="active">
+           <!--    <alpha>0</alpha>-->
+           </state>
+       </statetype>
+       <!--ARROWS-->
+       <statetype name="upscrollarrow">
+           <position>164,5</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowRightNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                    <filename>images/shared/ArrowRightFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+       <statetype name="downscrollarrow">
+           <position>164,20</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowLeftNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowLeftFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
+   <buttonlist name="selector_base_tiny">
+       <area>0,0,85,35</area>
+       <align>left,vcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,85,35</buttonarea>
+       <statetype name="buttonitem">
+           <area>0,0,88,35</area>
+           <!--ACTIVE-->
+           <state name="active">
+<!--               <imagetype name="MenuItemNF">
+                   <area>-170,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>-->
+               <textarea name="buttontext">
+                   <area>10,0,80,35</area>
+                   <font>normal</font>
+                   <alpha>128</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>hcenter,vcenter</align>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selectedactive">
+               <imagetype name="MenuItemNF">
+                   <area>-170,0,510,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="MenuItemFO">
+                   <area>0,0,83,35</area>
+                   <filename>images/shared/MenuItemFO.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,80,35</area>
+                   <font>normal</font>
+                   <alpha>255</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>hcenter,vcenter</align>
+               </textarea>
+           </state>
+           <!--INACTIVE-->
+           <state name="inactive" from="active">
+           <!--    <alpha>0</alpha>-->
+           </state>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="active">
+           <!--    <alpha>0</alpha>-->
+           </state>
+       </statetype>
+       <!--ARROWS-->
+       <statetype name="upscrollarrow">
+           <position>84,5</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowRightNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                    <filename>images/shared/ArrowRightFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+       <statetype name="downscrollarrow">
+           <position>84,20</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowLeftNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowLeftFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
    <buttonlist name="selector_base_wide">
        <area>0,0,510,35</area>
        <align>left,vcenter</align>
