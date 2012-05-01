@@ -2001,8 +2001,13 @@
         </spinbox>
 
         <!-- Push buttons -->
+        <button name="showresultsbutton" from="button_base_menu">
+            <position>790,245</position>
+            <value>Show Results</value>
+        </button>
+
         <textarea name="navigatelbl" from="textarea_base">
-            <area>790,280,180,35</area>
+            <area>790,315,180,35</area>
             <alpha>128</alpha>
             <font>title_small</font>         
             <align>right,bottom</align>
@@ -2010,13 +2015,8 @@
         </textarea>
 
         <button name="cancelbutton" from="button_base_menu">
-            <position>790,315</position>
-            <value>Cancel</value>
-        </button>
-
-        <button name="showresultsbutton" from="button_base_menu">
             <position>790,350</position>
-            <value>Show Results</value>
+            <value>Cancel</value>
         </button>
 
         <button name="savebutton" from="button_base_menu">
@@ -2028,43 +2028,110 @@
 
    <!-- popup to edit a smartplaylist criteria row -->
     <window name="criteriaroweditor">
-        <area>-1,-1,500,500</area>
-
-        <imagetype name="box">
-            <position>0,0</position>
-            <filename>mythdialogbox-background.png</filename>
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/MediaStreamMusicBGD.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
         </imagetype>
 
-        <textarea name="title" from="basetextarea">
-            <area>5,5,460,40</area>
-            <font>basemedium</font>
-            <align>allcenter</align>
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Edit your playlists with your favorite music</value>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
             <value>Edit Criteria</value>
         </textarea>
 
-        <buttonlist name="fieldselector" from="basemediumselector">
-            <position>40,60</position>
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+        <textarea name="fieldlbl"  from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Criteria:</value>
+        </textarea>
+
+        <buttonlist name="fieldselector" from="selector_base">
+            <position>420,175</position>
         </buttonlist>
 
-        <buttonlist name="operatorselector" from="basemediumselector">
-            <position>40,130</position>
+        <textarea name="operatorlbl" from="fieldlbl">
+            <position>250,210</position>
+            <value>Operator:</value>
+        </textarea>
+
+        <buttonlist name="operatorselector" from="selector_base">
+            <position>420,210</position>
         </buttonlist>
 
-        <textedit name="value1edit" from="basetextedit">
-            <position>40,200</position>
+        <textarea name="value1lbl" from="fieldlbl">
+            <position>250,245</position>
+            <value>First Value:</value>
+        </textarea>
+
+        <textedit name="value1edit" from="textedit_menu">
+            <position>420,245</position>
         </textedit>
 
-        <buttonlist name="value1selector" from="basemediumselector">
-            <position>40,203</position>
+        <buttonlist name="value1selector" from="selector_base">
+            <position>420,245</position>
         </buttonlist>
 
-        <spinbox name="value1spinbox" from="basespinbox">
-            <position>40,203</position>
+        <spinbox name="value1spinbox" from="spinbox_menu">
+            <position>420,245</position>
         </spinbox>
 
-        <button name="value1button" from="basesearchbutton">
-            <position>435,210</position>
+        <!-- Push buttons -->
+        <textarea name="searchlbl" from="textarea_base">
+            <area>790,175,180,35</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <align>right,bottom</align>
+            <value>Search</value>
+        </textarea>
+
+        <button name="value1button" from="button_base_menu">
+            <position>790,210</position>
+            <value>First Value</value>
         </button>
+
 <!--
         <textarea name="andlbl"  from="basetextarea">
             <area>40,235,376,50</area>
@@ -2072,33 +2139,46 @@
             <value>And</value>
         </textarea>
         -->
-        <textedit name="value2edit" from="basetextedit">
-            <position>40,270</position>
+        <textarea name="value2lbl" from="fieldlbl">
+            <position>250,280</position>
+            <value>Second Value:</value>
+        </textarea>
+
+        <textedit name="value2edit" from="textedit_menu">
+            <position>420,280</position>
         </textedit>
 
-        <buttonlist name="value2selector" from="basemediumselector">
-            <position>40,273</position>
+        <buttonlist name="value2selector" from="selector_base">
+            <position>420,280</position>
         </buttonlist>
 
-        <spinbox name="value2spinbox" from="basespinbox">
-            <position>40,273</position>
+        <spinbox name="value2spinbox" from="spinbox_menu">
+            <position>420,280</position>
         </spinbox>
 
-        <button name="value2button" from="basesearchbutton">
-            <position>435,280</position>
+        <button name="value2button" from="button_base_menu">
+            <position>790,245</position>
+            <value>Second Value</value>
         </button>
 
         <!-- Push buttons -->
-        <button name="cancelbutton" from="basebutton">
-            <position>20,430</position>
+        <textarea name="navigatelbl" from="textarea_base">
+            <area>790,315,180,35</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <align>right,bottom</align>
+            <value>Navigation</value>
+        </textarea>
+
+        <button name="cancelbutton" from="button_base_menu">
+            <position>790,350</position>
             <value>Cancel</value>
         </button>
 
-        <button name="savebutton" from="basebutton">
-            <position>320,430</position>
+        <button name="savebutton" from="button_base_menu">
+            <position>790,385</position>
             <value>Save</value>
         </button>
-
     </window>
 
     <!-- popup to edit the date in a smartplaylist criteria row -->
