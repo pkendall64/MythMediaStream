@@ -2093,29 +2093,29 @@
         </buttonlist>
 
         <textarea name="operatorlbl" from="fieldlbl">
-            <position>250,210</position>
+            <position>250,245</position>
             <value>Operator:</value>
         </textarea>
 
         <buttonlist name="operatorselector" from="selector_base">
-            <position>420,210</position>
+            <position>420,245</position>
         </buttonlist>
 
         <textarea name="value1lbl" from="fieldlbl">
-            <position>250,245</position>
+            <position>250,315</position>
             <value>First Value:</value>
         </textarea>
 
         <textedit name="value1edit" from="textedit_menu">
-            <position>420,245</position>
+            <position>420,315</position>
         </textedit>
 
         <buttonlist name="value1selector" from="selector_base">
-            <position>420,245</position>
+            <position>420,315</position>
         </buttonlist>
 
         <spinbox name="value1spinbox" from="spinbox_menu">
-            <position>420,245</position>
+            <position>420,315</position>
         </spinbox>
 
         <!-- Push buttons -->
@@ -2124,7 +2124,7 @@
             <alpha>128</alpha>
             <font>title_small</font>         
             <align>right,bottom</align>
-            <value>Search</value>
+            <value>Set</value>
         </textarea>
 
         <button name="value1button" from="button_base_menu">
@@ -2140,20 +2140,20 @@
         </textarea>
         -->
         <textarea name="value2lbl" from="fieldlbl">
-            <position>250,280</position>
+            <position>250,395</position>
             <value>Second Value:</value>
         </textarea>
 
         <textedit name="value2edit" from="textedit_menu">
-            <position>420,280</position>
+            <position>420,395</position>
         </textedit>
 
         <buttonlist name="value2selector" from="selector_base">
-            <position>420,280</position>
+            <position>420,395</position>
         </buttonlist>
 
         <spinbox name="value2spinbox" from="spinbox_menu">
-            <position>420,280</position>
+            <position>420,395</position>
         </spinbox>
 
         <button name="value2button" from="button_base_menu">
@@ -2183,280 +2183,287 @@
 
     <!-- popup to edit the date in a smartplaylist criteria row -->
     <window name="dateeditordialog">
-        <area>-1,-1,500,500</area>
-
-        <imagetype name="box">
-            <position>0,0</position>
-            <filename>mythdialogbox-background.png</filename>
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/MediaStreamMusicBGD.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
         </imagetype>
 
-        <textarea name="title" from="basetextarea">
-            <area>5,5,460,40</area>
-            <font>basemedium</font>
-            <align>allcenter</align>
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Edit your playlists with your favorite music</value>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
             <value>Edit Date</value>
         </textarea>
 
-        <textarea name="fixeddatelbl"  from="basetextarea">
-            <area>90,70,170,30</area>
-            <align>left,vcenter</align>
-            <value>Fixed Date</value>
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+
+        <textarea name="fixeddatelbl"  from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Fixed Date:</value>
         </textarea>
 
-        <checkbox name="fixeddatecheck" from="basecheckbox">
-            <position>50,70</position>
+        <checkbox name="fixeddatecheck" from="checkbox_menu">
+            <position>420,175</position>
         </checkbox>
 
         <textarea name="daylbl"  from="fixeddatelbl">
-            <position>50,125</position>
-            <value>Day</value>
+            <position>250,210</position>
+            <value>Day:</value>
         </textarea>
 
-        <spinbox name="dayspinbox" from="basespinbox">
-            <position>50,153</position>
+        <spinbox name="dayspinbox" from="spinbox_menu">
+            <position>420,210</position>
         </spinbox>
 
         <textarea name="monthlbl"  from="fixeddatelbl">
-            <position>200,125</position>
-            <value>Month</value>
+            <position>250,245</position>
+            <value>Month:</value>
         </textarea>
 
-        <spinbox name="monthspinbox" from="basespinbox">
-            <position>200,153</position>
+        <spinbox name="monthspinbox" from="spinbox_menu">
+            <position>420,245</position>
         </spinbox>
 
         <textarea name="yearlbl"  from="fixeddatelbl">
-            <position>350,125</position>
-            <value>Year</value>
+            <position>250,280</position>
+            <value>Year:</value>
         </textarea>
 
-        <spinbox name="yearspinbox" from="basespinbox">
-            <position>350,153</position>
+        <spinbox name="yearspinbox" from="spinbox_menu">
+            <position>420,280</position>
         </spinbox>
 
         <textarea name="nowlbl"  from="fixeddatelbl">
-            <area>90,270,300,30</area>
-            <value>Use Current Date</value>
+            <position>250,350</position>
+            <value>Use Current Date:</value>
         </textarea>
 
-        <checkbox name="nowcheck" from="basecheckbox">
-            <position>50,270</position>
+        <checkbox name="nowcheck" from="checkbox_menu">
+            <position>420,350</position>
         </checkbox>
 
         <textarea name="adddayslbl"  from="fixeddatelbl">
-            <area>50,315,240,30</area>
-            <align>right</align>
-            <value>+/- Days</value>
+            <position>250,385</position>
+            <value>+/- Days:</value>
         </textarea>
 
-        <spinbox name="adddaysspinbox" from="basespinbox">
-            <position>300,310</position>
+        <spinbox name="adddaysspinbox" from="spinbox_menu">
+            <position>420,385</position>
         </spinbox>
 
-        <shape name="matchesbackground">
-            <area>50,380,400,40</area>
-            <type>roundbox</type>
-            <line color="#000000" alpha="100" width="1" />
-            <fill color="#000000" alpha="50" />
-            <cornerradius>4</cornerradius>
-        </shape>
+        <textarea name="statustextlbl"  from="fixeddatelbl">
+            <position>250,455</position>
+            <value>Result:</value>
+        </textarea>
 
-        <textarea name="statustext">
-            <area>50,380,400,40</area>
-            <font>basesmall_normal</font>
-            <font state="valid">basesmall_running</font>
-            <font state="error">basesmall_error</font>
-            <align>allcenter</align>
+        <textarea name="statustext" from="fixeddatelbl">
+            <position>420,455</position>
+            <font>normal</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <font state="valid">normal_running</font>
+            <font state="error">normal_error</font>
         </textarea>
 
         <!-- Push buttons -->
-        <button name="cancelbutton" from="basebutton">
-            <position>20,430</position>
+        <textarea name="navigatelbl" from="textarea_base">
+            <area>790,315,180,35</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <align>right,bottom</align>
+            <value>Navigation</value>
+        </textarea>
+
+        <button name="cancelbutton" from="button_base_menu">
+            <position>790,350</position>
             <value>Cancel</value>
         </button>
 
-        <button name="okbutton" from="basebutton">
-            <position>320,430</position>
-            <value>OK</value>
+        <button name="okbutton" from="button_base_menu">
+            <position>790,385</position>
+            <value>Save</value>
         </button>
 
     </window>
 
     <!-- popup to edit the smartplaylist order by clause-->
     <window name="orderbydialog">
-        <area>-1,-1,470,500</area>
-
-        <imagetype name="box">
-            <area>0,0,470,500</area>
-            <filename>mythdialogbox-background.png</filename>
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/MediaStreamMusicBGD.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
         </imagetype>
 
-        <textarea name="title" from="basetextarea">
-            <area>5,5,460,40</area>
-            <font>basemedium</font>
-            <align>allcenter</align>
-            <value>Order By Fields</value>
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Edit your playlists with your favorite music</value>
         </textarea>
 
-        <buttonlist name="fieldlist">
-            <area>20,50,420,210</area>
-            <spacing>0</spacing>
-            <layout>vertical</layout>
-            <arrange>stack</arrange>
-            <showarrow>no</showarrow>
-            <buttonarea>0,0,420,150</buttonarea>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,420,46</area>
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Order by Fields</value>
+        </textarea>
 
-                    <statetype name="sortstate">
-                        <position>3,7</position>
-                        <state name="ascending">
-                            <imagetype name="statusimage">
-                                <filename>mm_ascending.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="descending">
-                            <imagetype name="statusimage">
-                                <filename>mm_descending.png</filename>
-                            </imagetype>
-                        </state>
-                    </statetype>
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+        <textarea name="fieldlistlbl"  from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Fields:</value>
+        </textarea>
 
-                    <textarea name="buttontext">
-                        <area>40,0,360,46</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
-                    </textarea>
-
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,420,46</area>
-                    <shape name="selectbar">
-                        <area>0,0,420,46</area>
-                        <type>roundbox</type>
-                        <line color="#00FF00" alpha="255" width="1" />
-                        <fill color="#43b038" alpha="128" />
-                        <cornerradius>4</cornerradius>
-                    </shape>
-                    <statetype name="sortstate">
-                        <position>3,7</position>
-                        <state name="ascending">
-                            <imagetype name="statusimage">
-                                <filename>mm_ascending.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="descending">
-                            <imagetype name="statusimage">
-                                <filename>mm_descending.png</filename>
-                            </imagetype>
-                        </state>
-                    </statetype>
-                    <textarea name="buttontext">
-                        <area>40,0,360,46</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="selectedactive">
-                    <shape name="selectbar">
-                        <area>0,0,420,46</area>
-                        <type>roundbox</type>
-                        <line color="#00FF00" alpha="100" width="1" />
-                        <fill color="#43b038" alpha="50" />
-                        <cornerradius>4</cornerradius>
-                    </shape>
-                    <statetype name="sortstate">
-                        <position>3,7</position>
-                        <state name="ascending">
-                            <imagetype name="statusimage">
-                                <filename>mm_ascending.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="descending">
-                            <imagetype name="statusimage">
-                                <filename>mm_descending.png</filename>
-                            </imagetype>
-                        </state>
-                    </statetype>
-                    <textarea name="buttontext">
-                        <area>40,0,360,46</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
-                    </textarea>
-                </state>
-            </statetype>
+        <buttonlist name="fieldlist" from="buttonlist_dialog_wide_permanent">
+            <area>250,210,510,220</area>
+            <buttonarea>0,0,510,200</buttonarea>
             <statetype name="upscrollarrow">
-                <position>360,145</position>
-                <state type="off">
-                    <imagetype name="upon">
-                        <filename>lb-uparrow-reg.png</filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="upoff">
-                        <filename>lb-uparrow-sel.png</filename>
-                    </imagetype>
-                </state>
+                <position>10,204</position>	
             </statetype>
             <statetype name="downscrollarrow">
-                <position>390,145</position>
-                <state type="off">
-                    <imagetype name="dnon">
-                        <filename>lb-dnarrow-reg.png</filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="dnoff">
-                        <filename>lb-dnarrow-sel.png</filename>
-                    </imagetype>
-                </state>
+                <position>30,204</position>	
             </statetype>
         </buttonlist>
 
-        <buttonlist name="fieldselector" from="baseselector">
-            <area>20,230,420,44</area>
+        <textarea name="newfieldlbl"  from="fieldlistlbl">
+            <position>250,455</position>
+            <value>New Field:</value>
+        </textarea>
+
+        <buttonlist name="fieldselector" from="selector_base">
+            <position>420,455</position>
         </buttonlist>
 
-
         <!-- Push buttons -->
-        <button name="addbutton" from="basebutton">
-            <area>20,280,200,44</area>
+        <textarea name="actionlbl" from="textarea_base">
+            <area>790,140,180,35</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <align>right,bottom</align>
+            <value>Actions</value>
+        </textarea>
+
+        <button name="addbutton" from="button_base_menu">
+            <position>790,175</position>
             <value>Add</value>
         </button>
 
-        <button name="deletebutton" from="addbutton">
-            <position>240,280</position>
+        <button name="deletebutton" from="button_base_menu">
+            <position>790,210</position>
             <value>Delete</value>
         </button>
 
-        <button name="moveupbutton" from="addbutton">
-            <position>20,330</position>
+        <button name="moveupbutton" from="button_base_menu">
+            <position>790,245</position>
             <value>Move Up</value>
         </button>
 
-        <button name="movedownbutton" from="addbutton">
-            <position>240,330</position>
+        <button name="movedownbutton" from="button_base_menu">
+            <position>790,280</position>
             <value>Move Down</value>
         </button>
 
-        <button name="ascendingbutton" from="addbutton">
-            <position>20,380</position>
+        <button name="ascendingbutton" from="button_base_menu">
+            <position>790,315</position>
             <value>Ascending</value>
         </button>
 
-        <button name="descendingbutton" from="addbutton">
-            <position>240,380</position>
+        <button name="descendingbutton" from="button_base_menu">
+            <position>790,350</position>
             <value>Descending</value>
         </button>
 
-        <button name="cancelbutton" from="addbutton">
-            <position>20,430</position>
+        <textarea name="navigatelbl" from="textarea_base">
+            <area>790,420,180,35</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <align>right,bottom</align>
+            <value>Navigation</value>
+        </textarea>
+
+        <button name="cancelbutton" from="button_base_menu">
+            <position>790,455</position>
             <value>Cancel</value>
         </button>
 
-        <button name="okbutton" from="addbutton">
-            <position>240,430</position>
+        <button name="okbutton" from="button_base_menu">
+            <position>790,490</position>
             <value>Save</value>
         </button>
 
