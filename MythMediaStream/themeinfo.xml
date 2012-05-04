@@ -21,7 +21,7 @@
 
     <detail>
         <thumbnail name="preview">preview.png</thumbnail>
-        <description>Port of the XBMC MediaStream skin: The theme has been made to look like the original XBMC skin were posible using its graphics and art design. Use the matching menu structure in the MythMediaStreamMenu folder as this theme its menu lay-out is custom tailored for this particular menu: Other menus in MythTV will give you unreadable menu items.</description>
+        <description>Based on MediaStream: The theme has been made to look like the original XBMC skin were posible using its graphics and art design. Works best with the matching menu structure in the MythMediaStreamMenu folder as this theme its menu lay-out is tailored for this particular menu: Other menus in MythTV will give you unreadable menu items.</description>
         <errata>Plugins done: MythMusic, MythNetVision, MythWeather, MythNews, MythGallery</errata>
     </detail>
 </themeinfo>
