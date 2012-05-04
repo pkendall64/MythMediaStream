@@ -1129,7 +1129,7 @@
                            <area>0,0,110,150</area>
                            <alpha>255</alpha>
                            <filename>images/shared/DefaultFolderBack.png</filename>
-                           <preserveaspect>no</preserveaspect>
+                           <preserveaspect>yes</preserveaspect>
                        </imagetype>
                    </state>
                </statetype>
@@ -1142,7 +1142,7 @@
                <imagetype name="buttonimage">
                    <area>0,0,150,205</area>
                    <alpha>255</alpha>
-                   <preserveaspect>no</preserveaspect>
+                   <preserveaspect>yes</preserveaspect>
                    <filename>images/shared/Take2RaspberryLong.png</filename>
                </imagetype>
                <statetype name="nodetype">
@@ -1160,7 +1160,7 @@
                            <area>0,0,150,205</area>
                            <alpha>255</alpha>
                            <filename>images/shared/DefaultFolderBack.png</filename>
-                           <preserveaspect>no</preserveaspect>
+                           <preserveaspect>yes</preserveaspect>
                        </imagetype>
                    </state>
                </statetype>
@@ -1218,7 +1218,7 @@
                            <area>10,19,90,122</area>
                            <alpha>255</alpha>
                            <filename>images/shared/DefaultFolderBack.png</filename>
-                           <preserveaspect>no</preserveaspect>
+                           <preserveaspect>yes</preserveaspect>
                        </imagetype>
                    </state>
                </statetype>
@@ -1231,7 +1231,7 @@
                <imagetype name="buttonimage">
                    <area>0,0,120,164</area>
                    <alpha>255</alpha>
-                   <preserveaspect>no</preserveaspect>
+                   <preserveaspect>yes</preserveaspect>
                    <filename>images/shared/Take2RaspberryLong.png</filename>
                </imagetype>
                <statetype name="nodetype">
@@ -1249,16 +1249,16 @@
                            <area>0,0,110,154</area>
                            <alpha>255</alpha>
                            <filename>images/shared/DefaultFolderBack.png</filename>
-                           <preserveaspect>no</preserveaspect>
+                           <preserveaspect>yes</preserveaspect>
                        </imagetype>
                    </state>
                </statetype>
-               <imagetype name="coverartoverlay">
+<!--               <imagetype name="coverartoverlay">
                    <area>0,0,120,160</area>
                    <alpha>64</alpha>
-                   <!--<preserveaspect>no</preserveaspect>-->
-                   <filename>images/shared/ButtonMenuGlass.png</filename>
-               </imagetype>
+                   <preserveaspect>no</preserveaspect>
+                  <filename>images/shared/ButtonMenuGlass.png</filename>
+               </imagetype>-->
            </state>
            <state name="selectedinactive" from="selectedactive">
                <alpha>0</alpha>
