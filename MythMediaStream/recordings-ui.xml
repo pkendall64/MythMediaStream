@@ -78,7 +78,7 @@
                             </imagetype>
                         </state>
                     </statetype>
-		</state>
+		          </state>
                 <state name="selectedactive">
                     <textarea name="title" from="textarea_base">
                         <area>10,0,350,40</area>
@@ -132,7 +132,7 @@
                             </imagetype>
                         </state>
                     </statetype>-->
-		</state>
+		          </state>
             </statetype>
         </buttonlist>
 
@@ -372,80 +372,80 @@
             </state>
        </statetype>
        <statetype name="videoprops">
-            <area>370,670,67,30</area>
+            <area>370,670,80,30</area>
             <showempty>yes</showempty>
             <state name="hd1080">
                 <imagetype name="hd1080">
-                    <area>0,0,67,30</area>
+                    <area>0,0,80,30</area>
                     <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/video/1080.png</filename>
+                    <filename>images/mediaflags/Video/1080.png</filename>
                 </imagetype>
             </state>
             <state name="hd720">
                 <imagetype name="hd720">
-                    <area>0,0,67,30</area>
+                    <area>0,0,80,30</area>
                     <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/video/720.png</filename>
+                    <filename>images/mediaflags/Video/720.png</filename>
                 </imagetype>
             </state>
             <state name="hdtv">
                 <imagetype name="hdtv">
-                    <area>0,0,67,30</area>
+                    <area>0,0,80,30</area>
                     <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/video/hdtv.png</filename>
+                    <filename>images/mediaflags/Video/1080.png</filename>
                 </imagetype>
             </state>
             <state name="widescreen">
                 <imagetype name="widescreen">
-                    <area>0,0,67,30</area>
+                    <area>0,0,80,30</area>
                     <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/video/widescreen.png</filename>
+                    <filename>images/mediaflags/Video/tv.png</filename>
                 </imagetype>
             </state>
             <state name="default">
                 <imagetype name="default">
-                    <area>0,0,67,30</area>
+                    <area>0,0,80,30</area>
                     <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/video/576i.png</filename>
+                    <filename>images/mediaflags/Video/576.png</filename>
                 </imagetype>
             </state>
         </statetype>
         <statetype name="audioprops">
-            <area>445,670,67,30</area>
+            <area>455,670,40,30</area>
             <showempty>yes</showempty>
             <state name="stereo">
                 <imagetype name="stereo">
-                    <area>0,0,131,30</area>
+                    <area>0,0,40,30</area>
                     <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/audio/dolby20.png</filename>
+                    <filename>images/mediaflags/Audio/2.png</filename>
                 </imagetype>
             </state>
             <state name="surround">
                 <imagetype name="surround">
-                    <area>0,0,131,30</area>
+                    <area>0,0,40,30</area>
                     <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/audio/dd51.png</filename>
+                    <filename>images/mediaflags/Audio/6.png</filename>
                 </imagetype>
             </state>
             <state name="dolby">
                 <imagetype name="dolby">
-                    <area>0,0,131,30</area>
+                    <area>0,0,40,30</area>
                     <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/audio/dd20.png</filename>
+                    <filename>images/mediaflags/Audio/dolbydigital.png</filename>
                 </imagetype>
             </state>
             <state name="mono">
                 <imagetype name="mono">
-                    <area>0,0,131,30</area>
+                    <area>0,0,40,30</area>
                     <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/audio/mono.png</filename>
+                    <filename>images/mediaflags/Audio/1.png</filename>
                 </imagetype>
             </state>
             <state name="default">
                 <imagetype name="default">
-                    <area>0,0,131,30</area>
+                    <area>0,0,40,30</area>
                     <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/audio/dolby20.png</filename>
+                    <filename>images/mediaflags/Audio/2.png</filename>
                 </imagetype>
             </state>
         </statetype>
