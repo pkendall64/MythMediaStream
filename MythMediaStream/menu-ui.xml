@@ -455,7 +455,7 @@
            <!-- ########  main_settings.xml  ########-->
            <state name="SETTINGS_GENERAL">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
+                   <filename>images/backgrounds/harddisk.jpg</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
@@ -483,6 +483,12 @@
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
+           <state name="SETTINGS_AUDIOGENERAL">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/music-settings.jpg</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
            <state name="SETTINGS_MUSIC">
                <imagetype name="watermark">
                    <filename>images/backgrounds/music-settings.jpg</filename>
@@ -492,6 +498,12 @@
            <state name="SETTINGS_VIDEO">
                <imagetype name="watermark">
                    <filename>images/backgrounds/video-settings.jpg</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
+           <state name="SETTINGS_GRABBERS">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/dvd.jpg</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>

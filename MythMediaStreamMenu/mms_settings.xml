@@ -18,25 +18,10 @@
     </button>
 
     <button>
-        <type>SETUP_KEYS</type>
-        <text>Keys</text>
-        <description>Setup your</description>
-        <action>SETUP_KEYS</action>
-    </button>
-
-    <button>
         <type>TV_STATUS</type>
         <text>System</text>
         <description>Info about your</description>
         <action>TV_STATUS</action>
-    </button>
-
-    <button>
-        <type>SETUP_MENU</type>
-        <text>Setup</text>
-        <description>MythTV</description>
-        <action>MENU main_settings.xml</action>
-        <password>SetupPinCode</password>
     </button>
 
 </mythmenu>

@@ -65,8 +65,16 @@
     <button>
         <type>SETTINGS_GENERAL</type>
         <text>System</text>
-        <description>Configure your</description>
+        <description>Tools for your</description>
         <action>MENU mms_settings.xml</action>
+    </button>
+
+    <button>
+        <type>SETUP_MENU</type>
+        <text>Setup</text>
+        <description>MythTV</description>
+        <action>MENU main_settings.xml</action>
+        <password>SetupPinCode</password>
     </button>
 
     <button>

@@ -2,7 +2,7 @@
 <mythmenu name="SETUP">
 
     <button>
-        <type>SETTINGS_GENERAL</type>
+        <type>SETUP_MENU</type>
         <text>Core Setup</text>
         <description>Configure</description>
         <action>SETTINGS MAINGENERAL</action>
@@ -37,6 +37,13 @@
     </button>
 
     <button>
+        <type>SETTINGS_AUDIOGENERAL</type>
+        <text>Audio Setup</text>
+        <description>Configure</description>
+        <action>SETTINGS AUDIOGENERAL</action>
+    </button>
+
+    <button>
         <type>SETTINGS_MEDIA</type>
         <text>Media Setup</text>
         <description>Configure</description>
@@ -58,6 +65,20 @@
         <description>Configure</description>
         <action>CONFIGPLUGIN mythzoneminder</action>
         <depends>mythzoneminder</depends>
+    </button>
+
+    <button>
+        <type>SETUP_KEYS</type>
+        <text>Keys</text>
+        <description>Setup your</description>
+        <action>SETUP_KEYS</action>
+    </button>
+
+    <button>
+        <type>SETTINGS_GRABBERS</type>
+        <text>MetaData</text>
+        <description>Configure sources for</description>
+        <action>SETTINGS GRABBERS</action>
     </button>
 
     <button>
