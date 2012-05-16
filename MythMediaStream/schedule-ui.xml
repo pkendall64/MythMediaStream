@@ -2278,6 +2278,14 @@
             <position>250,210</position>
         </buttonlist>
 
+        <textarea name="actionslbl" from="textarea_base">
+            <area>790,140,180,35</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <align>right,bottom</align>
+            <value>Actions</value>
+        </textarea>
+
         <button name="schedoptions" from="button_base_menu">
             <position>790,175</position>
             <value>Schedule Options</value>
@@ -2288,28 +2296,41 @@
             <value>Storage Options</value>
         </button>
 
-        <button name="postprocessing" from="button_base_menu">
+        <button name="metadata" from="button_base_menu">
             <position>790,245</position>
+            <value>Metadata Options</value>
+        </button>
+
+        <button name="postprocessing" from="button_base_menu">
+            <position>790,280</position>
             <value>Post processing</value>
         </button>
 
         <button name="schedinfo" from="button_base_menu">
-            <position>790,280</position>
+            <position>790,315</position>
             <value>Schedule info</value>
         </button>
 
         <button name="preview" from="button_base_menu">
-            <position>790,315</position>
+            <position>790,350</position>
             <value>Preview</value>
         </button>
 
+        <textarea name="navigationlbl" from="textarea_base">
+            <area>790,420,180,35</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <align>right,bottom</align>
+            <value>Navigation</value>
+        </textarea>
+
         <button name="cancel" from="button_base_menu">
-            <position>790,350</position>
+            <position>790,455</position>
             <value>Cancel</value>
         </button>
 
         <button name="save" from="button_base_menu">
-            <position>790,385</position>
+            <position>790,490</position>
             <value>Save</value>
         </button>
 
@@ -2342,7 +2363,6 @@
             <cutdown>yes</cutdown>
             <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
-
 
         <textarea name="rectypestatuslbl" from="textarea_base">
             <area>250,605,170,25</area>
@@ -2965,6 +2985,223 @@
             <position>420,680</position>
         </textarea>
     </window>
+    
+    <window name="metadataoptions">
+
+        <imagetype name="background" from="image_wallpaper_base">
+            <filename>images/backgrounds/tv-shows.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- STORAGE  EDITOR                                    -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Customize your recording schedule</value> 
+        </textarea>
+
+        <textarea name="pagetitle" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Metadata OPTIONS</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+
+        <textarea name="inet" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>TMDB/TVDB ID:</value>
+        </textarea>
+
+        <textedit name="inetref_edit" from="textedit_menu">
+            <position>420,175</position>
+        </textedit>
+
+        <textarea name="seas" from="inet">
+            <position>250,245</position>
+            <value>Season:</value>
+        </textarea>
+
+        <spinbox name="season_spinbox" from="spinbox_menu">
+            <position>420,245</position>
+        </spinbox>
+
+        <textarea name="ep" from="init">
+            <position>530,245</position>
+            <value>Episode:</value>
+        </textarea>
+
+        <spinbox name="episode_spinbox" from="spinbox_base">
+            <position>670,245</position>
+        </spinbox>
+
+        <button name="query_button" from="button_base_menu">
+            <position>790,175</position>
+            <value>Perform Query</value>
+        </button>
+
+        <textarea name="coverartbuttonlbl" from="textarea_base">
+            <area>790,245,180,35</area>
+            <alpha>128</alpha>
+            <font>title_small</font>         
+            <align>right,bottom</align>
+            <value>Coverart</value>
+        </textarea>
+
+        <button name="local_coverart_button" from="button_base_menu">
+            <position>790,280</position>
+            <value>Search Local</value>
+        </button>
+
+        <button name="online_coverart_button" from="button_base_menu">
+            <position>790,315</position>
+            <value>Search Net</value>
+        </button>
+
+        <textarea name="fanartbuttonlbl" from="coverartbuttonlbl">
+            <position>790,385</position>
+            <value>Fanart</value>
+        </textarea>
+
+        <button name="local_fanart_button" from="button_base_menu">
+            <position>790,420</position>
+            <value>Search Local</value>
+        </button>
+
+        <button name="online_fanart_button" from="button_base_menu">
+            <position>790,455</position>
+            <value>Search Net</value>
+        </button>
+
+        <textarea name="bannerbuttonlbl" from="coverartbuttonlbl">
+            <position>790,525</position>
+            <value>Banner</value>
+        </textarea>
+
+        <button name="local_banner_button" from="button_base_menu">
+            <position>790,560</position>
+            <value>Search Local</value>
+        </button>
+
+        <button name="online_banner_button" from="button_base_menu">
+            <position>790,595</position>
+            <value>Search Net</value>
+        </button>
+
+        <button name="back" from="button_base_menu">
+            <position>790,665</position>
+            <value>Back</value>
+        </button>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,515,510,40</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="longchannel" from="textarea_base">
+            <area>250,555,510,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <alpha>192</alpha>
+            <template>%longchannel% - %timedate%</template>
+        </textarea>
+
+<!--        <textarea name="description" from="textarea_base">
+            <area>250,545,510,50</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>-->
+
+
+        <textarea name="rectypestatuslbl" from="textarea_base">
+            <area>250,605,170,25</area>
+            <font>title_verysmall_blue</font>
+            <align>left,vcenter</align>
+            <value>Recording Status</value>
+        </textarea>
+
+        <textarea name="rectypestatus" from="textarea_base">
+            <area>420,605,340,25</area>
+            <font>small</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="recgrouplbl" from="rectypestatuslbl">
+            <position>250,630</position>
+            <value>Recording Group</value>
+        </textarea>
+
+        <textarea name="recgroup" from="rectypestatus">
+            <position>420,630</position>
+        </textarea>
+
+        <textarea name="lenminslbl" from="rectypestatuslbl">
+            <position>250,655</position>
+            <value>Lenght</value>
+        </textarea>
+
+        <textarea name="lenmins" from="rectypestatus">
+            <position>420,655</position>
+        </textarea>
+
+        <textarea name="programidlbl" from="rectypestatuslbl">
+            <position>250,680</position>
+            <value>Programid</value>
+        </textarea>
+
+        <textarea name="programid" from="rectypestatus">
+            <position>420,680</position>
+        </textarea>
+ 
+    </window>
+    
     
 <!-- to do-->
     <window name="schedulediff">
