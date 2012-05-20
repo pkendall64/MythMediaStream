@@ -3,7 +3,7 @@
 <mythuitheme>
 
     <window name="programguide">
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
         <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
@@ -182,7 +182,7 @@
     </window>
 
     <window name="programguide-video">
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
         <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
@@ -485,7 +485,7 @@
     </window>
 
     <window name="viewscheduled">
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
         <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
@@ -687,7 +687,7 @@
     </window>
 
     <window name="channelrecpriority">
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/podium.jpg</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
@@ -870,7 +870,7 @@
     </window>
 
     <window name="programrecpriority">
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/podium.jpg</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
@@ -1499,7 +1499,7 @@
     </window>
 
     <window name="programlist">
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
         <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
@@ -1904,7 +1904,7 @@
     </window>
 
     <window name="managerecrules">
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
         <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
@@ -2216,7 +2216,7 @@
     </window>
 
     <window name="scheduleeditor">
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
@@ -2406,7 +2406,7 @@
     </window>
 
     <window name="scheduleoptionseditor">
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
@@ -2600,7 +2600,7 @@
     </window>
 
     <window name="storageoptionseditor">
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
@@ -2793,7 +2793,7 @@
     </window>
 
     <window name="postproceditor">
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
@@ -2873,40 +2873,49 @@
             <position>420,245</position>
         </buttonlist>
 
-        <textarea name="userjob1label" from="autocommflaglbl">
+        <textarea name="metadatalookuplabel" from="autocommflaglbl">
             <position>250,315</position>
+            <value>Automatically Look Up Metadata</value>
+        </textarea>
+
+        <checkbox name="metadatalookup" from="checkbox_base">
+            <position>735,315</position>
+        </checkbox>
+
+        <textarea name="userjob1label" from="autocommflaglbl">
+            <position>250,350</position>
             <value>Run user job one</value>
         </textarea>
 
         <checkbox name="userjob1" from="checkbox_base">
-            <position>735,315</position>
+            <position>735,350</position>
         </checkbox>
 
         <textarea name="userjob2label" from="autocommflaglbl">
-            <position>250,350</position>
+            <position>250,385</position>
             <value>Run user job two</value>
         </textarea>
 
         <checkbox name="userjob2" from="checkbox_base">
-            <position>735,350</position>
+            <position>735,385</position>
         </checkbox>
 
         <textarea name="userjob3label" from="autocommflaglbl">
-            <position>250,385</position>
+            <position>250,420</position>
             <value>Run user job three</value>
         </textarea>
 
         <checkbox name="userjob3" from="checkbox_base">
-            <position>735,385</position>
+            <position>735,420</position>
         </checkbox>
 
         <textarea name="userjob4label" from="autocommflaglbl">
-            <position>250,420</position>
+            <position>250,455</position>
             <value>Run user job four</value>
         </textarea>
 
         <checkbox name="userjob4" from="checkbox_base">
-            <position>735,420</position>
+            <position>735,455</position>
         </checkbox>
 
         <button name="back" from="button_base_menu">
@@ -2988,7 +2997,7 @@
     
     <window name="metadataoptions">
 
-        <imagetype name="background" from="image_wallpaper_base">
+        <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
         <imagetype name="Menu_background_Sub2">
@@ -3062,7 +3071,7 @@
             <position>420,245</position>
         </spinbox>
 
-        <textarea name="ep" from="init">
+        <textarea name="ep" from="inet">
             <position>530,245</position>
             <value>Episode:</value>
         </textarea>
