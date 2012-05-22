@@ -45,7 +45,7 @@
             <align>right,bottom</align>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
-            <value>Choose which movie you like most</value>
+            <value>Choose which movie or tvserie you look for</value>
         </textarea>
 
         <textarea name="title" from="textarea_base">
@@ -67,7 +67,6 @@
         </buttonlist>
 
     </window>
-
 
     <!-- ===================================================== -->
     <!--     ARTWORK SELECTION POPUP                           -->

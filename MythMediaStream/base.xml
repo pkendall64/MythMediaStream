@@ -1345,6 +1345,87 @@
        </statetype>
    </buttonlist>
 
+   <buttonlist name="selector_base_plain">
+       <area>0,0,340,35</area>
+       <align>left,vcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,340,35</buttonarea>
+       <statetype name="buttonitem">
+           <area>0,0,350,35</area>
+           <!--ACTIVE-->
+           <state name="active">
+<!--               <imagetype name="MenuItemNF">
+                   <area>0,0,340,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype> -->
+               <textarea name="buttontext">
+                   <area>10,0,320,35</area>
+                   <font>normal</font>
+                   <alpha>128</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selectedactive">
+<!--               <imagetype name="MenuItemNF">
+                   <area>0,0,340,35</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype> -->
+               <imagetype name="MenuItemFO">
+                   <area>0,0,330,35</area>
+                   <filename>images/shared/MenuItemFO.png</filename>
+               </imagetype>
+               <textarea name="buttontext">
+                   <area>10,0,320,35</area>
+                   <font>normal</font>
+                   <alpha>255</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <!--INACTIVE-->
+           <state name="inactive" from="active">
+           <!--    <alpha>0</alpha>-->
+           </state>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="active">
+           <!--    <alpha>0</alpha>-->
+           </state>
+       </statetype>
+       <!--ARROWS-->
+       <statetype name="upscrollarrow">
+           <position>324,5</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowRightNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                    <filename>images/shared/ArrowRightFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+       <statetype name="downscrollarrow">
+           <position>324,20</position>	
+           <state type="off">
+               <imagetype name="upoff">
+                   <filename>images/shared/ArrowLeftNF.png</filename>
+               </imagetype>
+           </state>
+           <state type="full">
+               <imagetype name="upon">
+                   <filename>images/shared/ArrowLeftFO.png</filename>
+               </imagetype>
+           </state>
+       </statetype>
+   </buttonlist>
+
    <buttonlist name="selector_base_small">
        <area>0,0,170,35</area>
        <align>left,vcenter</align>
@@ -2261,8 +2342,8 @@
 
    <window name="dialog_base">
        <area>-1,-1,520,205</area>
-       <!--Darken background
-       <shape name="shape_dark" from="shape_darken_base"/>-->
+       <!-- darken background 
+       <shape name="shape_dark" from="shape_darken_base"/> -->
        <imagetype name="DialogProgressBG">
            <area>0,0,520,205</area>
            <filename>images/shared/DialogProgressBG.png</filename>
@@ -2351,7 +2432,6 @@
            <position>980,130</position>
        </buttonlist>
     </window>
-
 
    <window name="MythProgressDialog" from="dialog_base">
        <textarea name="message" from="textarea_base">
@@ -2587,14 +2667,284 @@
         </statetype>
     </window>
 
-
    <window name="backgroundwindow">
        <area>0,0,1280,720</area>
 <!--       <shape name="shape_black">
            <area>0,0,1280,720</area>
            <type>box</type>
            <fill color="#000000"/>
-       </shape>-->
+       </shape> -->
    </window>
+
+    <window name="MythTimeInputDialog" from="dialog_base">
+       <textarea name="message" from="textarea_base">
+           <area>20,35,480,35</area>
+            <value>Select Time &amp; Date</value>
+        </textarea>
+
+       <textarea name="dateslbl" from="textarea_base">
+           <area>20,70,500,35</area>
+           <value>Date:</value>
+        </textarea>
+
+        <buttonlist name="dates" from="selector_base_plain">
+           <position>160,70</position>
+        </buttonlist>
+
+       <textarea name="timelbl" from="dateslbl">
+           <position>20,105</position>
+           <value>Time:</value>
+        </textarea>
+
+        <buttonlist name="times" from="selector_base_plain">
+            <position>160,105</position>
+        </buttonlist>
+
+        <button name="ok" from="button_base">
+           <position>380,145</position>
+           <value>Ok</value>
+       </button>
+
+    </window>
+
+    <window name="videowindow" from="dialog_base">
+
+       <textarea name="title" from="textarea_base">
+           <area>120,35,380,135</area>
+           <font>normal</font>
+           <align>allcenter</align>
+           <value>Loading content...</value>
+           <cutdown>yes</cutdown>
+           <multiline>yes</multiline>
+       </textarea>
+
+       <imagetype name="animation">
+           <position>20,98</position>
+           <filepattern low="1" high="29">images/shared/busy/busy-%1.png</filepattern>
+           <delay>80</delay>
+       </imagetype>
+
+    </window>
+
+    <window name="MythMetadataResults">
+
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+<!--        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>-->
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Choose which movie or tvserie you look for</value>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Movie selector</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+
+        <buttonlist name="results" from="filelist_base">
+            <position>250,175</position>
+        </buttonlist>
+
+    </window>
+
+    <window name="MythArtworkResults">
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub2">
+            <filename>images/shared/HomeBladeLeft.png</filename>
+            <area>-600,0,846,720</area>
+        </imagetype> 
+        <imagetype name="Menu_Overlay">
+            <area>1045,0,235,720</area> 
+            <filename>images/shared/HomeRightOverlay.png</filename>
+        </imagetype>
+        <imagetype name="Menu_background_Sub3">
+            <filename>images/shared/BlackTransparent.png</filename>
+            <area>238,0,550,720</area>
+        </imagetype> 
+        <imagetype name="Menu_background_Sub4">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>240,0,560,720</area>
+        </imagetype> 
+<!--        <imagetype name="Menu_background_Sub5">
+            <filename>images/shared/HomeBladeSub.png</filename>
+            <area>788,0,200,720</area>
+        </imagetype>-->
+
+        <!-- ================================================== -->
+        <!-- The clock                                          -->
+        <!-- ================================================== -->
+        <textarea name="clock" from="textarea_clock_base"/>
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Choose which artwork you like most</value>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Artwork selector</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+
+        <buttonlist name="results" from="filelist_base">
+            <position>250,175</position>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="resolution">
+                        <area>100,0,400,50</area>
+                        <font>normal</font>
+                        <alpha>128</alpha>
+                        <multiline>no</multiline>
+                        <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <textarea name="resolution">
+                        <area>100,0,400,50</area>
+                        <font>normal</font>
+                        <alpha>255</alpha>
+                        <multiline>no</multiline>
+                        <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+<!--        <buttonlist name="results">
+            <area>20,22,363,378</area>
+            <layout>vertical</layout>
+            <spacing>5</spacing>
+            <wrapstyle>selection</wrapstyle>
+            <buttonarea>0,0,100%,97%</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,85</area>
+                    <shape name="buttonbackground">
+                        <area>0,0,100%,100%</area>
+                        <fill style="gradient">
+                            <gradient start="#505050" end="#000000" alpha="200" direction="vertical"  />
+                        </fill>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>5,2,150,80</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="resolution">
+                        <area>160,0,175,80</area>
+                        <font>basesmall</font>
+                        <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <shape name="buttonbackground">
+                        <fill style="gradient">
+                            <gradient start="#52CA38" end="#349838" alpha="255" />
+                        </fill>
+                    </shape>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <shape name="buttonbackground">
+                        <fill style="gradient">
+                            <gradient start="#52CA38" end="#349838" alpha="100" />
+                        </fill>
+                    </shape>
+                    <textarea name="resolution">
+                        <font>basesmallpurple</font>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>10,96%</position>
+                <state type="off">
+                    <imagetype name="upon">
+                        <filename>lb-uparrow-reg.png</filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upoff">
+                        <filename>lb-uparrow-sel.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>40,96%</position>
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename>lb-dnarrow-reg.png</filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename>lb-dnarrow-sel.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist> -->
+        
+    </window>
 
 </mythuitheme>
