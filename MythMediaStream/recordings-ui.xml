@@ -13,7 +13,7 @@
             <filename>images/shared/TVFanartOverlay.png</filename>
         </imagetype>
         <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+	     <imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
         <textarea name="ScreenTitleRecordings" from="screentitle">
             <value>WATCH RECORDINGS</value>
         </textarea>
@@ -449,6 +449,16 @@
                 </imagetype>
             </state>
         </statetype>
+
+        <imagetype name="coverart">
+            <area>520,670,20,30</area>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
+        <imagetype name="banner">
+            <area>558,670,162,30</area>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
 
        <!-- ===================================================== -->
        <!--     NO RECORDINGS TEXT                                -->

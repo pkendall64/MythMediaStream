@@ -128,27 +128,29 @@
         <!-- screen content                                     -->
         <!-- ================================================== -->
 
-        <buttonlist name="results" from="filelist_base">
+        <buttonlist name="results" from="filelist_big">
             <position>250,175</position>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="resolution">
-                        <area>100,0,400,50</area>
+                        <area>300,50,200,50</area>
                         <font>normal</font>
                         <alpha>128</alpha>
                         <multiline>no</multiline>
                         <cutdown>yes</cutdown>
                         <align>left,vcenter</align>
+                        <value>No res specified</value>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <textarea name="resolution">
-                        <area>100,0,400,50</area>
+                        <area>300,50,200,50</area>
                         <font>normal</font>
                         <alpha>255</alpha>
                         <multiline>no</multiline>
                         <cutdown>yes</cutdown>
                         <align>left,vcenter</align>
+                        <value>No res specified</value>
                     </textarea>
                 </state>
             </statetype>

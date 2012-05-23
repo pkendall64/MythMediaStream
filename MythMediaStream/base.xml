@@ -2040,6 +2040,102 @@
        </statetype>
    </buttonlist>
 
+   <buttonlist name="filelist_big" from="filelist_base">
+       <statetype name="buttonitem">
+           <area>0,0,510,100</area>
+           <state name="active">
+               <imagetype name="MenuItemNF">
+                   <area>300,50,200,50</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="buttonimage">
+                   <area>0,0,267,150</area>
+                   <alpha>128</alpha>
+                   <preserveaspect>yes</preserveaspect>
+               </imagetype>
+               <statetype name="nodetype">
+                   <state name="folder">
+                       <imagetype name="icon">
+                           <area>0,0,267,150</area>
+                           <preserveaspect>true</preserveaspect>
+                           <filename>images/shared/DefaultFolder.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="upfolder" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/DefaultFolderBack.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="executable" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/file-exec.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="file" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/file.png</filename>
+                       </imagetype>
+                   </state>
+               </statetype>
+               <textarea name="buttontext">
+                   <area>300,50,200,50</area>
+                   <font>normal</font>
+                   <alpha>128</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+           <state name="selectedactive">
+               <imagetype name="MenuItemNF">
+                   <area>3000,50,200,50</area>
+                   <filename>images/shared/MenuItemNF.png</filename>
+               </imagetype>
+               <imagetype name="MenuItemFO">
+                   <area>300,50,200,50</area>
+                   <filename>images/shared/MenuItemFO.png</filename>
+               </imagetype>
+               <imagetype name="buttonimage">
+                   <area>0,0,267,150</area>
+                   <alpha>255</alpha>
+                   <preserveaspect>yes</preserveaspect>
+               </imagetype>
+               <statetype name="nodetype">
+                   <state name="folder">
+                       <imagetype name="icon">
+                           <area>0,0,267,150</area>
+                           <preserveaspect>true</preserveaspect>
+                           <filename>images/shared/DefaultFolder.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="upfolder" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/DefaultFolderBack.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="executable" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/file-exec.png</filename>
+                       </imagetype>
+                   </state>
+                   <state name="file" from="folder">
+                       <imagetype name="icon">
+                           <filename>images/shared/file.png</filename>
+                       </imagetype>
+                   </state>
+               </statetype>
+               <textarea name="buttontext">
+                   <area>300,50,200,50</area>
+                   <font>normal</font>
+                   <alpha>255</alpha>
+                   <multiline>no</multiline>
+                   <cutdown>yes</cutdown>
+                   <align>left,vcenter</align>
+               </textarea>
+           </state>
+       </statetype>
+   </buttonlist>
+
    <buttonlist name="filelist_base_check" from="filelist_base">
        <statetype name="buttonitem">
            <!--ACTIVE-->
@@ -2847,27 +2943,29 @@
         <!-- screen content                                     -->
         <!-- ================================================== -->
 
-        <buttonlist name="results" from="filelist_base">
+        <buttonlist name="results" from="filelist_big">
             <position>250,175</position>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="resolution">
-                        <area>100,0,400,50</area>
+                        <area>300,50,200,50</area>
                         <font>normal</font>
                         <alpha>128</alpha>
                         <multiline>no</multiline>
                         <cutdown>yes</cutdown>
                         <align>left,vcenter</align>
+                        <value>No res specified</value>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <textarea name="resolution">
-                        <area>100,0,400,50</area>
+                        <area>300,50,200,50</area>
                         <font>normal</font>
                         <alpha>255</alpha>
                         <multiline>no</multiline>
                         <cutdown>yes</cutdown>
                         <align>left,vcenter</align>
+                        <value>No res specified</value>
                     </textarea>
                 </state>
             </statetype>
