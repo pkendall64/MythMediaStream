@@ -1139,6 +1139,13 @@
            </state>
            <state name="selectedactive">
                <area>0,-10,160,215</area>
+               <shape name="coverartbgd">
+                   <area>-9,-3,175,215</area>
+                   <type>roundbox</type>
+                   <cornerradius>3</cornerradius>
+                   <line color="#7E7E75" alpha="255" width="4" />
+                   <fill color="#262626" alpha="192" />
+               </shape>
                <imagetype name="buttonimage">
                    <area>3,10,154,195</area>
                    <alpha>255</alpha>
@@ -1165,12 +1172,6 @@
                        </imagetype>
                    </state>
                </statetype>
-               <imagetype name="coverartframe">
-                   <area>0,0,160,215</area>
-                   <alpha>255</alpha>
-                   <filename>images/shared/MovieFocusFrame.png</filename>
-                   <preserveaspect>no</preserveaspect>
-               </imagetype>
            </state>
            <state name="selectedinactive" from="selectedactive">
                <alpha>0</alpha>

@@ -451,7 +451,7 @@
         </statetype>
 
         <imagetype name="coverart">
-            <area>520,670,20,30</area>
+            <area>515,670,20,30</area>
             <preserveaspect>no</preserveaspect>
         </imagetype>
 

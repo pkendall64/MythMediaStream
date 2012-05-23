@@ -210,7 +210,7 @@
         </imagetype>
         <imagetype name="coverart">
             <area>30,100,100,100</area>
-            <preserveaspect>yes</preserveaspect>
+            <preserveaspect>no</preserveaspect>
         </imagetype>
 
         <textarea name="description">
@@ -286,6 +286,11 @@
                 </textarea>
             </state>
         </statetype>
+
+        <imagetype name="banner">
+            <area>570,170,259,48</area>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
 
         <statetype name="videocodec">
             <area>840,170,128,48</area>
