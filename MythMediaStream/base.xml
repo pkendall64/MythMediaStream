@@ -1138,16 +1138,17 @@
                <alpha>0</alpha>
            </state>
            <state name="selectedactive">
-               <area>0,-10,160,215</area>
+               <area>0,-10,160,225</area>
                <shape name="coverartbgd">
-                   <area>-9,-3,175,215</area>
+                   <area>-7,-3,171,215</area>
                    <type>roundbox</type>
                    <cornerradius>3</cornerradius>
-                   <line color="#7E7E75" alpha="255" width="4" />
-                   <fill color="#262626" alpha="192" />
+                   <line color="#7E7E7E" alpha="255" width="3" />
+                   <fill color="#7E7E7E" alpha="92" />
+<!--                   <fill color="#262626" alpha="192" /> -->
                </shape>
                <imagetype name="buttonimage">
-                   <area>3,10,154,195</area>
+                   <area>4,7,150,200</area>
                    <alpha>255</alpha>
                    <preserveaspect>no</preserveaspect>
                    <filename>images/shared/amt-blank-poster.png</filename>
