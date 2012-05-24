@@ -3063,21 +3063,21 @@
         </textedit>
 
         <textarea name="seas" from="inet">
-            <position>250,245</position>
+            <position>250,210</position>
             <value>Season:</value>
         </textarea>
 
         <spinbox name="season_spinbox" from="spinbox_menu">
-            <position>420,245</position>
+            <position>420,210</position>
         </spinbox>
 
         <textarea name="ep" from="inet">
-            <position>530,245</position>
+            <position>530,210</position>
             <value>Episode:</value>
         </textarea>
 
         <spinbox name="episode_spinbox" from="spinbox_base">
-            <position>670,245</position>
+            <position>670,210</position>
         </spinbox>
 
         <button name="query_button" from="button_base_menu">
@@ -3137,6 +3137,45 @@
             <position>790,665</position>
             <value>Back</value>
         </button>
+
+       <!-- ===================================================== -->
+       <!-- SHOW GRAPHICS                                         -->
+       <!-- ===================================================== -->
+        <textarea name="coverart_text" from="inet">
+            <area>270,486,170,20</area>
+            <font>tiny</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>left,top</align>
+            <value>Coverart Image:</value>
+        </textarea>
+        <imagetype name="coverart">
+            <area>272,270,156,206</area>
+            <alpha>255</alpha>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+        <textarea name="screenshot_text" from="coverart_text">
+            <position>470,415</position>
+            <value>Screenshot Image:</value>
+        </textarea>
+        <imagetype name="screenshot">
+            <area>472,270,276,141</area>
+            <alpha>255</alpha>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+        <textarea name="banner_text" from="coverart_text">
+            <position>470,486</position>
+            <value>Banner Image:</value>
+        </textarea>
+        <imagetype name="banner">
+            <area>472,435,276,41</area>
+            <alpha>255</alpha>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
+       <!-- ===================================================== -->
+       <!-- Schedule details                                      -->
+       <!-- ===================================================== -->
 
         <textarea name="title" from="textarea_base">
             <area>250,515,510,40</area>
@@ -3211,8 +3250,6 @@
  
     </window>
     
-    
-<!-- to do-->
     <window name="schedulediff">
 
         <imagetype name="fanart" from="image_wallpaper_base">
