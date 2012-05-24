@@ -1139,13 +1139,24 @@
            </state>
            <state name="selectedactive">
                <area>0,-10,160,225</area>
-               <shape name="coverartbgd">
+               <shape name="coverartbgd1">
                    <area>-7,-3,171,215</area>
                    <type>roundbox</type>
                    <cornerradius>3</cornerradius>
-                   <line color="#7E7E7E" alpha="255" width="3" />
-                   <fill color="#7E7E7E" alpha="92" />
-<!--                   <fill color="#262626" alpha="192" /> -->
+                   <line color="#424242" alpha="255" width="1" />
+               </shape>
+               <shape name="coverartbgd2">
+                   <area>-6,-2,169,213</area>
+                   <type>roundbox</type>
+                   <cornerradius>3</cornerradius>
+                   <line color="#808080" alpha="255" width="1" />
+               </shape>
+               <shape name="coverartbgd3">
+                   <area>-5,-1,167,211</area>
+                   <type>roundbox</type>
+                   <cornerradius>3</cornerradius>
+                   <line color="#313131" alpha="255" width="1" />
+                   <fill color="#272727" alpha="128" />
                </shape>
                <imagetype name="buttonimage">
                    <area>4,7,150,200</area>
