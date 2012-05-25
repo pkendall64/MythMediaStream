@@ -450,10 +450,10 @@
             </state>
         </statetype>
 
-        <imagetype name="coverart">
+<!--        <imagetype name="coverart">
             <area>515,670,20,30</area>
             <preserveaspect>no</preserveaspect>
-        </imagetype>
+        </imagetype>-->
 
         <imagetype name="banner">
             <area>558,670,162,30</area>
@@ -625,10 +625,9 @@
             <cutdown>yes</cutdown>
             <value>Status Icon Help</value>
         </textarea>
-        <buttonlist name="iconlist" from="buttonlist_base">
-            <area>900,65,380,640</area>
-            <spacing>2</spacing>
-            <showarrow>no</showarrow>
+        <buttonlist name="iconlist" from="buttonlist_menu">
+            <area>900,60,380,660</area>
+            <buttonarea>0,0,300,640</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,35</area>
@@ -637,126 +636,123 @@
                         <filename>images/shared/MenuItemNF.png</filename>
                     </imagetype>
                     <statetype name="icons">
-                        <position>6,0</position>
+                        <position>0,0</position>
+                        <state name="autoexpire">
+                            <imagetype name="statusimage">
+                                <area>15,0,30,30</area>
+                                <filename>images/shared/OSDRepeatFO.png</filename>
+                            </imagetype>
+                        </state>
                         <state name="commflagged">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/commflagged.png</filename>
+                                <area>15,0,30,30</area>
+                                <filename>images/shared/OSDPresetSettingsFO.png</filename>
                             </imagetype>
                         </state>
                         <state name="cutlist">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/cutlist.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="autoexpire">
-                            <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/autoexpire.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="processing">
-                            <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/processing.png</filename>
+                                <area>15,0,30,30</area>
+                                <filename>images/shared/OSDVideoFO.png</filename>
                             </imagetype>
                         </state>
                         <state name="bookmark">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/bookmark.png</filename>
+                                <area>15,0,30,30</area>
+                                <filename>images/shared/OSDBookmarksFO.png</filename>
                             </imagetype>
                         </state>
                         <state name="playlist">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/playlist.png</filename>
+                                <area>15,0,30,30</area>
+                                <filename>images/shared/OSDPlaylistFO.png</filename>
                             </imagetype>
                         </state>
-                        <state name="mono">
+                        <state name="processing">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/audio/mono.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="stereo">
-                            <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/audio/stereo.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="surround">
-                            <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/audio/surround.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="dolby">
-                            <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/audio/dolby.png</filename>
+                                <area>15,0,30,30</area>
+                                <filepattern low="1" high="8">images/tv-recordings/processing/flagging_%1.png</filepattern>
+                                <delay>60</delay>
                             </imagetype>
                         </state>
                         <state name="cc">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
+                                <area>15,0,30,30</area>
                                 <filename>images/tv-recordings/subtitles/cc.png</filename>
                             </imagetype>
                         </state>
                         <state name="subtitles">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
+                                <area>15,0,30,30</area>
                                 <filename>images/tv-recordings/subtitles/subtitles.png</filename>
                             </imagetype>
                         </state>
                         <state name="onscreensub">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
+                                <area>15,0,30,30</area>
                                 <filename>images/tv-recordings/subtitles/onscreensub.png</filename>
                             </imagetype>
                         </state>
                         <state name="hdtv">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/video/hdtv.png</filename>
+                                <area>-5,0,75,30</area>
+                                <filename>images/mediaflags/Video/1080.png</filename>
                             </imagetype>
                         </state>
                         <state name="hd1080">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/video/hd1080.png</filename>
+                                <area>-5,0,75,30</area>
+                                <filename>images/mediaflags/Video/1080.png</filename>
                             </imagetype>
                         </state>
                         <state name="hd720">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/video/hd720.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="avchd">
-                            <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/video/avchd.png</filename>
+                                <area>-5,0,75,30</area>
+                                <filename>images/mediaflags/Video/720.png</filename>
                             </imagetype>
                         </state>
                         <state name="widescreen">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
-                                <filename>images/tv-recordings/video/widescreen.png</filename>
+                                <area>-5,0,75,30</area>
+                                <filename>images/mediaflags/Video/tv.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="mono">
+                            <imagetype name="statusimage">
+                                <area>15,0,30,30</area>
+                                <filename>images/mediaflags/Audio/1.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="stereo">
+                            <imagetype name="statusimage">
+                                <area>15,0,30,30</area>
+                                <filename>images/mediaflags/Audio/2.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="surround">
+                            <imagetype name="statusimage">
+                                <area>15,0,30,30</area>
+                                <filename>images/mediaflags/Audio/6.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="dolby">
+                            <imagetype name="statusimage">
+                                <area>15,0,30,30</area>
+                                <filename>images/mediaflags/Audio/dolbydigital.png</filename>
                             </imagetype>
                         </state>
                         <state name="watched">
                             <imagetype name="statusimage">
-                                <area>0,0,35,35</area>
+                                <area>15,0,30,30</area>
                               <filename>images/shared/OverlayWatched.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
                     <textarea name="buttontext" from="textarea_base">
-                        <area>80,5,400,30</area>
+                        <area>80,0,400,35</area>
                         <multiline>no</multiline>
                         <cutdown>yes</cutdown>
+                        <case>normal</case>
+                        <alpha>128</alpha>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
@@ -765,7 +761,22 @@
                         <area>0,0,380,35</area>
                         <filename>images/shared/MenuItemFO.png</filename>
                     </imagetype>
+                    <textarea name="buttontext" from="textarea_base">
+                        <area>80,0,400,35</area>
+                        <multiline>no</multiline>
+                        <cutdown>yes</cutdown>
+                        <case>normal</case>
+                        <alpha>255</alpha>
+                        <align>left,vcenter</align>
+                    </textarea>
                 </state>
+            </statetype>
+            <!--ARROWS-->
+            <statetype name="upscrollarrow">
+                <position>10,644</position>	
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>30,644</position>	
             </statetype>
         </buttonlist>
     </window>
