@@ -2819,19 +2819,19 @@
     <window name="videowindow" from="dialog_base">
 
        <textarea name="title" from="textarea_base">
-           <area>120,35,380,135</area>
+           <area>20,35,480,135</area>
            <font>normal</font>
            <align>allcenter</align>
-           <value>Loading content...</value>
+           <value>Loading content for playback...</value>
            <cutdown>yes</cutdown>
            <multiline>yes</multiline>
        </textarea>
 
-       <imagetype name="animation">
+<!--       <imagetype name="animation">
            <position>20,98</position>
            <filepattern low="1" high="29">images/shared/busy/busy-%1.png</filepattern>
            <delay>80</delay>
-       </imagetype>
+       </imagetype> -->
 
     </window>
 

@@ -753,24 +753,20 @@
                         <preserveaspect>no</preserveaspect>
                         <filename>images/shared/ButtonMenuGlass.png</filename>
                     </imagetype>
-                    <textarea name="channum" from="textarea_base">
-                        <area>40,0,50,40</area>
+                    <textarea name="callsign" from="textarea_base">
+                        <area>40,0,390,40</area>
                         <alpha>128</alpha>
                     </textarea>
-                    <textarea name="name" from="channum">
-                        <area>100,0,340,40</area>
-                        <template>%name% (%callsign%)</template>
-                    </textarea>
-                    <textarea name="priority" from="channum">
+                    <textarea name="priority" from="callsign">
                         <area>450,0,25,40</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-		    <imagetype name="MediaItemDetailBG">
-			<area>100,5,410,30</area>
-			<filename>images/shared/MediaItemDetailBG.png</filename>
-		    </imagetype>
+	          	    <imagetype name="MediaItemDetailBG">
+			              <area>100,5,410,30</area>
+			              <filename>images/shared/MediaItemDetailBG.png</filename>
+		              </imagetype>
                     <imagetype name="icon">
                         <area>0,2,36,36</area>
                         <preserveaspect>no</preserveaspect>
@@ -784,20 +780,13 @@
                         <area>40,0,50,40</area>
                         <alpha>255</alpha>
                     </textarea>
-                    <textarea name="name" from="textarea_base">
+                    <textarea name="callsign" from="textarea_base">
                         <area>120,7,379,33</area>
                         <font>verysmall</font>
                         <alpha>255</alpha>
                         <align>left,vcenter</align>
-                        <template>%name% / %callsign%  (Priority: %priority%)</template>
+                        <template>%callsign%  (Priority: %priority%)</template>
                     </textarea>
-<!--                    <textarea name="priority" from="textarea_base">
-                        <area>120,7,100,33</area>
-                        <font>verysmall</font>
-                        <align>left,vcenter</align>
-                        <alpha>255</alpha>
-                        <template>Priority: %priority%</template>
-                    </textarea>-->
                 </state>         
             </statetype>
         </buttonlist>
