@@ -289,6 +289,7 @@
 
         <imagetype name="banner">
             <area>570,170,259,48</area>
+            <mask>images/shared/BannerMaskOSD.png</mask>
             <preserveaspect>no</preserveaspect>
         </imagetype>
 

@@ -457,6 +457,7 @@
 
         <imagetype name="banner">
             <area>558,670,162,30</area>
+            <mask>images/shared/BannerMask.png</mask>
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
