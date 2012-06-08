@@ -136,7 +136,7 @@
         </textarea>
         <textarea name="videowidth" from="storagerate">
             <position>160,295</position>
-            <template>%VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%fps</template>
+            <template>%VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%</template>
         </textarea>
         <textarea name="vidcodec" from="storage">
             <position>32,330</position>
