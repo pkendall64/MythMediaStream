@@ -50,6 +50,175 @@
         </textarea>
     </window>
 
+    <window name="osd_debug">
+        <fontdef name="normal" face="MediaStreamALT">
+            <pixelsize>24</pixelsize>
+            <stretch>extracondensed</stretch>
+            <weight>normal</weight>
+            <color>#FFFFFF</color>
+            <shadowoffset>1,1</shadowoffset>
+            <shadowcolor>#000000</shadowcolor>
+        </fontdef>
+        <fontdef name="normal_tiny" from="normal">
+            <pixelsize>16</pixelsize>
+        </fontdef>
+        <fontdef name="title_small" face="Fluid">
+            <color>#FFFFFF</color>
+            <pixelsize>25</pixelsize>
+            <stretch>extracondensed</stretch>
+            <weight>normal</weight>
+            <shadowoffset>1,1</shadowoffset>
+            <shadowcolor>#000000</shadowcolor>
+        </fontdef>
+        <area>968,0,316,720</area>
+        <imagetype name="popup_background">
+            <area>0,0,316,720</area>	
+            <filename>images/shared/VisOsdPanel.png</filename>
+        </imagetype>
+        <textarea name="storagetitle">
+            <area>22,85,280,35</area>
+            <font>title_small</font>
+            <case>upper</case>
+            <multiline>yes</multiline>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Storage Details</value>
+        </textarea>
+        
+        <textarea name="storage">
+            <area>32,120,130,35</area>
+            <font>normal</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <alpha>255</alpha>
+            <value>Storage rate:</value>
+        </textarea>
+        <textarea name="storagerate">
+            <area>160,120,150,35</area>
+            <font>normal</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>normal</case>
+            <align>left,vcenter</align>
+            <alpha>128</alpha>
+        </textarea>
+        <textarea name="decoder" from="storage">
+            <position>32,155</position>
+            <value>Decoder rate:</value>
+        </textarea>
+        <textarea name="decoderrate" from="storagerate">
+            <position>160,155</position>
+        </textarea>
+        <textarea name="buffer" from="storage">
+            <position>32,190</position>
+            <value>File Buffer:</value>
+        </textarea>
+        <textarea name="bufferavail" from="storagerate">
+            <position>160,190</position>
+            <template>%BUFFERAVAIL% of %BUFFERSIZE%Mb</template>
+        </textarea>
+
+        <textarea name="videotitle">
+            <area>22,260,280,35</area>
+            <font>title_small</font>
+            <case>upper</case>
+            <multiline>yes</multiline>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Video Details</value>
+        </textarea>
+        
+        <textarea name="video" from="storage">
+            <position>32,295</position>
+            <value>Video Res:</value>
+        </textarea>
+        <textarea name="videowidth" from="storagerate">
+            <position>160,295</position>
+            <template>%VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%fps</template>
+        </textarea>
+        <textarea name="vidcodec" from="storage">
+            <position>32,330</position>
+            <value>Codec/Dec:</value>
+        </textarea>
+        <textarea name="videocodec" from="storagerate">
+            <position>160,330</position>
+            <template>%VIDEOCODEC%/%VIDEODECODER%</template>
+        </textarea>
+        <textarea name="cpuload" from="storage">
+            <position>32,365</position>
+            <value>CPU load:</value>
+        </textarea>
+        <textarea name="load" from="storagerate">
+            <position>160,365</position>
+        </textarea>
+
+        <textarea name="fps" from="storage">
+            <position>32,400</position>
+            <value>FPS:</value>
+        </textarea>
+        <textarea name="framerate" from="storagerate">
+            <position>160,400</position>
+        </textarea>
+        
+        <textarea name="sync" from="storage">
+            <position>32,435</position>
+            <value>A/V Sync:</value>
+        </textarea>
+        <textarea name="avsync" from="storagerate">
+            <position>160,435</position>
+        </textarea>
+        <textarea name="frames" from="storage">
+            <position>32,470</position>
+            <value>decoded/free:</value>
+        </textarea>
+        <textarea name="videoframes" from="storagerate">
+            <position>160,470</position>
+            <template>%VIDEOFRAMES% frames</template>
+        </textarea>
+
+        <textarea name="audiotitle">
+            <area>22,540,280,35</area>
+            <font>title_small</font>
+            <case>upper</case>
+            <multiline>yes</multiline>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Audio Details</value>
+        </textarea>
+        
+        <textarea name="audio" from="storage">
+            <position>32,575</position>
+            <value>Audio codec:</value>
+        </textarea>
+        <textarea name="audiocodec" from="storagerate">
+            <position>160,575</position>
+        </textarea>
+        <textarea name="channels" from="storage">
+            <position>32,610</position>
+            <value>Channels:</value>
+        </textarea>
+        <textarea name="audiochannels" from="storagerate">
+            <position>160,610</position>
+        </textarea>
+        <textarea name="audiorate" from="storage">
+            <position>32,645</position>
+            <value>Sample rate:</value>
+        </textarea>
+        <textarea name="samplerate" from="storagerate">
+            <position>160,645</position>
+        </textarea>
+
+<!--        <textarea name="filename" from="storagerate">
+            <area>32,690,310,20</area>
+            <font>normal_tiny</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>  -->   
+        
+    </window>
+
     <window name="osd_status">
         <fontdef name="small" face="MediaStreamALT">
             <pixelsize>21</pixelsize>
