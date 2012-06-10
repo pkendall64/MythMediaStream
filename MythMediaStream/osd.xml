@@ -249,6 +249,7 @@
             <align>right,top</align>
         </clock>
 
+
         <imagetype name="OSDPrevTrackNF">
             <area>436,70,50,50</area>	
             <filename>images/shared/OSDPrevTrackNF.png</filename>

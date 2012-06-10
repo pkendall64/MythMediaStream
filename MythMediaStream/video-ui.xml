@@ -807,6 +807,15 @@
             <position>670,420</position>
         </spinbox>
 
+        <textarea name="inetreflbl" from="title_editlbl">
+            <position>250,455</position>
+            <value>TMDB/TVDB ID:</value>
+        </textarea>
+
+        <textedit name="inetref_edit" from="textedit_menu">
+            <position>420,455</position>
+        </textedit>
+
         <textarea name="coverartbuttonlbl" from="textarea_base">
             <area>790,140,180,35</area>
             <alpha>128</alpha>
@@ -890,31 +899,32 @@
        <!-- SHOW GRAPHICS                                         -->
        <!-- ===================================================== -->
         <textarea name="coverart_text" from="title_editlbl">
-            <area>270,690,170,20</area>
+            <area>270,704,170,16</area>
             <font>tiny</font>
             <case>normal</case>
             <alpha>128</alpha>
-            <align>left,top</align>
+            <align>left,bottom</align>
         </textarea>
         <imagetype name="coverart">
-            <area>272,482,156,206</area>
+            <area>272,495,156,206</area>
             <alpha>255</alpha>
             <preserveaspect>no</preserveaspect>
         </imagetype>
         <textarea name="screenshot_text" from="coverart_text">
-            <position>470,625</position>
+            <position>478,638</position>
+            <align>left,vcenter</align>
             <value>Screenshot Image:</value>
         </textarea>
         <imagetype name="screenshot">
-            <area>472,482,276,141</area>
+            <area>472,495,276,141</area>
             <alpha>255</alpha>
             <preserveaspect>no</preserveaspect>
         </imagetype>
         <textarea name="banner_text" from="coverart_text">
-            <position>470,690</position>
+            <position>478,704</position>
         </textarea>
         <imagetype name="banner">
-            <area>472,647,276,41</area>
+            <area>472,660,276,41</area>
             <alpha>255</alpha>
             <preserveaspect>no</preserveaspect>
         </imagetype>
