@@ -572,6 +572,41 @@
            </textarea>
         </textedit>
 
+        <textedit name="textedit_menu_box_wide">
+           <area>0,0,510,90</area>
+           <statetype name="background">
+               <state name="active">
+                    <imagetype name="backgroundactive3">
+                        <area>0,0,510,90</area>
+                        <filename>images/shared/MenuItemNF.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selected">
+                    <imagetype name="backgroundactive3">
+                        <area>0,0,510,90</area>
+                        <filename>images/shared/MenuItemNF.png</filename>
+                    </imagetype>
+                    <imagetype name="backgroundselected3">
+                        <area>10,0,490,90</area>
+                        <filename>images/shared/MenuItemFO.png</filename>
+                    </imagetype>
+                </state>
+                <state name="inactive" from="active"/>
+           </statetype>
+           <imagetype name="cursor">
+               <filename>images/shared/cursor.png</filename>
+               <alpha>192</alpha>
+           </imagetype>
+           <textarea name="text">
+                <area>10,0,490,90</area>
+                <font>normal</font>
+                <align>left,top</align>
+                <multiline>yes</multiline>
+                <cutdown>yes</cutdown>
+                <alpha>128</alpha>
+           </textarea>
+        </textedit>
+
 <!-- ===================================================== -->
 <!-- CHECKBOX                                              -->
 <!-- ===================================================== -->
@@ -2437,6 +2472,22 @@
         <state name="10" from="9" />
     </statetype>
 
+<!-- ===================================================== -->
+<!-- GROUPS                                                -->
+<!-- ===================================================== -->
+
+    <group name="defaultscreenlayoutTVlist_1">
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/TVFanartOverlay.png</filename>
+        </imagetype>
+        <textarea name="clock" from="textarea_clock_base"/>
+	     <imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <imagetype name="MediaCountBackground">
+            <area>1110,5,160,40</area>
+            <filename>images/shared/MediaCountBackgroundLong.png</filename>
+        </imagetype>    
+    </group>
+
 
 <!-- ===================================================== -->
 <!-- WINDOWS & DIALOGS                                     -->
@@ -2983,79 +3034,7 @@
                 </state>
             </statetype>
         </buttonlist>
-
-<!--        <buttonlist name="results">
-            <area>20,22,363,378</area>
-            <layout>vertical</layout>
-            <spacing>5</spacing>
-            <wrapstyle>selection</wrapstyle>
-            <buttonarea>0,0,100%,97%</buttonarea>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,100%,85</area>
-                    <shape name="buttonbackground">
-                        <area>0,0,100%,100%</area>
-                        <fill style="gradient">
-                            <gradient start="#505050" end="#000000" alpha="200" direction="vertical"  />
-                        </fill>
-                    </shape>
-                    <imagetype name="buttonimage">
-                        <area>5,2,150,80</area>
-                        <preserveaspect>true</preserveaspect>
-                    </imagetype>
-                    <textarea name="resolution">
-                        <area>160,0,175,80</area>
-                        <font>basesmall</font>
-                        <cutdown>yes</cutdown>
-                        <align>left,vcenter</align>
-                    </textarea>
-                </state>
-                <state name="selectedactive" from="active">
-                    <shape name="buttonbackground">
-                        <fill style="gradient">
-                            <gradient start="#52CA38" end="#349838" alpha="255" />
-                        </fill>
-                    </shape>
-                </state>
-                <state name="selectedinactive" from="active">
-                    <shape name="buttonbackground">
-                        <fill style="gradient">
-                            <gradient start="#52CA38" end="#349838" alpha="100" />
-                        </fill>
-                    </shape>
-                    <textarea name="resolution">
-                        <font>basesmallpurple</font>
-                    </textarea>
-                </state>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>10,96%</position>
-                <state type="off">
-                    <imagetype name="upon">
-                        <filename>lb-uparrow-reg.png</filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="upoff">
-                        <filename>lb-uparrow-sel.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>40,96%</position>
-                <state type="off">
-                    <imagetype name="dnon">
-                        <filename>lb-dnarrow-reg.png</filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="dnoff">
-                        <filename>lb-dnarrow-sel.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
-        </buttonlist> -->
-        
+                
     </window>
 
 </mythuitheme>

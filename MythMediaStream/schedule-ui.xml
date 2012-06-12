@@ -1091,7 +1091,7 @@
             <value>Current Rule Phrase:</value>
         </textarea>
 
-        <textedit name="description" from="textedit_menu_wide">
+        <textedit name="description" from="textedit_menu_box_wide">
             <position>250,455</position>
         </textedit>
 

@@ -130,7 +130,7 @@
             <align>right,bottom</align>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
-            <value>Choose a local theme or download new ones</value>
+            <value>Choose a local theme or download new</value>
         </textarea>
 
         <textarea name="pagetitle" from="textarea_base">

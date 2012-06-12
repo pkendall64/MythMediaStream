@@ -9,19 +9,22 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamVideoBGD.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
+<!--        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
             <filename>images/shared/TVFanartOverlay.png</filename>
         </imagetype>
         <textarea name="clock" from="textarea_clock_base"/>
-	     <imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+	     <imagetype name="TitleBackgroundRecordings" from="titlebackground"/>-->
         <textarea name="ScreenTitleRecordings" from="screentitle">
             <value>WATCH RECORDINGS</value>
         </textarea>
 
-        <imagetype name="MediaCountBackground">
+<!--        <imagetype name="MediaCountBackground">
             <area>1110,5,160,40</area>
             <filename>images/shared/MediaCountBackgroundLong.png</filename>
-        </imagetype>
+        </imagetype>-->
 
         <textarea name="position" from="textarea_base">
             <area>1112,5,146,40</area>
@@ -38,7 +41,6 @@
         <buttonlist name="groups" from="buttonlist_menu">
             <position>740,260</position>
         </buttonlist>
-
 
         <!-- ===================================================== -->
         <!--     RECORDING LIST IN THE GROUP                       -->
@@ -470,7 +472,7 @@
     </window>
 
     <window name="groupfilter">
-       <shape name="shape_darken_background" from="shape_darken_base"/>
+<!--       <shape name="shape_darken_background" from="shape_darken_base"/>-->
        <imagetype name="popup_background">
            <area>974,0,308,720</area>	
            <filename>images/shared/HomeBladeSubRight.png</filename>
@@ -490,7 +492,7 @@
     </window>
 
     <window name="groupselector">
-       <shape name="shape_darken_background" from="shape_darken_base"/>
+<!--       <shape name="shape_darken_background" from="shape_darken_base"/>-->
        <imagetype name="popup_background">
            <area>974,0,308,720</area>	
            <filename>images/shared/HomeBladeSubRight.png</filename>
@@ -510,7 +512,7 @@
     </window>
 
     <window name="changeview">
-       <shape name="shape_darken_background" from="shape_darken_base"/>
+<!--       <shape name="shape_darken_background" from="shape_darken_base"/>-->
        <imagetype name="popup_background">
            <area>974,0,308,720</area>	
            <filename>images/shared/HomeBladeSubRight.png</filename>
@@ -588,14 +590,14 @@
             <value>Change Recording Group Password</value>
         </textarea>
         <textarea name="oldpasslabel" from="textarea_base">
-            <area>40,75,140,35</area>
+            <area>40,75,150,35</area>
             <value>Old Password:</value>
             <align>left,vcenter</align>
         </textarea>
         <textedit name="oldpassword" from="textedit_menu">
            <position>180,75</position>
         </textedit>
-        <textarea name="newpasslabel" from="textarea_base">
+        <textarea name="newpasslabel" from="oldpasslabel">
             <position>40,110</position>
             <value>New Password:</value>
         </textarea>
@@ -859,7 +861,7 @@
 
         <textarea name="inetreflbl" from="title_editlbl">
             <position>250,245</position>
-            <value>Inet Ref:</value>
+            <value>TMDB/TVDB ID:</value>
         </textarea>
 
         <textedit name="inetref" from="title">
@@ -883,6 +885,49 @@
         <spinbox name="episode" from="spinbox_base">
             <position>670,280</position>
         </spinbox>
+
+        <textarea name="descriptionlbl" from="title_editlbl">
+            <position>250,315</position>
+            <value>Description:</value>
+        </textarea>
+
+        <textedit name="description" from="textedit_menu_box_wide">
+           <position>250,350</position>
+        </textedit>
+
+       <!-- ===================================================== -->
+       <!-- SHOW GRAPHICS                                         -->
+       <!-- ===================================================== -->
+        <textarea name="coverart_text" from="title_editlbl">
+            <area>270,704,170,16</area>
+            <font>tiny</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>left,bottom</align>
+        </textarea>
+        <imagetype name="coverart">
+            <area>272,495,156,206</area>
+            <alpha>255</alpha>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+        <textarea name="screenshot_text" from="coverart_text">
+            <position>478,638</position>
+            <align>left,vcenter</align>
+            <value>Screenshot Image:</value>
+        </textarea>
+        <imagetype name="screenshot">
+            <area>472,495,276,141</area>
+            <alpha>255</alpha>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+        <textarea name="banner_text" from="coverart_text">
+            <position>478,704</position>
+        </textarea>
+        <imagetype name="banner">
+            <area>472,660,276,41</area>
+            <alpha>255</alpha>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
 
         <button name="ok" from="button_base_menu">
             <position>790,175</position>
