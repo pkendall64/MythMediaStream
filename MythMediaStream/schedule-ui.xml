@@ -6,11 +6,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/MovieViewBG.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutBrowse_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleProgramGuide" from="screentitle">
             <value>PROGRAM GUIDE</value>
         </textarea>
@@ -185,11 +183,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/MovieViewBG.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutBrowse_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleProgramGuide" from="screentitle">
             <value>PROGRAM GUIDE</value>
         </textarea>
@@ -360,35 +356,11 @@
 
     <window name="manualschedule">
         <imagetype name="background" from="image_wallpaper_base">
-            <area>0,0,1280,720</area>
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype> 
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- MANUAL RECORDING INPUT                             -->
@@ -488,17 +460,13 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	     <imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleProgramList" from="screentitle">
             <value>upcoming recordings</value>
         </textarea>
-
 	     <imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
-
         <textarea name="status" from="screentitle2">
             <font state="warning">normal_warning</font>
         </textarea>
@@ -690,32 +658,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/podium.jpg</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-<!--        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>-->
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- CHANNEL RECORING PRIORITY                          -->
@@ -862,32 +807,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/podium.jpg</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-<!--        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>-->
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- CHANNEL RECORING PRIORITY                          -->
@@ -1000,32 +922,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/podium.jpg</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Custom  RECORING PRIORITY                          -->
@@ -1126,31 +1025,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Custom  RECORING PRIORITY                          -->
@@ -1218,32 +1095,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Custom  RECORING PRIORITY                          -->
@@ -1297,32 +1151,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Custom  RECORING PRIORITY                          -->
@@ -1376,32 +1207,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Custom  RECORING PRIORITY                          -->
@@ -1491,11 +1299,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleProgramList" from="screentitle">
             <value>PROGRAM LIST</value>
         </textarea>
@@ -1686,11 +1492,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleProgramList" from="screentitle">
             <value>PROGRAM DETAILS</value>
         </textarea>
@@ -1711,32 +1515,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- SEARCH POPUP                                       -->
@@ -1781,11 +1562,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleProgramList" from="screentitle">
             <value>PROGRAM SEARCH</value>
         </textarea>
@@ -1896,11 +1675,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleProgramList" from="screentitle">
             <value>MANAGE RECORDING RULES</value>
         </textarea>
@@ -2081,31 +1858,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- CUSTOM EDIT POPUP                                  -->
@@ -2208,32 +1963,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- SCHEDULE EDITOR                                    -->
@@ -2398,32 +2130,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- SCHEDULE EDITOR                                    -->
@@ -2592,32 +2301,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- STORAGE  EDITOR                                    -->
@@ -2785,32 +2471,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- STORAGE  EDITOR                                    -->
@@ -2985,38 +2648,15 @@
     </window>
     
     <window name="metadataoptions">
-
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
-        <!-- ================================================== -->
-        <!-- STORAGE  EDITOR                                    -->
+        <!-- Screen description                                 -->
         <!-- ================================================== -->
         <textarea name="pagetitledesc" from="textarea_base">
             <area>250,10,515,65</area>
@@ -3042,31 +2682,52 @@
         <!-- screen content                                     -->
         <!-- ================================================== -->
 
-        <textarea name="inet" from="textarea_base">
+        <textarea name="title_editlbl" from="textarea_base">
             <area>250,175,510,35</area>
+            <value>Title:</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+           <area>420,175,340,35</area>
+           <case>normal</case>
+           <alpha>128</alpha>
+        </textarea>
+
+        <textarea name="subtitle_editlbl" from="title_editlbl">
+            <position>250,210</position>
+            <value>Subtitle:</value>
+        </textarea>
+
+        <textarea name="subtitle" from="title">
+            <position>420,210</position>
+        </textarea>
+
+        <textarea name="inetreflbl" from="title_editlbl">
+            <position>250,245</position>
             <value>TMDB/TVDB ID:</value>
         </textarea>
 
         <textedit name="inetref_edit" from="textedit_menu">
-            <position>420,175</position>
+            <position>420,245</position>
         </textedit>
 
-        <textarea name="seas" from="inet">
-            <position>250,210</position>
+        <textarea name="seasonlbl" from="title_editlbl">
+            <position>250,280</position>
             <value>Season:</value>
         </textarea>
 
         <spinbox name="season_spinbox" from="spinbox_menu">
-            <position>420,210</position>
+            <position>420,280</position>
         </spinbox>
 
-        <textarea name="ep" from="inet">
-            <position>530,210</position>
+        <textarea name="episodelbl" from="title_editlbl">
+            <position>530,280</position>
             <value>Episode:</value>
         </textarea>
 
         <spinbox name="episode_spinbox" from="spinbox_base">
-            <position>670,210</position>
+            <position>670,280</position>
         </spinbox>
 
         <button name="query_button" from="button_base_menu">
@@ -3130,50 +2791,22 @@
        <!-- ===================================================== -->
        <!-- SHOW GRAPHICS                                         -->
        <!-- ===================================================== -->
-        <textarea name="coverart_text" from="inet">
-            <area>270,486,170,20</area>
-            <font>tiny</font>
-            <case>normal</case>
-            <alpha>128</alpha>
-            <align>left,top</align>
-            <value>Coverart Image:</value>
-        </textarea>
-        <imagetype name="coverart">
-            <area>272,270,156,206</area>
-            <alpha>255</alpha>
-            <preserveaspect>no</preserveaspect>
-        </imagetype>
-        <textarea name="screenshot_text" from="coverart_text">
-            <position>470,415</position>
-            <value>Screenshot Image:</value>
-        </textarea>
-        <imagetype name="screenshot">
-            <area>472,270,276,141</area>
-            <alpha>255</alpha>
-            <preserveaspect>no</preserveaspect>
-        </imagetype>
-        <textarea name="banner_text" from="coverart_text">
-            <position>470,486</position>
-            <value>Banner Image:</value>
-        </textarea>
-        <imagetype name="banner">
-            <area>472,435,276,41</area>
-            <alpha>255</alpha>
-            <preserveaspect>no</preserveaspect>
-        </imagetype>
+       <group name="artworkoverview" from="defaultartworkoverview">
+           <position>250,320</position>
+       </group>
 
        <!-- ===================================================== -->
        <!-- Schedule details                                      -->
        <!-- ===================================================== -->
 
-        <textarea name="title" from="textarea_base">
+<!--        <textarea name="title" from="textarea_base">
             <area>250,515,510,40</area>
             <font>title</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <case>upper</case>
             <align>left,vcenter</align>
-        </textarea>
+        </textarea>-->
 
         <textarea name="longchannel" from="textarea_base">
             <area>250,555,510,25</area>
@@ -3240,15 +2873,12 @@
     </window>
     
     <window name="schedulediff">
-
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	     <imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleProgramList" from="screentitle">
             <value>Preview Schedule Changes</value>
         </textarea>

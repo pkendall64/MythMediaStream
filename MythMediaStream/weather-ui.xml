@@ -5,26 +5,17 @@
         <imagetype name="bgd" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamWeatherBGD.png</filename>
         </imagetype>
-<!--        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <area>0,0,1280,112</area>
-            <filename>images/shared/WeatherOverlay.png</filename>
-        </imagetype>-->
         <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
-
+        <imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
         <textarea name="ScreenTitleRecordings" from="screentitle">
             <value>WEATHER</value>
         </textarea>
-
-	<imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
-
+        <imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
         <textarea name="header" from="screentitle2"/>
-
         <imagetype name="MediaCountBackground">
             <area>1110,5,160,40</area>
             <filename>images/shared/MediaCountBackgroundLong.png</filename>
         </imagetype>
-
         <textarea name="pause_text" from="screentitle">
             <area>1112,5,146,40</area>
             <font>normal</font>
@@ -35,7 +26,7 @@
             <value>Running</value>
         </textarea>
 
-	<imagetype name="TitleBackgroundUpdate" from="titlebackground3"/>
+        <imagetype name="TitleBackgroundUpdate" from="titlebackground3"/>
 
         <textarea name="update_text" from="screentitle3">
             <multiline>no</multiline>
@@ -767,32 +758,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamWeatherBGD.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
         <!-- ================================================== -->
         <!-- Screen description                                 -->
         <!-- ================================================== -->
@@ -849,32 +817,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamWeatherBGD.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
         <!-- ================================================== -->
         <!-- Screen description                                 -->
         <!-- ================================================== -->
@@ -952,32 +897,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamWeatherBGD.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
         <!-- ================================================== -->
         <!-- Screen description                                 -->
         <!-- ================================================== -->
@@ -1052,32 +974,9 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamWeatherBGD.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
         <!-- ================================================== -->
         <!-- Screen description                                 -->
         <!-- ================================================== -->

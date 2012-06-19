@@ -6,20 +6,12 @@
         <imagetype name="picturesbgd" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamPicturesBGD.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleVideoGallery" from="screentitle">
             <value>PICTURE GALLERY</value>
         </textarea>
-
-        <imagetype name="MediaCountBackground">
-            <area>1110,5,160,40</area>
-            <filename>images/shared/MediaCountBackgroundLong.png</filename>
-        </imagetype>
-
         <textarea name="position" from="textarea_base">
             <area>1112,5,146,40</area>
             <font>normal</font>

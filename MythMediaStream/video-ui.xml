@@ -9,31 +9,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-<!--        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>-->
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Screen description                                 -->
@@ -75,31 +53,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-<!--        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>-->
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Screen description                                 -->
@@ -158,7 +114,6 @@
 
     </window>
 
-
     <!-- ===================================================== -->
     <!--     VIDEO MANAGER WINDOW                              -->
     <!-- ===================================================== -->
@@ -166,20 +121,12 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleVideoManager" from="screentitle">
             <value>VIDEO MANAGER</value>
         </textarea>
-
-        <imagetype name="MediaCountBackground">
-            <area>1110,5,160,40</area>
-            <filename>images/shared/MediaCountBackgroundLong.png</filename>
-        </imagetype>
-
         <textarea name="position" from="textarea_base">
             <area>1112,5,146,40</area>
             <font>normal</font>
@@ -319,7 +266,6 @@
 
     </window>
 
-
     <!-- ===================================================== -->
     <!--     VIDEO TREE WINDOW                                 -->
     <!-- ===================================================== -->
@@ -327,20 +273,12 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleVideoList" from="screentitle">
             <value>VIDEO LIST</value>
         </textarea>
-
-        <imagetype name="MediaCountBackground">
-            <area>1110,5,160,40</area>
-            <filename>images/shared/MediaCountBackgroundLong.png</filename>
-        </imagetype>
-
         <textarea name="position" from="textarea_base">
             <area>1112,5,146,40</area>
             <font>normal</font>
@@ -418,7 +356,6 @@
 
     </window>
 
-
     <!-- ===================================================== -->
     <!--     VIDEO BROWSER WINDOW                              -->
     <!-- ===================================================== -->
@@ -426,20 +363,12 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/MovieViewBG.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutBrowse_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleVideoBrowser" from="screentitle">
             <value>VIDEO BROWSER</value>
         </textarea>
-
-        <imagetype name="MediaCountBackground">
-            <area>1110,5,160,40</area>
-            <filename>images/shared/MediaCountBackgroundLong.png</filename>
-        </imagetype>
-
         <textarea name="position" from="textarea_base">
             <area>1112,5,146,40</area>
             <font>normal</font>
@@ -576,7 +505,6 @@
 
     </window>
 
-
     <!-- ===================================================== -->
     <!--     VIDEO GALLERY WINDOW                              -->
     <!-- ===================================================== -->
@@ -584,20 +512,12 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleVideoGallery" from="screentitle">
             <value>VIDEO GALLERY</value>
         </textarea>
-
-        <imagetype name="MediaCountBackground">
-            <area>1110,5,160,40</area>
-            <filename>images/shared/MediaCountBackgroundLong.png</filename>
-        </imagetype>
-
         <textarea name="position" from="textarea_base">
             <area>1112,5,146,40</area>
             <font>normal</font>
@@ -658,36 +578,13 @@
 
     </window>
 
-
     <window name="edit_metadata">
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Screen description                                 -->
@@ -735,12 +632,12 @@
             <position>420,210</position>
         </textedit>
 
-        <textarea name="player_editlbl" from="title_editlbl">
+        <textarea name="inetreflbl" from="title_editlbl">
             <position>250,245</position>
-            <value>Player Command:</value>
+            <value>TMDB/TVDB ID:</value>
         </textarea>
 
-        <textedit name="player_edit" from="title_edit">
+        <textedit name="inetref_edit" from="textedit_menu">
             <position>420,245</position>
         </textedit>
 
@@ -807,12 +704,12 @@
             <position>670,420</position>
         </spinbox>
 
-        <textarea name="inetreflbl" from="title_editlbl">
+        <textarea name="player_editlbl" from="title_editlbl">
             <position>250,455</position>
-            <value>TMDB/TVDB ID:</value>
+            <value>Player Command:</value>
         </textarea>
 
-        <textedit name="inetref_edit" from="textedit_menu">
+        <textedit name="player_edit" from="title_edit">
             <position>420,455</position>
         </textedit>
 
@@ -898,7 +795,11 @@
        <!-- ===================================================== -->
        <!-- SHOW GRAPHICS                                         -->
        <!-- ===================================================== -->
-        <textarea name="coverart_text" from="title_editlbl">
+       <group name="artworkoverview" from="defaultartworkoverview">
+           <position>250,495</position>
+       </group>
+
+<!--        <textarea name="coverart_text" from="title_editlbl">
             <area>270,704,170,16</area>
             <font>tiny</font>
             <case>normal</case>
@@ -927,11 +828,11 @@
             <area>472,660,276,41</area>
             <alpha>255</alpha>
             <preserveaspect>no</preserveaspect>
-        </imagetype>
+        </imagetype>-->
     </window>
 
     <window name="castpopup">
-        <shape name="shape_darken_background" from="shape_darken_base"/>
+<!--        <shape name="shape_darken_background" from="shape_darken_base"/>-->
         <imagetype name="popup_background">
             <area>974,0,308,720</area>	
             <filename>images/shared/HomeBladeSubRight.png</filename>
@@ -952,23 +853,55 @@
     </window>
 
     <window name="descriptionpopup">
-        <shape name="shape_darken_background" from="shape_darken_base"/>
-        <imagetype name="popup_background">
-            <area>974,0,308,720</area>	
-            <filename>images/shared/HomeBladeSubRight.png</filename>
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-       <textarea name="changeviewtitle">
-           <area>990,20,290,100</area>
-           <font>title_small</font>
-           <case>upper</case>
-           <multiline>yes</multiline>
-           <align>left,bottom</align>
-           <cutdown>yes</cutdown>
-           <value>Full Plot</value>
-       </textarea>
+        <group name="popuplarge" from="defaultpopuplarge">
+            <position>100,55</position>
+        </group>
+        <!-- ===================================================== -->
+        <!--     PROGRAM DETAILS                                   -->
+        <!-- ===================================================== -->
+        <imagetype name="coverart">
+            <area>130,120,333,500</area>
+            <filename>images/shared/Take2RaspberryLong.png</filename>
+            <preserveaspect>yes</preserveaspect>
+            <reflection shear="0" scale="65" length="10"/>
+        </imagetype>
+
+        <imagetype name="OverlayWUBG">
+            <position>432,195</position>
+            <filename>images/shared/OverlayWUBG.png</filename>
+        </imagetype>
+
+        <statetype name="watchedstate">
+            <state name="yes">
+                <imagetype name="yes">
+                    <position>438,199</position>
+                    <filename>images/shared/OverlayWatched.png</filename>
+                </imagetype>
+            </state>
+            <state name="no">
+                <imagetype name="no">
+                    <position>438,199</position>
+                    <filename>images/shared/OverlayUnwatched.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <textarea name="descriptionlbl" from="textarea_base">
+            <area>480,120,680,35</area>
+            <font>title</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <value>Full plot:</value>
+        </textarea>
 
         <textarea name="description" from="textarea_base">
-            <area>1000,130,270,580</area>
+            <area>480,155,680,485</area>
             <font>small</font>
             <case>normal</case>
             <align>justify</align>
@@ -983,20 +916,9 @@
             <area>0,0,1280,720</area>
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-
-        <imagetype name="DialogContextTop">
-            <area>100,55,1080,40</area>
-            <filename>images/shared/DialogContextTop.png</filename>
-        </imagetype>
-        <imagetype name="DialogContextMiddle">
-            <area>100,94,1080,556</area>
-            <filename>images/shared/DialogContextMiddle.png</filename>
-        </imagetype>
-        <imagetype name="DialogContextBottom">
-            <area>100,650,1080,15</area>
-            <filename>images/shared/DialogContextBottom.png</filename>
-        </imagetype>
-
+        <group name="popuplarge" from="defaultpopuplarge">
+            <position>100,55</position>
+        </group>
         <!-- ===================================================== -->
         <!--     PROGRAM DETAILS                                   -->
         <!-- ===================================================== -->
@@ -1125,31 +1047,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/video-settings.jpg</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Screen description                                 -->
@@ -1235,31 +1135,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/video-settings.jpg</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Screen description                                 -->
@@ -1371,36 +1249,13 @@
 
     </window>
 
-<!--to do-->
     <window name="filter">
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Screen description                                 -->
@@ -1558,36 +1413,13 @@
         </button>
      </window>
 
-
     <window name="metadatasettings">
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/video-settings.jpg</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Screen description                                 -->

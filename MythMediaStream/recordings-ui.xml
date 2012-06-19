@@ -12,20 +12,9 @@
         <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
             <position>0,0</position>        
         </group>
-<!--        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	     <imagetype name="TitleBackgroundRecordings" from="titlebackground"/>-->
         <textarea name="ScreenTitleRecordings" from="screentitle">
             <value>WATCH RECORDINGS</value>
         </textarea>
-
-<!--        <imagetype name="MediaCountBackground">
-            <area>1110,5,160,40</area>
-            <filename>images/shared/MediaCountBackgroundLong.png</filename>
-        </imagetype>-->
-
         <textarea name="position" from="textarea_base">
             <area>1112,5,146,40</area>
             <font>normal</font>
@@ -614,7 +603,6 @@
 
     <window name="iconhelp">
         <area>0,0,1280,720</area>
-        <shape name="shape_darken_background" from="shape_darken_base"/>
         <imagetype name="popup_background">
             <area>869,0,411,720</area>	
             <filename>images/shared/HomeBladeSubRight.png</filename>
@@ -788,31 +776,9 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamVideoBGD.png</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
 
         <!-- ================================================== -->
         <!-- Screen description                                 -->
@@ -898,36 +864,9 @@
        <!-- ===================================================== -->
        <!-- SHOW GRAPHICS                                         -->
        <!-- ===================================================== -->
-        <textarea name="coverart_text" from="title_editlbl">
-            <area>270,704,170,16</area>
-            <font>tiny</font>
-            <case>normal</case>
-            <alpha>128</alpha>
-            <align>left,bottom</align>
-        </textarea>
-        <imagetype name="coverart">
-            <area>272,495,156,206</area>
-            <alpha>255</alpha>
-            <preserveaspect>no</preserveaspect>
-        </imagetype>
-        <textarea name="screenshot_text" from="coverart_text">
-            <position>478,638</position>
-            <align>left,vcenter</align>
-            <value>Screenshot Image:</value>
-        </textarea>
-        <imagetype name="screenshot">
-            <area>472,495,276,141</area>
-            <alpha>255</alpha>
-            <preserveaspect>no</preserveaspect>
-        </imagetype>
-        <textarea name="banner_text" from="coverart_text">
-            <position>478,704</position>
-        </textarea>
-        <imagetype name="banner">
-            <area>472,660,276,41</area>
-            <alpha>255</alpha>
-            <preserveaspect>no</preserveaspect>
-        </imagetype>
+       <group name="artworkoverview" from="defaultartworkoverview">
+           <position>250,495</position>
+       </group>
 
         <button name="ok" from="button_base_menu">
             <position>790,175</position>

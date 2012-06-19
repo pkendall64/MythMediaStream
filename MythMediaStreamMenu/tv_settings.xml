@@ -44,13 +44,6 @@
     </button>
 
     <button>
-        <type>TV_SETTINGS_RECORDING_PROFILES</type>
-        <text>Profiles</text>
-        <description>Setup recordings</description>
-        <action>SETTINGS RECORDING</action>
-    </button>
-
-    <button>
         <type>TV_RECPRIORITIES_SETTINGS_GENERAL</type>
         <text>Priorities</text>
         <description>Setup recording</description>

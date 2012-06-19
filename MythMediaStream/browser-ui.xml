@@ -10,7 +10,7 @@
             <filename>images/shared/TVFanartOverlay.png</filename>
         </imagetype>
         <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
         <textarea name="ScreenTitleRecordings" from="screentitle">
             <value>WEB BROWSER</value>
         </textarea>
@@ -50,11 +50,9 @@
         <imagetype name="browserbgd" from="image_wallpaper_base">
             <filename>images/backgrounds/web.jpg</filename>
         </imagetype>
-        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
-            <filename>images/shared/TVFanartOverlay.png</filename>
-        </imagetype>
-        <textarea name="clock" from="textarea_clock_base"/>
-	<imagetype name="TitleBackgroundRecordings" from="titlebackground"/>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
         <textarea name="ScreenTitleRecordings" from="screentitle">
             <value>BOOKMARK MANAGER</value>
         </textarea>
@@ -108,32 +106,9 @@
             <area>0,0,1280,720</area>
             <filename>images/backgrounds/web.jpg</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
         <!-- ================================================== -->
         <!-- content of the window                              -->
         <!-- ================================================== -->
@@ -206,32 +181,9 @@
             <area>0,0,1280,720</area>
             <filename>images/backgrounds/web.jpg</filename>
         </imagetype>
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
-
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" from="textarea_clock_base"/>
-
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
         <!-- ================================================== -->
         <!-- content of the window                              -->
         <!-- ================================================== -->

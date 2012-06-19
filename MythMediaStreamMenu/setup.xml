@@ -42,6 +42,13 @@
      <action>STORAGE GROUPS</action>
    </button>
 
+    <button>
+        <type>TV_SETTINGS_RECORDING_PROFILES</type>
+        <text>Profiles</text>
+        <description>Setup recordings</description>
+        <action>RECORDING PROFILE</action>
+    </button>
+
    <button>
      <type>SETUP_SYSTEM_EVENTS</type>
      <text>Events</text>
