@@ -170,6 +170,7 @@ MythTV Archive GUI theme
         <button name="next_button" from="button_base_menu">
             <position>790,385</position>
             <value>Next</value>
+            <focusorder>1</focusorder>
         </button>
 
     </window>
@@ -222,6 +223,7 @@ MythTV Archive GUI theme
 
         <button name="home_button" from="button_base_menu">
             <position>790,210</position>
+            <focusorder>1</focusorder>
             <value>Home</value>
         </button>
 
@@ -499,6 +501,7 @@ MythTV Archive GUI theme
         <button name="finish_button" from="button_base_menu">
             <position>790,490</position>
             <value>Finish</value>
+            <focusorder>1</focusorder>
         </button>
 
   </window>
