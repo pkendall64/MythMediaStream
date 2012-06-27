@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
+<mythuitheme>
+
+    <window name="generalsettings">
+
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/music-settings.jpg</filename>
+        </imagetype>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Configure Music folders and general options</value>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>General Settings</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+        <textarea name="musiclocationlbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Music Directory:</value>
+        </textarea> 
+
+        <textedit name="musiclocation" from="textedit_menu">
+            <position>420,175</position>
+        </textedit>
+
+        <textarea name="musiccddevice_label" from="musiclocationlbl">
+            <position>250,210</position>
+            <value>CD device:</value>
+        </textarea>
+
+        <textedit name="musiccddevice" from="textedit_menu">
+            <position>420,210</position>
+        </textedit>
+
+        <textarea name="musicaudiodevice_label" from="musiclocationlbl">
+            <position>250,245</position>
+            <value>Audio device:</value>
+        </textarea>
+
+        <textedit name="musicaudiodevice" from="textedit_menu">
+            <position>420,245</position>
+        </textedit>
+
+        <textarea name="musicdefaultupmix_label" from="musiclocationlbl">
+            <position>250,315</position>
+            <value>Convert stereo to 5.1 sound:</value>
+        </textarea>
+
+        <checkbox name="musicdefaultupmix" from="checkbox_base">
+            <position>735,315</position>
+        </checkbox>
+
+        <textarea name="nonid3filenameformat_label" from="musiclocationlbl">
+            <position>250,385</position>
+            <value>Filename Format:</value>
+        </textarea>
+
+        <textedit name="nonid3filenameformat" from="textedit_menu">
+            <position>420,385</position>
+        </textedit>
+
+        <textarea name="ignoreid3tags_label" from="musiclocationlbl">
+            <position>250,420</position>
+            <value>Ignore ID3 Tags:</value>
+        </textarea>
+
+        <checkbox name="ignoreid3tags" from="checkbox_menu">
+            <position>420,420</position>
+        </checkbox>
+
+        <textarea name="tagencoding_label" from="musiclocationlbl">
+            <position>250,455</position>
+            <value>Tag Encoding:</value>
+        </textarea>
+
+        <buttonlist name="tagencoding" from="selector_base">
+            <position>420,455</position>
+        </buttonlist>
+
+        <textarea name="allowtagwriting_label" from="musiclocationlbl">
+            <position>250,525</position>
+            <value>Allow metadata to be written to tags:</value>
+        </textarea>
+
+        <checkbox name="allowtagwriting" from="checkbox_base">
+            <position>735,525</position>
+        </checkbox>
+
+        <textarea name="helptext" from="textarea_base">
+            <area>250,560,510,150</area>
+            <cutdown>yes</cutdown>
+            <font>smaller</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>hcenter,bottom</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="button_base_menu">
+            <position>790,175</position>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="playersettings">
+
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/music-settings.jpg</filename>
+        </imagetype>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Configure Music playback options</value>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Player Settings</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+        <textarea name="resumemodelbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Resume mode:</value>
+        </textarea>
+        <buttonlist name="resumemode" from="selector_base">
+            <position>420,175</position>
+        </buttonlist>
+
+        <textarea name="exitaction_label" from="resumemodelbl">
+            <position>250,210</position>
+            <value>Action on exit:</value>
+        </textarea>
+        <buttonlist name="exitaction" from="selector_base">
+            <position>420,210</position>
+        </buttonlist>
+
+        <textarea name="autolookupcd_label" from="resumemodelbl">
+            <position>250,280</position>
+            <value>Automatically lookup CDs:</value>
+        </textarea>
+        <checkbox name="autolookupcd" from="checkbox_base">
+            <position>735,280</position>
+        </checkbox>
+
+        <textarea name="autoplaycd_label" from="resumemodelbl">
+            <position>250,315</position>
+            <value>Automatically Play CDs:</value>
+        </textarea>
+        <checkbox name="autoplaycd" from="checkbox_base">
+            <position>735,315</position>
+        </checkbox>
+
+        <textarea name="helptext" from="textarea_base">
+            <area>250,560,510,150</area>
+            <cutdown>yes</cutdown>
+            <font>smaller</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>hcenter,bottom</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="button_base_menu">
+            <position>790,175</position>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="ratingsettings">
+
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/music-settings.jpg</filename>
+        </imagetype>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Configure Music rating options</value>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Rating Settings</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+        <textarea name="ratingweightlbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Rating Weight:</value>
+        </textarea>
+        <spinbox name="ratingweight" from="spinbox_base">
+            <position>665,175</position>
+        </spinbox>
+
+        <textarea name="playcountweight_label" from="ratingweightlbl">
+            <position>250,210</position>
+            <value>Play Count Weight:</value>
+        </textarea>
+        <spinbox name="playcountweight" from="spinbox_base">
+            <position>665,210</position>
+        </spinbox>
+
+        <textarea name="lastplayweight_label" from="ratingweightlbl">
+            <position>250,245</position>
+            <value>Last Play Weight:</value>
+        </textarea>
+        <spinbox name="lastplayweight" from="spinbox_base">
+            <position>665,245</position>
+        </spinbox>
+
+        <textarea name="randomweight_label" from="ratingweightlbl">
+            <position>250,280</position>
+            <value>Random Weight:</value>
+        </textarea>
+        <spinbox name="randomweight" from="spinbox_base">
+            <position>665,280</position>
+        </spinbox>
+
+        <textarea name="helptext" from="textarea_base">
+            <area>250,560,510,150</area>
+            <cutdown>yes</cutdown>
+            <font>smaller</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>hcenter,bottom</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="button_base_menu">
+            <position>790,175</position>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="importsettings">
+
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/music-settings.jpg</filename>
+        </imagetype>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Configure CD copying options</value>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Ripper Settings</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+        <textarea name="paranoialevellbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Paranoia Level:</value>
+        </textarea>
+        <buttonlist name="paranoialevel" from="selector_base">
+            <position>420,175</position>
+        </buttonlist>
+
+        <textarea name="filenametemplate_label" from="paranoialevellbl">
+            <position>250,210</position>
+            <value>storage location:</value>
+        </textarea>
+        <textedit name="filenametemplate" from="textedit_menu">
+            <position>420,210</position>
+        </textedit>
+
+        <textarea name="nowhitespace_label" from="paranoialevellbl">
+            <position>250,280</position>
+            <value>Replace space with underscore:</value>
+        </textarea>
+        <checkbox name="nowhitespace" from="checkbox_base">
+            <position>735,280</position>
+        </checkbox>
+
+        <textarea name="encoding_label" from="paranoialevellbl">
+            <position>250,350</position>
+            <value>Encoding Type:</value>
+        </textarea>
+        <buttonlist name="encodertype" from="selector_base">
+            <position>420,350</position>
+        </buttonlist>
+
+        <textarea name="defaultripquality_label" from="paranoialevellbl">
+            <position>250,385</position>
+            <value>Default Rip Quality:</value>
+        </textarea>
+        <buttonlist name="defaultripquality" from="selector_base">
+            <position>420,385</position>
+        </buttonlist>
+
+        <textarea name="mp3usevbr_label" from="paranoialevellbl">
+            <position>250,455</position>
+            <value>Use variable bitrates:</value>
+        </textarea>
+        <checkbox name="mp3usevbr" from="checkbox_base">
+            <position>735,455</position>
+        </checkbox>
+
+        <textarea name="ejectcd_label" from="paranoialevellbl">
+            <position>250,490</position>
+            <value>Automatically eject CDs after ripping:</value>
+        </textarea>
+        <checkbox name="ejectcd" from="checkbox_base">
+            <position>735,490</position>
+        </checkbox>
+
+        <textarea name="postcdripscript_label" from="paranoialevellbl">
+            <position>250,560</position>
+            <value>Script Path:</value>
+        </textarea>
+        <textedit name="postcdripscript" from="textedit_menu">
+            <position>420,560</position>
+        </textedit>
+
+        <textarea name="helptext" from="textarea_base">
+            <area>250,560,510,150</area>
+            <cutdown>yes</cutdown>
+            <font>smaller</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>hcenter,bottom</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="button_base_menu">
+            <position>790,175</position>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="visualizationsettings">
+
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/music-settings.jpg</filename>
+        </imagetype>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
+
+        <!-- ================================================== -->
+        <!-- Screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Configure Music visualization options</value>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Visualiser Settings</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+        <textarea name="cycleonsongchangelbl" from="textarea_base">
+            <area>250,175,510,35</area>
+            <value>Change Visualizer on each song:</value>
+        </textarea>
+        <checkbox name="cycleonsongchange" from="checkbox_base">
+            <position>735,175</position>
+        </checkbox>
+
+        <textarea name="randomizeorder_label" from="cycleonsongchangelbl">
+            <position>250,210</position>
+            <value>Randomize Visualizer order:</value>
+        </textarea>
+        <checkbox name="randomizeorder" from="checkbox_base">
+            <position>735,210</position>
+        </checkbox>
+
+        <textarea name="scalewidth_label" from="cycleonsongchangelbl">
+            <position>250,280</position>
+            <value>Width for Visual Scaling:</value>
+        </textarea>
+        <spinbox name="scalewidth" from="spinbox_base">
+            <position>665,280</position>
+        </spinbox>
+
+        <textarea name="scaleheight_label" from="cycleonsongchangelbl">
+            <position>250,315</position>
+            <value>Height for Visual Scaling:</value>
+        </textarea>
+        <spinbox name="scaleheight" from="spinbox_base">
+            <position>665, 315</position>
+        </spinbox>
+
+        <textarea name="helptext" from="textarea_base">
+            <area>250,560,510,150</area>
+            <cutdown>yes</cutdown>
+            <font>smaller</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>hcenter,bottom</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="button_base_menu">
+            <position>790,175</position>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+</mythuitheme>

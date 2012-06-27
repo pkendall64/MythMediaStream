@@ -598,6 +598,18 @@
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
+           <state name="MUSIC_SETTINGS_RATING">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/music-settings.jpg</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
+           <state name="MUSIC_SETTINGS_VISUALIZATION">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/music-settings.jpg</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
            <!-- ########  musicmenu.xml  ########-->
            <state name="MUSIC_PLAY">
                <imagetype name="watermark">

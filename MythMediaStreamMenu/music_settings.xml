@@ -3,22 +3,36 @@
    <button>
       <type>MUSIC_SETTINGS_GENERAL</type>
       <text>Settings</text>
-      <action>MUSIC_SET_GENERAL</action>
+      <action>SETTINGS_GENERAL</action>
       <description>General music</description>
    </button>
 
    <button>
       <type>MUSIC_SETTINGS_PLAYER</type>
       <text>Player</text>
-      <action>MUSIC_SET_PLAYER</action>
-      <description>Setup your Music</description>
+      <action>SETTINGS_PLAYER</action>
+      <description>Setup you music</description>
    </button>
 
    <button>
       <type>MUSIC_SETTINGS_RIP</type>
       <text>Ripper</text>
-      <action>MUSIC_SET_RIPPER</action>
+      <action>SETTINGS_IMPORT</action>
       <description>Configure your CD</description>
+   </button>
+
+   <button>
+      <type>MUSIC_SETTINGS_RATING</type>
+      <text>Ratings</text>
+      <action>SETTINGS_RATING</action>
+      <description>Setup your music</description>
+   </button>
+
+   <button>
+      <type>MUSIC_SETTINGS_VISUALIZATION</type>
+      <text>Visualizer</text>
+      <action>SETTINGS_VISUALIZATION</action>
+      <description>Configure settings for</description>
    </button>
 
 </mythmenu>
