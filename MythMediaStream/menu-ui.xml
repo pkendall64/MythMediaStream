@@ -943,16 +943,16 @@
 		                <filename>images/shared/DiffuseMirrorBlack.png</filename>
                    </imagetype>
                    <textarea name="buttontext">
-                       <area>0,0,370,200</area>
+                       <area>0,71,370,200</area>
 	                    <alpha>255</alpha>
 	                    <font>menumain_active</font>
                        <case>upper</case>
-	                    <multiline>no</multiline>
+	                    <multiline>yes</multiline>
 	                    <cutdown>yes</cutdown>
-	                    <align>right,vcenter</align>
+	                    <align>right,top</align>
                    </textarea>
                    <textarea name="description">
-                       <area>0,10,365,65</area>
+                       <area>0,0,365,75</area>
                        <font>menumain_description</font>
                        <case>upper</case>
                        <multiline>yes</multiline>
