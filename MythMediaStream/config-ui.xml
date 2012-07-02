@@ -354,70 +354,95 @@
 
     <window name="grabbersettings">
 
-        <textarea name="title" from="basetextarea">
-            <area>20,40,760,40</area>
-            <value>Artwork and Metadata Sources</value>
-            <align>hcenter,vcenter</align>
-            <font>baselarge</font>
-        </textarea>
-
-        <textarea name="helptext" from="basetextarea">
-            <area>50,350,700,280</area>
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/dvd.jpg</filename>
+        </imagetype>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
+        <!-- ================================================== -->
+        <!-- screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
             <multiline>yes</multiline>
-            <font>basesmall</font>
-            <align>allcenter</align>
+            <value>Customize your grabber settings</value>
         </textarea>
 
-        <textarea name="moviegrabber_text" from="basetextarea">
-            <area>75,173,225,30</area>
-            <font>basesmall</font>
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Artwork and Metadata</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+        <textarea name="moviegrabberlbl" from="textarea_base">
+            <area>250,175,510,35</area>
             <value>Movie Metadata Source:</value>
         </textarea>
 
-        <textarea name="tvgrabber_text" from="basetextarea">
-            <area>75,238,225,30</area>
-            <font>basesmall</font>
+        <textarea name="tvgrabber_text" from="moviegrabberlbl">
+            <position>250,280</position>
             <value>Television Metadata Source:</value>
         </textarea>
 
-        <textarea name="gamegrabber_text" from="basetextarea">
-            <area>75,303,225,30</area>
-            <font>basesmall</font>
+        <textarea name="gamegrabber_text" from="moviegrabberlbl">
+            <position>250,385</position>
             <value>Game Metadata Source:</value>
         </textarea>
 
-        <textarea name="dailyupdates_text" from="basetextarea">
-            <area>330,365,500,40</area>
+        <textarea name="dailyupdates_text" from="moviegrabberlbl">
+            <position>250,490</position>
             <value>Perform daily updates of recording artwork</value>
-            <align>left,vcenter</align>
         </textarea>
 
     <!--Widgets-->
 
-        <buttonlist name="moviegrabber" from="basewideselector">
-            <position>310,167</position>
+        <buttonlist name="moviegrabber" from="selector_base_wide">
+            <position>250,210</position>
         </buttonlist>
 
-        <buttonlist name="tvgrabber" from="basewideselector">
-            <position>310,232</position>
+        <buttonlist name="tvgrabber" from="selector_base_wide">
+            <position>250,315</position>
         </buttonlist>
 
-        <buttonlist name="gamegrabber" from="basewideselector">
-            <position>310,297</position>
+        <buttonlist name="gamegrabber" from="selector_base_wide">
+            <position>250,420</position>
         </buttonlist>
 
-        <checkbox name="dailyupdates" from="basecheckbox">
-            <position>290,370</position>
+        <checkbox name="dailyupdates" from="checkbox_base">
+            <position>735,490</position>
         </checkbox>
 
-        <button name="cancel" from="basebutton">
-            <position>188,530</position>
-            <value>Cancel</value>
+        <textarea name="helptext" from="textarea_base">
+            <area>250,560,510,150</area>
+            <cutdown>yes</cutdown>
+            <font>smaller</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>hcenter,bottom</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="ok" from="button_base_menu">
+            <position>790,175</position>
+            <value>Save</value>
         </button>
 
-        <button name="ok" from="basebutton">
-            <position>435,530</position>
-            <value>OK</value>
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
         </button>
 
     </window>

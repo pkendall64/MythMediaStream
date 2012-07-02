@@ -2,6 +2,13 @@
 <mythmenu name="SETUP">
 
     <button>
+        <type>SETTINGS_SETUPWIZARD</type>
+        <text>Wizard</text>
+        <description>Basic configuration by</description>
+        <action>SETTINGS SETUPWIZARD</action>
+    </button>
+
+    <button>
         <type>SETUP_MENU</type>
         <text>Core Setup</text>
         <description>Configure</description>

@@ -826,6 +826,12 @@
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
+           <state name="SETTINGS_SETUPWIZARD">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
            <state name="NETFLIX">
                <imagetype name="watermark">
                    <filename>images/backgrounds/default.png</filename>

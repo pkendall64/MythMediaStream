@@ -47,6 +47,14 @@
     </button>
 
     <button>
+        <type>GAME</type>
+        <text>Games</text>
+        <description>Play your video</description>
+        <action>PLUGIN mythgame</action>
+        <depends>mythgame</depends>
+    </button>
+
+    <button>
         <type>WEATHER</type>
         <text>Weather</text>
         <action>PLUGIN mythweather</action>
