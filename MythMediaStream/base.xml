@@ -780,6 +780,43 @@
        </statetype>
    </button>
 
+   <button name="button_base_menu_wide" from="button_base_menu">
+        <statetype name="buttonstate">
+           <!--ACTIVE-->
+           <state name="active">
+               <imagetype name="ButtonMenuBack">
+                   <area>0,0,510,35</area>
+               </imagetype>
+               <textarea name="text">
+                   <area>10,0,500,35</area>
+                   <align>allcenter</align>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selected">
+               <imagetype name="ButtonMenuBack">
+                   <area>0,0,510,35</area>
+               </imagetype>
+               <imagetype name="ButtonMenuFront">
+                   <area>0,0,510,35</area>
+               </imagetype>
+               <textarea name="text">
+                   <area>10,0,500,35</area>
+                   <align>allcenter</align>
+               </textarea>
+           </state>
+           <!--PUSHED-->
+           <state name="pushed" from="active">
+               <alpha>128</alpha>
+               <textarea name="text">
+                   <area>10,0,500,35</area>
+                   <align>allcenter</align>
+               </textarea>
+           </state>
+       </statetype>  
+   </button>
+
+
 <!-- ===================================================== -->
 <!--     BUTTONLIST MENU                                   -->
 <!-- ===================================================== -->
@@ -2681,7 +2718,8 @@
 
    <window name="MythProgressDialog" from="dialog_base">
        <textarea name="message" from="textarea_base">
-           <area>20,35,480,35</area>
+           <area>20,35,480,70</area>
+           <align>allcenter</align>
            <font>popup_title</font>
        </textarea>
        <textarea name="progresstext" from="textarea_base">

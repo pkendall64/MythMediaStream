@@ -4,7 +4,7 @@
     <button>
         <type>SETTINGS_SETUPWIZARD</type>
         <text>Wizard</text>
-        <description>Basic configuration by</description>
+        <description>Basic configuration</description>
         <action>SETTINGS SETUPWIZARD</action>
     </button>
 

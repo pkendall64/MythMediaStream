@@ -449,206 +449,318 @@
 
     <window name="generalwizard">
 
-        <textarea name="title" from="basetextarea">
-            <area>20,40,760,40</area>
-            <value>MythTV Configuration Wizard</value>
-            <align>hcenter,vcenter</align>
-            <font>baselarge</font>
-        </textarea>
-
-        <textarea name="helptext" from="basetextarea">
-            <area>30,470,740,50</area>
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
+        </imagetype>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
+        <!-- ================================================== -->
+        <!-- screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
             <multiline>yes</multiline>
-            <font>basesmall</font>
-            <align>allcenter</align>
+            <value>Wizard for main mythtv settings</value>
         </textarea>
 
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Hardware Configuration</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
     <!--Widgets-->
 
-        <button name="submit" from="basewidebutton">
-            <position>250,167</position>
+        <button name="submit" from="button_base_menu_wide">
+            <position>250,175</position>
             <value>Submit your hardware profile</value>
         </button>
 
-        <button name="view" from="basewidebutton">
-            <position>250,232</position>
+        <button name="view" from="button_base_menu_wide">
+            <position>250,210</position>
             <value>View your hardware profile</value>
         </button>
 
-        <button name="delete" from="basewidebutton">
-            <position>250,297</position>
+        <button name="delete" from="button_base_menu_wide">
+            <position>250,245</position>
             <value>Delete your hardware profile</value>
         </button>
 
-        <button name="cancel" from="basebutton">
-            <position>188,530</position>
-            <value>Cancel</value>
+        <textarea name="helptext" from="textarea_base">
+            <area>250,560,510,150</area>
+            <cutdown>yes</cutdown>
+            <font>smaller</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>hcenter,bottom</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="next" from="button_base_menu">
+            <position>790,175</position>
+            <value>Next</value>
         </button>
 
-        <button name="next" from="basebutton">
-            <position>435,530</position>
-            <value>Next</value>
+        <button name="cancel" from="button_base_menu">
+            <position>790,210</position>
+            <value>Cancel</value>
         </button>
 
     </window>
 
     <window name="audiowizard">
 
-        <textarea name="title" from="basetextarea">
-            <area>20,40,760,40</area>
-            <value>Audio Configuration</value>
-            <align>hcenter,vcenter</align>
-            <font>baselarge</font>
-        </textarea>
-
-        <textarea name="helptext" from="basetextarea">
-            <area>30,470,740,50</area>
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
+        </imagetype>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
+        <!-- ================================================== -->
+        <!-- screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
             <multiline>yes</multiline>
-            <font>basesmall</font>
-            <align>allcenter</align>
+            <value>Wizard for main mythtv settings</value>
         </textarea>
 
-        <textarea name="auddev_text" from="basetextarea">
-            <area>20,103,225,30</area>
-            <font>basesmall</font>
-            <align>right</align>
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Audio Configuration</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+        <textarea name="auddevlbl" from="textarea_base">
+            <area>250,175,510,35</area>
             <value>Audio Device:</value>
         </textarea>
 
-        <textarea name="ac3_text" from="basetextarea">
-            <area>290,155,-20,30</area>
-            <font>basesmall</font>
+        <textarea name="ac3lbl" from="auddevlbl">
+            <position>250,245</position>
+            <case>normal</case>
+            <alpha>128</alpha>
             <value>My audio subsystem supports Dolby Digital</value>
         </textarea>
 
-        <textarea name="dts_text" from="basetextarea">
-            <area>290,200,-20,30</area>
-            <font>basesmall</font>
+        <textarea name="dts_text" from="ac3lbl">
+            <position>250,280</position>
             <value>My audio subsystem supports DTS</value>
         </textarea>
 
-        <textarea name="eac3_text" from="basetextarea">
-            <area>290,245,-20,30</area>
-            <font>basesmall</font>
+        <textarea name="eac3_text" from="ac3lbl">
+            <position>250,315</position>
             <value>My audio subsystem supports E-AC-3</value>
         </textarea>
 
-        <textarea name="truehd_text" from="basetextarea">
-            <area>290,290,-20,30</area>
-            <font>basesmall</font>
+        <textarea name="truehd_text" from="ac3lbl">
+            <position>250,350</position>
             <value>My audio subsystem supports TrueHD</value>
         </textarea>
 
-        <textarea name="dtshd_text" from="basetextarea">
-            <area>290,335,-20,30</area>
-            <font>basesmall</font>
+        <textarea name="dtshd_text" from="ac3lbl">
+            <position>250,385</position>
             <value>My audio subsystem supports DTS-HD</value>
         </textarea>
 
-        <textarea name="speaktext_text" from="basetextarea">
-            <area>20,378,225,30</area>
-            <font>basesmall</font>
-            <align>right</align>
+        <textarea name="speaktext_text" from="auddevlbl">
+            <position>250,455</position>
             <value>Number of Speakers:</value>
         </textarea>
 
     <!--Widgets-->
 
-        <buttonlist name="audiodevices" from="basewideselector">
-            <position>250,97</position>
+        <buttonlist name="audiodevices" from="selector_base">
+            <position>420,175</position>
         </buttonlist>
 
-        <checkbox name="ac3check" from="basecheckbox">
-            <position>250,153</position>
+        <checkbox name="ac3check" from="checkbox_base">
+            <position>735,245</position>
         </checkbox>
 
-        <checkbox name="dtscheck" from="basecheckbox">
-            <position>250,198</position>
+        <checkbox name="dtscheck" from="checkbox_base">
+            <position>735,280</position>
         </checkbox>
 
-        <checkbox name="eac3check" from="basecheckbox">
-            <position>250,243</position>
+        <checkbox name="eac3check" from="checkbox_base">
+            <position>735,315</position>
         </checkbox>
 
-        <checkbox name="truehdcheck" from="basecheckbox">
-            <position>250,288</position>
+        <checkbox name="truehdcheck" from="checkbox_base">
+            <position>735,350</position>
         </checkbox>
 
-        <checkbox name="dtshdcheck" from="basecheckbox">
-            <position>250,333</position>
+        <checkbox name="dtshdcheck" from="checkbox_base">
+            <position>735,385</position>
         </checkbox>
 
-        <buttonlist name="speakers" from="basewideselector">
-            <position>250,372</position>
+        <buttonlist name="speakers" from="selector_base_small">
+            <position>590,455</position>
         </buttonlist>
 
-        <button name="testspeakers" from="basewidebutton">
-            <position>250,422</position>
+        <button name="testspeakers" from="button_base_menu_wide">
+            <position>250,525</position>
         </button>
 
-        <button name="previous" from="basebutton">
-            <position>188,530</position>
-            <value>Previous</value>
-        </button>
+        <textarea name="helptext" from="textarea_base">
+            <area>250,560,510,150</area>
+            <cutdown>yes</cutdown>
+            <font>smaller</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>hcenter,bottom</align>
+            <multiline>yes</multiline>
+        </textarea>
 
-        <button name="next" from="basebutton">
-            <position>435,530</position>
+        <button name="next" from="button_base_menu">
+            <position>790,175</position>
             <value>Next</value>
+        </button>
+
+        <button name="previous" from="button_base_menu">
+            <position>790,210</position>
+            <value>Previous</value>
         </button>
 
     </window>
 
     <window name="videowizard">
 
-        <textarea name="title" from="basetextarea">
-            <area>20,40,760,40</area>
-            <value>Video Configuration</value>
-            <align>hcenter,vcenter</align>
-            <font>baselarge</font>
-        </textarea>
-
-        <textarea name="helptext" from="basetextarea">
-            <area>30,470,740,50</area>
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
+        </imagetype>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
+        <!-- ================================================== -->
+        <!-- screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
             <multiline>yes</multiline>
-            <font>basesmall</font>
-            <align>allcenter</align>
+            <value>Wizard for main mythtv settings</value>
         </textarea>
 
-        <textarea name="prof_text" from="basetextarea">
-            <area>75,173,225,30</area>
-            <font>basesmall</font>
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Video Configuration</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
+        <textarea name="prof_text" from="textarea_base">
+            <area>250,175,510,35</area>
             <value>Video Playback Profile:</value>
         </textarea>
 
     <!--Widgets-->
 
-        <buttonlist name="playbackprofiles" from="basewideselector">
-            <position>310,167</position>
+        <buttonlist name="playbackprofiles" from="selector_base_wide">
+            <position>250,210</position>
         </buttonlist>
 
-        <button name="testsd" from="baseverywidebutton">
-            <position>310,232</position>
+        <button name="testsd" from="button_base_menu_wide">
+            <position>250,280</position>
             <value>Test Standard Definition</value>
         </button>
 
-        <button name="testhd" from="baseverywidebutton">
-            <position>310,297</position>
+        <button name="testhd" from="button_base_menu_wide">
+            <position>250,315</position>
             <value>Test High Definition</value>
         </button>
 
-        <button name="previous" from="basebutton">
-            <position>188,530</position>
-            <value>Previous</value>
+        <textarea name="helptext" from="textarea_base">
+            <area>250,560,510,150</area>
+            <cutdown>yes</cutdown>
+            <font>smaller</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>hcenter,bottom</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="next" from="button_base_menu">
+            <position>790,175</position>
+            <value>Finish</value>
         </button>
 
-        <button name="next" from="basebutton">
-            <position>435,530</position>
-            <value>Finish</value>
+        <button name="previous" from="button_base_menu">
+            <position>790,210</position>
+            <value>Previous</value>
         </button>
 
     </window>
 
     <window name="backendselection">
+        <imagetype name="background" from="image_wallpaper_base">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
+        </imagetype>
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+            <position>0,0</position>
+        </group> 
+        <!-- ================================================== -->
+        <!-- screen description                                 -->
+        <!-- ================================================== -->
+        <textarea name="pagetitledesc" from="textarea_base">
+            <area>250,10,515,65</area>
+            <font>menu_description</font>
+            <case>upper</case>
+            <align>right,bottom</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Choose your mythtv backend server</value>
+        </textarea>
+
+        <textarea name="title" from="textarea_base">
+            <area>250,75,515,65</area>
+            <font>menu_active</font>
+            <case>upper</case>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <value>Backend Selection</value>
+        </textarea>
+
+        <!-- ================================================== -->
+        <!-- screen content                                     -->
+        <!-- ================================================== -->
 
         <textarea name="label">
             <font>baselarge</font>
