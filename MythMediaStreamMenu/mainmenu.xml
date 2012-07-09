@@ -31,11 +31,10 @@
     </button>
 
     <button>
-        <type>DVD_PLAY</type>
-        <text>DVD</text>
-        <description>Play a</description>
-        <action>JUMP Play DVD</action>
-        <depends>mythvideo</depends>
+        <type>MENU_OPTICAL_DISKS</type>
+        <text>Disks</text>
+        <description>Play Blu-ray and DVD</description>
+        <action>MENU optical_menu.xml</action>
     </button>
 
     <button>

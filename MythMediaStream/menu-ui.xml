@@ -35,7 +35,7 @@
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
-           <state name="DVD">
+           <state name="DISC_PLAY">
                <imagetype name="watermark">
                    <filename>images/backgrounds/MediaStreamDVDBGD.png</filename>
                    <area>0,0,1280,720</area>
@@ -442,13 +442,25 @@
            <!-- ########  game_settings.xml  ########-->
            <state name="GAME_SETTINGS_GENERAL">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/default.png</filename>
+                   <filename>images/backgrounds/game.jpg</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
+           <state name="GAME_SETTINGS_PLAYERS">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/game.jpg</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="GAME_SCAN">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/default.png</filename>
+                   <filename>images/backgrounds/game.jpg</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
+           <state name="GAME_CLEAR_DATA">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/game.jpg</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
