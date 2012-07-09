@@ -93,7 +93,7 @@
             <case>upper</case>
         </textarea>
 
-	<imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
+        <imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
 
         <textarea name="datetext" from="screentitle2"/>
 
