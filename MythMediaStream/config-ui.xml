@@ -727,6 +727,7 @@
 
     </window>
 
+<!-- to do -->
     <window name="backendselection">
         <imagetype name="background" from="image_wallpaper_base">
             <area>0,0,1280,720</area>
@@ -768,10 +769,6 @@
             <value>MythTV Servers</value>
             <align>left</align>
         </textarea>
-
-        <shape name="listbackground" from="basebackground">
-            <area>20,55,760,410</area>
-        </shape>
 
         <buttonlist name="backends">
             <area>30,65,740,390</area>
@@ -895,24 +892,28 @@
             <helptext>Select the server you wish to connect to</helptext>
         </buttonlist>
 
-        <textarea name="helptext" from="basetextarea">
-            <area>200,530,400,60</area>
-            <align>allcenter</align>
-            <multiline>true</multiline>
+        <textarea name="helptext" from="textarea_base">
+            <area>250,560,510,150</area>
+            <cutdown>yes</cutdown>
+            <font>smaller</font>
+            <case>normal</case>
+            <alpha>128</alpha>
+            <align>hcenter,bottom</align>
+            <multiline>yes</multiline>
         </textarea>
 
-        <button name="save" from="basebutton">
-            <position>610,530</position>
+        <button name="save" from="button_base_menu">
+            <position>790,175</position>
             <value>Save</value>
         </button>
 
-        <button name="manual" from="basebutton">
-            <position>310,530</position>
+        <button name="manual" from="button_base_menu">
+            <position>790,210</position>
             <value>Manual</value>
         </button>
 
-        <button name="cancel" from="basebutton">
-            <position>40,530</position>
+        <button name="cancel" from="button_base_menu">
+            <position>790,245</position>
             <value>Cancel</value>
         </button>
 

@@ -3,12 +3,12 @@
 <mythuitheme>
    <window name="mainmenu">
 
-       <shape name="shape_black">
+<!--       <shape name="shape_black">
            <area>0,0,1280,720</area>
            <type>box</type>
            <fill color="#000000"/>
        </shape>
-
+-->
        <statetype name="watermarks">
            <!-- ########  mainmenu.xml  ########-->
            <state name="TV">
@@ -923,69 +923,82 @@
    
        <imagetype name="Menu_Overlay">
            <area>1045,0,235,720</area>
-	   <filename>images/shared/HomeRightOverlay.png</filename>
+	        <filename>images/shared/HomeRightOverlay.png</filename>
        </imagetype>
-
-       <buttonlist name="menu">
-           <area>0,0,410,720</area>
-           <layout>vertical</layout>
-           <scrollstyle>center</scrollstyle>
-           <spacing>0</spacing>
-           <arrange>stack</arrange>
-           <align>vcenter</align>
-           <wrapstyle>items</wrapstyle>
-           <buttonarea>5,27,370,700</buttonarea>
-           <statetype name="buttonitem">
-               <!--ACTIVE-->
-               <state name="active">
-                   <area>0,0,360,125</area>
-                   <textarea name="buttontext">
-                       <alpha>96</alpha>
-                       <area>0,0,370,125</area>
-                       <font>menumain</font>
-                       <case>upper</case>
-	                    <multiline>yes</multiline>
-                       <align>right,vcenter</align>
-                       <cutdown>yes</cutdown>
-                   </textarea>
-                   <imagetype name="overlay">
-		                <area>-5,0,410,125</area>
-		                <filename>images/shared/DiffuseMirrorBlack.png</filename>
-                   </imagetype>
-               </state>
-               <!--SELECTED ACTIVE-->
-               <state name="selectedactive">
-	           <area>0,0,370,200</area>
-                   <imagetype name="overlay">
-		                <area>-5,0,410,200</area>
-		                <filename>images/shared/DiffuseMirrorBlack.png</filename>
-                   </imagetype>
-                   <textarea name="buttontext">
-                       <area>0,71,370,200</area>
-	                    <alpha>255</alpha>
-	                    <font>menumain_active</font>
-                       <case>upper</case>
-	                    <multiline>yes</multiline>
-	                    <cutdown>yes</cutdown>
-	                    <align>right,top</align>
-                   </textarea>
-                   <textarea name="description">
-                       <area>0,0,365,75</area>
-                       <font>menumain_description</font>
-                       <case>upper</case>
-                       <multiline>yes</multiline>
-                       <cutdown>yes</cutdown>
-                       <align>right,bottom</align>
-                   </textarea>
-               </state>
-           </statetype>
-       </buttonlist>
-
-       <imagetype name="overlay">
-          <area>-5,0,410,27</area>
-          <filename>images/shared/DiffuseMirrorBlack.png</filename>
-       </imagetype>
-
+	
+       <group name="mainmenugroup">    
+          <area>0,0,1280,720</area>
+	       <animation trigger="AboutToShow">
+	          <section duration="500" centre="middle">
+	              <alpha start="0" end="255" easingcurve="InQuad" />
+	          </section>
+	       </animation>
+<!--	       <animation trigger="AboutToHide">
+	          <section duration="300" centre="middle">
+	              <alpha start="255" end="0" easingcurve="linear" />
+	          </section>
+	       </animation>    -->      
+	       <buttonlist name="menu">
+	           <area>0,0,410,720</area>
+	           <layout>vertical</layout>
+	           <scrollstyle>center</scrollstyle>
+	           <spacing>0</spacing>
+	           <arrange>stack</arrange>
+	           <align>vcenter</align>
+	           <wrapstyle>items</wrapstyle>
+	           <buttonarea>5,27,370,700</buttonarea>
+	           <statetype name="buttonitem">
+	               <!--ACTIVE-->
+	               <state name="active">
+	                   <area>0,0,360,125</area>
+	                   <textarea name="buttontext">
+	                       <alpha>96</alpha>
+	                       <area>0,0,370,125</area>
+	                       <font>menumain</font>
+	                       <case>upper</case>
+		                    <multiline>yes</multiline>
+	                       <align>right,vcenter</align>
+	                       <cutdown>yes</cutdown>
+	                   </textarea>
+	                   <imagetype name="overlay">
+			                <area>-5,0,410,125</area>
+			                <filename>images/shared/DiffuseMirrorBlack.png</filename>
+	                   </imagetype>
+	               </state>
+	               <!--SELECTED ACTIVE-->
+	               <state name="selectedactive">
+		           <area>0,0,370,200</area>
+	                   <imagetype name="overlay">
+			                <area>-5,0,410,200</area>
+			                <filename>images/shared/DiffuseMirrorBlack.png</filename>
+	                   </imagetype>
+	                   <textarea name="buttontext">
+	                       <area>0,71,370,200</area>
+		                    <alpha>255</alpha>
+		                    <font>menumain_active</font>
+	                       <case>upper</case>
+		                    <multiline>yes</multiline>
+		                    <cutdown>yes</cutdown>
+		                    <align>right,top</align>
+	                   </textarea>
+	                   <textarea name="description">
+	                       <area>0,0,365,75</area>
+	                       <font>menumain_description</font>
+	                       <case>upper</case>
+	                       <multiline>yes</multiline>
+	                       <cutdown>yes</cutdown>
+	                       <align>right,bottom</align>
+	                   </textarea>
+	               </state>
+	           </statetype>
+	       </buttonlist>
+	
+	       <imagetype name="overlay">
+	          <area>-5,0,410,27</area>
+	          <filename>images/shared/DiffuseMirrorBlack.png</filename>
+	       </imagetype>
+      </group>
+	
        <!-- ========== -->
        <!-- The clock  -->
        <!-- ========== -->

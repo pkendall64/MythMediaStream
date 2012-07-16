@@ -25,7 +25,8 @@
    </imagetype>
 
    <imagetype name="image_wallpaper_base">
-       <area>0,0,1280,720</area>
+      <area>0,0,1280,720</area>
+      <filename>images/backgrounds/default.png</filename>
    </imagetype>
 
 
@@ -2535,13 +2536,13 @@
     <group name="defaultscreenlayoutSettings_1">
         <area>0,0,1280,720</area>
         <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
             <area>-600,0,846,720</area>
+            <filename>images/shared/HomeBladeLeft.png</filename>
         </imagetype> 
-        <imagetype name="Menu_Overlay">
+<!--        <imagetype name="Menu_Overlay">
             <area>1045,0,235,720</area> 
             <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
+        </imagetype>-->
         <imagetype name="Menu_background_Sub3">
             <filename>images/shared/BlackTransparent.png</filename>
             <area>238,0,550,720</area>
@@ -2555,9 +2556,145 @@
 
     <group name="defaultscreenlayoutSettings_2" from="defaultscreenlayoutSettings_1">
         <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
             <area>788,0,200,720</area>
+            <filename>images/shared/HomeBladeSub.png</filename>
         </imagetype>
+    </group>
+
+    <group name="defaultscreenlayoutSettings_1A_animated" from="defaultscreenlayoutSettings_1">
+        <animation trigger="AboutToShow">
+            <section duration="1000" centre="middle">
+                <position start="-988,0" end="0,0" easingcurve="InOutBack" reversible="false" />
+            </section>
+        </animation>
+    </group>
+
+    <group name="defaultscreenlayoutSettings_1B_animated" from="defaultscreenlayoutSettings_1">
+        <animation trigger="AboutToShow">
+            <section duration="1000" centre="middle">
+                <position start="-988,0" end="0,0" easingcurve="InOutBack" reversible="false" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="2000" centre="middle">
+                <position start="0,0" end="-988,0" easingcurve="InBack" />
+            </section>
+        </animation>
+    </group>
+
+    <group name="defaultscreenlayoutSettings_1C_animated" from="defaultscreenlayoutSettings_1">
+        <animation trigger="AboutToHide">
+            <section duration="2000" centre="middle">
+                <position start="0,0" end="-988,0" easingcurve="InBack" />
+            </section>
+        </animation>
+    </group>
+
+    <group name="defaultscreenlayoutSettings_2A_animated" from="defaultscreenlayoutSettings_1A_animated">
+         <imagetype name="Menu_background_Sub5">
+            <area>788,0,200,720</area>
+	         <animation trigger="AboutToShow">
+	             <section duration="2000" centre="middle">
+	                 <position start="588,0" end="788,0" easingcurve="InOutBack" reversible="false" />
+	             </section>
+	         </animation>
+            <filename>images/shared/HomeBladeSub.png</filename>
+         </imagetype>
+    </group>
+
+    <group name="defaultscreenlayoutSettings_2B_animated" from="defaultscreenlayoutSettings_1B_animated">
+         <imagetype name="Menu_background_Sub5">
+            <area>788,0,200,720</area>
+	         <animation trigger="AboutToShow">
+	             <section duration="2000" centre="middle">
+	                 <position start="588,0" end="788,0" easingcurve="InOutBack" reversible="false" />
+	             </section>
+	         </animation>
+	         <animation trigger="AboutToHide">
+	             <section duration="1000" centre="middle">
+	                 <position start="788,0" end="588,0" easingcurve="InBack" />
+	             </section>
+	         </animation>
+            <filename>images/shared/HomeBladeSub.png</filename>
+         </imagetype>
+    </group>
+
+    <group name="defaultscreenlayoutSettings_2C_animated" from="defaultscreenlayoutSettings_1C_animated">
+         <imagetype name="Menu_background_Sub5">
+            <area>788,0,200,720</area>
+	         <animation trigger="AboutToHide">
+	             <section duration="1000" centre="middle">
+	                 <position start="788,0" end="588,0" easingcurve="InBack" />
+	             </section>
+	         </animation>
+            <filename>images/shared/HomeBladeSub.png</filename>
+         </imagetype>
+    </group>
+
+    <group name="defaultscreencontent_1A_animated">
+        <animation trigger="AboutToShow">
+            <section duration="1000" centre="middle">
+                <alpha start="0" end="255" easingcurve="InExpo" />
+                <position start="-988,0" end="0,0" easingcurve="InOutBack" />
+            </section>
+        </animation>
+    </group>
+
+    <group name="defaultscreencontent_1B_animated">
+        <animation trigger="AboutToShow">
+            <section duration="1000" centre="middle">
+                <alpha start="0" end="255" easingcurve="InExpo" />
+                <position start="-988,0" end="0,0" easingcurve="InOutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="2000" centre="middle">
+                <alpha start="255" end="0" easingcurve="OutExpo" />
+                <position start="0,0" end="-988,0" easingcurve="InBack" />
+            </section>
+        </animation>
+    </group>
+
+    <group name="defaultscreencontent_1C_animated">
+        <animation trigger="AboutToHide">
+            <section duration="2000" centre="middle">
+                <alpha start="255" end="0" easingcurve="OutExpo" />
+                <position start="0,0" end="-988,0" easingcurve="InBack" />
+            </section>
+        </animation>
+    </group>
+
+    <group name="defaultscreencontent_2A_animated">
+	      <animation trigger="AboutToShow">
+	          <section duration="2000" centre="middle">
+	              <alpha start="0" end="255" easingcurve="InExpo" />
+	              <position start="588,0" end="788,0" easingcurve="InOutBack" />
+	          </section>
+	      </animation>
+    </group>
+
+    <group name="defaultscreencontent_2B_animated">
+	      <animation trigger="AboutToShow">
+	          <section duration="2000" centre="middle">
+	              <alpha start="0" end="255" easingcurve="InExpo" />
+	              <position start="588,0" end="788,0" easingcurve="InOutBack" />
+	          </section>
+	      </animation>
+	      <animation trigger="AboutToHide">
+	          <section duration="1000" centre="middle">
+	              <alpha start="255" end="0" easingcurve="OutExpo" />
+	              <position start="788,0" end="588,0" easingcurve="InBack" />
+	          </section>
+	      </animation>
+    </group>
+
+    <group name="defaultscreencontent_2C_animated">
+	      <animation trigger="AboutToHide">
+	          <section duration="1000" centre="middle">
+	              <alpha start="255" end="0" easingcurve="OutExpo" />
+	              <position start="788,0" end="588,0" easingcurve="InBack" />
+	          </section>
+	      </animation>
     </group>
 
     <group name="defaultpopuplarge">
@@ -2616,17 +2753,35 @@
 <!-- WINDOWS & DIALOGS                                     -->
 <!-- ===================================================== -->
    <window name="dialog_left_base">
-<!--       <shape name="shape_darken_background" from="shape_darken_base"/>-->
+       <area>974,0,308,720</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="1280,0" end="974,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="974,0" end="1280,0" easingcurve="InBack" />
+            </section>
+        </animation>
        <imagetype name="popup_background">
-           <area>974,0,308,720</area>	
+           <area>0,0,350,720</area>	
            <filename>images/shared/HomeBladeSubRight.png</filename>
        </imagetype>
    </window>
 
    <window name="dialog_base">
        <area>-1,-1,520,205</area>
-       <!-- darken background 
-       <shape name="shape_dark" from="shape_darken_base"/> -->
+        <animation trigger="AboutToShow">
+            <section duration="400" centre="middle">
+                <zoom start="10" end="100" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="400" centre="middle">
+                <zoom start="100" end="10" easingcurve="InBack" />
+            </section>
+        </animation>
        <imagetype name="DialogProgressBG">
            <area>0,0,520,205</area>
            <filename>images/shared/DialogProgressBG.png</filename>
@@ -2688,7 +2843,7 @@
 
    <window name="MythPopupBox" from="dialog_left_base">
        <textarea name="messagearea">
-           <area>990,20,290,100</area>
+           <area>16,20,290,100</area>
            <font>title_small</font>
            <case>upper</case>
            <multiline>yes</multiline>
@@ -2697,13 +2852,13 @@
        </textarea>
 
        <buttonlist name="list" from="buttonlist_popup">
-           <position>980,130</position>
+           <position>6,130</position>
        </buttonlist>
    </window>
 
     <window name="MythDialogBox" from="dialog_left_base">
        <textarea name="messagearea">
-           <area>990,20,290,100</area>
+           <area>16,20,290,100</area>
            <font>title_small</font>
            <case>upper</case>
            <multiline>yes</multiline>
@@ -2712,7 +2867,7 @@
        </textarea>
 
        <buttonlist name="list" from="buttonlist_popup">
-           <position>980,130</position>
+           <position>6,130</position>
        </buttonlist>
     </window>
 
@@ -2741,123 +2896,136 @@
 
     <window name="MythFileBrowser">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
+            <filename>images/backgrounds/serverroom.jpg</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
 
-        <!-- ================================================== -->
-        <!-- Custom  RECORING PRIORITY                          -->
-        <!-- ================================================== -->
-        <textarea name="info" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Search files on your harddisk</value> 
-        </textarea>
+        <group name="mythfilebrowsergroup" from="defaultscreencontent_1B_animated">
+           <area>0,0,988,720</area>
 
-        <textarea name="pagetitle" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>File Manager</value>
-        </textarea>
-
-        <buttonlist name="filelist" from="filelist_base">
-            <position>250,175</position>
-        </buttonlist>
-
-        <textedit name="location" from="textedit_menu_wide">
-            <position>250,675</position>
-        </textedit>
-
-        <button name="back" from="button_base_menu">
-            <position>790,175</position>
-            <value>Up Level</value>
-        </button>
-
-        <button name="home" from="button_base_menu">
-            <position>790,210</position>
-            <value>Home</value>
-        </button>
-
-        <button name="cancel" from="button_base_menu">
-            <position>790,245</position>
-            <value>Cancel</value>
-        </button>
-
-        <button name="ok" from="button_base_menu">
-            <position>790,280</position>
-            <value>Ok</value>
-        </button>
-
+	        <!-- ================================================== -->
+	        <!-- Custom  RECORING PRIORITY                          -->
+	        <!-- ================================================== -->
+	        <textarea name="info" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Search files on your harddisk</value> 
+	        </textarea>
+	
+	        <textarea name="pagetitle" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>File Manager</value>
+	        </textarea>
+	        
+	        <buttonlist name="filelist" from="filelist_base">
+	            <position>250,175</position>
+	        </buttonlist>
+	
+	        <textedit name="location" from="textedit_menu_wide">
+	            <position>250,675</position>
+	        </textedit>	
+	    </group>
+	 
+	    <group name="mythfilebrowserbuttongroup" from="defaultscreencontent_2B_animated">
+           <area>788,0,988,720</area>
+	        <button name="back" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>Up Level</value>
+	        </button>
+	
+	        <button name="home" from="button_base_menu">
+	            <position>2,210</position>
+	            <value>Home</value>
+	        </button>
+	
+	        <button name="cancel" from="button_base_menu">
+	            <position>2,245</position>
+	            <value>Cancel</value>
+	        </button>
+	
+	        <button name="ok" from="button_base_menu">
+	            <position>2,280</position>
+	            <value>Ok</value>
+	        </button>
+        </group>
    </window>
 
     <window name="MythSearchDialog">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/Search-Engine.jpg</filename>
+            <filename>images/backgrounds/network.jpg</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
 
-        <!-- ================================================== -->
-        <!-- Search dialog content                              -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Pick a program from a set of lists</value> 
-        </textarea>
+        <group name="mythsearchdialoggroup" from="defaultscreencontent_1B_animated">
+            <area>0,0,988,720</area>
 
-        <textarea name="title" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-<!--            <value>Search Lists</value>-->
-        </textarea>
+	        <!-- ================================================== -->
+	        <!-- Search dialog content                              -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Pick a program from a set of lists</value> 
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	<!--            <value>Search Lists</value>-->
+	        </textarea>
+	
+	        <textarea name="titlelbl" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Select item to be searched for from the list:</value>
+	        </textarea>
 
-        <textarea name="titlelbl" from="textarea_base">
-            <area>250,175,510,35</area>
-            <value>Select item to be searched for from the list:</value>
-        </textarea>
-
-        <buttonlist name="itemlist" from="selector_base_wide">
-            <position>250,210</position>
-        </buttonlist>
-
-        <textarea name="inputlbl" from="textarea_base">
-            <area>250,280,510,35</area>
-            <value>Edit search item:</value>
-        </textarea>
-
-        <textedit name="input" from="textedit_menu_wide">
-            <position>250,315</position>
-        </textedit>
-
-        <button name="ok" from="button_base_menu">
-            <position>790,175</position>
-            <value>Search</value>
-        </button>
-
-        <button name="cancel" from="button_base_menu">
-            <position>790,210</position>
-            <value>Cancel</value>
-        </button>
+	        <buttonlist name="itemlist" from="selector_base_wide">
+	            <position>250,210</position>
+	        </buttonlist>
+	
+	        <textarea name="inputlbl" from="textarea_base">
+	            <area>250,280,510,35</area>
+	            <value>Edit search item:</value>
+	        </textarea>
+	
+	        <textedit name="input" from="textedit_menu_wide">
+	            <position>250,315</position>
+	        </textedit>
+        </group>
+        	
+        <group name="mythsearchdialogbuttongroup" from="defaultscreencontent_2B_animated">
+           <area>788,0,988,720</area>
+	        <button name="ok" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>Search</value>
+	        </button>
+	
+	        <button name="cancel" from="button_base_menu">
+	            <position>2,210</position>
+	            <value>Cancel</value>
+	        </button>
+        </group>
     </window>
 
     <!-- Popup search dialog used to search button lists -->
@@ -2968,106 +3136,110 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1">
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1B_animated">
             <position>0,0</position>
         </group> 
 
-        <!-- ================================================== -->
-        <!-- Screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Choose which movie or tvserie you look for</value>
-        </textarea>
-
-        <textarea name="title" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Movie selector</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-
-        <buttonlist name="results" from="filelist_base">
-            <position>250,175</position>
-        </buttonlist>
-
+        <group name="mythmetadataresultsgroup" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Choose which movie or tvserie you look for</value>
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Movie selector</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	
+	        <buttonlist name="results" from="filelist_base">
+	            <position>250,175</position>
+	        </buttonlist>
+        </group>
     </window>
 
     <window name="MythArtworkResults">
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1">
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1B_animated">
             <position>0,0</position>
         </group> 
 
-        <!-- ================================================== -->
-        <!-- Screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Choose which artwork you like most</value>
-        </textarea>
-
-        <textarea name="title" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Artwork selector</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-
-        <buttonlist name="results" from="filelist_big">
-            <position>250,175</position>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <textarea name="resolution">
-                        <area>300,50,200,50</area>
-                        <font>normal</font>
-                        <alpha>128</alpha>
-                        <multiline>no</multiline>
-                        <cutdown>yes</cutdown>
-                        <align>left,vcenter</align>
-                        <value>No res specified</value>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <textarea name="resolution">
-                        <area>300,50,200,50</area>
-                        <font>normal</font>
-                        <alpha>255</alpha>
-                        <multiline>no</multiline>
-                        <cutdown>yes</cutdown>
-                        <align>left,vcenter</align>
-                        <value>No res specified</value>
-                    </textarea>
-                </state>
-            </statetype>
-        </buttonlist>
-                
+        <group name="mythartworkresultsgroup" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Choose which artwork you like most</value>
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Artwork selector</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	
+	        <buttonlist name="results" from="filelist_big">
+	            <position>250,175</position>
+	            <statetype name="buttonitem">
+	                <state name="active">
+	                    <textarea name="resolution">
+	                        <area>300,50,200,50</area>
+	                        <font>normal</font>
+	                        <alpha>128</alpha>
+	                        <multiline>no</multiline>
+	                        <cutdown>yes</cutdown>
+	                        <align>left,vcenter</align>
+	                        <value>No res specified</value>
+	                    </textarea>
+	                </state>
+	                <state name="selectedactive">
+	                    <textarea name="resolution">
+	                        <area>300,50,200,50</area>
+	                        <font>normal</font>
+	                        <alpha>255</alpha>
+	                        <multiline>no</multiline>
+	                        <cutdown>yes</cutdown>
+	                        <align>left,vcenter</align>
+	                        <value>No res specified</value>
+	                    </textarea>
+	                </state>
+	            </statetype>
+	        </buttonlist>
+        </group>
     </window>
 
 </mythuitheme>

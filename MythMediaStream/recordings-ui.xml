@@ -461,7 +461,11 @@
     </window>
 
     <window name="groupfilter">
-<!--       <shape name="shape_darken_background" from="shape_darken_base"/>-->
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="974,0" end="1280,0" easingcurve="InBack" />
+            </section>
+        </animation>
        <imagetype name="popup_background">
            <area>974,0,308,720</area>	
            <filename>images/shared/HomeBladeSubRight.png</filename>
@@ -481,7 +485,11 @@
     </window>
 
     <window name="groupselector">
-<!--       <shape name="shape_darken_background" from="shape_darken_base"/>-->
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="974,0" end="1280,0" easingcurve="InBack" />
+            </section>
+        </animation>
        <imagetype name="popup_background">
            <area>974,0,308,720</area>	
            <filename>images/shared/HomeBladeSubRight.png</filename>
@@ -501,7 +509,11 @@
     </window>
 
     <window name="changeview">
-<!--       <shape name="shape_darken_background" from="shape_darken_base"/>-->
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="974,0" end="1280,0" easingcurve="InBack" />
+            </section>
+        </animation>
        <imagetype name="popup_background">
            <area>974,0,308,720</area>	
            <filename>images/shared/HomeBladeSubRight.png</filename>
@@ -565,6 +577,16 @@
 
     <window name="passwordchanger">
         <area>-1,-1,520,245</area>
+        <animation trigger="AboutToShow">
+            <section duration="400" centre="middle">
+                <zoom start="10" end="100" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="400" centre="middle">
+                <zoom start="100" end="10" easingcurve="InBack" />
+            </section>
+        </animation>
         <imagetype name="DialogProgressBG">
             <area>0,0,520,245</area>
             <filename>images/shared/DialogProgressBG.png</filename>
@@ -776,102 +798,108 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamVideoBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
 
-        <!-- ================================================== -->
-        <!-- Screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Customize meta data of your Recordings</value>
-        </textarea>
-
-        <textarea name="pagetitle" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Recording details</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-        <textarea name="title_editlbl" from="textarea_base">
-            <area>250,175,510,35</area>
-            <value>Title:</value>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textedit name="title" from="textedit_menu">
-           <position>420,175</position>
-        </textedit>
-
-        <textarea name="subtitle_editlbl" from="title_editlbl">
-            <position>250,210</position>
-            <value>Subtitle:</value>
-        </textarea>
-
-        <textedit name="subtitle" from="title">
-            <position>420,210</position>
-        </textedit>
-
-        <textarea name="inetreflbl" from="title_editlbl">
-            <position>250,245</position>
-            <value>TMDB/TVDB ID:</value>
-        </textarea>
-
-        <textedit name="inetref" from="title">
-            <position>420,245</position>
-        </textedit>
-
-        <textarea name="seasonlbl" from="title_editlbl">
-            <position>250,280</position>
-            <value>Season:</value>
-        </textarea>
-
-        <spinbox name="season" from="spinbox_menu">
-            <position>420,280</position>
-        </spinbox>
-
-        <textarea name="episodelbl" from="title_editlbl">
-            <position>530,280</position>
-            <value>Episode:</value>
-        </textarea>
-
-        <spinbox name="episode" from="spinbox_base">
-            <position>670,280</position>
-        </spinbox>
-
-        <textarea name="descriptionlbl" from="title_editlbl">
-            <position>250,315</position>
-            <value>Description:</value>
-        </textarea>
-
-        <textedit name="description" from="textedit_menu_box_wide">
-           <position>250,350</position>
-        </textedit>
-
-       <!-- ===================================================== -->
-       <!-- SHOW GRAPHICS                                         -->
-       <!-- ===================================================== -->
-       <group name="artworkoverview" from="defaultartworkoverview">
-           <position>250,495</position>
-       </group>
-
-        <button name="ok" from="button_base_menu">
-            <position>790,175</position>
-            <value>save</value>
-        </button>
+        <group name="editmetadatagroup" from="defaultscreencontent_1B_animated">
+           <area>0,0,988,720</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Customize meta data of your Recordings</value>
+	        </textarea>
+	
+	        <textarea name="pagetitle" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Recording details</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	        <textarea name="title_editlbl" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Title:</value>
+	            <align>left,vcenter</align>
+	        </textarea>
+	
+	        <textedit name="title" from="textedit_menu">
+	           <position>420,175</position>
+	        </textedit>
+	
+	        <textarea name="subtitle_editlbl" from="title_editlbl">
+	            <position>250,210</position>
+	            <value>Subtitle:</value>
+	        </textarea>
+	
+	        <textedit name="subtitle" from="title">
+	            <position>420,210</position>
+	        </textedit>
+	
+	        <textarea name="inetreflbl" from="title_editlbl">
+	            <position>250,245</position>
+	            <value>TMDB/TVDB ID:</value>
+	        </textarea>
+	
+	        <textedit name="inetref" from="title">
+	            <position>420,245</position>
+	        </textedit>
+	
+	        <textarea name="seasonlbl" from="title_editlbl">
+	            <position>250,280</position>
+	            <value>Season:</value>
+	        </textarea>
+	
+	        <spinbox name="season" from="spinbox_menu">
+	            <position>420,280</position>
+	        </spinbox>
+	
+	        <textarea name="episodelbl" from="title_editlbl">
+	            <position>530,280</position>
+	            <value>Episode:</value>
+	        </textarea>
+	
+	        <spinbox name="episode" from="spinbox_base">
+	            <position>670,280</position>
+	        </spinbox>
+	
+	        <textarea name="descriptionlbl" from="title_editlbl">
+	            <position>250,315</position>
+	            <value>Description:</value>
+	        </textarea>
+	
+	        <textedit name="description" from="textedit_menu_box_wide">
+	           <position>250,350</position>
+	        </textedit>
+	
+	       <!-- ===================================================== -->
+	       <!-- SHOW GRAPHICS                                         -->
+	       <!-- ===================================================== -->
+	       <group name="artworkoverview" from="defaultartworkoverview">
+	           <position>250,495</position>
+	       </group>
+        </group>
+        
+        <group name="editmetadatabuttongroup" from="defaultscreencontent_2B_animated">
+           <area>788,0,988,720</area>
+	        <button name="ok" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>save</value>
+	        </button>
+        </group>
     </window>
 
 </mythuitheme>
