@@ -28,7 +28,11 @@
       <area>0,0,1280,720</area>
       <filename>images/backgrounds/default.png</filename>
    </imagetype>
-
+   
+   <imagetype name="background_overlay_base">
+      <area>1045,0,235,720</area> 
+      <filename>images/shared/HomeRightOverlay.png</filename>
+   </imagetype>
 
 <!-- ===================================================== -->
 <!--     FONT                                              -->
@@ -2753,7 +2757,7 @@
 <!-- WINDOWS & DIALOGS                                     -->
 <!-- ===================================================== -->
    <window name="dialog_left_base">
-       <area>974,0,308,720</area>
+        <area>974,0,308,720</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="1280,0" end="974,0" easingcurve="OutBack" />
@@ -2894,10 +2898,12 @@
        </progressbar>
    </window>
 
-    <window name="MythFileBrowser">
-        <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/serverroom.jpg</filename>
-        </imagetype>
+   <window name="MythFileBrowser">
+ 	 	 <imagetype name="background" from="image_wallpaper_base">
+	         <filename>images/backgrounds/serverroom.jpg</filename>
+	    </imagetype>
+	    <imagetype name="backgroundoverlay" from="background_overlay_base" />
+	     
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
@@ -2939,6 +2945,14 @@
 	 
 	    <group name="mythfilebrowserbuttongroup" from="defaultscreencontent_2B_animated">
            <area>788,0,988,720</area>
+	        <textarea name="navigationlbl" from="textarea_base">
+	            <area>2,140,180,35</area>
+	            <alpha>128</alpha>
+	            <font>title_small</font>         
+	            <align>right,bottom</align>
+	            <value>Navigation</value>
+	        </textarea>
+
 	        <button name="back" from="button_base_menu">
 	            <position>2,175</position>
 	            <value>Up Level</value>
@@ -2962,10 +2976,11 @@
    </window>
 
     <window name="MythSearchDialog">
-        <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/network.jpg</filename>
-        </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
+	 	 <imagetype name="background" from="image_wallpaper_base">
+	         <filename>images/backgrounds/network.jpg</filename>
+	    </imagetype>
+	    <imagetype name="backgroundoverlay" from="background_overlay_base" />
+       <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
 
@@ -3136,6 +3151,7 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1B_animated">
             <position>0,0</position>
         </group> 
@@ -3179,6 +3195,7 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMovieBGD.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1B_animated">
             <position>0,0</position>
         </group> 

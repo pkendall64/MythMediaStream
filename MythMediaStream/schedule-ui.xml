@@ -358,7 +358,8 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+       <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
 
@@ -663,6 +664,7 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/podium.jpg</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1B_animated">
             <position>0,0</position>
         </group> 
@@ -814,6 +816,7 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/podium.jpg</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1B_animated">
             <position>0,0</position>
         </group> 
@@ -931,6 +934,7 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/podium.jpg</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
@@ -1039,6 +1043,7 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
@@ -1114,6 +1119,7 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
@@ -1175,6 +1181,7 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
@@ -1236,6 +1243,7 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
             <position>0,0</position>
         </group> 
@@ -1547,8 +1555,9 @@
 
     <window name="searchpopup">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/network.jpg</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
@@ -1897,6 +1906,7 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
@@ -2007,6 +2017,7 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettingsScheduleeditor" from="defaultscreenlayoutSettings_2A_animated">
             <position>0,0</position>
         </group> 
@@ -2183,6 +2194,7 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettingsScheduleoptionseditor" from="defaultscreenlayoutSettings_2C_animated">
             <position>0,0</position>
         </group> 
@@ -2363,6 +2375,7 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettingsStorageoptionseditor" from="defaultscreenlayoutSettings_2C_animated">
             <position>0,0</position>
         </group> 
@@ -2542,6 +2555,7 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettingsPostproceditor" from="defaultscreenlayoutSettings_2C_animated">
             <position>0,0</position>
         </group> 
@@ -2731,6 +2745,7 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettingsMetadataoptions" from="defaultscreenlayoutSettings_2C_animated">
             <position>0,0</position>
         </group> 
