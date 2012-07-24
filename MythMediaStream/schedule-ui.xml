@@ -6,7 +6,7 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <group name="screenlayoutTVlist" from="defaultscreenlayoutBrowse_1">
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
             <position>0,0</position>        
         </group>
         <textarea name="ScreenTitleProgramGuide" from="screentitle">
@@ -18,17 +18,17 @@
         <!-- ===================================================== -->
 
         <guidegrid name="guidegrid">
-            <area>200,106,1040,385</area>
+            <area>25,260,700,320</area>
             <layout>horizontal</layout>
-            <channels>10</channels>
+            <channels>8</channels>
             <timeslots>3</timeslots>
             <solidcolor>#000000</solidcolor>
             <selector type="box" linecolor="#105B8F" fillcolor="#105B8F"/>
             <showcategories>no</showcategories>
-<!--            <showcategorycolors>no</showcategorycolors>-->
+            <showcategorycolors>no</showcategorycolors>
             <categoryalpha>60</categoryalpha>
-            <recordingcolor>#00aa00</recordingcolor>
-            <conflictingcolor>#ff6600</conflictingcolor>
+            <recordingcolor>#E0991A</recordingcolor>
+            <conflictingcolor>#F92626</conflictingcolor>
             <cutdown>yes</cutdown>
             <multiline>no</multiline>
             <textoffset>5,10</textoffset>
@@ -45,13 +45,13 @@
         </guidegrid>
 
         <buttonlist name="timelist">
-            <area>200,80,1040,20</area>
+            <area>25,240,700,20</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,1040,20</buttonarea>
+            <buttonarea>0,0,700,20</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext" from="textarea_base">
                         <area>0,0,346,20</area>
                         <font>verysmall</font>
                         <align>left,bottom</align>
@@ -86,29 +86,25 @@
             </statetype>
         </buttonlist>
 
-        <textarea name="channelgroup" from="basetextarea">
-            <area>8,80,90,20</area>
-            <align>left,vcenter</align>
-            <font>verysmall</font>
-            <case>upper</case>
-        </textarea>
-
         <imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
 
         <textarea name="datetext" from="screentitle2"/>
 
+        <imagetype name="TitleBackgroundUpdate" from="titlebackground3"/>
+
+        <textarea name="channelgroup" from="screentitle3" />
+
         <buttonlist name="channellist">
-            <area>0,104,1280,400</area>
+            <area>740,260,540,360</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,1280,400</buttonarea>
+            <buttonarea>0,0,540,340</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,1280,39</area>
                 <state name="active">
-		    <imagetype name="MenuItemNFMid">
-			<area>0,0,1280,39</area>
-			<filename>images/shared/MenuItemNF.png</filename>
-		    </imagetype>
+	                 <imagetype name="MenuItemNF">
+	                     <area>0,0,540,40</area>
+	                     <filename>images/shared/MenuItemNF.png</filename>
+	                 </imagetype>
                     <imagetype name="channelicon">
                         <area>8,2,36,36</area>
                         <preserveaspect>no</preserveaspect>
@@ -119,48 +115,54 @@
                         <filename>images/shared/ButtonMenuGlass.png</filename>
                     </imagetype>
                     <textarea name="buttontext" from="textarea_base">
-                         <area>50,10,140,26</area>
-                         <align>left,bottom</align>
-                         <font>small</font>
+                         <area>55,0,470,40</area>
                     </textarea>
                 </state>
-                <state name="selectedactive" from="active"/>
+                <state name="selectedactive">
+	                 <imagetype name="MenuItemNF">
+	                     <area>0,0,540,40</area>
+	                     <filename>images/shared/MenuItemNF.png</filename>
+	                 </imagetype>
+	                 <imagetype name="MenuItemFO">
+	                     <area>0,0,540,40</area>
+	                     <filename>images/shared/MenuItemFO.png</filename>
+	                 </imagetype>
+                    <imagetype name="channelicon">
+                        <area>8,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                    </imagetype>
+                    <imagetype name="glasoverlay">
+                        <area>8,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                        <filename>images/shared/ButtonMenuGlass.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext" from="textarea_base">
+                         <area>60,0,470,40</area>
+                    </textarea>
+                </state>
                 <state name="selectedinactive" from="active"/>
             </statetype>
-            <statetype name="downscrollarrow">
-                <state type="off">
-                    <imagetype name="dnon">
-                        <filename></filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="dnoff">
-                        <filename></filename>
-                    </imagetype>
-                </state>
-            </statetype>
             <statetype name="upscrollarrow">
-                <state type="off">
-                    <imagetype name="upon">
-                        <filename></filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="upoff">
-                        <filename></filename>
-                    </imagetype>
-                </state>
+               <position>10,324</position>	
             </statetype>
-        </buttonlist>
+            <statetype name="downscrollarrow">
+                <position>30,324</position>	
+            </statetype>
+       </buttonlist>
+
+        <group name="programguidegrid" from="defaultprogramguidegrid">
+            <position>25,260</position>
+        </group>
+
 
        <imagetype name="channelicon">
-            <area>20,525,180,180</area>
+            <area>20,600,100,100</area>
             <preserveaspect>no</preserveaspect>
-            <reflection shear="0" scale="75" length="35"/>
+            <reflection shear="0" scale="75" length="15"/>
         </imagetype>
 
         <textarea name="title" from="textarea_base">
-            <area>220,520,1020,40</area>
+            <area>140,600,1120,40</area>
             <align>left,vcenter</align>
             <font>title</font>
             <case>upper</case>
@@ -168,7 +170,7 @@
         </textarea>
 
         <textarea name="description" from="textarea_base">
-            <area>220,560,1020,150</area>
+            <area>140,635,1120,85</area>
             <font>small</font>
             <case>normal</case>
             <align>justify</align>
@@ -183,7 +185,7 @@
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/tv-shows.png</filename>
         </imagetype>
-        <group name="screenlayoutTVlist" from="defaultscreenlayoutBrowse_1">
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
             <position>0,0</position>        
         </group>
         <textarea name="ScreenTitleProgramGuide" from="screentitle">
@@ -195,17 +197,17 @@
         <!-- ===================================================== -->
 
         <guidegrid name="guidegrid">
-            <area>200,106,1040,385</area>
+            <area>25,260,700,160</area>
             <layout>horizontal</layout>
-            <channels>10</channels>
+            <channels>4</channels>
             <timeslots>3</timeslots>
             <solidcolor>#000000</solidcolor>
             <selector type="box" linecolor="#105B8F" fillcolor="#105B8F"/>
             <showcategories>no</showcategories>
-<!--            <showcategorycolors>no</showcategorycolors>-->
+            <showcategorycolors>no</showcategorycolors>
             <categoryalpha>60</categoryalpha>
-            <recordingcolor>#00aa00</recordingcolor>
-            <conflictingcolor>#ff6600</conflictingcolor>
+            <recordingcolor>#E0991A</recordingcolor>
+            <conflictingcolor>#F92626</conflictingcolor>
             <cutdown>yes</cutdown>
             <multiline>no</multiline>
             <textoffset>5,10</textoffset>
@@ -222,13 +224,13 @@
         </guidegrid>
 
         <buttonlist name="timelist">
-            <area>200,80,1040,20</area>
+            <area>25,240,700,20</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,1040,20</buttonarea>
+            <buttonarea>0,0,700,20</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext" from="textarea_base">
                         <area>0,0,346,20</area>
                         <font>verysmall</font>
                         <align>left,bottom</align>
@@ -263,29 +265,25 @@
             </statetype>
         </buttonlist>
 
-        <textarea name="channelgroup" from="basetextarea">
-            <area>8,80,90,20</area>
-            <align>left,vcenter</align>
-            <font>verysmall</font>
-            <case>upper</case>
-        </textarea>
-
-	<imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
+        <imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
 
         <textarea name="datetext" from="screentitle2"/>
 
+        <imagetype name="TitleBackgroundUpdate" from="titlebackground3"/>
+
+        <textarea name="channelgroup" from="screentitle3" />
+
         <buttonlist name="channellist">
-            <area>0,104,1280,400</area>
+            <area>740,260,540,180</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,1280,400</buttonarea>
+            <buttonarea>0,0,540,160</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,1280,39</area>
                 <state name="active">
-		    <imagetype name="MenuItemNFMid">
-			<area>0,0,1280,39</area>
-			<filename>images/shared/MenuItemNF.png</filename>
-		    </imagetype>
+	                 <imagetype name="MenuItemNF">
+	                     <area>0,0,540,40</area>
+	                     <filename>images/shared/MenuItemNF.png</filename>
+	                 </imagetype>
                     <imagetype name="channelicon">
                         <area>8,2,36,36</area>
                         <preserveaspect>no</preserveaspect>
@@ -296,47 +294,54 @@
                         <filename>images/shared/ButtonMenuGlass.png</filename>
                     </imagetype>
                     <textarea name="buttontext" from="textarea_base">
-                         <area>50,10,140,26</area>
-                         <align>left,bottom</align>
-                         <font>small</font>
+                         <area>55,0,470,40</area>
                     </textarea>
                 </state>
-                <state name="selectedactive" from="active"/>
+                <state name="selectedactive">
+	                 <imagetype name="MenuItemNF">
+	                     <area>0,0,540,40</area>
+	                     <filename>images/shared/MenuItemNF.png</filename>
+	                 </imagetype>
+	                 <imagetype name="MenuItemFO">
+	                     <area>0,0,540,40</area>
+	                     <filename>images/shared/MenuItemFO.png</filename>
+	                 </imagetype>
+                    <imagetype name="channelicon">
+                        <area>8,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                    </imagetype>
+                    <imagetype name="glasoverlay">
+                        <area>8,2,36,36</area>
+                        <preserveaspect>no</preserveaspect>
+                        <filename>images/shared/ButtonMenuGlass.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext" from="textarea_base">
+                         <area>60,0,470,40</area>
+                    </textarea>
+                </state>
                 <state name="selectedinactive" from="active"/>
             </statetype>
-            <statetype name="downscrollarrow">
-                <state type="off">
-                    <imagetype name="dnon">
-                        <filename></filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="dnoff">
-                        <filename></filename>
-                    </imagetype>
-                </state>
-            </statetype>
             <statetype name="upscrollarrow">
-                <state type="off">
-                    <imagetype name="upon">
-                        <filename></filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="upoff">
-                        <filename></filename>
-                    </imagetype>
-                </state>
+               <position>10,164</position>	
             </statetype>
-        </buttonlist>
+            <statetype name="downscrollarrow">
+                <position>30,164</position>	
+            </statetype>
+       </buttonlist>
 
-       <imagetype name="video">
-            <area>20,525,320,180</area>
+        <group name="programguidegrid" from="defaultprogramguidegridvideo">
+            <position>25,260</position>
+        </group>
+
+
+       <imagetype name="channelicon">
+            <area>20,430,280,280</area>
             <preserveaspect>no</preserveaspect>
+<!--            <reflection shear="0" scale="75" length="15"/>-->
         </imagetype>
 
         <textarea name="title" from="textarea_base">
-            <area>360,520,880,40</area>
+            <area>320,430,405,40</area>
             <align>left,vcenter</align>
             <font>title</font>
             <case>upper</case>
@@ -344,7 +349,7 @@
         </textarea>
 
         <textarea name="description" from="textarea_base">
-            <area>360,560,880,150</area>
+            <area>320,465,405,245</area>
             <font>small</font>
             <case>normal</case>
             <align>justify</align>
@@ -352,6 +357,11 @@
             <template>%timedate% - %description%</template>
             <cutdown>yes</cutdown>
         </textarea>
+
+       <imagetype name="video">
+            <area>750,430,500,280</area>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
     </window>
 
     <window name="manualschedule">

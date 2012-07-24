@@ -2753,6 +2753,52 @@
         </imagetype>   
     </group>
 
+    <group name="defaultprogramguidegrid">
+        <area>0,0,725,320</area>
+        <imagetype name="MenuItemNF1">
+            <area>0,0,725,40</area>
+            <filename>images/shared/MenuItemNF.png</filename>
+        </imagetype>
+        <imagetype name="MenuItemFN2" from="MenuItemNF1">
+            <position>0,40</position>
+        </imagetype>
+        <imagetype name="MenuItemFN3" from="MenuItemNF1">
+            <position>0,80</position>
+        </imagetype>
+        <imagetype name="MenuItemFN4" from="MenuItemNF1">
+            <position>0,120</position>
+        </imagetype>
+        <imagetype name="MenuItemFN5" from="MenuItemNF1">
+            <position>0,160</position>
+        </imagetype>
+        <imagetype name="MenuItemFN6" from="MenuItemNF1">
+            <position>0,200</position>
+        </imagetype>
+        <imagetype name="MenuItemFN7" from="MenuItemNF1">
+            <position>0,240</position>
+        </imagetype>
+        <imagetype name="MenuItemFN8" from="MenuItemNF1">
+            <position>0,280</position>
+        </imagetype>
+    </group>
+
+    <group name="defaultprogramguidegridvideo">
+        <area>0,0,725,160</area>
+        <imagetype name="MenuItemNF1">
+            <area>0,0,725,40</area>
+            <filename>images/shared/MenuItemNF.png</filename>
+        </imagetype>
+        <imagetype name="MenuItemFN2" from="MenuItemNF1">
+            <position>0,40</position>
+        </imagetype>
+        <imagetype name="MenuItemFN3" from="MenuItemNF1">
+            <position>0,80</position>
+        </imagetype>
+        <imagetype name="MenuItemFN4" from="MenuItemNF1">
+            <position>0,120</position>
+        </imagetype>
+    </group>
+
 <!-- ===================================================== -->
 <!-- WINDOWS & DIALOGS                                     -->
 <!-- ===================================================== -->
