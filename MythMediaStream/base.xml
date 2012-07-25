@@ -2754,48 +2754,42 @@
     </group>
 
     <group name="defaultprogramguidegrid">
-        <area>0,0,725,320</area>
+        <area>0,0,1140,410</area>
         <imagetype name="MenuItemNF1">
-            <area>0,0,725,40</area>
-            <filename>images/shared/MenuItemNF.png</filename>
+            <area>0,0,190,400</area>
+            <filename>images/shared/MusicAlbumDetailsPanel.png</filename>
         </imagetype>
         <imagetype name="MenuItemFN2" from="MenuItemNF1">
-            <position>0,40</position>
+            <position>190,0</position>
         </imagetype>
         <imagetype name="MenuItemFN3" from="MenuItemNF1">
-            <position>0,80</position>
+            <position>380,0</position>
         </imagetype>
         <imagetype name="MenuItemFN4" from="MenuItemNF1">
-            <position>0,120</position>
+            <position>570,0</position>
         </imagetype>
         <imagetype name="MenuItemFN5" from="MenuItemNF1">
-            <position>0,160</position>
+            <position>760,0</position>
         </imagetype>
         <imagetype name="MenuItemFN6" from="MenuItemNF1">
-            <position>0,200</position>
-        </imagetype>
-        <imagetype name="MenuItemFN7" from="MenuItemNF1">
-            <position>0,240</position>
-        </imagetype>
-        <imagetype name="MenuItemFN8" from="MenuItemNF1">
-            <position>0,280</position>
+            <position>950,0</position>
         </imagetype>
     </group>
 
     <group name="defaultprogramguidegridvideo">
-        <area>0,0,725,160</area>
+        <area>0,0,1140,340</area>
         <imagetype name="MenuItemNF1">
-            <area>0,0,725,40</area>
-            <filename>images/shared/MenuItemNF.png</filename>
+            <area>0,0,190,340</area>
+            <filename>images/shared/MusicAlbumDetailsPanel.png</filename>
         </imagetype>
         <imagetype name="MenuItemFN2" from="MenuItemNF1">
-            <position>0,40</position>
+            <position>0,340</position>
         </imagetype>
         <imagetype name="MenuItemFN3" from="MenuItemNF1">
-            <position>0,80</position>
+            <position>0,340</position>
         </imagetype>
         <imagetype name="MenuItemFN4" from="MenuItemNF1">
-            <position>0,120</position>
+            <position>0,340</position>
         </imagetype>
     </group>
 
@@ -3094,12 +3088,12 @@
        <area>758,55,512,152</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
-                <position start="1280,0" end="758,0" easingcurve="OutBack" />
+                <position start="1280,55" end="758,55" easingcurve="OutBack" />
             </section>
         </animation>
         <animation trigger="AboutToHide">
             <section duration="500" centre="middle">
-                <position start="758,0" end="1280,0" easingcurve="InBack" />
+                <position start="758,55" end="1280,55" easingcurve="InBack" />
             </section>
         </animation>
         <imagetype name="DialogProgressBG">
