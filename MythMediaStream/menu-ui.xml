@@ -129,7 +129,7 @@
            <!-- ########  tv_schedule.xml  ########-->
            <state name="TV_PROGRAM_GUIDE">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/tv2.jpg</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>

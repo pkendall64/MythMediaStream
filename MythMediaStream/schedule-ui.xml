@@ -4,9 +4,9 @@
 
     <window name="programguide">
         <imagetype name="fanart" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/tv2.jpg</filename>
         </imagetype>
-        <group name="screenlayoutTVlist" from="defaultscreenlayoutBrowse_1">
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutGuide_1">
             <position>0,0</position>        
         </group>
         <textarea name="ScreenTitleProgramGuide" from="screentitle">
@@ -18,19 +18,19 @@
         <!-- ===================================================== -->
 
         <group name="programguidegrid" from="defaultprogramguidegrid">
-            <position>118,100</position>
+            <position>118,101</position>
         </group>
 
         <guidegrid name="guidegrid">
-            <area>120,100,1140,400</area>
+            <area>120,101,1140,400</area>
             <layout>vertical</layout>
             <channels>6</channels>
             <timeslots>6</timeslots>
             <solidcolor>#000000</solidcolor>
             <selector type="highlight" linecolor="#105B8F" fillcolor="#105B8F"/>
-            <showcategories>no</showcategories>
+            <showcategories>yes</showcategories>
             <showcategorycolors>no</showcategorycolors>
-            <categoryalpha>60</categoryalpha>
+            <categoryalpha>80</categoryalpha>
             <recordingcolor>#E0991A</recordingcolor>
             <conflictingcolor>#F92626</conflictingcolor>
             <cutdown>yes</cutdown>
@@ -45,21 +45,26 @@
             <recordstatus type="OverrideRecord" image="images/tv-recordings/gg-rs-override.png" />
             <arrow direction="left" image="images/shared/ArrowLeftFO.png" />
             <arrow direction="right" image="images/shared/ArrowRightFO.png" />
-            <font>verysmall</font>
+            <font>smaller</font>
         </guidegrid>
 
+        <imagetype name="timelistbgd">
+            <area>15,70,100,430</area>
+            <filename>images/shared/MusicAlbumDetailsPanel.png</filename>
+        </imagetype>
+
         <buttonlist name="timelist">
-            <area>10,100,70,400</area>
+            <area>15,100,70,400</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
 <!--            <scrollstyle>center</scrollstyle>-->
-            <arrange>fill</arrange>
+            <arrange>stack</arrange>
             <align>right</align>
             <buttonarea>0,0,70,400</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="buttontext" from="textarea_base">
-                        <area>0,0,70,50</area>
+                        <area>0,0,70,66</area>
                         <font>verysmall</font>
                         <align>right,top</align>
                     </textarea>
@@ -102,15 +107,15 @@
         <textarea name="channelgroup" from="screentitle3" />
 
         <buttonlist name="channellist">
-            <area>120,70,1140,30</area>
+            <area>120,71,1140,30</area>
             <layout>horizontal</layout>
-            <spacing>0</spacing>
+            <spacing>3</spacing>
             <buttonarea>0,0,1140,30</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
 	                 <imagetype name="MenuItemNF">
-	                     <area>0,0,190,30</area>
-	                     <filename>images/shared/GlassTitleBar.png</filename>
+	                     <area>0,0,187,30</area>
+	                     <filename>images/shared/ButtonMenuBack.png</filename>
 	                 </imagetype>
                     <imagetype name="channelicon">
                         <area>8,2,26,26</area>
@@ -138,7 +143,7 @@
        </buttonlist>
 
        <imagetype name="channelicon">
-            <area>20,525,170,170</area>
+            <area>15,520,175,175</area>
             <preserveaspect>no</preserveaspect>
             <reflection shear="0" scale="75" length="25"/>
         </imagetype>
@@ -165,9 +170,9 @@
 
     <window name="programguide-video">
         <imagetype name="fanart" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/tv2.jpg</filename>
         </imagetype>
-        <group name="screenlayoutTVlist" from="defaultscreenlayoutBrowse_1">
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutGuide_1">
             <position>0,0</position>        
         </group>
         <textarea name="ScreenTitleProgramGuide" from="screentitle">
@@ -179,19 +184,19 @@
         <!-- ===================================================== -->
 
         <group name="programguidegrid" from="defaultprogramguidegrid">
-            <position>118,100</position>
+            <position>118,101</position>
         </group>
 
         <guidegrid name="guidegrid">
-            <area>120,100,1140,400</area>
+            <area>120,101,1140,400</area>
             <layout>vertical</layout>
             <channels>6</channels>
             <timeslots>6</timeslots>
             <solidcolor>#000000</solidcolor>
             <selector type="highlight" linecolor="#105B8F" fillcolor="#105B8F"/>
-            <showcategories>no</showcategories>
+            <showcategories>yes</showcategories>
             <showcategorycolors>no</showcategorycolors>
-            <categoryalpha>60</categoryalpha>
+            <categoryalpha>80</categoryalpha>
             <recordingcolor>#E0991A</recordingcolor>
             <conflictingcolor>#F92626</conflictingcolor>
             <cutdown>yes</cutdown>
@@ -206,21 +211,26 @@
             <recordstatus type="OverrideRecord" image="images/tv-recordings/gg-rs-override.png" />
             <arrow direction="left" image="images/shared/ArrowLeftFO.png" />
             <arrow direction="right" image="images/shared/ArrowRightFO.png" />
-            <font>verysmall</font>
+            <font>smaller</font>
         </guidegrid>
 
+        <imagetype name="timelistbgd">
+            <area>15,70,100,430</area>
+            <filename>images/shared/MusicAlbumDetailsPanel.png</filename>
+        </imagetype>
+
         <buttonlist name="timelist">
-            <area>10,100,70,400</area>
+            <area>15,100,70,400</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
 <!--            <scrollstyle>center</scrollstyle>-->
-            <arrange>fill</arrange>
+            <arrange>stack</arrange>
             <align>right</align>
             <buttonarea>0,0,70,400</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="buttontext" from="textarea_base">
-                        <area>0,0,70,50</area>
+                        <area>0,0,70,66</area>
                         <font>verysmall</font>
                         <align>right,top</align>
                     </textarea>
@@ -263,15 +273,15 @@
         <textarea name="channelgroup" from="screentitle3" />
 
         <buttonlist name="channellist">
-            <area>120,70,1140,30</area>
+            <area>120,71,1140,30</area>
             <layout>horizontal</layout>
-            <spacing>0</spacing>
+            <spacing>3</spacing>
             <buttonarea>0,0,1140,30</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
 	                 <imagetype name="MenuItemNF">
-	                     <area>0,0,190,30</area>
-	                     <filename>images/shared/GlassTitleBar.png</filename>
+	                     <area>0,0,187,30</area>
+	                     <filename>images/shared/ButtonMenuBack.png</filename>
 	                 </imagetype>
                     <imagetype name="channelicon">
                         <area>8,2,26,26</area>
@@ -299,12 +309,12 @@
        </buttonlist>
 
         <imagetype name="video">
-            <area>20,525,330,185</area>
+            <area>15,520,330,185</area>
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="textarea_base">
-            <area>350,520,910,40</area>
+            <area>365,520,895,40</area>
             <align>left,vcenter</align>
             <font>title</font>
             <case>upper</case>
@@ -312,7 +322,7 @@
         </textarea>
 
         <textarea name="description" from="textarea_base">
-            <area>350,560,910,150</area>
+            <area>365,560,895,150</area>
             <font>small</font>
             <case>normal</case>
             <align>justify</align>

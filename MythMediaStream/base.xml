@@ -153,7 +153,7 @@
    <fontdef name="smaller" from="normal">
        <pixelsize>21</pixelsize>
        <weight>light</weight>
-       <weight>bold</weight>
+<!--       <weight>bold</weight>-->
    </fontdef>
 
    <fontdef name="verysmall" from="normal">
@@ -2534,6 +2534,12 @@
     <group name="defaultscreenlayoutBrowse_1" from="defaultscreenlayoutTVlist_1">
         <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
             <filename>images/shared/MovieViewBG.png</filename>
+        </imagetype>
+    </group>
+
+    <group name="defaultscreenlayoutGuide_1" from="defaultscreenlayoutTVlist_1">
+        <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
+            <filename>images/shared/GuideViewBG.png</filename>
         </imagetype>
     </group>
 
