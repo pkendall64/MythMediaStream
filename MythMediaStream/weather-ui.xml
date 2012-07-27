@@ -758,295 +758,323 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamWeatherBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- Screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>General Mythweather options</value>
-        </textarea>
+        <group name="global-setup1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>General Mythweather options</value>
+	        </textarea>
+	
+	        <textarea name="header" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Global Settings</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	
+	        <textarea name="timeout_text" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Seconds to display each page:</value>
+	        </textarea>
+	
+	        <spinbox name="timeout_spinbox" from="spinbox_base">
+	            <position>670,175</position>
+	        </spinbox>
+	
+	        <textarea name="backgroundlbl" from="timeout_text">
+	            <position>250,245</position>
+	            <value>Retrieve data in the background:</value>
+	        </textarea>
+	
+	        <checkbox name="backgroundcheck" from="checkbox_base">
+	            <position>730,245</position>
+	        </checkbox>
+        </group>
 
-        <textarea name="header" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Global Settings</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-
-        <textarea name="timeout_text" from="textarea_base">
-            <area>250,175,510,35</area>
-            <value>Seconds to display each page:</value>
-        </textarea>
-
-        <spinbox name="timeout_spinbox" from="spinbox_base">
-            <position>670,175</position>
-        </spinbox>
-
-        <textarea name="backgroundlbl" from="timeout_text">
-            <position>250,245</position>
-            <value>Retrieve data in the background:</value>
-        </textarea>
-
-        <checkbox name="backgroundcheck" from="checkbox_base">
-            <position>730,245</position>
-        </checkbox>
-
-        <button name="finishbutton" from="button_base_menu">
-            <position>790,175</position>
-            <value>OK</value>
-        </button>
-
+        <group name="global-setupbutton1group" from="defaultscreencontent_2B_animated">
+           <area>788,0,720,988</area>      
+	        <button name="finishbutton" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>OK</value>
+	        </button>
+        </group>
     </window>
 
     <window name="screen-setup">
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamWeatherBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- Screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Choose which weather forecasts to display</value>
-        </textarea>
+        <group name="screen-setup1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Choose which weather forecasts to display</value>
+	        </textarea>
+	
+	        <textarea name="header" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Screen setup</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	
+	        <textarea name="inactivehdr" from="textarea_base">
+	            <area>250,175,510,35</area>
+	        </textarea>
+	
+	        <buttonlist name="inactivelist" from="buttonlist_dialog_wide_permanent">
+	            <area>250,210,510,180</area>
+	            <buttonarea>0,0,510,160</buttonarea>
+	            <statetype name="upscrollarrow">
+	                <position>10,164</position>	
+	            </statetype>
+	            <statetype name="downscrollarrow">
+	                <position>30,164</position>	
+	            </statetype>
+	        </buttonlist>
+	
+	        <textarea name="helptxt" from="textarea_base">
+	            <area>250,390,510,105</area>
+	            <font>small</font>
+	            <case>normal</case>
+	            <multiline>yes</multiline>
+	            <align>allcenter</align>
+	        </textarea>
+	
+	        <textarea name="activehdr" from="inactivehdr">
+	            <position>250,495</position>
+	        </textarea>
+	
+	        <buttonlist name="activelist" from="buttonlist_dialog_wide_permanent">
+	            <area>250,530,510,180</area>
+	            <buttonarea>0,0,510,160</buttonarea>
+	            <statetype name="upscrollarrow">
+	                <position>10,164</position>	
+	            </statetype>
+	            <statetype name="downscrollarrow">
+	                <position>30,164</position>	
+	            </statetype>
+	        </buttonlist>
+        </group>
 
-        <textarea name="header" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Screen setup</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-
-        <textarea name="inactivehdr" from="textarea_base">
-            <area>250,175,510,35</area>
-        </textarea>
-
-        <buttonlist name="inactivelist" from="buttonlist_dialog_wide_permanent">
-            <area>250,210,510,180</area>
-            <buttonarea>0,0,510,160</buttonarea>
-            <statetype name="upscrollarrow">
-                <position>10,164</position>	
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>30,164</position>	
-            </statetype>
-        </buttonlist>
-
-        <textarea name="helptxt" from="textarea_base">
-            <area>250,390,510,105</area>
-            <font>small</font>
-            <case>normal</case>
-            <multiline>yes</multiline>
-            <align>allcenter</align>
-        </textarea>
-
-        <textarea name="activehdr" from="inactivehdr">
-            <position>250,495</position>
-        </textarea>
-
-        <buttonlist name="activelist" from="buttonlist_dialog_wide_permanent">
-            <area>250,530,510,180</area>
-            <buttonarea>0,0,510,160</buttonarea>
-            <statetype name="upscrollarrow">
-                <position>10,164</position>	
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>30,164</position>	
-            </statetype>
-        </buttonlist>
-
-
-        <button name="finishbutton" from="button_base_menu">
-            <position>790,175</position>
-            <value>OK</value>
-        </button>
-
+        <group name="screen-setupbutton1group" from="defaultscreencontent_2B_animated">
+           <area>788,0,720,988</area>      
+	        <button name="finishbutton" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>OK</value>
+	        </button>
+        </group>
     </window>
 
     <window name="source-setup">
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamWeatherBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- Screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Configure the behavior of weather scripts</value>
-        </textarea>
+        <group name="source-setup1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Configure the behavior of weather scripts</value>
+	        </textarea>
+	
+	        <textarea name="header" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Source setup</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	
+	        <buttonlist name="srclist" from="buttonlist_dialog_wide_permanent">
+	            <area>250,175,510,260</area>
+	            <buttonarea>0,0,510,240</buttonarea>
+	            <statetype name="upscrollarrow">
+	                <position>10,244</position>	
+	            </statetype>
+	            <statetype name="downscrollarrow">
+	                <position>30,244</position>	
+	            </statetype>
+	        </buttonlist>
+	
+	        <textarea name="updatetxt" from="textarea_base">
+	            <area>250,470,510,35</area>
+	            <value>Data Retrieval Interval (minutes):</value>
+	        </textarea>
+	
+	        <spinbox name="update_spinbox" from="spinbox_base">
+	            <position>670,470</position>
+	        </spinbox>
+	
+	        <textarea name="retrievetxt" from="textarea_base">
+	            <area>250,540,510,35</area>
+	            <value>Source Update Timeout (seconds):</value>
+	        </textarea>
+	
+	        <spinbox name="retrieve_spinbox" from="spinbox_base">
+	            <position>670,540</position>
+	        </spinbox>
+	
+	        <textarea name="srcinfo" from="textarea_base">
+	            <area>250,610,510,100</area>
+	            <font>small</font>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	            <multiline>yes</multiline>
+	        </textarea>
+        </group>
 
-        <textarea name="header" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Source setup</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-
-        <buttonlist name="srclist" from="buttonlist_dialog_wide_permanent">
-            <area>250,175,510,260</area>
-            <buttonarea>0,0,510,240</buttonarea>
-            <statetype name="upscrollarrow">
-                <position>10,244</position>	
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>30,244</position>	
-            </statetype>
-        </buttonlist>
-
-        <textarea name="updatetxt" from="textarea_base">
-            <area>250,470,510,35</area>
-            <value>Data Retrieval Interval (minutes):</value>
-        </textarea>
-
-        <spinbox name="update_spinbox" from="spinbox_base">
-            <position>670,470</position>
-        </spinbox>
-
-        <textarea name="retrievetxt" from="textarea_base">
-            <area>250,540,510,35</area>
-            <value>Source Update Timeout (seconds):</value>
-        </textarea>
-
-        <spinbox name="retrieve_spinbox" from="spinbox_base">
-            <position>670,540</position>
-        </spinbox>
-
-        <textarea name="srcinfo" from="textarea_base">
-            <area>250,610,510,100</area>
-            <font>small</font>
-            <case>normal</case>
-            <alpha>128</alpha>
-            <multiline>yes</multiline>
-        </textarea>
-
-        <button name="finishbutton" from="button_base_menu">
-            <position>790,175</position>
-            <value>OK</value>
-        </button>
+        <group name="source-setupbutton1group" from="defaultscreencontent_2B_animated">
+           <area>788,0,720,988</area>      
+	        <button name="finishbutton" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>OK</value>
+	        </button>
+        </group>
     </window>
 
     <window name="setup-location">
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamWeatherBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- Screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Configure the behavior of weather scripts</value>
-        </textarea>
+        <group name="setup-location1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Configure the behavior of weather scripts</value>
+	        </textarea>
+	
+	        <textarea name="header" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Location Search</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	
+	        <textarea name="editlbl" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Enter Location:</value>
+	        </textarea>
+	
+	        <textedit name="loc-edit" from="textedit_menu">
+	            <position>420,175</position>
+	        </textedit>
+        </group>
+        
+        <group name="setup-locationbutton1group" from="defaultscreencontent_2B_animated">
+           <area>788,0,720,988</area>      
+	        <button name="searchbtn" from="button_base_menu">
+	            <position>2,175</position>
+	        </button>
+        </group>
 
-        <textarea name="header" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Location Search</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-
-        <textarea name="editlbl" from="textarea_base">
-            <area>250,175,510,35</area>
-            <value>Enter Location:</value>
-        </textarea>
-
-        <textedit name="loc-edit" from="textedit_menu">
-            <position>420,175</position>
-        </textedit>
-
-        <button name="searchbtn" from="button_base_menu">
-            <position>790,175</position>
-        </button>
-
-        <buttonlist name="results" from="buttonlist_dialog_wide_permanent">
-            <area>250,245,510,260</area>
-            <buttonarea>0,0,510,240</buttonarea>
-            <statetype name="upscrollarrow">
-                <position>10,244</position>	
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>30,244</position>	
-            </statetype>
-        </buttonlist>
-
-        <textarea name="numresults" from="textarea_base">
-            <area>250,510,510,35</area>
-        </textarea>
-
-        <textarea name="source" from="textarea_base">
-            <area>250,580,510,35</area>
-            <font>small</font>
-            <case>normal</case>
-            <alpha>128</alpha>
-        </textarea>
-
-        <textarea name="helptxt" from="textarea_base">
-            <area>250,650,510,60</area>
-            <font>small</font>
-            <case>normal</case>
-            <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
-            <alpha>128</alpha>
-            <multiline>yes</multiline>
-        </textarea>
+        <group name="setup-location2group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <buttonlist name="results" from="buttonlist_dialog_wide_permanent">
+	            <area>250,245,510,260</area>
+	            <buttonarea>0,0,510,240</buttonarea>
+	            <statetype name="upscrollarrow">
+	                <position>10,244</position>	
+	            </statetype>
+	            <statetype name="downscrollarrow">
+	                <position>30,244</position>	
+	            </statetype>
+	        </buttonlist>
+	
+	        <textarea name="numresults" from="textarea_base">
+	            <area>250,510,510,35</area>
+	        </textarea>
+	
+	        <textarea name="source" from="textarea_base">
+	            <area>250,580,510,35</area>
+	            <font>small</font>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	        </textarea>
+	
+	        <textarea name="helptxt" from="textarea_base">
+	            <area>250,650,510,60</area>
+	            <font>small</font>
+	            <case>normal</case>
+	            <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
+	            <alpha>128</alpha>
+	            <multiline>yes</multiline>
+	        </textarea>
+        </group>
     </window>
 
 </mythuitheme>
