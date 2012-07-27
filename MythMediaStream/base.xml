@@ -1767,7 +1767,7 @@
        <arrange>stack</arrange>
        <buttonarea>0,0,510,360</buttonarea>
        <statetype name="buttonitem">
-           <area>0,0,510,35</area>
+           <area>0,0,510,40</area>
            <!--ACTIVE-->
            <state name="active">
                <imagetype name="MenuItemNF">

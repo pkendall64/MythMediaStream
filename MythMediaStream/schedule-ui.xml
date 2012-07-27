@@ -49,7 +49,7 @@
         </guidegrid>
 
         <imagetype name="timelistbgd">
-            <area>15,70,100,430</area>
+            <area>15,68,100,432</area>
             <filename>images/shared/MusicAlbumDetailsPanel.png</filename>
         </imagetype>
 
@@ -109,7 +109,7 @@
         <buttonlist name="channellist">
             <area>120,71,1140,30</area>
             <layout>horizontal</layout>
-            <spacing>3</spacing>
+            <spacing>4</spacing>
             <buttonarea>0,0,1140,30</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
@@ -143,13 +143,13 @@
        </buttonlist>
 
        <imagetype name="channelicon">
-            <area>15,520,175,175</area>
+            <area>15,520,160,160</area>
             <preserveaspect>no</preserveaspect>
             <reflection shear="0" scale="75" length="25"/>
         </imagetype>
 
         <textarea name="title" from="textarea_base">
-            <area>210,520,1050,40</area>
+            <area>205,520,1055,40</area>
             <align>left,vcenter</align>
             <font>title</font>
             <case>upper</case>
@@ -157,7 +157,7 @@
         </textarea>
 
         <textarea name="description" from="textarea_base">
-            <area>210,560,1050,150</area>
+            <area>205,560,1055,150</area>
             <font>small</font>
             <case>normal</case>
             <align>justify</align>
@@ -215,7 +215,7 @@
         </guidegrid>
 
         <imagetype name="timelistbgd">
-            <area>15,70,100,430</area>
+            <area>15,68,100,432</area>
             <filename>images/shared/MusicAlbumDetailsPanel.png</filename>
         </imagetype>
 
@@ -275,7 +275,7 @@
         <buttonlist name="channellist">
             <area>120,71,1140,30</area>
             <layout>horizontal</layout>
-            <spacing>3</spacing>
+            <spacing>4</spacing>
             <buttonarea>0,0,1140,30</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">

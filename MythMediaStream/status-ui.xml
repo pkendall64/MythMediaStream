@@ -6,52 +6,69 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- CUSTOM EDIT POPUP                                  -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>See what your system is doing</value> 
-        </textarea>
+        <group name="status1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- CUSTOM EDIT POPUP                                  -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>See what your system is doing</value> 
+	        </textarea>
+	
+	        <textarea name="pagetitle" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>System status</value>
+	        </textarea>
+        </group>
+        
+        <group name="statusbutton1group" from="defaultscreencontent_2B_animated">
+           <area>788,0,720,988</area>      
+	        <!-- ===================================================== -->
+	        <!--     STATUS GROUPS                                     -->
+	        <!-- ===================================================== -->
+	        <buttonlist name="category" from="buttonlist_menu_2">
+	            <position>2,175</position>
+	        </buttonlist>
+        </group>
 
-        <textarea name="pagetitle" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>System status</value>
-        </textarea>
-
-        <!-- ===================================================== -->
-        <!--     STATUS GROUPS                                     -->
-        <!-- ===================================================== -->
-        <buttonlist name="category" from="buttonlist_menu_2">
-            <position>790,175</position>
-        </buttonlist>
-
-        <buttonlist name="log" from="buttonlist_dialog_wide_permanent">
-            <position>250,175</position>
-        </buttonlist>
-
-        <textarea name="helptext" from="textarea_base">
-            <area>250,610,510,100</area>
-            <font>small</font>
-            <case>normal</case>
-            <align>left,bottom</align>
-            <value>This screen displays the status of various system components</value>
-            <multiline>yes</multiline>
-        </textarea>
-
+        <group name="status2group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <buttonlist name="log" from="buttonlist_dialog_wide_permanent">
+	            <area>250,175,510,420</area>
+               <buttonarea>0,0,510,400</buttonarea>
+               <statetype name="upscrollarrow">
+                   <position>10,404</position>
+               </statetype>
+               <statetype name="downscrollarrow">
+                   <position>30,404</position>
+               </statetype>	
+	        </buttonlist>
+	
+	        <textarea name="helptext" from="textarea_base">
+	            <area>250,560,510,150</area>
+	            <cutdown>yes</cutdown>
+	            <font>smaller</font>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	            <align>hcenter,bottom</align>
+	            <multiline>yes</multiline>
+	        </textarea>
+        </group>
     </window>
 
 </mythuitheme>
