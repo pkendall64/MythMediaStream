@@ -71,8 +71,18 @@
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <area>968,0,316,720</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="1280,0" end="968,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="968,0" end="1280,0" easingcurve="InBack" />
+            </section>
+        </animation>
         <imagetype name="popup_background">
-            <area>0,0,316,720</area>	
+            <area>0,0,350,720</area>	
             <filename>images/shared/VisOsdPanel.png</filename>
         </imagetype>
         <textarea name="storagetitle">
@@ -740,199 +750,252 @@
 
     <window name="ChannelEditor">
 
-        <imagetype name="Menu_background_Sub2">
-            <filename>images/shared/HomeBladeLeft.png</filename>
-            <area>-600,0,846,720</area>
-        </imagetype> 
-        <imagetype name="Menu_Overlay">
-            <area>1045,0,235,720</area> 
-            <filename>images/shared/HomeRightOverlay.png</filename>
-        </imagetype>
-        <imagetype name="Menu_background_Sub3">
-            <filename>images/shared/BlackTransparent.png</filename>
-            <area>238,0,550,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub4">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>240,0,560,720</area>
-        </imagetype> 
-        <imagetype name="Menu_background_Sub5">
-            <filename>images/shared/HomeBladeSub.png</filename>
-            <area>788,0,200,720</area>
-        </imagetype>
+        <group name="defaultscreenlayoutSettings_1">
+	        <animation trigger="AboutToShow">
+	            <section duration="1000" centre="middle">
+	                <position start="-988,0" end="0,0" easingcurve="InOutBack" reversible="false" />
+	            </section>
+	        </animation>
+	        <animation trigger="AboutToHide">
+	            <section duration="2000" centre="middle">
+	                <position start="0,0" end="-988,0" easingcurve="InBack" />
+	            </section>
+	        </animation>        
+	        <imagetype name="Menu_background_Sub2">
+	            <filename>images/shared/HomeBladeLeft.png</filename>
+	            <area>-600,0,846,720</area>
+	        </imagetype> 
+	        <imagetype name="Menu_Overlay">
+	            <area>1045,0,235,720</area> 
+	            <filename>images/shared/HomeRightOverlay.png</filename>
+	        </imagetype>
+	        <imagetype name="Menu_background_Sub3">
+	            <filename>images/shared/BlackTransparent.png</filename>
+	            <area>238,0,550,720</area>
+	        </imagetype> 
+	        <imagetype name="Menu_background_Sub4">
+	            <filename>images/shared/HomeBladeSub.png</filename>
+	            <area>240,0,560,720</area>
+	        </imagetype> 
+	        <!-- ================================================== -->
+	        <!-- The clock                                          -->
+	        <!-- ================================================== -->
+	        <textarea name="clock" >
+	          <area>10,5,160,40</area> 
+		       <imagetype name="ClockBackground">
+		           <filename>images/shared/ClockBackgroundLong.png</filename>
+		           <area>0,0,160,40</area>
+		       </imagetype>
+		       <clock name="texthours">
+		           <area>30,0,75,40</area>
+		           <font>normal</font>
+		           <template>hh:mm</template>
+		           <align>right,vcenter</align>
+		           <multiline>no</multiline>
+		           <cutdown>no</cutdown>
+		       </clock>
+		       <clock name="textdaypart">
+		           <area>110,0,30,40</area>
+		           <font>normal_blue_bold</font>
+		           <template>AP</template>
+		           <align>hcenter,vcenter</align>
+		           <multiline>no</multiline>
+		           <cutdown>no</cutdown>
+		       </clock>
+	       </textarea>
+        </group>
+        <group name="defaultscreenlayoutSettings_2">
+	         <imagetype name="Menu_background_Sub5">
+	            <area>788,0,200,720</area>
+		         <animation trigger="AboutToShow">
+		             <section duration="2000" centre="middle">
+		                 <position start="588,0" end="788,0" easingcurve="InOutBack" reversible="false" />
+		             </section>
+		         </animation>
+		         <animation trigger="AboutToHide">
+		             <section duration="1000" centre="middle">
+		                 <position start="788,0" end="588,0" easingcurve="InBack" />
+		             </section>
+		         </animation>
+	            <filename>images/shared/HomeBladeSub.png</filename>
+	         </imagetype>
+        </group>
 
-        <!-- ================================================== -->
-        <!-- The clock                                          -->
-        <!-- ================================================== -->
-        <textarea name="clock" >
-          <area>10,5,160,40</area> 
-	       <imagetype name="ClockBackground">
-	           <filename>images/shared/ClockBackgroundLong.png</filename>
-	           <area>0,0,160,40</area>
-	       </imagetype>
-	       <clock name="texthours">
-	           <area>30,0,75,40</area>
-	           <font>normal</font>
-	           <template>hh:mm</template>
-	           <align>right,vcenter</align>
-	           <multiline>no</multiline>
-	           <cutdown>no</cutdown>
-	       </clock>
-	       <clock name="textdaypart">
-	           <area>110,0,30,40</area>
-	           <font>normal_blue_bold</font>
-	           <template>AP</template>
-	           <align>hcenter,vcenter</align>
-	           <multiline>no</multiline>
-	           <cutdown>no</cutdown>
-	       </clock>
-       </textarea>
+        <group name="screencontent_1">
+           <area>0,0,720,988</area>
+	        <animation trigger="AboutToShow">
+	            <section duration="1000" centre="middle">
+	                <alpha start="0" end="255" easingcurve="InExpo" />
+	                <position start="-988,0" end="0,0" easingcurve="InOutBack" />
+	            </section>
+	        </animation>
+	        <animation trigger="AboutToHide">
+	            <section duration="2000" centre="middle">
+	                <alpha start="255" end="0" easingcurve="OutExpo" />
+	                <position start="0,0" end="-988,0" easingcurve="InBack" />
+	            </section>
+	        </animation>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Update your channels</value>
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Channel Editor</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	
+	        <textarea name="callsign_label" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Callsign</value>
+	        </textarea>
+	 
+	        <textedit name="callsign" from="textedit_menu">
+	           <area>420,175,340,35</area>
+	           <statetype name="background">
+	               <state name="active">
+	                    <imagetype name="backgroundactive">
+	                        <area>-170,0,510,35</area>
+	                        <filename>images/shared/MenuItemNF.png</filename>
+	                    </imagetype>
+	                </state>
+	                <state name="selected">
+	                    <imagetype name="backgroundactive">
+	                        <area>-170,0,510,35</area>
+	                        <filename>images/shared/MenuItemNF.png</filename>
+	                    </imagetype>
+	                    <imagetype name="backgroundselected">
+	                        <area>0,0,330,35</area>
+	                        <filename>images/shared/MenuItemFO.png</filename>
+	                    </imagetype>
+	                </state>
+	                <state name="inactive" from="active"/>
+	           </statetype>
+	           <imagetype name="cursor">
+	               <filename>images/shared/cursor.png</filename>
+	               <alpha>192</alpha>
+	           </imagetype>
+	           <textarea name="text">
+	                <area>10,0,320,35</area>
+	                <font>normal</font>
+	                <alpha>128</alpha>
+	                <align>left,vcenter</align>
+	           </textarea>
+	        </textedit>
+	
+	        <textarea name="channum_label" from="callsign_label">
+	            <position>250,210</position>
+	            <value>Channel Number</value>
+	        </textarea>
+	        
+	        <textedit name="channum" from="callsign">
+	            <position>420,210</position>
+	        </textedit>
+	
+	        <textarea name="channame_label" from="callsign_label">
+	            <position>250,245</position>
+	            <value>Channel Name</value>
+	        </textarea>
+	        
+	        <textedit name="channame" from="callsign">
+	            <position>420,245</position>
+	        </textedit>
+	
+	        <textarea name="xmltv_label" from="callsign_label">
+	            <position>250,280</position>
+	            <value>XMLTV ID</value>
+	        </textarea>
+	        
+	        <textedit name="XMLTV" from="callsign">
+	            <position>420,280</position>
+	        </textedit>
+        </group>
 
-        <!-- ================================================== -->
-        <!-- Screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Update your channels</value>
-        </textarea>
-
-        <textarea name="title" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Channel Editor</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-
-        <textarea name="callsign_label" from="textarea_base">
-            <area>250,175,510,35</area>
-            <value>Callsign</value>
-        </textarea>
- 
-        <textedit name="callsign" from="textedit_menu">
-           <area>420,175,340,35</area>
-           <statetype name="background">
-               <state name="active">
-                    <imagetype name="backgroundactive">
-                        <area>-170,0,510,35</area>
-                        <filename>images/shared/MenuItemNF.png</filename>
-                    </imagetype>
-                </state>
-                <state name="selected">
-                    <imagetype name="backgroundactive">
-                        <area>-170,0,510,35</area>
-                        <filename>images/shared/MenuItemNF.png</filename>
-                    </imagetype>
-                    <imagetype name="backgroundselected">
-                        <area>0,0,330,35</area>
-                        <filename>images/shared/MenuItemFO.png</filename>
-                    </imagetype>
-                </state>
-                <state name="inactive" from="active"/>
-           </statetype>
-           <imagetype name="cursor">
-               <filename>images/shared/cursor.png</filename>
-               <alpha>192</alpha>
-           </imagetype>
-           <textarea name="text">
-                <area>10,0,320,35</area>
-                <font>normal</font>
-                <alpha>128</alpha>
-                <align>left,vcenter</align>
-           </textarea>
-        </textedit>
-
-        <textarea name="channum_label" from="callsign_label">
-            <position>250,210</position>
-            <value>Channel Number</value>
-        </textarea>
-        
-        <textedit name="channum" from="callsign">
-            <position>420,210</position>
-        </textedit>
-
-        <textarea name="channame_label" from="callsign_label">
-            <position>250,245</position>
-            <value>Channel Name</value>
-        </textarea>
-        
-        <textedit name="channame" from="callsign">
-            <position>420,245</position>
-        </textedit>
-
-        <textarea name="xmltv_label" from="callsign_label">
-            <position>250,280</position>
-            <value>XMLTV ID</value>
-        </textarea>
-        
-        <textedit name="XMLTV" from="callsign">
-            <position>420,280</position>
-        </textedit>
-
-        <button name="probe" from="button_base_menu">
-             <area>790,175,190,35</area>
-		       <statetype name="buttonstate">
-		           <!--ACTIVE-->
-		           <state name="active">
-		               <imagetype name="ButtonMenuBack">
-		                   <area>0,0,190,35</area>
-		                   <filename>images/shared/MenuItemNF.png</filename>
-		               </imagetype>
-		               <textarea name="text" from="textarea_base">
-		                   <area>10,0,180,35</area>
-		                   <align>left,vcenter</align>
-		                   <alpha>128</alpha>
-		                   <font>normal</font>
-				             <value>Probe</value>
-		               </textarea>
-		           </state>
-		           <!--SELECTED ACTIVE-->
-		           <state name="selected">
-		               <imagetype name="ButtonMenuBack">
-		                   <area>0,0,190,35</area>
-		                   <filename>images/shared/MenuItemNF.png</filename>
-		               </imagetype>
-		               <imagetype name="ButtonMenuFront">
-		                   <area>0,0,190,35</area>
-		                   <filename>images/shared/HomeBladeSubFO2.png</filename>
-		               </imagetype>
-		               <textarea name="text" from="textarea_base">
-		                   <area>10,0,180,35</area>
-		                   <align>left,vcenter</align>
-		                   <font>normal</font>
-				             <value>Probe</value>
-		               </textarea>
-		           </state>
-		           <!--DISABLED-->
-		           <state name="disabled" from="active" />
-		           <!--PUSHED-->
-		           <state name="pushed" from="active">
-		               <alpha>128</alpha>
-		               <textarea name="text" from="textarea_base">
-		                   <area>10,0,180,35</area>
-		                   <align>left,vcenter</align>
-		                   <font>normal_amber</font>
-				             <value>Probe</value>
-		               </textarea>
-		           </state>
-		       </statetype>
-        </button>
-        
-        <button name="ok" from="probe">
-            <position>790,210</position>
-            <value>OK</value>
-        </button>
+        <group name="screencontent_2">
+	        <area>788,0,720,988</area>      
+	        <animation trigger="AboutToShow">
+		         <section duration="2000" centre="middle">
+		             <alpha start="0" end="255" easingcurve="InExpo" />
+		             <position start="588,0" end="788,0" easingcurve="InOutBack" />
+		         </section>
+		     </animation>
+		     <animation trigger="AboutToHide">
+		         <section duration="1000" centre="middle">
+		             <alpha start="255" end="0" easingcurve="OutExpo" />
+		             <position start="788,0" end="588,0" easingcurve="InBack" />
+		         </section>
+		     </animation>
+	        <button name="probe" from="button_base_menu">
+	             <area>2,175,190,35</area>
+			       <statetype name="buttonstate">
+			           <!--ACTIVE-->
+			           <state name="active">
+			               <imagetype name="ButtonMenuBack">
+			                   <area>0,0,190,35</area>
+			                   <filename>images/shared/MenuItemNF.png</filename>
+			               </imagetype>
+			               <textarea name="text" from="textarea_base">
+			                   <area>10,0,180,35</area>
+			                   <align>left,vcenter</align>
+			                   <alpha>128</alpha>
+			                   <font>normal</font>
+					             <value>Probe</value>
+			               </textarea>
+			           </state>
+			           <!--SELECTED ACTIVE-->
+			           <state name="selected">
+			               <imagetype name="ButtonMenuBack">
+			                   <area>0,0,190,35</area>
+			                   <filename>images/shared/MenuItemNF.png</filename>
+			               </imagetype>
+			               <imagetype name="ButtonMenuFront">
+			                   <area>0,0,190,35</area>
+			                   <filename>images/shared/HomeBladeSubFO2.png</filename>
+			               </imagetype>
+			               <textarea name="text" from="textarea_base">
+			                   <area>10,0,180,35</area>
+			                   <align>left,vcenter</align>
+			                   <font>normal</font>
+					             <value>Probe</value>
+			               </textarea>
+			           </state>
+			           <!--DISABLED-->
+			           <state name="disabled" from="active" />
+			           <!--PUSHED-->
+			           <state name="pushed" from="active">
+			               <alpha>128</alpha>
+			               <textarea name="text" from="textarea_base">
+			                   <area>10,0,180,35</area>
+			                   <align>left,vcenter</align>
+			                   <font>normal_amber</font>
+					             <value>Probe</value>
+			               </textarea>
+			           </state>
+			       </statetype>
+	        </button>
+	        
+	        <button name="ok" from="probe">
+	            <position>2,210</position>
+	            <value>OK</value>
+	        </button>
+        </group>
 
     </window>
 
@@ -1057,12 +1120,24 @@
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
 
+        <area>968,0,316,720</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="1280,0" end="968,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="968,0" end="1280,0" easingcurve="InBack" />
+            </section>
+        </animation>
         <imagetype name="popup_background">
-            <area>968,0,316,720</area>	
+            <area>0,0,350,720</area>	
             <filename>images/shared/VisOsdPanel.png</filename>
         </imagetype>
+
         <textarea name="messagearea">
-            <area>990,20,280,100</area>
+            <area>22,20,280,100</area>
             <font>title_small</font>
             <case>upper</case>
             <multiline>yes</multiline>
@@ -1070,7 +1145,7 @@
             <cutdown>yes</cutdown>
         </textarea>
         <buttonlist name="list">
-            <area>980,130,300,580</area>
+            <area>12,130,300,580</area>
             <align>top,hcenter</align>
             <layout>vertical</layout>
             <wrapstyle>selection</wrapstyle>
