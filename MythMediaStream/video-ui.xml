@@ -948,7 +948,7 @@
             </state>
             <state name="no">
                 <imagetype name="no">
-                    <position>338,155</position>
+                    <position>338,144</position>
                     <filename>images/shared/OverlayUnwatched.png</filename>
                 </imagetype>
             </state>

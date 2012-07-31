@@ -89,80 +89,87 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/news.jpg</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- Screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Choose which news channels interest you</value>
-        </textarea>
-
-        <textarea name="title" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-
-        <textarea name="namelabel" from="textarea_base">
-            <area>250,175,510,35</area>
-            <value>Name site:</value>
-        </textarea>
-
-        <textedit name="name" from="textedit_menu">
-            <position>420,175</position>
-        </textedit>
-
-        <textarea name="podcastlabel" from="namelabel">
-            <position>250,210</position>
-            <value>Site icon:</value>
-        </textarea>
-
-        <checkbox name="podcast_check" from="checkbox_menu">
-            <position>420,210</position>
-        </checkbox>
-
-        <textarea name="urllabel" from="namelabel">
-            <position>250,280</position>
-            <value>URL site:</value>
-        </textarea>
-
-        <textedit name="url" from="textedit_menu_wide">
-            <position>250,315</position>
-        </textedit>
-
-        <textarea name="iconlabel" from="namelabel">
-            <position>250,385</position>
-            <value>Site icon:</value>
-        </textarea>
-
-        <textedit name="icon" from="textedit_menu_wide">
-            <position>250,420</position>
-        </textedit>
-
-        <button name="ok" from="button_base_menu">
-            <position>790,175</position>
-            <value>OK</value>
-        </button>
-
-        <button name="cancel" from="button_base_menu">
-            <position>790,210</position>
-            <value>Cancel</value>
-        </button>
+        <group name="editor1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Choose which news channels interest you</value>
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	
+	        <textarea name="namelabel" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Name site:</value>
+	        </textarea>
+	
+	        <textedit name="name" from="textedit_menu">
+	            <position>420,175</position>
+	        </textedit>
+	
+	        <textarea name="podcastlabel" from="namelabel">
+	            <position>250,210</position>
+	            <value>Site icon:</value>
+	        </textarea>
+	
+	        <checkbox name="podcast_check" from="checkbox_menu">
+	            <position>420,210</position>
+	        </checkbox>
+	
+	        <textarea name="urllabel" from="namelabel">
+	            <position>250,280</position>
+	            <value>URL site:</value>
+	        </textarea>
+	
+	        <textedit name="url" from="textedit_menu_wide">
+	            <position>250,315</position>
+	        </textedit>
+	
+	        <textarea name="iconlabel" from="namelabel">
+	            <position>250,385</position>
+	            <value>Site icon:</value>
+	        </textarea>
+	
+	        <textedit name="icon" from="textedit_menu_wide">
+	            <position>250,420</position>
+	        </textedit>
+        </group>
+        
+        <group name="editorbutton1group" from="defaultscreencontent_2B_animated">
+           <area>788,0,720,988</area>      
+	        <button name="ok" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>Save</value>
+	        </button>
+	
+	        <button name="cancel" from="button_base_menu">
+	            <position>2,210</position>
+	            <value>Cancel</value>
+	        </button>
+        </group>
 
     </window>
 
@@ -171,9 +178,12 @@
             <area>0,0,1280,720</area>
             <filename>images/backgrounds/news.jpg</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1B_animated">
             <position>0,0</position>
         </group> 
+        <group name="config1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
         <!-- ================================================== -->
         <!-- Screen description                                 -->
         <!-- ================================================== -->
@@ -203,21 +213,27 @@
 
         <buttonlist name="category" from="buttonlist_dialog_wide">
             <position>250,175</position>
-        </buttonlist>
-
-        <buttonlist name="sites" from="buttonlist_dialog_wide_check">
-            <position>250,175</position>
-        </buttonlist>
-
-        <textarea name="context_switch" from="textarea_base">
-            <area>250,590,510,50</area>
-            <multiline>yes</multiline>
-        </textarea>
-
-        <textarea name="help" from="textarea_base">
-            <area>250,675,510,35</area>
-            <multiline>yes</multiline>
-        </textarea>
+	        </buttonlist>
+	
+	        <buttonlist name="sites" from="buttonlist_dialog_wide_check">
+	            <position>250,175</position>
+	        </buttonlist>
+	
+	        <textarea name="context_switch" from="textarea_base">
+	            <area>250,590,510,50</area>
+	            <multiline>yes</multiline>
+	        </textarea>
+	
+	        <textarea name="help" from="textarea_base">
+	            <area>250,675,510,35</area>
+	            <cutdown>yes</cutdown>
+	            <font>smaller</font>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	            <align>hcenter,bottom</align>
+	            <multiline>yes</multiline>
+	        </textarea>
+        </group>
 
     </window>
 
