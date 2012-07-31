@@ -180,35 +180,39 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/app-store.jpg</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1B_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- content of the window                              -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Browse Internet video</value> 
-        </textarea>
-
-        <textarea name="title" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Manage Site Subscriptions</value>
-        </textarea>
-
-        <buttonlist name="grabbers" from="buttonlist_dialog_wide_check">
-            <position>250,175</position>
-        </buttonlist>
+        <group name="treeeditor1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- content of the window                              -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Browse Internet video</value> 
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Manage Site Subscriptions</value>
+	        </textarea>
+	
+	        <buttonlist name="grabbers" from="buttonlist_dialog_wide_check">
+	            <position>250,175</position>
+	        </buttonlist>
+        </group>
 
   </window>
 
@@ -216,59 +220,66 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/app-store.jpg</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2A_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- content of the window                              -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Browse Internet video</value> 
-        </textarea>
+        <group name="rsseditor1group" from="defaultscreencontent_1A_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- content of the window                              -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Browse Internet video</value> 
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Manage Site Subscriptions</value>
+	        </textarea>
+	
+	        <buttonlist name="sites" from="buttonlist_dialog_wide_check">
+	            <position>250,175</position>
+	        </buttonlist>
+	
+	        <textarea name="description" from="textarea_base">
+	            <area>250,640,510,70</area>
+	            <font>small</font>
+	            <case>normal</case>
+	            <align>justify</align>
+	            <multiline>yes</multiline>
+	            <cutdown>yes</cutdown>
+	        </textarea>
+        </group>
 
-        <textarea name="title" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Manage Site Subscriptions</value>
-        </textarea>
-
-        <button name="new" from="button_base_menu">
-            <position>790,175</position>
-            <value>New</value>
-        </button>
-
-        <button name="edit" from="button_base_menu">
-            <position>790,210</position>
-            <value>Edit</value>
-        </button>
-
-        <button name="delete" from="button_base_menu">
-            <position>790,245</position>
-            <value>Delete</value>
-        </button>
-
-        <buttonlist name="sites" from="buttonlist_dialog_wide_check">
-            <position>250,175</position>
-        </buttonlist>
-
-        <textarea name="description" from="textarea_base">
-            <area>250,640,510,70</area>
-            <font>small</font>
-            <case>normal</case>
-            <align>justify</align>
-            <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
-        </textarea>
+        <group name="rsseditorbutton1group" from="defaultscreencontent_2A_animated">
+           <area>788,0,720,988</area>      
+	        <button name="new" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>New</value>
+	        </button>
+	
+	        <button name="edit" from="button_base_menu">
+	            <position>2,210</position>
+	            <value>Edit</value>
+	        </button>
+	
+	        <button name="delete" from="button_base_menu">
+	            <position>2,245</position>
+	            <value>Delete</value>
+	        </button>
+        </group>
 
 <!--      <imagetype name="preview">
           <area>38,330,150,240</area>
@@ -281,95 +292,102 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/app-store.jpg</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2A_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- content of the window                              -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Browse Internet video</value> 
-        </textarea>
+        <group name="rsseditorpopup1group" from="defaultscreencontent_1A_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- content of the window                              -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Browse Internet video</value> 
+	        </textarea>
+	
+	        <textarea name="pagetitle" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Manage RSS Subscriptions</value>
+	        </textarea>
+	
+	        <textarea name="titlelbl" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Feed Name:</value>
+	        </textarea>
+	
+	        <textedit name="title" from="textedit_menu">
+	            <position>420,175</position>
+	        </textedit>
+	
+	        <textarea name="authorlbl" from="titlelbl">
+	            <position>250,210</position>
+	            <value>Feed Author:</value>
+	        </textarea>
+	
+	        <textedit name="author" from="textedit_menu">
+	            <position>420,210</position>
+	        </textedit>
+	
+	        <textarea name="urllabel" from="titlelbl">
+	            <position>250,280</position>
+	            <value>Feed URL:</value>
+	        </textarea>
+	
+	        <textedit name="url" from="textedit_menu_wide">
+	            <position>250,315</position>
+	        </textedit>
+	
+	        <textarea name="desclabel" from="titlelbl">
+	            <position>250,385</position>
+	            <value>Site Description:</value>
+	        </textarea>
+	
+	        <textedit name="description" from="textedit_menu_wide">
+	            <position>250,420</position>
+	        </textedit>
+	
+	        <textarea name="downloadlbl" from="titlelbl">
+	            <position>250,490</position>
+	            <value>Download this feed automatically</value>
+	        </textarea>
+	
+	        <checkbox name="download" from="checkbox_base">
+	            <position>730,490</position>
+	        </checkbox>
+	
+	        <imagetype name="preview">
+	            <area>372,560,267,150</area>
+	        </imagetype>
+        </group>
 
-        <textarea name="pagetitle" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Manage RSS Subscriptions</value>
-        </textarea>
-
-        <textarea name="titlelbl" from="textarea_base">
-            <area>250,175,510,35</area>
-            <value>Feed Name:</value>
-        </textarea>
-
-        <textedit name="title" from="textedit_menu">
-            <position>420,175</position>
-        </textedit>
-
-        <textarea name="authorlbl" from="titlelbl">
-            <position>250,210</position>
-            <value>Feed Author:</value>
-        </textarea>
-
-        <textedit name="author" from="textedit_menu">
-            <position>420,210</position>
-        </textedit>
-
-        <textarea name="urllabel" from="titlelbl">
-            <position>250,280</position>
-            <value>Feed URL:</value>
-        </textarea>
-
-        <textedit name="url" from="textedit_menu_wide">
-            <position>250,315</position>
-        </textedit>
-
-        <textarea name="desclabel" from="titlelbl">
-            <position>250,385</position>
-            <value>Site Description:</value>
-        </textarea>
-
-        <textedit name="description" from="textedit_menu_wide">
-            <position>250,420</position>
-        </textedit>
-
-        <textarea name="downloadlbl" from="titlelbl">
-            <position>250,490</position>
-            <value>Download this feed automatically</value>
-        </textarea>
-
-        <checkbox name="download" from="checkbox_base">
-            <position>730,490</position>
-        </checkbox>
-
-        <imagetype name="preview">
-            <area>372,560,267,150</area>
-        </imagetype>
-
-        <button name="preview_browse" from="button_base_menu">
-            <position>790,175</position>
-            <value>Preview</value>
-        </button>
-
-        <button name="ok" from="button_base_menu">
-            <position>790,210</position>
-            <value>Save</value>
-        </button>
-
-        <button name="cancel" from="button_base_menu">
-            <position>790,245</position>
-            <value>Cancel</value>
-        </button>
+        <group name="rsseditorpopubutton1group" from="defaultscreencontent_2A_animated">
+           <area>788,0,720,988</area>      
+	        <button name="preview_browse" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>Preview</value>
+	        </button>
+	
+	        <button name="ok" from="button_base_menu">
+	            <position>2,210</position>
+	            <value>Save</value>
+	        </button>
+	
+	        <button name="cancel" from="button_base_menu">
+	            <position>2,245</position>
+	            <value>Cancel</value>
+	        </button>
+        </group>
 
   </window>
 
