@@ -46,7 +46,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <imagetype name="background1">
+<!--        <imagetype name="background1">
             <area>100,150,1080,450</area>
             <filename>images/shared/MusicAlbumDetailsPanel.png</filename>
             <preserveaspect>no</preserveaspect>
@@ -55,16 +55,29 @@
             <area>132,558,1048,40</area>
             <filename>images/shared/ButtonMenuBack.png</filename>
             <preserveaspect>no</preserveaspect>
+        </imagetype>-->
+        
+        <imagetype name="background1">
+            <area>100,150,300,450</area>
+            <filename>images/shared/MusicAlbumDetailsPanel.png</filename>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+        <imagetype name="background1title">
+            <area>112,558,288,40</area>
+            <filename>images/shared/ButtonMenuBack.png</filename>
+            <preserveaspect>no</preserveaspect>
         </imagetype>
 
         <textarea name="observation_time" from="textarea_base">
-            <area>112,558,1048,40</area>
+            <area>112,558,288,40</area>
+            <font>smaller</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="humiditylbl" from="textarea_base">
             <font>normal</font>
-            <area>170,210,400,40</area>
+            <area>125,210,255,40</area>
+<!--            <area>170,210,400,40</area>-->
             <value>Humidity</value>
         </textarea>
 
@@ -74,7 +87,7 @@
         </textarea>
 
         <textarea name="pressurelbl" from="humiditylbl">
-            <position>170,260</position>
+            <position>125,260</position>
             <value>Pressure</value>
         </textarea>
 
@@ -84,7 +97,7 @@
         </textarea>
 
         <textarea name="windlbl" from="humiditylbl">
-            <position>170,310</position>
+            <position>125,310</position>
             <value>Wind(Gust)</value>
         </textarea>
 
@@ -94,7 +107,7 @@
         </textarea>
 
         <textarea name="dirlbl" from="humiditylbl">
-            <position>170,360</position>
+            <position>125,360</position>
             <value>Wind Direction</value>
         </textarea>
 
@@ -104,7 +117,7 @@
         </textarea>
 
         <textarea name="visilbl" from="humiditylbl">
-            <position>170,410</position>
+            <position>125,410</position>
             <value>Visibility</value>
         </textarea>
 
@@ -114,7 +127,7 @@
         </textarea>
 
         <textarea name="apptlbl" from="humiditylbl">
-            <position>170,460</position>
+            <position>125,460</position>
             <value>Feels Like</value>
         </textarea>
 
@@ -123,8 +136,21 @@
             <align>right,vcenter</align>
         </textarea>
 
+        <imagetype name="background3" from="background1">
+            <position>880,150</position>
+        </imagetype>
+        <imagetype name="background3title" from="background1title">
+            <position>892,558</position>
+        </imagetype>
+
+        <imagetype name="weather_icon">
+            <area>890,160,290,290</area>
+            <filename>unknown.png</filename>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+
         <textarea name="templbl" from="humiditylbl">
-            <position>170,510</position>
+            <area>910,460,255,40</area>
             <value>Temperature</value>
         </textarea>
 
@@ -133,21 +159,14 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <textarea name="weatherlbl" from="humiditylbl">
-            <position>170,160</position>
+<!--        <textarea name="weatherlbl" from="templbl">
+            <position>915,460</position>
             <value>Weather</value>
-        </textarea>
+	        </textarea>-->
 
-        <textarea name="weather" from="weatherlbl">
-            <font>normal_amber</font>
-            <align>right,vcenter</align>
+        <textarea name="weather" from="observation_time">
+            <position>892,558</position>
         </textarea>
-
-        <imagetype name="weather_icon">
-            <area>600,180,560,330</area>
-            <filename>unknown.png</filename>
-            <preserveaspect>yes</preserveaspect>
-        </imagetype>
 
         <textarea name="copyright" from="textarea_base">
             <area>70,680,1140,40</area>
@@ -179,6 +198,7 @@
 
         <textarea name="date-0" from="textarea_base">
             <area>112,558,288,40</area>
+            <font>smaller</font>
             <align>allcenter</align>
         </textarea>
 
@@ -339,6 +359,7 @@
 
         <textarea name="date-0" from="textarea_base">
             <area>112,308,288,40</area>
+            <font>smaller</font>
             <align>allcenter</align>
         </textarea>
         <textarea name="date-1" from="date-0">
@@ -618,6 +639,7 @@
 
         <textarea name="time-0" from="textarea_base">
             <area>112,308,288,40</area>
+            <font>smaller</font>
             <align>allcenter</align>
         </textarea>
         <textarea name="time-1" from="time-0">
@@ -824,10 +846,10 @@
             <filename>images/backgrounds/MediaStreamWeatherBGD.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2A_animated">
             <position>0,0</position>
         </group> 
-        <group name="screen-setup1group" from="defaultscreencontent_1B_animated">
+        <group name="screen-setup1group" from="defaultscreencontent_1A_animated">
            <area>0,0,720,988</area>
 	        <!-- ================================================== -->
 	        <!-- Screen description                                 -->
@@ -895,7 +917,7 @@
 	        </buttonlist>
         </group>
 
-        <group name="screen-setupbutton1group" from="defaultscreencontent_2B_animated">
+        <group name="screen-setupbutton1group" from="defaultscreencontent_2A_animated">
            <area>788,0,720,988</area>      
 	        <button name="finishbutton" from="button_base_menu">
 	            <position>2,175</position>
@@ -909,10 +931,10 @@
             <filename>images/backgrounds/MediaStreamWeatherBGD.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2A_animated">
             <position>0,0</position>
         </group> 
-        <group name="source-setup1group" from="defaultscreencontent_1B_animated">
+        <group name="source-setup1group" from="defaultscreencontent_1A_animated">
            <area>0,0,720,988</area>
 	        <!-- ================================================== -->
 	        <!-- Screen description                                 -->
@@ -979,7 +1001,7 @@
 	        </textarea>
         </group>
 
-        <group name="source-setupbutton1group" from="defaultscreencontent_2B_animated">
+        <group name="source-setupbutton1group" from="defaultscreencontent_2A_animated">
            <area>788,0,720,988</area>      
 	        <button name="finishbutton" from="button_base_menu">
 	            <position>2,175</position>
@@ -1068,11 +1090,13 @@
 	
 	        <textarea name="helptxt" from="textarea_base">
 	            <area>250,650,510,60</area>
-	            <font>small</font>
+	            <cutdown>yes</cutdown>
+	            <font>smaller</font>
 	            <case>normal</case>
-	            <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
 	            <alpha>128</alpha>
+	            <align>hcenter,bottom</align>
 	            <multiline>yes</multiline>
+	            <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
 	        </textarea>
         </group>
     </window>
