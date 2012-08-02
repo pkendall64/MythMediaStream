@@ -4,6 +4,16 @@
 
     <window name="keygrabpopup">
        <area>-1,-1,520,205</area>
+        <animation trigger="AboutToShow">
+            <section duration="400" centre="middle">
+                <zoom start="10" end="100" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="400" centre="middle">
+                <zoom start="100" end="10" easingcurve="InBack" />
+            </section>
+        </animation>
        <imagetype name="DialogProgressBG">
            <area>0,0,520,205</area>
            <filename>images/shared/DialogProgressBG.png</filename>
@@ -29,83 +39,90 @@
             <area>0,0,1280,720</area>
             <filename>images/backgrounds/keys.jpg</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- Key bindings input                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Change mythtv key bindings</value>
-        </textarea>
+        <group name="controls1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Key bindings input                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Change mythtv key bindings</value>
+	        </textarea>
+	
+	        <textarea name="pagetitle" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Edit keys</value>
+	        </textarea>
+	
+	        <textarea name="leftdesc" from="textarea_base">
+	            <area>790,90,180,25</area>
+	            <alpha>128</alpha>
+	            <font>title_small</font>         
+	            <value>Contexts</value>
+	            <align>right,vcenter</align>
+	        </textarea>
+	
+	        <textarea name="bylbl" from="leftdesc">
+	            <position>790,115</position>
+	            <value>By</value>
+	        </textarea>
+	
+	        <textarea name="rightdesc" from="leftdesc">
+	            <position>790,140</position>
+	            <value>Actions</value>
+	        </textarea>
+	
+	
+	        <buttonlist name="leftlist" from="buttonlist_dialog_wide">
+	            <position>250,175</position>
+	            <showarrow>no</showarrow>
+	        </buttonlist>
+	
+	        <buttonlist name="rightlist" from="leftlist"/>
 
-        <textarea name="pagetitle" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Edit keys</value>
-        </textarea>
+	        <textarea name="description" from="textarea_base">
+	            <area>250,640,510,70</area>
+	            <cutdown>yes</cutdown>
+	            <font>smaller</font>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	            <align>hcenter,bottom</align>
+	            <multiline>yes</multiline>
+	        </textarea>
+        </group>
 
-        <textarea name="leftdesc" from="textarea_base">
-            <area>790,90,180,25</area>
-            <alpha>128</alpha>
-            <font>title_small</font>         
-            <value>Contexts</value>
-            <align>right,vcenter</align>
-        </textarea>
-
-        <textarea name="bylbl" from="leftdesc">
-            <position>790,115</position>
-            <value>By</value>
-        </textarea>
-
-        <textarea name="rightdesc" from="leftdesc">
-            <position>790,140</position>
-            <value>Actions</value>
-        </textarea>
-
-
-        <buttonlist name="leftlist" from="buttonlist_dialog_wide">
-            <position>250,175</position>
-            <showarrow>no</showarrow>
-        </buttonlist>
-
-
-        <buttonlist name="rightlist" from="leftlist"/>
-
-        <button name="action_0" from="button_base_menu">
-            <position>790,175</position>
-        </button>
-
-        <button name="action_1" from="action_0">
-            <position>790,210</position>
-        </button>
-
-        <button name="action_2" from="action_0">
-            <position>790,245</position>
-        </button>
-
-        <button name="action_3" from="action_0">
-            <position>790,280</position>
-        </button>
-
-        <textarea name="description" from="textarea_base">
-            <area>250,640,510,70</area>
-            <font>small</font>
-            <case>normal</case>
-            <align>justify</align>
-            <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
-        </textarea>
+        <group name="controlsbutton1group" from="defaultscreencontent_2B_animated">
+           <area>788,0,720,988</area>      
+	        <button name="action_0" from="button_base_menu">
+	            <position>2,175</position>
+	        </button>
+	
+	        <button name="action_1" from="action_0">
+	            <position>2,210</position>
+	        </button>
+	
+	        <button name="action_2" from="action_0">
+	            <position>2,245</position>
+	        </button>
+	
+	        <button name="action_3" from="action_0">
+	            <position>2,280</position>
+	        </button>
+        </group>
 
     </window>
 </mythuitheme>
