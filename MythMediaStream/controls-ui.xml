@@ -68,34 +68,33 @@
 	            <value>Edit keys</value>
 	        </textarea>
 	
-	        <textarea name="leftdesc" from="textarea_base">
-	            <area>790,90,180,25</area>
-	            <alpha>128</alpha>
-	            <font>title_small</font>         
-	            <value>Contexts</value>
-	            <align>right,vcenter</align>
-	        </textarea>
-	
-	        <textarea name="bylbl" from="leftdesc">
-	            <position>790,115</position>
-	            <value>By</value>
-	        </textarea>
-	
-	        <textarea name="rightdesc" from="leftdesc">
-	            <position>790,140</position>
-	            <value>Actions</value>
-	        </textarea>
-	
-	
-	        <buttonlist name="leftlist" from="buttonlist_dialog_wide">
-	            <position>250,175</position>
-	            <showarrow>no</showarrow>
+           <textarea name="leftdesc" from="textarea_base">
+               <area>250,175,510,35</area>
+               <value>Context:</value>
+           </textarea>
+
+	        <buttonlist name="leftlist" from="buttonlist_dialog_wide_permanent">
+               <area>250,210,510,220</area>
+               <buttonarea>0,0,510,200</buttonarea>
+               <statetype name="upscrollarrow">
+                  <position>10,204</position>
+               </statetype>	
+               <statetype name="downscrollarrow">
+                  <position>30,204</position>
+               </statetype>	
 	        </buttonlist>
 	
-	        <buttonlist name="rightlist" from="leftlist"/>
+           <textarea name="rightdesc" from="leftdesc">
+               <position>250,440</position>
+               <value>Actions:</value>
+           </textarea>
 
-	        <textarea name="description" from="textarea_base">
-	            <area>250,640,510,70</area>
+	        <buttonlist name="rightlist" from="leftlist">
+               <position>250,475</position>
+           </buttonlist>
+           
+           <textarea name="description" from="textarea_base">
+	            <area>250,675,510,35</area>
 	            <cutdown>yes</cutdown>
 	            <font>smaller</font>
 	            <case>normal</case>
@@ -103,10 +102,19 @@
 	            <align>hcenter,bottom</align>
 	            <multiline>yes</multiline>
 	        </textarea>
+	        
         </group>
 
         <group name="controlsbutton1group" from="defaultscreencontent_2B_animated">
            <area>788,0,720,988</area>      
+	        <textarea name="keydesc" from="textarea_base">
+	            <area>2,140,180,25</area>
+	            <alpha>128</alpha>
+	            <font>title_small</font>         
+	            <value>Keys</value>
+	            <align>right,vcenter</align>
+	        </textarea>
+	
 	        <button name="action_0" from="button_base_menu">
 	            <position>2,175</position>
 	        </button>

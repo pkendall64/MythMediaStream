@@ -48,8 +48,7 @@
         </textarea>
 
         <textarea name="changeamount" from="size">
-            <position>400
-,440</position>
+            <position>400,440</position>
         </textarea>
 
     </window>

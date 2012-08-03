@@ -358,92 +358,99 @@
             <area>0,0,1280,720</area>
             <filename>images/backgrounds/dvd.jpg</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Customize your grabber settings</value>
-        </textarea>
+        <group name="grabbersettings1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Customize your grabber settings</value>
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Artwork and Metadata</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	        <textarea name="moviegrabberlbl" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Movie Metadata Source:</value>
+	        </textarea>
+	
+	        <textarea name="tvgrabber_text" from="moviegrabberlbl">
+	            <position>250,280</position>
+	            <value>Television Metadata Source:</value>
+	        </textarea>
+	
+	        <textarea name="gamegrabber_text" from="moviegrabberlbl">
+	            <position>250,385</position>
+	            <value>Game Metadata Source:</value>
+	        </textarea>
+	
+	        <textarea name="dailyupdates_text" from="moviegrabberlbl">
+	            <position>250,490</position>
+	            <value>Perform daily updates of recording artwork</value>
+	        </textarea>
+	
+	    <!--Widgets-->
+	
+	        <buttonlist name="moviegrabber" from="selector_base_wide">
+	            <position>250,210</position>
+	        </buttonlist>
+	
+	        <buttonlist name="tvgrabber" from="selector_base_wide">
+	            <position>250,315</position>
+	        </buttonlist>
+	
+	        <buttonlist name="gamegrabber" from="selector_base_wide">
+	            <position>250,420</position>
+	        </buttonlist>
+	
+	        <checkbox name="dailyupdates" from="checkbox_base">
+	            <position>735,490</position>
+	        </checkbox>
+	
+	        <textarea name="helptext" from="textarea_base">
+	            <area>250,560,510,150</area>
+	            <cutdown>yes</cutdown>
+	            <font>smaller</font>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	            <align>hcenter,bottom</align>
+	            <multiline>yes</multiline>
+	        </textarea>
+        </group>
 
-        <textarea name="title" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Artwork and Metadata</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-        <textarea name="moviegrabberlbl" from="textarea_base">
-            <area>250,175,510,35</area>
-            <value>Movie Metadata Source:</value>
-        </textarea>
-
-        <textarea name="tvgrabber_text" from="moviegrabberlbl">
-            <position>250,280</position>
-            <value>Television Metadata Source:</value>
-        </textarea>
-
-        <textarea name="gamegrabber_text" from="moviegrabberlbl">
-            <position>250,385</position>
-            <value>Game Metadata Source:</value>
-        </textarea>
-
-        <textarea name="dailyupdates_text" from="moviegrabberlbl">
-            <position>250,490</position>
-            <value>Perform daily updates of recording artwork</value>
-        </textarea>
-
-    <!--Widgets-->
-
-        <buttonlist name="moviegrabber" from="selector_base_wide">
-            <position>250,210</position>
-        </buttonlist>
-
-        <buttonlist name="tvgrabber" from="selector_base_wide">
-            <position>250,315</position>
-        </buttonlist>
-
-        <buttonlist name="gamegrabber" from="selector_base_wide">
-            <position>250,420</position>
-        </buttonlist>
-
-        <checkbox name="dailyupdates" from="checkbox_base">
-            <position>735,490</position>
-        </checkbox>
-
-        <textarea name="helptext" from="textarea_base">
-            <area>250,560,510,150</area>
-            <cutdown>yes</cutdown>
-            <font>smaller</font>
-            <case>normal</case>
-            <alpha>128</alpha>
-            <align>hcenter,bottom</align>
-            <multiline>yes</multiline>
-        </textarea>
-
-        <button name="ok" from="button_base_menu">
-            <position>790,175</position>
-            <value>Save</value>
-        </button>
-
-        <button name="cancel" from="button_base_menu">
-            <position>790,210</position>
-            <value>Cancel</value>
-        </button>
+        <group name="grabbersettingsbutton1group" from="defaultscreencontent_2B_animated">
+           <area>788,0,720,988</area>      
+	        <button name="ok" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>Save</value>
+	        </button>
+	
+	        <button name="cancel" from="button_base_menu">
+	            <position>2,210</position>
+	            <value>Cancel</value>
+	        </button>
+        </group>
 
     </window>
 
@@ -453,71 +460,78 @@
             <area>0,0,1280,720</area>
             <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2A_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Wizard for main mythtv settings</value>
-        </textarea>
+        <group name="generalwizard1group" from="defaultscreencontent_1A_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Wizard for main mythtv settings</value>
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Hardware Configuration</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	    <!--Widgets-->
+	
+	        <button name="submit" from="button_base_menu_wide">
+	            <position>250,175</position>
+	            <value>Submit your hardware profile</value>
+	        </button>
+	
+	        <button name="view" from="button_base_menu_wide">
+	            <position>250,210</position>
+	            <value>View your hardware profile</value>
+	        </button>
+	
+	        <button name="delete" from="button_base_menu_wide">
+	            <position>250,245</position>
+	            <value>Delete your hardware profile</value>
+	        </button>
+	
+	        <textarea name="helptext" from="textarea_base">
+	            <area>250,560,510,150</area>
+	            <cutdown>yes</cutdown>
+	            <font>smaller</font>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	            <align>hcenter,bottom</align>
+	            <multiline>yes</multiline>
+	        </textarea>
+        </group>
 
-        <textarea name="title" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Hardware Configuration</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-    <!--Widgets-->
-
-        <button name="submit" from="button_base_menu_wide">
-            <position>250,175</position>
-            <value>Submit your hardware profile</value>
-        </button>
-
-        <button name="view" from="button_base_menu_wide">
-            <position>250,210</position>
-            <value>View your hardware profile</value>
-        </button>
-
-        <button name="delete" from="button_base_menu_wide">
-            <position>250,245</position>
-            <value>Delete your hardware profile</value>
-        </button>
-
-        <textarea name="helptext" from="textarea_base">
-            <area>250,560,510,150</area>
-            <cutdown>yes</cutdown>
-            <font>smaller</font>
-            <case>normal</case>
-            <alpha>128</alpha>
-            <align>hcenter,bottom</align>
-            <multiline>yes</multiline>
-        </textarea>
-
-        <button name="next" from="button_base_menu">
-            <position>790,175</position>
-            <value>Next</value>
-        </button>
-
-        <button name="cancel" from="button_base_menu">
-            <position>790,210</position>
-            <value>Cancel</value>
-        </button>
+        <group name="generalwizardbutton1group" from="defaultscreencontent_2A_animated">
+           <area>788,0,720,988</area>      
+	        <button name="next" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>Next</value>
+	        </button>
+	
+	        <button name="cancel" from="button_base_menu">
+	            <position>2,210</position>
+	            <value>Cancel</value>
+	        </button>
+        </group>
 
     </window>
 
@@ -527,125 +541,132 @@
             <area>0,0,1280,720</area>
             <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2A_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Wizard for main mythtv settings</value>
-        </textarea>
+        <group name="audiowizard1group" from="defaultscreencontent_1A_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Wizard for main mythtv settings</value>
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Audio Configuration</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	        <textarea name="auddevlbl" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Audio Device:</value>
+	        </textarea>
+	
+	        <textarea name="ac3lbl" from="auddevlbl">
+	            <position>250,245</position>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	            <value>My audio subsystem supports Dolby Digital</value>
+	        </textarea>
+	
+	        <textarea name="dts_text" from="ac3lbl">
+	            <position>250,280</position>
+	            <value>My audio subsystem supports DTS</value>
+	        </textarea>
+	
+	        <textarea name="eac3_text" from="ac3lbl">
+	            <position>250,315</position>
+	            <value>My audio subsystem supports E-AC-3</value>
+	        </textarea>
+	
+	        <textarea name="truehd_text" from="ac3lbl">
+	            <position>250,350</position>
+	            <value>My audio subsystem supports TrueHD</value>
+	        </textarea>
+	
+	        <textarea name="dtshd_text" from="ac3lbl">
+	            <position>250,385</position>
+	            <value>My audio subsystem supports DTS-HD</value>
+	        </textarea>
+	
+	        <textarea name="speaktext_text" from="auddevlbl">
+	            <position>250,455</position>
+	            <value>Number of Speakers:</value>
+	        </textarea>
+	
+	    <!--Widgets-->
+	
+	        <buttonlist name="audiodevices" from="selector_base">
+	            <position>420,175</position>
+	        </buttonlist>
+	
+	        <checkbox name="ac3check" from="checkbox_base">
+	            <position>735,245</position>
+	        </checkbox>
+	
+	        <checkbox name="dtscheck" from="checkbox_base">
+	            <position>735,280</position>
+	        </checkbox>
+	
+	        <checkbox name="eac3check" from="checkbox_base">
+	            <position>735,315</position>
+	        </checkbox>
+	
+	        <checkbox name="truehdcheck" from="checkbox_base">
+	            <position>735,350</position>
+	        </checkbox>
+	
+	        <checkbox name="dtshdcheck" from="checkbox_base">
+	            <position>735,385</position>
+	        </checkbox>
+	
+	        <buttonlist name="speakers" from="selector_base_small">
+	            <position>590,455</position>
+	        </buttonlist>
+	
+	        <button name="testspeakers" from="button_base_menu_wide">
+	            <position>250,525</position>
+	        </button>
+	
+	        <textarea name="helptext" from="textarea_base">
+	            <area>250,560,510,150</area>
+	            <cutdown>yes</cutdown>
+	            <font>smaller</font>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	            <align>hcenter,bottom</align>
+	            <multiline>yes</multiline>
+	        </textarea>
+        </group>
 
-        <textarea name="title" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Audio Configuration</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-        <textarea name="auddevlbl" from="textarea_base">
-            <area>250,175,510,35</area>
-            <value>Audio Device:</value>
-        </textarea>
-
-        <textarea name="ac3lbl" from="auddevlbl">
-            <position>250,245</position>
-            <case>normal</case>
-            <alpha>128</alpha>
-            <value>My audio subsystem supports Dolby Digital</value>
-        </textarea>
-
-        <textarea name="dts_text" from="ac3lbl">
-            <position>250,280</position>
-            <value>My audio subsystem supports DTS</value>
-        </textarea>
-
-        <textarea name="eac3_text" from="ac3lbl">
-            <position>250,315</position>
-            <value>My audio subsystem supports E-AC-3</value>
-        </textarea>
-
-        <textarea name="truehd_text" from="ac3lbl">
-            <position>250,350</position>
-            <value>My audio subsystem supports TrueHD</value>
-        </textarea>
-
-        <textarea name="dtshd_text" from="ac3lbl">
-            <position>250,385</position>
-            <value>My audio subsystem supports DTS-HD</value>
-        </textarea>
-
-        <textarea name="speaktext_text" from="auddevlbl">
-            <position>250,455</position>
-            <value>Number of Speakers:</value>
-        </textarea>
-
-    <!--Widgets-->
-
-        <buttonlist name="audiodevices" from="selector_base">
-            <position>420,175</position>
-        </buttonlist>
-
-        <checkbox name="ac3check" from="checkbox_base">
-            <position>735,245</position>
-        </checkbox>
-
-        <checkbox name="dtscheck" from="checkbox_base">
-            <position>735,280</position>
-        </checkbox>
-
-        <checkbox name="eac3check" from="checkbox_base">
-            <position>735,315</position>
-        </checkbox>
-
-        <checkbox name="truehdcheck" from="checkbox_base">
-            <position>735,350</position>
-        </checkbox>
-
-        <checkbox name="dtshdcheck" from="checkbox_base">
-            <position>735,385</position>
-        </checkbox>
-
-        <buttonlist name="speakers" from="selector_base_small">
-            <position>590,455</position>
-        </buttonlist>
-
-        <button name="testspeakers" from="button_base_menu_wide">
-            <position>250,525</position>
-        </button>
-
-        <textarea name="helptext" from="textarea_base">
-            <area>250,560,510,150</area>
-            <cutdown>yes</cutdown>
-            <font>smaller</font>
-            <case>normal</case>
-            <alpha>128</alpha>
-            <align>hcenter,bottom</align>
-            <multiline>yes</multiline>
-        </textarea>
-
-        <button name="next" from="button_base_menu">
-            <position>790,175</position>
-            <value>Next</value>
-        </button>
-
-        <button name="previous" from="button_base_menu">
-            <position>790,210</position>
-            <value>Previous</value>
-        </button>
+        <group name="audiowizardbutton1group" from="defaultscreencontent_2A_animated">
+           <area>788,0,720,988</area>      
+	        <button name="next" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>Next</value>
+	        </button>
+	
+	        <button name="previous" from="button_base_menu">
+	            <position>2,210</position>
+	            <value>Previous</value>
+	        </button>
+        </group>
 
     </window>
 
@@ -655,75 +676,82 @@
             <area>0,0,1280,720</area>
             <filename>images/backgrounds/MediaStreamSystemBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2A_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Wizard for main mythtv settings</value>
-        </textarea>
+        <group name="videowizard1group" from="defaultscreencontent_1A_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Wizard for main mythtv settings</value>
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Video Configuration</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	        <textarea name="prof_text" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Video Playback Profile:</value>
+	        </textarea>
+	
+	    <!--Widgets-->
+	
+	        <buttonlist name="playbackprofiles" from="selector_base_wide">
+	            <position>250,210</position>
+	        </buttonlist>
+	
+	        <button name="testsd" from="button_base_menu_wide">
+	            <position>250,280</position>
+	            <value>Test Standard Definition</value>
+	        </button>
+	
+	        <button name="testhd" from="button_base_menu_wide">
+	            <position>250,315</position>
+	            <value>Test High Definition</value>
+	        </button>
+	
+	        <textarea name="helptext" from="textarea_base">
+	            <area>250,560,510,150</area>
+	            <cutdown>yes</cutdown>
+	            <font>smaller</font>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	            <align>hcenter,bottom</align>
+	            <multiline>yes</multiline>
+	        </textarea>
+        </group>
 
-        <textarea name="title" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Video Configuration</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-        <textarea name="prof_text" from="textarea_base">
-            <area>250,175,510,35</area>
-            <value>Video Playback Profile:</value>
-        </textarea>
-
-    <!--Widgets-->
-
-        <buttonlist name="playbackprofiles" from="selector_base_wide">
-            <position>250,210</position>
-        </buttonlist>
-
-        <button name="testsd" from="button_base_menu_wide">
-            <position>250,280</position>
-            <value>Test Standard Definition</value>
-        </button>
-
-        <button name="testhd" from="button_base_menu_wide">
-            <position>250,315</position>
-            <value>Test High Definition</value>
-        </button>
-
-        <textarea name="helptext" from="textarea_base">
-            <area>250,560,510,150</area>
-            <cutdown>yes</cutdown>
-            <font>smaller</font>
-            <case>normal</case>
-            <alpha>128</alpha>
-            <align>hcenter,bottom</align>
-            <multiline>yes</multiline>
-        </textarea>
-
-        <button name="next" from="button_base_menu">
-            <position>790,175</position>
-            <value>Finish</value>
-        </button>
-
-        <button name="previous" from="button_base_menu">
-            <position>790,210</position>
-            <value>Previous</value>
-        </button>
+        <group name="videowizardbutton1group" from="defaultscreencontent_2A_animated">
+           <area>788,0,720,988</area>      
+	        <button name="next" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>Finish</value>
+	        </button>
+	
+	        <button name="previous" from="button_base_menu">
+	            <position>2,210</position>
+	            <value>Previous</value>
+	        </button>
+        </group>
 
     </window>
 
