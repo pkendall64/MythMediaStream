@@ -298,147 +298,151 @@
         <imagetype name="background" from="image_wallpaper_base">
             <filename>images/backgrounds/MediaStreamMusicBGD.png</filename>
         </imagetype>
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1">
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1B_animated">
             <position>0,0</position>
         </group> 
-        <!-- ================================================== -->
-        <!-- Screen description                                 -->
-        <!-- ================================================== -->
-        <textarea name="pagetitledesc" from="textarea_base">
-            <area>250,10,515,65</area>
-            <font>menu_description</font>
-            <case>upper</case>
-            <align>right,bottom</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Search library for your favorite music</value>
-        </textarea>
-
-        <textarea name="destination_text" from="textarea_base">
-            <area>250,75,515,65</area>
-            <font>menu_active</font>
-            <case>upper</case>
-            <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <value>Search Music</value>
-        </textarea>
-
-        <!-- ================================================== -->
-        <!-- screen content                                     -->
-        <!-- ================================================== -->
-
-        <textarea name="field_listlbl" from="textarea_base">
-            <area>250,175,510,35</area>
-            <value>Field:</value>
-        </textarea>
-
-        <buttonlist name="field_list" from="selector_base">
-            <position>420,175</position>
-        </buttonlist>
-
-        <textarea name="criteria_lbl" from="field_listlbl">
-            <position>250,210</position>
-            <value>Search for:</value>
-        </textarea>
-
-       <textedit name="criteria_edit" from="textedit_menu">
-            <position>420,210</position>
-        </textedit>
-
-        <textarea name="matches_text" from="field_listlbl">
-            <position>250,245</position>
-            <template>%1 Matches found:</template>
-        </textarea>
-
-        <buttonlist name="tracks_list" from="buttonlist_dialog_wide">
-            <area>250,285,510,260</area>
-            <searchposition>758,55</searchposition>
-            <buttonarea>0,0,510,240</buttonarea>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <textarea name="title">
-                        <area>10,0,470,40</area>
-                        <font>normal</font>
-                        <alpha>128</alpha>
-                        <multiline>no</multiline>
-                        <cutdown>yes</cutdown>
-                        <align>left,vcenter</align>
-                        <template>%TITLE% by %ARTIST% on %ALBUM%</template>
-                    </textarea>
-                    <statetype name="selectedstate">
-                        <state name="off">
-                            <imagetype name="LedOff">
-                                <area>480,5,30,30</area>
-                                <filename>images/shared/LEDOff.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="on">
-                            <imagetype name="LEDOn">
-                                <area>480,5,30,30</area>
-                                <filename>images/shared/LEDOn.png</filename>
-                            </imagetype>
-                        </state>
-                    </statetype>
-                </state>
-                <state name="selectedactive">
-                    <textarea name="title">
-                        <area>10,0,470,40</area>
-                        <font>normal</font>
-                        <alpha>255</alpha>
-                        <multiline>no</multiline>
-                        <cutdown>yes</cutdown>
-                        <align>left,vcenter</align>
-                        <template>%TITLE% by %ARTIST% on %ALBUM%</template>
-                    </textarea>
-                    <statetype name="selectedstate">
-                        <state name="off">
-                            <imagetype name="LedOff">
-                                <area>480,5,30,30</area>
-                                <filename>images/shared/LEDOff.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="on">
-                            <imagetype name="LEDOn">
-                                <area>480,5,30,30</area>
-                                <filename>images/shared/LEDOn.png</filename>
-                            </imagetype>
-                        </state>
-                    </statetype>
-                </state>
-                <state name="inactive" from="active">
-                    <alpha>255</alpha>
-                </state>
-                <state name="selectedinactive" from="selectedactive">
-                    <alpha>128</alpha>
-                </state>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>10,244</position>	
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>30,244</position>	
-            </statetype>
-        </buttonlist>
-
-        <textarea name="currentplayinglbl" from="field_listlbl">
-            <position>250,555</position>
-            <value>Now Playing:</value>
-        </textarea>
-
-        <textarea name="title" from="field_listlbl">
-            <area>420,555,260,35</area>
-            <case>normal</case>
-            <alpha>128</alpha>
-        </textarea>
-
-        <group name="playliststatusgroup" from="baseplayliststatusgroup">
-            <position>250,610</position>
+        <group name="searchview1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Search library for your favorite music</value>
+	        </textarea>
+	
+	        <textarea name="destination_text" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Search Music</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+	
+	        <textarea name="field_listlbl" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Field:</value>
+	        </textarea>
+	
+	        <buttonlist name="field_list" from="selector_base">
+	            <position>420,175</position>
+	        </buttonlist>
+	
+	        <textarea name="criteria_lbl" from="field_listlbl">
+	            <position>250,210</position>
+	            <value>Search for:</value>
+	        </textarea>
+	
+	       <textedit name="criteria_edit" from="textedit_menu">
+	            <position>420,210</position>
+	        </textedit>
+	
+	        <textarea name="matches_text" from="field_listlbl">
+	            <position>250,245</position>
+	            <template>%1 Matches found:</template>
+	        </textarea>
+	
+	        <buttonlist name="tracks_list" from="buttonlist_dialog_wide">
+	            <area>250,285,510,260</area>
+	            <searchposition>758,55</searchposition>
+	            <buttonarea>0,0,510,240</buttonarea>
+	            <statetype name="buttonitem">
+	                <state name="active">
+	                    <textarea name="title">
+	                        <area>10,0,470,40</area>
+	                        <font>normal</font>
+	                        <alpha>128</alpha>
+	                        <multiline>no</multiline>
+	                        <cutdown>yes</cutdown>
+	                        <align>left,vcenter</align>
+	                        <template>%TITLE% by %ARTIST% on %ALBUM%</template>
+	                    </textarea>
+	                    <statetype name="selectedstate">
+	                        <state name="off">
+	                            <imagetype name="LedOff">
+	                                <area>480,5,30,30</area>
+	                                <filename>images/shared/LEDOff.png</filename>
+	                            </imagetype>
+	                        </state>
+	                        <state name="on">
+	                            <imagetype name="LEDOn">
+	                                <area>480,5,30,30</area>
+	                                <filename>images/shared/LEDOn.png</filename>
+	                            </imagetype>
+	                        </state>
+	                    </statetype>
+	                </state>
+	                <state name="selectedactive">
+	                    <textarea name="title">
+	                        <area>10,0,470,40</area>
+	                        <font>normal</font>
+	                        <alpha>255</alpha>
+	                        <multiline>no</multiline>
+	                        <cutdown>yes</cutdown>
+	                        <align>left,vcenter</align>
+	                        <template>%TITLE% by %ARTIST% on %ALBUM%</template>
+	                    </textarea>
+	                    <statetype name="selectedstate">
+	                        <state name="off">
+	                            <imagetype name="LedOff">
+	                                <area>480,5,30,30</area>
+	                                <filename>images/shared/LEDOff.png</filename>
+	                            </imagetype>
+	                        </state>
+	                        <state name="on">
+	                            <imagetype name="LEDOn">
+	                                <area>480,5,30,30</area>
+	                                <filename>images/shared/LEDOn.png</filename>
+	                            </imagetype>
+	                        </state>
+	                    </statetype>
+	                </state>
+	                <state name="inactive" from="active">
+	                    <alpha>255</alpha>
+	                </state>
+	                <state name="selectedinactive" from="selectedactive">
+	                    <alpha>128</alpha>
+	                </state>
+	            </statetype>
+	            <statetype name="upscrollarrow">
+	                <position>10,244</position>	
+	            </statetype>
+	            <statetype name="downscrollarrow">
+	                <position>30,244</position>	
+	            </statetype>
+	        </buttonlist>
+	
+	        <textarea name="currentplayinglbl" from="field_listlbl">
+	            <position>250,555</position>
+	            <value>Now Playing:</value>
+	        </textarea>
+	
+	        <textarea name="title" from="field_listlbl">
+	            <area>420,555,260,35</area>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	        </textarea>
+	
+	        <group name="playliststatusgroup" from="baseplayliststatusgroup">
+	            <position>250,610</position>
+	        </group>
+	
+	        <video name="visualizer">
+	            <area>645,610,100,100,</area>
+	        </video>
         </group>
-
-        <video name="visualizer">
-            <area>645,610,100,100,</area>
-        </video>
 
     </window>
 
