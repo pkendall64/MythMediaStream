@@ -1310,10 +1310,10 @@
             <filename>images/backgrounds/MediaStreamMusicBGD.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2A_animated">
             <position>0,0</position>
         </group> 
-        <group name="editmetadata1group" from="defaultscreencontent_1B_animated">
+        <group name="editmetadata1group" from="defaultscreencontent_1A_animated">
            <area>0,0,720,988</area>
 	        <!-- ================================================== -->
 	        <!-- Screen description                                 -->
@@ -1416,7 +1416,7 @@
 	        </textedit>
         </group>
 
-        <group name="editmetadatabutton1group" from="defaultscreencontent_2B_animated">
+        <group name="editmetadatabutton1group" from="defaultscreencontent_2A_animated">
            <area>788,0,720,988</area>
 	        <textarea name="searchlbl" from="textarea_base">
 	            <area>2,175,180,35</area>
@@ -1432,14 +1432,14 @@
 	        </button>
         </group>
 
-        <group name="editmetadata2group" from="defaultscreencontent_1B_animated">
+        <group name="editmetadata2group" from="defaultscreencontent_1A_animated">
            <area>0,0,720,988</area>
 	        <textedit name="artistedit" from="textedit_menu">
 	            <position>420,245</position>
 	        </textedit>
         </group>
 
-        <group name="editmetadatabutton2group" from="defaultscreencontent_2B_animated">
+        <group name="editmetadatabutton2group" from="defaultscreencontent_2A_animated">
            <area>788,0,720,988</area>
 	        <button name="searchartistbutton" from="button_base_menu">
 	            <position>2,245</position>
@@ -1447,14 +1447,14 @@
 	        </button>
         </group>
 
-        <group name="editmetadata3group" from="defaultscreencontent_1B_animated">
+        <group name="editmetadata3group" from="defaultscreencontent_1A_animated">
            <area>0,0,720,988</area>
 	        <textedit name="albumedit" from="textedit_base">
 	            <position>420,280</position>
 	        </textedit>
         </group>
 
-        <group name="editmetadatabutton3group" from="defaultscreencontent_2B_animated">
+        <group name="editmetadatabutton3group" from="defaultscreencontent_2A_animated">
            <area>788,0,720,988</area>
 	        <button name="searchalbumbutton" from="button_base_menu">
 	            <position>2,280</position>
@@ -1462,14 +1462,14 @@
 	        </button>
         </group>
 
-        <group name="editmetadata4group" from="defaultscreencontent_1B_animated">
+        <group name="editmetadata4group" from="defaultscreencontent_1A_animated">
            <area>0,0,720,988</area>
 	        <textedit name="genreedit" from="textedit_menu">
 	            <position>420,315</position>
 	        </textedit>
         </group>
 
-        <group name="editmetadatabutton4group" from="defaultscreencontent_2B_animated">
+        <group name="editmetadatabutton4group" from="defaultscreencontent_2A_animated">
            <area>788,0,720,988</area>
 	        <button name="searchgenrebutton" from="button_base_menu">
 	            <position>2,315</position>
@@ -1477,7 +1477,7 @@
 	        </button>
         </group>
 
-        <group name="editmetadata5group" from="defaultscreencontent_1B_animated">
+        <group name="editmetadata5group" from="defaultscreencontent_1A_animated">
            <area>0,0,720,988</area>
 	        <textedit name="titleedit" from="textedit_menu">
 	            <position>420,350</position>
@@ -1497,7 +1497,7 @@
 	
 	     </group>
 
-        <group name="editmetadatabutton5group" from="defaultscreencontent_2B_animated">
+        <group name="editmetadatabutton5group" from="defaultscreencontent_2A_animated">
            <area>788,0,720,988</area>
 	        <textarea name="ratingchangelbl" from="textarea_base">
 	            <area>2,385,180,35</area>
@@ -1518,7 +1518,7 @@
 	        </button>
 	     </group>
 
-        <group name="editmetadata6group" from="defaultscreencontent_1B_animated">
+        <group name="editmetadata6group" from="defaultscreencontent_1A_animated">
            <area>0,0,720,988</area>
 	        <imagetype name="artisticon">
 	            <area>250,525,150,150</area>
@@ -1536,7 +1536,7 @@
 	        </imagetype>
         </group>
 
-        <group name="editmetadatabutton6group" from="defaultscreencontent_2B_animated">
+        <group name="editmetadatabutton6group" from="defaultscreencontent_2A_animated">
            <area>788,0,720,988</area>
 	        <textarea name="navigatelbl" from="textarea_base">
 	            <area>2,525,180,35</area>
@@ -1564,10 +1564,10 @@
             <filename>images/backgrounds/MediaStreamMusicBGD.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
-        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2A_animated">
             <position>0,0</position>
         </group> 
-        <group name="editalbumart1group" from="defaultscreencontent_1B_animated">
+        <group name="editalbumart1group" from="defaultscreencontent_1A_animated">
            <area>0,0,720,988</area>
 	        <!-- ================================================== -->
 	        <!-- Screen description                                 -->
@@ -1631,7 +1631,7 @@
 	        <!-- Push buttons -->
         </group>
 
-        <group name="editalbumartbutton1group" from="defaultscreencontent_2B_animated">
+        <group name="editalbumartbutton1group" from="defaultscreencontent_2A_animated">
            <area>788,0,720,988</area>
 	        <textarea name="selectedlbl" from="textarea_base">
 	            <area>2,300,180,35</area>
