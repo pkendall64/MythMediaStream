@@ -2824,12 +2824,12 @@
        <area>-1,-1,520,205</area>
         <animation trigger="AboutToShow">
             <section duration="400" centre="middle">
-                <zoom start="10" end="100" easingcurve="OutBack" />
+                <zoom start="10" end="100" easingcurve="InOutBack" />
             </section>
         </animation>
         <animation trigger="AboutToHide">
             <section duration="400" centre="middle">
-                <zoom start="100" end="10" easingcurve="InBack" />
+                <zoom start="100" end="10" easingcurve="InOutBack" />
             </section>
         </animation>
        <imagetype name="DialogProgressBG">
