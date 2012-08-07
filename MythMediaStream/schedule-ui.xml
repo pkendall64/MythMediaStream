@@ -2035,17 +2035,18 @@
 	            <position>250,210</position>
 	        </buttonlist>
 	
+        </group>
+        
+        <group name="scheduleeditorbuttongroup" from="defaultscreencontent_2A_animated">
+	        <area>788,0,988,720</area>
 	        <textarea name="actionslbl" from="textarea_base">
-	            <area>790,140,180,35</area>
+	            <area>2,140,180,35</area>
 	            <alpha>128</alpha>
 	            <font>title_small</font>         
 	            <align>right,bottom</align>
 	            <value>Actions</value>
 	        </textarea>
-        </group>
-        
-        <group name="scheduleeditorbuttongroup" from="defaultscreencontent_2A_animated">
-	        <area>788,0,988,720</area>
+
 	        <button name="schedoptions" from="button_base_menu">
 	            <position>2,175</position>
 	            <value>Schedule Options</value>
