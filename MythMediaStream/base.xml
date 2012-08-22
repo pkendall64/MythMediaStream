@@ -857,6 +857,7 @@
                </imagetype>
                <textarea name="buttontext" from="textarea_base">
                    <area>20,0,275,40</area>
+                   <scroll direction="left" />
                    <alpha>255</alpha>
                </textarea>
            </state>
@@ -930,6 +931,7 @@
                </imagetype>
                <textarea name="buttontext" from="textarea_base">
                    <area>10,0,520,40</area>
+                   <scroll direction="left" />
                    <alpha>255</alpha>
                </textarea>
            </state>
@@ -1031,6 +1033,7 @@
                </imagetype>
                <textarea name="buttontext" from="textarea_base">
                    <area>10,0,350,40</area>
+                   <scroll direction="left" />
                    <alpha>255</alpha>
                </textarea>
            </state>
@@ -1080,6 +1083,7 @@
                </imagetype>
                <textarea name="buttontext" from="textarea_base">
                    <area>10,0,260,40</area>
+                   <scroll direction="left" />
                    <alpha>255</alpha>
                </textarea>
                <imagetype name="MediaItemDetailBG">
@@ -1160,6 +1164,7 @@
                <textarea name="buttontext" from="textarea_base">
                    <area>10,0,180,40</area>
                    <align>left,vcenter</align>
+                   <scroll direction="left" />
                    <font>normal</font>
                </textarea>
            </state>
@@ -1391,6 +1396,7 @@
                <textarea name="buttontext">
                    <area>10,0,320,35</area>
                    <font>normal</font>
+                   <scroll direction="left" />
                    <alpha>255</alpha>
                    <multiline>no</multiline>
                    <cutdown>yes</cutdown>
@@ -1473,6 +1479,7 @@
                    <area>10,0,320,35</area>
                    <font>normal</font>
                    <alpha>255</alpha>
+                   <scroll direction="left" />
                    <multiline>no</multiline>
                    <cutdown>yes</cutdown>
                    <align>left,vcenter</align>
@@ -1554,6 +1561,7 @@
                    <area>10,0,160,35</area>
                    <font>normal</font>
                    <alpha>255</alpha>
+                   <scroll direction="left" />
                    <multiline>no</multiline>
                    <cutdown>yes</cutdown>
                    <align>left,vcenter</align>
@@ -1635,6 +1643,7 @@
                    <area>10,0,80,35</area>
                    <font>normal</font>
                    <alpha>255</alpha>
+                   <scroll direction="left" />
                    <multiline>no</multiline>
                    <cutdown>yes</cutdown>
                    <align>hcenter,vcenter</align>
@@ -1716,6 +1725,7 @@
                    <area>10,0,490,35</area>
                    <font>normal</font>
                    <alpha>255</alpha>
+                   <scroll direction="left" />
                    <multiline>no</multiline>
                    <cutdown>yes</cutdown>
                    <align>left,vcenter</align>
@@ -1797,6 +1807,7 @@
                    <area>10,0,470,40</area>
                    <font>normal</font>
                    <alpha>255</alpha>
+                   <scroll direction="left" />
                    <multiline>no</multiline>
                    <cutdown>yes</cutdown>
                    <align>left,vcenter</align>
@@ -1862,6 +1873,7 @@
                    <area>10,0,320,40</area>
                    <font>normal</font>
                    <alpha>255</alpha>
+                   <scroll direction="left" />
                    <multiline>no</multiline>
                    <cutdown>yes</cutdown>
                    <align>left,vcenter</align>
@@ -2092,6 +2104,7 @@
                    <area>100,0,400,50</area>
                    <font>normal</font>
                    <alpha>255</alpha>
+                   <scroll direction="left" />
                    <multiline>no</multiline>
                    <cutdown>yes</cutdown>
                    <align>left,vcenter</align>
@@ -2218,6 +2231,7 @@
                    <area>300,50,200,50</area>
                    <font>normal</font>
                    <alpha>255</alpha>
+                   <scroll direction="left" />
                    <multiline>no</multiline>
                    <cutdown>yes</cutdown>
                    <align>left,vcenter</align>
@@ -2286,6 +2300,7 @@
                    <area>100,0,380,50</area>
                    <font>normal</font>
                    <alpha>255</alpha>
+                   <scroll direction="left" />
                    <multiline>no</multiline>
                    <cutdown>yes</cutdown>
                    <align>left,vcenter</align>
@@ -2434,12 +2449,12 @@
        <style>reveal</style>
        <imagetype name="background">
            <area>0,0,700,10</area>
-           <filename>images/shared/progressbar/progressbar_background.png</filename>
+           <filename>images/shared/progressbar/progressbar_large_background.png</filename>
            <preserveaspect>false</preserveaspect>
        </imagetype>
        <imagetype name="progressimage">
            <area>0,0,700,10</area>
-           <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
+           <filename>images/shared/progressbar/progressbar_large_fill_blue.png</filename>
            <preserveaspect>false</preserveaspect>
        </imagetype>
    </progressbar>
@@ -2467,7 +2482,7 @@
             <imagetype name="2">
                 <area>,0,80,20</area>
                 <filename>images/shared/rating/songrating1.png</filename>
-            </imagetype>
+            </imagetype><scroll direction="left" />
         </state>
         <state name="3">
             <imagetype name="3">
@@ -2570,6 +2585,235 @@
             <filename>images/shared/HomeBladeSub.png</filename>
         </imagetype>
     </group>
+
+    <group name="defaultinfoicons" >
+        <area>0,0,495,50</area>
+        <!-- ===================================================== -->
+        <!--   INFO ICONS                                          -->
+        <!-- ===================================================== -->
+        <statetype name="autoexpire">
+            <area>25,10,30,30</area>
+            <state name="yes">
+                <imagetype name="autoexpire_icon">
+                    <area>0,0,30,30</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/shared/OSDRepeatFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="no">
+                <imagetype name="autoexpire_icon">
+                    <area>0,0,30,30</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/shared/OSDRepeatNF.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="commflagged">
+            <area>70,10,30,30</area>
+            <state name="yes">
+                <imagetype name="commflagged_icon">
+                    <area>0,0,30,30</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/shared/OSDPresetSettingsFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="no">
+                <imagetype name="commflagged_icon">
+                    <area>0,0,30,30</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/shared/OSDPresetSettingsNF.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="bookmark">
+            <area>115,10,30,30</area>
+            <state name="yes">
+                <imagetype name="bookmark_icon">
+                    <area>0,0,30,30</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/shared/OSDBookmarksFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="no">
+                <imagetype name="bookmark_icon">
+                    <area>0,0,30,30</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/shared/OSDBookmarksNF.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="cutlist">
+            <area>160,10,30,30</area>
+            <state name="yes">
+                <imagetype name="cutlist_icon">
+                    <area>0,0,30,30</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/shared/OSDVideoFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="no">
+                <imagetype name="cutlist_icon">
+                    <area>0,0,30,30</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/shared/OSDVideoNF.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="jobstate">
+            <area>250,10,30,30</area>
+            <state name="recording">
+                <imagetype name="animation1">
+                    <area>0,0,30,30</area>
+                    <filepattern low="1" high="8">images/tv-recordings/processing/recording_%1.png</filepattern>
+                    <delay>60</delay>
+                </imagetype>
+            </state>
+            <state name="transcoding">
+                <imagetype name="animation2">
+                    <area>0,0,30,30</area>
+                    <filepattern low="1" high="8">images/tv-recordings/processing/transcoding_%1.png</filepattern>
+                    <delay>60</delay>
+                </imagetype>
+            </state>
+            <state name="commflagging">
+                <imagetype name="animation3">
+                    <area>0,0,30,30</area>
+                    <filepattern low="1" high="8">images/tv-recordings/processing/flagging_%1.png</filepattern>
+                    <delay>60</delay>
+                </imagetype>
+            </state>
+            <state name="default">
+                <imagetype name="image1">
+                    <area>0,0,30,30</area>
+                    <alpha>92</alpha>
+                    <filename>images/tv-recordings/processing/defaultflagging.png</filename>
+                </imagetype>
+            </state>
+       </statetype>
+        <!-- ===================================================== -->
+        <!--   VIDEO, AUDIO AND SUBTITLE ICONS                     -->
+        <!-- ===================================================== -->
+        <statetype name="subtitletypes">
+            <area>285,0,74,50</area>
+            <state name="cc">
+                <imagetype name="cc">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/cc.png</filename>
+                </imagetype>
+            </state>
+            <state name="subtitles">
+                <imagetype name="subtitles">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/sub.png</filename>
+                </imagetype>
+            </state>
+            <state name="onscreensub">
+                <imagetype name="onscreensub">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/onscreensub.png</filename>
+                </imagetype>
+            </state>
+            <state name="default">
+                <imagetype name="default">
+                    <area>0,0,74,50</area>
+                    <alpha>64</alpha>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/onscreensub.png</filename>
+                </imagetype>
+            </state>
+       </statetype>
+        <statetype name="videoprops">
+            <area>355,0,74,50</area>
+            <showempty>yes</showempty>
+            <state name="hd1080">
+                <imagetype name="hd1080">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/1080i.png</filename>
+                </imagetype>
+            </state>
+            <state name="hd720">
+                <imagetype name="hd720">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/720i.png</filename>
+                </imagetype>
+            </state>
+            <state name="hdtv">
+                <imagetype name="hdtv">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/hdtv.png</filename>
+                </imagetype>
+            </state>
+            <state name="avchd">
+                <imagetype name="avchd">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/h264.png</filename>
+                </imagetype>
+            </state>
+            <state name="widescreen">
+                <imagetype name="widescreen">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/2.20.png</filename>
+                </imagetype>
+            </state>
+            <state name="default">
+                <imagetype name="default">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <alpha>64</alpha>
+                    <filename>images/flags/576i.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="audioprops">
+            <area>430,0,74,50</area>
+            <showempty>yes</showempty>
+            <state name="stereo">
+                <imagetype name="stereo">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/dd20.png</filename>
+                </imagetype>
+            </state>
+            <state name="surround">
+                <imagetype name="surround">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/dd51.png</filename>
+                </imagetype>
+            </state>
+            <state name="dolby">
+                <imagetype name="dolby">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/dolby.png</filename>
+                </imagetype>
+            </state>
+            <state name="mono">
+                <imagetype name="mono">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <filename>images/flags/dd10.png</filename>
+                </imagetype>
+            </state>
+            <state name="default">
+                <imagetype name="default">
+                    <area>0,0,74,50</area>
+                    <preserveaspect>no</preserveaspect>
+                    <alpha>64</alpha>
+                    <filename>images/flags/dd20.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </group>
+
 
     <group name="defaultscreenlayoutSettings_1A_animated" from="defaultscreenlayoutSettings_1">
         <animation trigger="AboutToShow">
@@ -2822,16 +3066,6 @@
 
    <window name="dialog_base">
        <area>-1,-1,520,205</area>
-        <animation trigger="AboutToShow">
-            <section duration="400" centre="middle">
-                <zoom start="10" end="100" easingcurve="InOutBack" />
-            </section>
-        </animation>
-        <animation trigger="AboutToHide">
-            <section duration="400" centre="middle">
-                <zoom start="100" end="10" easingcurve="InOutBack" />
-            </section>
-        </animation>
        <imagetype name="DialogProgressBG">
            <area>0,0,520,205</area>
            <filename>images/shared/DialogProgressBG.png</filename>
@@ -2845,7 +3079,20 @@
        </textarea>
    </window>
 
-   <window name="MythBusyDialog" from="dialog_base">
+   <window name="dialog_base_animated" from="dialog_base">
+       <animation trigger="AboutToShow">
+           <section duration="400" centre="middle">
+               <zoom start="10" end="100" easingcurve="InOutBack" />
+           </section>
+       </animation>
+       <animation trigger="AboutToHide">
+           <section duration="400" centre="middle">
+               <zoom start="100" end="10" easingcurve="InOutBack" />
+           </section>
+       </animation>
+   </window>
+
+   <window name="MythBusyDialog" from="dialog_base_animated">
        <imagetype name="animation">
            <position>20,98</position>
            <filepattern low="1" high="29">images/shared/busy/busy-%1.png</filepattern>
@@ -2860,7 +3107,7 @@
        </textarea>
    </window>
 
-   <window name="MythConfirmationDialog" from="dialog_base">
+   <window name="MythConfirmationDialog" from="dialog_base_animated">
        <textarea name="message">
            <area>20,35,480,70</area>
            <font>normal</font>
@@ -2877,7 +3124,7 @@
        </button>
    </window>
 
-   <window name="MythTextInputDialog" from="dialog_base">
+   <window name="MythTextInputDialog" from="dialog_base_animated">
        <textarea name="message" from="textarea_base">
            <area>20,35,480,35</area>
            <value>Enter Search Text:</value>
@@ -2921,7 +3168,7 @@
        </buttonlist>
     </window>
 
-   <window name="MythProgressDialog" from="dialog_base">
+   <window name="MythProgressDialog" from="dialog_base_animated">
        <textarea name="message" from="textarea_base">
            <area>20,35,480,70</area>
            <align>allcenter</align>
@@ -2937,9 +3184,13 @@
            <area>20,140,480,10</area>
            <imagetype name="background">
                <area>0,0,480,10</area>
+               <filename>images/shared/progressbar/progressbar_large_background.png</filename>
+               <preserveaspect>false</preserveaspect>
            </imagetype>
            <imagetype name="progressimage">
                <area>0,0,480,10</area>
+               <filename>images/shared/progressbar/progressbar_large_fill_blue.png</filename>
+               <preserveaspect>false</preserveaspect>
            </imagetype>
        </progressbar>
    </window>
@@ -3152,7 +3403,7 @@
        </shape> -->
    </window>
 
-    <window name="MythTimeInputDialog" from="dialog_base">
+    <window name="MythTimeInputDialog" from="dialog_base_animated">
        <textarea name="message" from="textarea_base">
            <area>20,35,480,35</area>
             <value>Select Time &amp; Date</value>

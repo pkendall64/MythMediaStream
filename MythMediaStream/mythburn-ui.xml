@@ -424,17 +424,17 @@ MythArchive GUI theme
 	        </textarea>
 	
 	        <progressbar name="size_bar"from="progressbar_base">
-	            <area>260,705,490,5</area>
+	            <area>260,705,490,10</area>
 	            <layout>horizontal</layout>
 	            <style>reveal</style>
 	            <imagetype name="background">
-	                <area>0,0,490,5</area>
-	                <filename>images/shared/progressbar/progressbar_background.png</filename>
+	                <area>0,0,490,10</area>
+	                <filename>images/shared/progressbar/progressbar_large_background.png</filename>
 	                <preserveaspect>false</preserveaspect>
 	            </imagetype>
 	            <imagetype name="progressimage">
-	                <area>0,0,490,5</area>
-	                <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
+	                <area>0,0,490,10</area>
+	                <filename>images/shared/progressbar/progressbar_large_fill_amber.png</filename>
 	                <preserveaspect>false</preserveaspect>
 	            </imagetype>
 	        </progressbar>

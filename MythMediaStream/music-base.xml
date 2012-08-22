@@ -421,13 +421,13 @@
         <layout>horizontal</layout>
         <style>reveal</style>
            <imagetype name="background">
-               <area>0,0,350,5</area>
-               <filename>images/shared/progressbar/progressbar_background.png</filename>
+               <area>0,0,350,10</area>
+               <filename>images/shared/progressbar/progressbar_large_background.png</filename>
                <preserveaspect>false</preserveaspect>
            </imagetype>
            <imagetype name="progressimage">
-               <area>0,0,350,5</area>
-               <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
+               <area>0,0,350,10</area>
+               <filename>images/shared/progressbar/progressbar_large_fill_blue.png</filename>
                <preserveaspect>false</preserveaspect>
            </imagetype>
     </progressbar>
@@ -438,12 +438,12 @@
         <layout>horizontal</layout>
         <style>reveal</style>
         <imagetype name="background">
-            <area>0,0,150,5</area>
-            <filename>images/shared/progressbar/progressbar_background.png</filename>
+            <area>0,0,150,10</area>
+            <filename>images/shared/progressbar/progressbar_large_background.png</filename>
         </imagetype>
         <imagetype name="progressimage">
-            <area>0,0,150,5</area>
-            <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
+            <area>0,0,150,10</area>
+            <filename>images/shared/progressbar/progressbar_large_fill_blue.png</filename>
         </imagetype>
     </progressbar>
     

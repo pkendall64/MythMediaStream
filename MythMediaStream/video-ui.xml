@@ -149,7 +149,7 @@
             <statetype name="buttonitem">
                 <state name="selectedactive">
                     <textarea name="length" from="textarea_base">
-                        <area>410,7,120,33</area>
+                        <area>405,5,120,35</area>
                         <font>verysmall</font>
                         <case>Normal</case>
                         <align>left,vcenter</align>
@@ -505,7 +505,7 @@
 
         <textarea name="s##e##" from="category">
             <position>850,450</position>
-            <value>s00e00</value>
+            <value>N/A</value>
         </textarea>
 
     </window>
@@ -1035,13 +1035,14 @@
 
         <textarea name="s##e##" from="director">
             <position>750,510</position>
-            <value>s00e00</value>
+            <value>N/A</value>
         </textarea>
 
         <button name="play_button" from="button_base">
             <position>770,550</position>
             <value>Play</value>
         </button>
+
         <button name="done_button" from="button_base">
             <position>900,550</position>
             <value>Done</value>

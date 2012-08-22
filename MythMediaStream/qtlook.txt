@@ -22,15 +22,15 @@ str ActiveHighlight=#333333
 str ActiveHighlightedText=#FFFFFF
 
 str InactiveForeground=#FFFFFF
-str InactiveButton=#000000
-str InactiveLight=#435B70
-str InactiveText=#000000
-str InactiveBrightText=#000000
-str InactiveButtonText=#000000
-str InactiveBase=#254E56
-str InactiveBackground=#264F57
+str InactiveButton=#1a1a1a
+str InactiveLight=#808080
+str InactiveText=#FFFFFF
+str InactiveBrightText=#FFFFFF
+str InactiveButtonText=#FFFFFF
+str InactiveBase=#1a1a1a
+str InactiveBackground=#1a1a1a
 str InactiveShadow=#000000
-str InactiveHighlight=#2D733F
+str InactiveHighlight=#333333
 str InactiveHighlightedText=#FFFFFF
 
 str DisabledForeground=#FFFFFF

@@ -15,7 +15,7 @@
         <textarea name="ScreenTitleRecordings" from="screentitle">
             <value>WATCH RECORDINGS</value>
         </textarea>
-        <textarea name="position" from="textarea_base">
+        <textarea name="rec_count" from="textarea_base">
             <area>1112,5,146,40</area>
             <font>normal</font>
             <case>lower</case>
@@ -38,15 +38,16 @@
             <position>740,260</position>
             <statetype name="buttonitem">
                 <state name="active">
-                    <textarea name="title" from="textarea_base">
+                    <textarea name="titlesubtitle" from="textarea_base">
                         <area>10,0,490,40</area>
                         <alpha>128</alpha>
 <!--                        <font state="error">normal_red</font>
                         <font state="running">normal_amber</font>-->
                         <align>left,vcenter</align>
+                        <template>%TITLE|  %%00x00| - %%SUBTITLE%</template>
                     </textarea>
                     <statetype name="jobstate">
-                        <area>495,9,22,22</area>
+                        <area>510,9,22,22</area>
                         <state name="recording">
                             <imagetype name="animation">
                                 <area>0,0,22,22</area>
@@ -69,16 +70,28 @@
                             </imagetype>
                         </state>
                     </statetype>
+				        <statetype name="playlist">
+				            <state name="yes">
+				                <imagetype name="playlist_icon">
+				                    <area>510,9,22,22</area>
+				                    <preserveaspect>no</preserveaspect>
+				                    <filename>images/shared/LEDOn.png</filename>
+				                </imagetype>
+				            </state>
+				            <state name="no"/>
+				        </statetype>
 		          </state>
                 <state name="selectedactive">
-                    <textarea name="title" from="textarea_base">
+                    <textarea name="titlesubtitle" from="textarea_base">
                         <area>10,0,350,40</area>
+                        <scroll direction="left" />
                         <font state="error">normal_red</font>
                         <font state="running">normal_amber</font>
                         <align>left,vcenter</align>
+                        <template>%TITLE|  %%00x00| - %%SUBTITLE%</template>
                     </textarea>
-                    <textarea name="lenmins" from="title">
-                        <area>410,7,110,33</area>
+                    <textarea name="lenmins" from="textarea_base">
+                        <area>405,5,120,35</area>
                         <font>verysmall</font>
                         <font state="error">verysmall_red</font>
                         <font state="running">verysmall_amber</font>
@@ -99,30 +112,16 @@
                             </imagetype>
                         </state>
                     </statetype>
-<!--                    <statetype name="jobstate">
-                        <area>495,9,22,22</area>
-                        <state name="recording">
-                            <imagetype name="animation">
-                                <area>0,0,22,22</area>
-                                <filepattern low="1" high="8">images/tv-recordings/processing/recording_%1.png</filepattern>
-                                <delay>60</delay>
-                            </imagetype>
-                        </state>
-                        <state name="transcoding">
-                            <imagetype name="animation">
-                                <area>0,0,22,22</area>
-                                <filepattern low="1" high="8">images/tv-recordings/processing/transcoding_%1.png</filepattern>
-                                <delay>60</delay>
-                            </imagetype>
-                        </state>
-                        <state name="commflagging">
-                            <imagetype name="animation">
-                                <area>0,0,22,22</area>
-                                <filepattern low="1" high="8">images/tv-recordings/processing/flagging_%1.png</filepattern>
-                                <delay>60</delay>
-                            </imagetype>
-                        </state>
-                    </statetype>-->
+				        <statetype name="playlist">
+				            <state name="yes">
+				                <imagetype name="playlist_icon">
+				                    <area>507,5,30,30</area>
+				                    <preserveaspect>no</preserveaspect>
+				                    <filename>images/shared/LEDOn.png</filename>
+				                </imagetype>
+				            </state>
+				            <state name="no"/>
+				        </statetype>
 		          </state>
             </statetype>
         </buttonlist>
@@ -131,26 +130,26 @@
         <!--     DISK OCCUPATION BAR                               -->
         <!-- ===================================================== -->
         <progressbar name="usedbar" from="progressbar_base">
-            <area>810,700,260,5</area>
+            <area>750,700,520,10</area>
             <layout>horizontal</layout>
-            <style>slide</style>
+            <style>reveal</style>
            <imagetype name="background">
-               <area>0,0,260,5</area>
-               <filename>images/shared/progressbar/progressbar_background.png</filename>
+               <area>0,0,520,10</area>
+               <filename>images/shared/progressbar/progressbar_large_background.png</filename>
                <preserveaspect>false</preserveaspect>
            </imagetype>
            <imagetype name="progressimage">
-               <area>0,0,260,5</area>
-               <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
+               <area>0,0,520,10</area>
+               <filename>images/shared/progressbar/progressbar_large_fill_amber.png</filename>
                <preserveaspect>false</preserveaspect>
            </imagetype>
         </progressbar>
 
         <textarea name="freereport">
-            <area>1100,690,170,25</area>
+            <area>750,675,520,25</area>
             <font>verysmall</font>
             <multiline>no</multiline>
-            <align>right,vcenter</align>
+            <align>hcenter,vcenter</align>
         </textarea>
 
 
@@ -165,37 +164,31 @@
             <reflection shear="0" scale="65" length="15"/>
         </imagetype>
 
+        <textarea name="titlesubtitle" from="textarea_base">
+            <area>450,260,275,105</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,bottom</align>
+            <template>%TITLE%\n%00x00| - %%SUBTITLE%</template>
+        </textarea>
+
         <textarea name="category" from="textarea_base">
-            <area>450,260,275,25</area>
+            <area>450,370,275,25</area>
             <font>title_small</font>
             <multiline>no</multiline>
             <cutdown>yes</cutdown>
             <alpha>128</alpha>
             <case>upper</case>
-            <align>left,top</align>
+            <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="titlesubtitle" from="textarea_base">
-            <area>450,285,275,90</area>
-            <font>title</font>
-            <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
-            <case>upper</case>
-            <align>left,top</align>
-        </textarea>
-
-        <textarea name="channellbl" from="textarea_base">
+<!--        <textarea name="channellbl" from="textarea_base">
             <area>450,395,90,25</area>
             <font>title_verysmall_blue</font>
             <align>left,vcenter</align>
             <value>channel</value>
-        </textarea>
-
-        <textarea name="longchannel" from="textarea_base">
-            <area>550,395,170,25</area>
-            <font>small</font>
-            <case>normal</case>
-            <align>left,vcenter</align>
         </textarea>
 
         <textarea name="startdatelbl" from="channellbl">
@@ -203,27 +196,39 @@
             <value>Recorded</value>
         </textarea>
 
-        <textarea name="startdate" from="longchannel">
-            <position>550,420</position>
-            <template>%startdate%, %starttime% - %endtime%</template>
-        </textarea>
-
         <textarea name="filesize_strlbl" from="channellbl">
             <position>450,445</position>
             <value>Size</value>
         </textarea>
 
-        <textarea name="filesize_str" from="longchannel">
-            <position>550,445</position>
-        </textarea>
-
         <textarea name="rectypestateslbl" from="channellbl">
             <position>450,470</position>
             <value>Storage</value>
+        </textarea>-->
+
+        <textarea name="longchannel" from="textarea_base">
+            <area>450,395,275,25</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="storagegroup" from="longchannel">
-            <position>550,470</position>
+ <!--   <textarea name="s00e00" from="longchannel">
+            <position>450,420</position>
+            <case>upper</case>
+            <template>Season and Episode: %s00e00%</template>
+        </textarea>-->
+
+        <textarea name="startdate" from="longchannel">
+            <position>450,445</position>
+            <font>smaller</font>
+            <template>Aired %startdate%, %starttime% - %endtime%</template>
+            <alpha>128</alpha>
+        </textarea>
+
+        <textarea name="storagegroup" from="startdate">
+            <position>450,470</position>
+            <template>Using %filesize_str% of %storagegroup% Storage</template>
         </textarea>
 
         <textarea name="description" from="textarea_base">
@@ -232,214 +237,13 @@
             <case>normal</case>
             <align>justify</align>
             <multiline>yes</multiline>
-            <template>%timedate% - %description%</template>
+            <template>%YEARSTARS| %%DESCRIPTION%</template>
             <cutdown>yes</cutdown>
         </textarea>
 
-
-        <!-- ===================================================== -->
-        <!--   INFO ICONS                                          -->
-        <!-- ===================================================== -->
-        <imagetype name="autoexpire_icon_off">
-            <area>25,670,30,30</area>
-            <preserveaspect>no</preserveaspect>
-            <filename>images/shared/OSDRepeatNF.png</filename>
-        </imagetype>
-        <imagetype name="commflagged_icon_off" from="autoexpire_icon_off">
-            <area>70,670,30,30</area>
-            <filename>images/shared/OSDPresetSettingsNF.png</filename>
-        </imagetype>
-        <imagetype name="bookmark_icon_off" from="autoexpire_icon_off">
-            <area>115,670,30,30</area>
-            <filename>images/shared/OSDBookmarksNF.png</filename>
-        </imagetype>
-        <imagetype name="cutlist_icon_off" from="autoexpire_icon_off">
-            <area>160,670,30,30</area>
-            <filename>images/shared/OSDVideoNF.png</filename>
-        </imagetype>
-        <imagetype name="playlist_icon_off" from="autoexpire_icon_off">
-            <area>205,670,30,30</area>
-            <filename>images/shared/OSDPlaylistNF.png</filename>
-        </imagetype>
-        <statetype name="autoexpire">
-            <area>25,670,30,30</area>
-            <state name="yes">
-                <imagetype name="autoexpire_icon">
-                    <area>0,0,30,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/shared/OSDRepeatFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-        <statetype name="commflagged">
-            <area>70,670,30,30</area>
-            <state name="yes">
-                <imagetype name="commflagged_icon">
-                    <area>0,0,30,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/shared/OSDPresetSettingsFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-        <statetype name="bookmark">
-            <area>115,670,30,30</area>
-            <state name="yes">
-                <imagetype name="bookmark_icon">
-                    <area>0,0,30,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/shared/OSDBookmarksFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-        <statetype name="cutlist">
-            <area>160,670,30,30</area>
-            <state name="yes">
-                <imagetype name="cutlist_icon">
-                    <area>0,0,30,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/shared/OSDVideoFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-        <statetype name="playlist">
-            <area>205,670,30,30</area>
-            <state name="yes">
-                <imagetype name="playlist_icon">
-                    <area>0,0,30,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/shared/OSDPlaylistFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-        <statetype name="jobstate">
-            <area>250,670,30,30</area>
-            <state name="recording">
-                <imagetype name="animation1">
-                    <area>0,0,30,30</area>
-                    <filepattern low="1" high="8">images/tv-recordings/processing/recording_%1.png</filepattern>
-                    <delay>60</delay>
-                </imagetype>
-            </state>
-            <state name="transcoding">
-                <imagetype name="animation2">
-                    <area>0,0,30,30</area>
-                    <filepattern low="1" high="8">images/tv-recordings/processing/transcoding_%1.png</filepattern>
-                    <delay>60</delay>
-                </imagetype>
-            </state>
-            <state name="commflagging">
-                <imagetype name="animation3">
-                    <area>0,0,30,30</area>
-                    <filepattern low="1" high="8">images/tv-recordings/processing/flagging_%1.png</filepattern>
-                    <delay>60</delay>
-                </imagetype>
-            </state>
-       </statetype>
-        <!-- ===================================================== -->
-        <!--   VIDEO, AUDIO AND SUBTITLE ICONS                     -->
-        <!-- ===================================================== -->
-        <statetype name="subtitletypes">
-            <area>295,670,67,30</area>
-            <state name="cc">
-                <imagetype name="cc">
-                    <area>0,0,67,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/subtitles/cc.png</filename>
-                </imagetype>
-            </state>
-            <state name="subtitles">
-                <imagetype name="subtitles">
-                    <area>0,0,67,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/subtitles/subtitles.png</filename>
-                </imagetype>
-            </state>
-            <state name="onscreensub">
-                <imagetype name="onscreensub">
-                    <area>0,0,67,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/tv-recordings/subtitles/onscreensub.png</filename>
-                </imagetype>
-            </state>
-       </statetype>
-       <statetype name="videoprops">
-            <area>370,670,80,30</area>
-            <showempty>yes</showempty>
-            <state name="hd1080">
-                <imagetype name="hd1080">
-                    <area>0,0,80,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/mediaflags/Video/1080.png</filename>
-                </imagetype>
-            </state>
-            <state name="hd720">
-                <imagetype name="hd720">
-                    <area>0,0,80,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/mediaflags/Video/720.png</filename>
-                </imagetype>
-            </state>
-            <state name="hdtv">
-                <imagetype name="hdtv">
-                    <area>0,0,80,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/mediaflags/Video/1080.png</filename>
-                </imagetype>
-            </state>
-            <state name="widescreen">
-                <imagetype name="widescreen">
-                    <area>0,0,80,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/mediaflags/Video/tv.png</filename>
-                </imagetype>
-            </state>
-            <state name="default">
-                <imagetype name="default">
-                    <area>0,0,80,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/mediaflags/Video/576.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-        <statetype name="audioprops">
-            <area>455,670,40,30</area>
-            <showempty>yes</showempty>
-            <state name="stereo">
-                <imagetype name="stereo">
-                    <area>0,0,40,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/mediaflags/Audio/2.png</filename>
-                </imagetype>
-            </state>
-            <state name="surround">
-                <imagetype name="surround">
-                    <area>0,0,40,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/mediaflags/Audio/6.png</filename>
-                </imagetype>
-            </state>
-            <state name="dolby">
-                <imagetype name="dolby">
-                    <area>0,0,40,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/mediaflags/Audio/dolbydigital.png</filename>
-                </imagetype>
-            </state>
-            <state name="mono">
-                <imagetype name="mono">
-                    <area>0,0,40,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/mediaflags/Audio/1.png</filename>
-                </imagetype>
-            </state>
-            <state name="default">
-                <imagetype name="default">
-                    <area>0,0,40,30</area>
-                    <preserveaspect>no</preserveaspect>
-                    <filename>images/mediaflags/Audio/2.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
+        <group name="infoicons" from="defaultinfoicons">
+            <position>0,660</position>
+        </group>
 
 <!--        <imagetype name="coverart">
             <area>515,670,20,30</area>

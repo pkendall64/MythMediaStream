@@ -29,12 +29,12 @@
             <area>950,30,320,10</area>
             <imagetype name="background">
                 <area>0,0,320,10</area>
-                <filename>images/shared/progressbar/progressbar_background.png</filename>
+                <filename>images/shared/progressbar/progressbar_large_background.png</filename>
                 <preserveaspect>false</preserveaspect>
             </imagetype>
             <imagetype name="progressimage">
                 <area>0,0,320,10</area>
-                <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
+                <filename>images/shared/progressbar/progressbar_large_fill_grey.png</filename>
                 <preserveaspect>false</preserveaspect>
             </imagetype>
         </progressbar>

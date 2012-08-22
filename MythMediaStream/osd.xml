@@ -327,17 +327,17 @@
         </textarea>
 
         <progressbar name="position">
-            <area>100,170,1080,10</area>
+            <area>100,175,1080,20</area>
             <layout>horizontal</layout>
             <style>reveal</style>
             <imagetype name="background">
                 <area>0,0,1080,10</area>
-                <filename>images/shared/progressbar/progressbar_background.png</filename>
+                <filename>images/shared/progressbar/progressbar_large_background.png</filename>
                 <preserveaspect>false</preserveaspect>
             </imagetype>
             <imagetype name="progressimage">
                 <area>0,0,1080,10</area>
-                <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
+                <filename>images/shared/progressbar/progressbar_large_fill_blue.png</filename>
                 <preserveaspect>false</preserveaspect>
             </imagetype>
         </progressbar>
@@ -1068,35 +1068,35 @@
             <template>%TIMEDISPLAY% %VALUE%%UNITS%</template>
         </textarea>
         <editbar name="editbar">
-            <area>100,170,1080,20</area>
+            <area>100,175,1080,20</area>
             <imagetype name="cut">
-                <area>0,5,1080,10</area>
-                <filename>images/shared/progressbar/progressbar_background.png</filename>
+                <area>0,0,1080,10</area>
+                <filename>images/shared/progressbar/progressbar_large_fill_red.png</filename>
                 <preserveaspect>false</preserveaspect>
             </imagetype>
             <imagetype name="keep">
-                <area>0,5,1080,10</area>
-                <filename>images/shared/progressbar/progressbar_fill_blue.png</filename>
+                <area>0,0,1080,10</area>
+                <filename>images/shared/progressbar/progressbar_large_fill_grey.png</filename>
                 <preserveaspect>false</preserveaspect>
             </imagetype>
             <shape name="cuttoright">
-                <area>0,0,3,20</area>
-                <fill color="#0000FF" alpha="255" />
+                <area>0,0,1,10</area>
+                <fill color="#FF0000" alpha="255" />
             </shape>
             <shape name="cuttoleft">
-                <area>0,0,3,20</area>
-                <fill color="#0000FF" alpha="255" />
+                <area>0,0,1,10</area>
+                <fill color="#FF0000" alpha="255" />
             </shape>
             <shape name="keeptoright">
-                <area>0,0,3,20</area>
-                <fill color="#0099FF" alpha="255" />
+                <area>0,0,1,10</area>
+                <fill color="#E0991A" alpha="255" />
             </shape>
             <shape name="keeptoleft">
-                <area>0,0,3,20</area>
-                <fill color="#0099FF" alpha="255" />
+                <area>0,0,1,10</area>
+                <fill color="#E0991A" alpha="255" />
             </shape>
             <shape name="position">
-                <area>0,0,3,20</area>
+                <area>0,-5,1,20</area>
                 <fill color="#FFFFFF" alpha="255" />
             </shape>
         </editbar>
