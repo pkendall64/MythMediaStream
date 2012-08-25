@@ -25,13 +25,6 @@
         </textarea>
 
         <!-- ===================================================== -->
-        <!--     RECORDINGS GROUPS                                 -->
-        <!-- ===================================================== -->
-        <buttonlist name="groups" from="buttonlist_menu">
-            <position>740,260</position>
-        </buttonlist>
-
-        <!-- ===================================================== -->
         <!--     RECORDING LIST IN THE GROUP                       -->
         <!-- ===================================================== -->
         <buttonlist name="recordings" from="buttonlist_menu_details">
@@ -127,6 +120,13 @@
         </buttonlist>
 
         <!-- ===================================================== -->
+        <!--     RECORDINGS GROUPS                                 -->
+        <!-- ===================================================== -->
+        <buttonlist name="groups" from="buttonlist_menu">
+            <position>740,260</position>
+        </buttonlist>
+
+        <!-- ===================================================== -->
         <!--     DISK OCCUPATION BAR                               -->
         <!-- ===================================================== -->
         <progressbar name="usedbar" from="progressbar_base">
@@ -157,109 +157,164 @@
         <!--     PROGRAM DETAILS                                   -->
         <!-- ===================================================== -->
 
-        <imagetype name="preview">
-            <area>25,260,400,225</area>
+        <!-- ===================================================== -->
+        <!--     PROGRAM DETAILS when coverart available           -->
+        <!-- ===================================================== -->
+
+<!--        <group name="preview_details" depends="coverart">
+	        <textarea name="title" from="textarea_base">
+	            <area>450,260,275,105</area>
+	            <font>title</font>
+	            <multiline>yes</multiline>
+	            <cutdown>yes</cutdown>
+	            <case>upper</case>
+	            <align>left,bottom</align>
+	            <template>%TITLE%%|\n00x00| -% %"|SUBTITLE|"%</template>
+	        </textarea>
+	
+	        <textarea name="category" from="textarea_base">
+	            <area>450,370,275,25</area>
+	            <font>title_small</font>
+	            <multiline>no</multiline>
+	            <cutdown>yes</cutdown>
+	            <alpha>128</alpha>
+	            <case>upper</case>
+	            <align>left,vcenter</align>
+	        </textarea>
+	
+	        <textarea name="longchannel" from="textarea_base">
+	            <area>450,395,275,25</area>
+	            <font>small</font>
+	            <case>normal</case>
+	            <align>left,vcenter</align>
+	        </textarea>
+	
+	        <textarea name="startdate" from="longchannel">
+	            <position>450,445</position>
+	            <font>smaller</font>
+	            <template>Aired %startdate%, %starttime% - %endtime%</template>
+	            <alpha>128</alpha>
+	        </textarea>
+	
+	        <textarea name="storagegroup" from="startdate">
+	            <position>450,470</position>
+	            <template>Using %filesize_str% of %storagegroup% Storage</template>
+	        </textarea>
+	
+	        <textarea name="description" from="textarea_base">
+	            <area>25,520,695,140</area>
+	            <font>small</font>
+	            <case>normal</case>
+	            <align>justify</align>
+	            <multiline>yes</multiline>
+	            <template>%YEARSTARS| %%DESCRIPTION%</template>
+	            <cutdown>yes</cutdown>
+	        </textarea>
+        </group>-->
+
+        <!-- ===================================================== -->
+        <!--     PROGRAM DETAILS when NO coverart available        -->
+        <!-- ===================================================== -->
+
+<!--        <group name="coverart_details" depends="!coverart">-->
+	        <textarea name="titlesubtitle" from="textarea_base">
+	            <area>400,260,325,30</area>
+	            <font>title</font>
+	            <multiline>yes</multiline>
+	            <cutdown>yes</cutdown>
+	            <case>upper</case>
+	            <align>left,bottom</align>
+	            <template>%TITLE%</template>
+	        </textarea>
+	
+	        <textarea name="category" from="textarea_base">
+	            <area>400,295,325,25</area>
+	            <font>title_small</font>
+	            <multiline>no</multiline>
+	            <cutdown>yes</cutdown>
+	            <alpha>128</alpha>
+	            <case>upper</case>
+	            <align>left,vcenter</align>
+	        </textarea>
+	
+	        <textarea name="longchannel" from="textarea_base">
+	            <area>400,320,325,25</area>
+	            <font>small</font>
+	            <case>normal</case>
+	            <align>left,vcenter</align>
+	        </textarea>
+	
+	        <textarea name="startdate" from="longchannel">
+	            <position>400,370</position>
+	            <font>smaller</font>
+	            <template>Aired %startdate%, %starttime% - %endtime%</template>
+	            <alpha>128</alpha>
+	        </textarea>
+	
+	        <textarea name="storagegroup" from="startdate">
+	            <position>400,395</position>
+	            <template>Using %filesize_str% of %storagegroup% Storage</template>
+	        </textarea>
+	        
+	        <textarea name="rectypestatus" from="startdate">
+	            <position>400,420</position>
+	            <template>Next recording: %rectypestatus%</template>
+	        </textarea>
+	
+	        <textarea name="inetref" from="startdate">
+	            <position>400,445</position>
+	            <template>Grabber ID: %inetref%</template>
+	        </textarea>
+	
+	        <textarea name="programid" from="startdate" depends="!inetref">
+	            <position>400,445</position>
+	            <template>Program ID: %programid%</template>
+	        </textarea>
+	
+	        <textarea name="subtitle" from="textarea_base">
+	            <area>25,490,700,170</area>
+	            <font>small</font>
+	            <case>normal</case>
+	            <align>justify</align>
+	            <multiline>yes</multiline>
+	            <template>%00x00| - %%"|SUBTITLE|"\n%%|YEARSTARS| - %%DESCRIPTION%</template>
+	            <cutdown>yes</cutdown>
+	        </textarea>
+<!--	     </group>-->
+
+<!--        <imagetype name="coverart">
+            <area>25,260,250,375</area>
+            <preserveaspect>yes</preserveaspect>
+            <reflection shear="0" scale="65" length="10"/>
+        </imagetype>-->
+
+        <imagetype name="preview" depends="!coverart">
+            <area>25,260,350,197</area>
             <preserveaspect>no</preserveaspect>
-            <filename>images/shared/DefaultHardDiskWide.png</filename>
-            <reflection shear="0" scale="65" length="15"/>
+            <reflection shear="0" scale="65" length="18"/>
         </imagetype>
 
-        <textarea name="titlesubtitle" from="textarea_base">
-            <area>450,260,275,105</area>
-            <font>title</font>
-            <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
-            <case>upper</case>
-            <align>left,bottom</align>
-            <template>%TITLE%\n%00x00| - %%SUBTITLE%</template>
-        </textarea>
-
-        <textarea name="category" from="textarea_base">
-            <area>450,370,275,25</area>
-            <font>title_small</font>
-            <multiline>no</multiline>
-            <cutdown>yes</cutdown>
-            <alpha>128</alpha>
-            <case>upper</case>
-            <align>left,vcenter</align>
-        </textarea>
-
-<!--        <textarea name="channellbl" from="textarea_base">
-            <area>450,395,90,25</area>
-            <font>title_verysmall_blue</font>
-            <align>left,vcenter</align>
-            <value>channel</value>
-        </textarea>
-
-        <textarea name="startdatelbl" from="channellbl">
-            <position>450,420</position>
-            <value>Recorded</value>
-        </textarea>
-
-        <textarea name="filesize_strlbl" from="channellbl">
-            <position>450,445</position>
-            <value>Size</value>
-        </textarea>
-
-        <textarea name="rectypestateslbl" from="channellbl">
-            <position>450,470</position>
-            <value>Storage</value>
-        </textarea>-->
-
-        <textarea name="longchannel" from="textarea_base">
-            <area>450,395,275,25</area>
-            <font>small</font>
-            <case>normal</case>
-            <align>left,vcenter</align>
-        </textarea>
-
- <!--   <textarea name="s00e00" from="longchannel">
-            <position>450,420</position>
-            <case>upper</case>
-            <template>Season and Episode: %s00e00%</template>
-        </textarea>-->
-
-        <textarea name="startdate" from="longchannel">
-            <position>450,445</position>
-            <font>smaller</font>
-            <template>Aired %startdate%, %starttime% - %endtime%</template>
-            <alpha>128</alpha>
-        </textarea>
-
-        <textarea name="storagegroup" from="startdate">
-            <position>450,470</position>
-            <template>Using %filesize_str% of %storagegroup% Storage</template>
-        </textarea>
-
-        <textarea name="description" from="textarea_base">
-            <area>25,540,695,120</area>
-            <font>small</font>
-            <case>normal</case>
-            <align>justify</align>
-            <multiline>yes</multiline>
-            <template>%YEARSTARS| %%DESCRIPTION%</template>
-            <cutdown>yes</cutdown>
-        </textarea>
+        <imagetype name="defaultimage" depends="!preview">
+            <area>25,260,350,350</area>
+            <preserveaspect>no</preserveaspect>
+            <filename>images/shared/defaultHardDiskBig.png</filename>
+            <reflection shear="0" scale="65" length="18"/>
+        </imagetype>
 
         <group name="infoicons" from="defaultinfoicons">
             <position>0,660</position>
         </group>
 
-<!--        <imagetype name="coverart">
-            <area>515,670,20,30</area>
-            <preserveaspect>no</preserveaspect>
-        </imagetype>-->
-
         <imagetype name="banner">
             <area>558,670,162,30</area>
-            <mask>images/shared/BannerMask.png</mask>
+<!--            <mask>images/shared/BannerMask.png</mask>-->
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
        <!-- ===================================================== -->
        <!--     NO RECORDINGS TEXT                                -->
        <!-- ===================================================== -->
-       <textarea name="norecordings" from="description">
+       <textarea name="norecordings" from="subtitle">
             <value>No recordings available, please schedule recordings first in order to watch them here</value>
         </textarea>
     </window>

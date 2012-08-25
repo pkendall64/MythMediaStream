@@ -176,96 +176,95 @@
         <!--     PROGRAM DETAILS                                   -->
         <!-- ===================================================== -->
         <imagetype name="coverart">
-            <area>25,260,275,415</area>
+            <area>25,260,250,375</area>
             <filename>images/shared/DefaultDVDEmptyLong.png</filename>
             <preserveaspect>yes</preserveaspect>
-            <reflection shear="0" scale="65" length="25"/>
+            <reflection shear="0" scale="65" length="10"/>
         </imagetype>
 
         <textarea name="title" from="textarea_base">
-            <area>345,260,355,40</area>
+            <area>300,260,425,30</area>
             <font>title</font>
-            <multiline>no</multiline>
+            <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <case>upper</case>
-            <align>left,vcenter</align>
+            <align>left,bottom</align>
         </textarea>
 
-        <textarea name="year" from="textarea_base">
-            <area>345,300,45,25</area>
+        <textarea name="genres" from="textarea_base">
+            <area>300,295,425,25</area>
             <font>title_small</font>
             <multiline>no</multiline>
             <cutdown>yes</cutdown>
+            <alpha>128</alpha>
             <case>upper</case>
             <align>left,vcenter</align>
-            <alpha>192</alpha>
+            <value>Unknown</value>
         </textarea>
 
-        <textarea name="subtitle" from="textarea_base">
-            <area>400,300,310,25</area>
-            <font>title_small</font>
-            <multiline>no</multiline>
-            <cutdown>yes</cutdown>
-            <case>upper</case>
+        <textarea name="director" from="textarea_base">
+            <area>300,320,425,25</area>
+            <font>small</font>
+            <case>normal</case>
             <align>left,vcenter</align>
-            <alpha>192</alpha>
+            <template>Directed by %DIRECTOR%, %YEAR%</template>
         </textarea>
 
+        <textarea name="cast" from="director">
+            <area>300,370,425,100</area>
+            <font>smaller</font>
+            <multiline>yes</multiline>
+            <align>left,top</align>
+            <template>Cast: %cast%</template>
+            <alpha>128</alpha>
+        </textarea>
+	        
         <textarea name="description" from="textarea_base">
-            <area>345,340,365,210</area>
+            <area>300,490,425,180</area>
             <font>small</font>
             <case>normal</case>
             <align>justify</align>
             <multiline>yes</multiline>
+            <template>%00x00| - %%"|SUBTITLE|"\n%%|YEARSTARS| - %%DESCRIPTION%</template>
             <cutdown>yes</cutdown>
-<!--            <template>%DESCRIPTION% - %YEAR% - %STARS%</template>-->
         </textarea>
 
-        <textarea name="directorlabel" from="textarea_base">
-            <area>345,575,85,25</area>
+        <textarea name="starslbl" from="textarea_base">
+            <area>25,677,100,25</area>
             <font>title_verysmall_blue</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>255</alpha>
+            <case>upper</case>
             <align>left,vcenter</align>
-            <value>Director</value>
+            <value>Stars</value>
         </textarea>
 
-        <textarea name="director" from="textarea_base">
-            <area>435,575,265,25</area>
-            <font>small</font>
-            <case>normal</case>
-            <align>left,vcenter</align>
-            <value>N/A</value>
-        </textarea>
+        <statetype name="userratingstate" from="rating_base">
+            <position>90,670</position>
+        </statetype>
 
-        <textarea name="categorylabel" from="directorlabel">
-            <position>345,600</position>
-            <value>Category</value>
-        </textarea>
-
-        <textarea name="category" from="director">
-            <position>435,600</position>
-        </textarea>
-
-        <textarea name="ratinglabel" from="directorlabel">
-            <position>345,625</position>
+        <textarea name="ratinglbl" from="starslbl">
+            <position>300,677</position>
             <value>Rating</value>
         </textarea>
+        
 
-        <textarea name="userrating" from="director">
-            <position>435,625</position>
-            <template>%USERRATING% - %RATING% - %STARS%</template>
+        <textarea name="userrating" from="textarea_base">
+            <area>375,677,175,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <alpha>255</alpha>
+            <template>%USERRATING| - %%RATING%</template>
         </textarea>
 
-        <textarea name="seasonlabel" from="directorlabel">
-            <position>345,650</position>
-            <value>Season</value>
-        </textarea>
+         <imagetype name="banner">
+            <area>558,670,162,30</area>
+<!--            <mask>images/shared/BannerMask.png</mask>-->
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
 
-        <textarea name="s##e##" from="director">
-            <position>435,650</position>
-            <value>N/A</value>
-        </textarea>
-
-        <textarea name="novideos" from="description">
+       <textarea name="novideos" from="description">
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>    
        </textarea>
 
@@ -307,54 +306,144 @@
             <area>25,260,675,125</area>
         </imagetype>
 
+<!--
+        <imagetype name="coverart">
+            <area>25,260,250,375</area>
+            <filename>images/shared/DefaultDVDEmptyLong.png</filename>
+            <preserveaspect>yes</preserveaspect>
+            <reflection shear="0" scale="65" length="10"/>
+        </imagetype>
+-->
+ <!--       <group name="detailsbanner" depends="banner">-->
+	        <textarea name="title" from="textarea_base">
+	            <area>25,410,675,35</area>
+	            <font>title</font>
+	            <multiline>no</multiline>
+	            <cutdown>yes</cutdown>
+	            <case>upper</case>
+	            <align>left,vcenter</align>
+	            <template>%TITLE% %SUBTITLE% (%YEAR%)</template>
+	        </textarea>
+	
+	        <textarea name="description" from="textarea_base">
+	            <area>25,445,675,200</area>
+	            <font>small</font>
+	            <case>normal</case>
+	            <align>justify</align>
+	            <multiline>yes</multiline>
+	            <cutdown>yes</cutdown>
+	        </textarea>
+	
+	        <textarea name="directorlabel" from="textarea_base">
+	            <area>25,670,85,25</area>
+	            <font>title_verysmall_blue</font>
+	            <align>left,vcenter</align>
+	            <value>Director</value>
+	        </textarea>
+	
+	        <textarea name="director" from="textarea_base">
+	            <area>115,670,265,25</area>
+	            <font>title_small</font>
+	            <multiline>no</multiline>
+	            <alpha>255</alpha>
+	            <value>N/A</value>
+	        </textarea>
+	
+	        <textarea name="ratinglabel" from="directorlabel">
+	            <position>390,670</position>
+	            <value>Rating</value>
+	        </textarea>
+	
+	        <textarea name="userrating" from="director">
+	            <position>460,670</position>
+	            <template>%USERRATING%/10 - %RATING%</template>
+	        </textarea>
+	
+	        <statetype name="userratingstate" from="rating_base">
+	            <position>580,665</position>
+	        </statetype>
+
+<!--        </group>-->
+
+<!-- 
+       <group name="detailscoverart" depends="!banner">
         <textarea name="title" from="textarea_base">
-            <area>25,410,675,35</area>
+            <area>300,260,425,30</area>
             <font>title</font>
-            <multiline>no</multiline>
+            <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <case>upper</case>
-            <align>left,vcenter</align>
-            <template>%TITLE% %SUBTITLE% (%YEAR%)</template>
+            <align>left,bottom</align>
         </textarea>
 
+        <textarea name="genres" from="textarea_base">
+            <area>300,295,425,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>128</alpha>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <value>Unknown</value>
+        </textarea>
+
+        <textarea name="director" from="textarea_base">
+            <area>300,320,425,25</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>left,vcenter</align>
+            <template>Directed by %DIRECTOR%, %YEAR%</template>
+        </textarea>
+
+        <textarea name="cast" from="director">
+            <area>300,370,425,100</area>
+            <font>smaller</font>
+            <multiline>yes</multiline>
+            <align>left,top</align>
+            <template>Cast: %cast%</template>
+            <alpha>128</alpha>
+        </textarea>
+	        
         <textarea name="description" from="textarea_base">
-            <area>25,445,675,200</area>
+            <area>300,490,425,180</area>
             <font>small</font>
             <case>normal</case>
             <align>justify</align>
             <multiline>yes</multiline>
+            <template>%00x00| - %%"|SUBTITLE|"\n%%|YEARSTARS| - %%DESCRIPTION%</template>
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="directorlabel" from="textarea_base">
-            <area>25,670,85,25</area>
+        <textarea name="starslbl" from="textarea_base">
+            <area>25,677,100,25</area>
             <font>title_verysmall_blue</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>255</alpha>
+            <case>upper</case>
             <align>left,vcenter</align>
-            <value>Director</value>
-        </textarea>
-
-        <textarea name="director" from="textarea_base">
-            <area>115,670,265,25</area>
-            <font>small</font>
-            <case>normal</case>
-            <align>left,vcenter</align>
-            <value>N/A</value>
-        </textarea>
-
-        <textarea name="ratinglabel" from="directorlabel">
-            <position>400,670</position>
-            <value>Rating</value>
-        </textarea>
-
-        <textarea name="userrating" from="director">
-            <position>470,670</position>
-            <template>%USERRATING%/10 - %RATING%</template>
+            <value>Stars</value>
         </textarea>
 
         <statetype name="userratingstate" from="rating_base">
-            <position>580,665</position>
+            <position>90,670</position>
         </statetype>
 
+        <textarea name="ratinglbl" from="starslbl">
+            <position>300,677</position>
+            <value>Rating</value>
+        </textarea>
+        
+        <textarea name="userrating" from="textarea_base">
+            <area>375,677,175,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <alpha>255</alpha>
+            <template>%USERRATING| - %%RATING%</template>
+        </textarea>
+        </group>
+ -->
+ 
         <textarea name="novideos" from="description">
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>    
        </textarea>
@@ -450,7 +539,7 @@
             <value>Movie Details</value>
         </textarea>
 
-        <textarea name="category" from="textarea_base">
+        <textarea name="genres" from="textarea_base">
             <area>345,300,400,25</area>
             <font>small</font>
             <case>normal</case>
@@ -458,17 +547,17 @@
             <value>None</value>
         </textarea>
 
-        <textarea name="year" from="category">
+        <textarea name="year" from="genres">
             <position>345,325</position>
             <value>N/A</value>
         </textarea>
 
-        <textarea name="length" from="category">
+        <textarea name="length" from="genres">
             <position>345,350</position>
             <value>N/A</value>
         </textarea>
 
-        <textarea name="rating" from="category">
+        <textarea name="rating" from="genres">
             <position>345,375</position>
             <value>N/A</value>
         </textarea>
@@ -482,7 +571,7 @@
             <position>345,445</position>
         </statetype>
 
-       <textarea name="userrating" from="category">
+       <textarea name="userrating" from="genres">
             <position>480,450</position>
             <template>%USERRATING%/10</template>
         </textarea>
@@ -493,9 +582,19 @@
             <value>Director</value>
         </textarea>
 
-        <textarea name="director" from="category">
+        <textarea name="director" from="genres">
             <position>850,300</position>
             <value>N/A</value>
+        </textarea>
+
+        <textarea name="castlbl" from="MovieDetailslbl">
+            <position>850,350</position>
+            <value>Cast</value>
+        </textarea>
+
+        <textarea name="cast" from="genres">
+            <position>850,375</position>
+            <value>Unknown</value>
         </textarea>
 
         <textarea name="Seasonlbl" from="MovieDetailslbl">
@@ -503,9 +602,8 @@
             <value>Season and Episode</value>
         </textarea>
 
-        <textarea name="s##e##" from="category">
+        <textarea name="##x##" from="genres">
             <position>850,450</position>
-            <value>N/A</value>
         </textarea>
 
     </window>
@@ -564,18 +662,18 @@
 
         <textarea name="StarRatinglbl" from="textarea_base">
             <area>820,680,120,25</area>
-            <font>normal</font>
+            <font>title_verysmall_blue</font>
             <case>upper</case>
             <align>left,vcenter</align>
-            <value>Star rating:</value>
+            <value>Star rating</value>
         </textarea>
 
         <statetype name="userratingstate" from="rating_base">
-            <position>940,673</position>
+            <position>930,673</position>
         </statetype>
 
        <textarea name="userrating" from="textarea_base">
-            <area>1030,680,100,25</area>
+            <area>1010,680,100,25</area>
             <font>small</font>
             <align>right,bottom</align>
             <template>%USERRATING%/10</template>
@@ -981,25 +1079,25 @@
             <value>Movie Details</value>
         </textarea>
 
-        <textarea name="category" from="textarea_base">
-            <area>380,360,400,25</area>
+        <textarea name="genres" from="textarea_base">
+            <area>380,360,325,25</area>
             <font>small</font>
             <case>normal</case>
             <align>left,vcenter</align>
             <value>N/A</value>
         </textarea>
 
-        <textarea name="year" from="category">
+        <textarea name="year" from="genres">
             <position>380,385</position>
             <value>N/A</value>
         </textarea>
 
-        <textarea name="length" from="category">
+        <textarea name="length" from="genres">
             <position>380,410</position>
             <value>N/A</value>
         </textarea>
 
-        <textarea name="rating" from="category">
+        <textarea name="rating" from="genres">
             <position>380,435</position>
             <value>N/A</value>
         </textarea>
@@ -1013,7 +1111,7 @@
             <position>380,505</position>
         </statetype>
 
-       <textarea name="userrating" from="category">
+       <textarea name="userrating" from="genres">
             <area>515,510,100,25</area>
             <template>%USERRATING%/10</template>
         </textarea>
@@ -1023,9 +1121,19 @@
             <value>Director</value>
         </textarea>
 
-        <textarea name="director" from="category">
+        <textarea name="director" from="genres">
             <area>750,360,420,25</area>
             <value>N/A</value>
+        </textarea>
+
+        <textarea name="castlbl" from="MovieDetailslbl">
+            <position>750,410</position>
+            <value>Cast</value>
+        </textarea>
+
+        <textarea name="cast" from="genres">
+            <position>750,435</position>
+            <value>Unknown</value>
         </textarea>
 
         <textarea name="Seasonlbl" from="MovieDetailslbl">
@@ -1033,9 +1141,8 @@
             <value>Season and Episode:</value>
         </textarea>
 
-        <textarea name="s##e##" from="director">
+        <textarea name="##x##" from="genres">
             <position>750,510</position>
-            <value>N/A</value>
         </textarea>
 
         <button name="play_button" from="button_base">

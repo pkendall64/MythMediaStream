@@ -3172,10 +3172,10 @@
        <textarea name="message" from="textarea_base">
            <area>20,35,480,70</area>
            <align>allcenter</align>
-           <font>popup_title</font>
+           <font>normal</font>
        </textarea>
        <textarea name="progresstext" from="textarea_base">
-            <area>20,105,480,35</area>
+            <area>20,115,480,25</area>
             <font>small</font>
             <align>allcenter</align>
             <value>0%</value>

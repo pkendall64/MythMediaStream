@@ -385,15 +385,17 @@
             <template>%TIME%</template>
             <align>right,top</align>
         </clock>
-        <imagetype name="iconpath">
-            <area>30,100,100,100</area>
-        </imagetype>
-        <imagetype name="coverart">
+        <imagetype name="iconpath" depends="!coverart">
             <area>30,100,100,100</area>
             <preserveaspect>no</preserveaspect>
         </imagetype>
+        
+        <imagetype name="coverart">
+            <area>30,100,67,100</area>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
 
-        <textarea name="description">
+        <textarea name="description" depends="!coverart">
             <font>small</font>
             <area>160,100,1110,70</area>
             <align>justify</align>
@@ -401,6 +403,14 @@
             <template>%"|SUBTITLE|" %%LONGREPEAT%%(|STARS|) %%DESCRIPTION%</template>
         </textarea>
 
+        <textarea name="subtitle" depends="coverart">
+            <font>small</font>
+            <area>127,100,1143,70</area>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <template>%"|SUBTITLE|" %%LONGREPEAT%%(|STARS|) %%DESCRIPTION%</template>
+        </textarea>
+	     
         <!-- ===================================================== -->
         <!--   INFO ICONS                                          -->
         <!-- ===================================================== -->
