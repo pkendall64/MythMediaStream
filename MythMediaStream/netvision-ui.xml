@@ -425,14 +425,23 @@
         </buttontree>
 
         <imagetype name="preview">
-            <area>25,260,400,225</area>
+            <area>25,260,350,197</area>
             <preserveaspect>no</preserveaspect>
-            <filename>images/shared/Take2RaspberryWide.png</filename>
-            <reflection shear="0" scale="65" length="15"/>
+            <filename>images/shared/defaultNetworkBigWide.png</filename>
+            <reflection shear="0" scale="65" length="18"/>
         </imagetype>
 
- from="image_wallpaper_base"        <textarea name="author" from="textarea_base">
-            <area>450,260,275,25</area>
+        <textarea name="title" from="textarea_base">
+            <area>400,260,325,85</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,bottom</align>
+        </textarea>
+
+        <textarea name="author" from="textarea_base">
+            <area>400,350,325,25</area>
             <font>title_small</font>
             <multiline>no</multiline>
             <cutdown>yes</cutdown>
@@ -441,80 +450,50 @@
             <align>left,top</align>
         </textarea>
 
-        <textarea name="title" from="textarea_base">
-            <area>450,285,275,90</area>
-            <font>title</font>
-            <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
-            <case>upper</case>
-            <align>left,top</align>
-        </textarea>
-
-        <textarea name="lengthlbl">
-            <area>450,395,150,25</area>
-            <font>title_verysmall_blue</font>
+        <textarea name="date" from="textarea_base">
+            <area>400,395,325,25</area>
+            <font>smaller</font>
+            <case>normal</case>
             <align>left,vcenter</align>
-            <value>Length</value>
+            <template>Published on %date%</template>
+            <alpha>128</alpha>
         </textarea>
-
-        <textarea name="length">
-            <area>555,395,200,25</area>
-            <font>small</font>
+        
+        <textarea name="resolution" from="textarea_base">
+            <area>400,445,325,25</area>
+            <font>smaller</font>
+            <case>normal</case>
             <align>left,vcenter</align>
+            <template>%RESOLUTION|, %%filesize_str| %%(|length|)%</template>
+            <alpha>128</alpha>
         </textarea>
 
-        <textarea name="resolutionlbl" from="lengthlbl">
-            <position>450,420</position>
-            <value>Resolution</value>
+        <textarea name="countries" from="textarea_base">
+            <area>400,420,325,25</area>
+            <font>smaller</font>
+            <case>normal</case>
+            <align>left,vcenter</align>
+            <template>Available in %countries%</template>
+            <alpha>128</alpha>
         </textarea>
-
-        <textarea name="resolution" from="length">
-            <position>555,420</position>
-        </textarea>
-
-        <textarea name="filesize_strlbl" from="lengthlbl">
-            <position>450,445</position>
-            <value>Size</value>
-        </textarea>
-
-        <textarea name="filesize_str" from="length">
-            <position>555,445</position>
-        </textarea>
-
-        <textarea name="downloadablelbl" from="lengthlbl">
-            <position>450,470</position>
-            <value>Download</value>
-        </textarea>
-
-        <statetype name="downloadable">
-            <area>555,470,200,25</area>
-            <state name="yes">
-                <textarea name="yestext">
-                    <area>0,0,200,25</area>
-                    <font>small</font>
-                    <case>normal</case>
-                    <align>left,vcenter</align>
-                    <value>Yes</value>
-                </textarea>
-            </state>
-            <state name="no">
-                <textarea name="notext">
-                    <area>0,0,200,25</area>
-                    <font>small</font>
-                    <case>normal</case>
-                    <align>left,vcenter</align>
-                    <value>No</value>
-                </textarea>
-            </state>
-        </statetype>
 
         <textarea name="description" from="textarea_base">
-            <area>25,540,695,120</area>
+            <area>25,490,700,170</area>
             <font>small</font>
             <case>normal</case>
-            <align>justify</align>
+            <align>left,top</align>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
+            <template>%00x00| - %%"|SUBTITLE|"\n%%|RATING| - %%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="mediaurl" from="textarea_base">
+            <area>255,685,470,25</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>left,vcenter</align>
+            <scroll direction="left" />
+            <alpha>64</alpha>
         </textarea>
 
         <textarea name="nosites" from="description">
@@ -524,27 +503,26 @@
         <!-- ===================================================== -->
         <!--   INFO ICONS                                          -->
         <!-- ===================================================== -->
-        <imagetype name="autoexpire_icon_off">
-            <area>25,670,30,30</area>
-            <preserveaspect>no</preserveaspect>
-            <filename>images/shared/OSDRepeatNF.png</filename>
-        </imagetype>
-        <imagetype name="commflagged_icon_off" from="autoexpire_icon_off">
-            <area>70,670,30,30</area>
-            <filename>images/shared/OSDPresetSettingsNF.png</filename>
-        </imagetype>
-        <imagetype name="bookmark_icon_off" from="autoexpire_icon_off">
-            <area>115,670,30,30</area>
-            <filename>images/shared/OSDBookmarksNF.png</filename>
-        </imagetype>
-        <imagetype name="cutlist_icon_off" from="autoexpire_icon_off">
-            <area>160,670,30,30</area>
-            <filename>images/shared/OSDVideoNF.png</filename>
-        </imagetype>
-        <imagetype name="playlist_icon_off" from="autoexpire_icon_off">
-            <area>205,670,30,30</area>
-            <filename>images/shared/OSDPlaylistNF.png</filename>
-        </imagetype>
+        <!-- now just for decoration, hopefully we will get here real status information-->
+        
+       <imagetype name="defaultsub">
+           <area>25,670,74,50</area>
+           <alpha>64</alpha>
+           <preserveaspect>no</preserveaspect>
+           <filename>images/flags/onscreensub.png</filename>
+       </imagetype>
+       <imagetype name="defaultvideo">
+           <area>95,670,74,50</area>
+           <preserveaspect>no</preserveaspect>
+           <alpha>64</alpha>
+           <filename>images/flags/576i.png</filename>
+       </imagetype>
+       <imagetype name="defaultaudio">
+           <area>170,670,74,50</area>
+           <preserveaspect>no</preserveaspect>
+           <alpha>64</alpha>
+           <filename>images/flags/dd20.png</filename>
+       </imagetype>
 
     </window>
 
