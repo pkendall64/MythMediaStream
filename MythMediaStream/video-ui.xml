@@ -204,23 +204,13 @@
 
         <textarea name="director" from="textarea_base">
             <area>300,320,425,25</area>
-            <font>small</font>
-            <case>normal</case>
             <align>left,vcenter</align>
+            <case>upper</case>
             <template>Directed by %DIRECTOR%, %YEAR%</template>
         </textarea>
 
-        <textarea name="cast" from="director">
-            <area>300,370,425,100</area>
-            <font>smaller</font>
-            <multiline>yes</multiline>
-            <align>left,top</align>
-            <template>Cast: %cast%</template>
-            <alpha>128</alpha>
-        </textarea>
-	        
         <textarea name="description" from="textarea_base">
-            <area>300,490,425,180</area>
+            <area>300,370,425,180</area>
             <font>small</font>
             <case>normal</case>
             <align>justify</align>
@@ -229,6 +219,16 @@
             <cutdown>yes</cutdown>
         </textarea>
 
+        <textarea name="cast" from="director">
+            <area>300,575,425,75</area>
+            <font>smaller</font>
+            <case>normal</case>
+            <multiline>yes</multiline>
+            <align>left,top</align>
+            <template>Cast: %cast%</template>
+            <alpha>128</alpha>
+        </textarea>
+	        
         <textarea name="starslbl" from="textarea_base">
             <area>25,677,100,25</area>
             <font>title_verysmall_blue</font>
@@ -524,7 +524,7 @@
             <case>normal</case>
             <align>justify</align>
             <multiline>yes</multiline>
-            <cutdown>yes</cutdown>-->
+            <cutdown>yes</cutdown>
         </textarea>
 
         <textarea name="novideos" from="description">
@@ -544,22 +544,18 @@
             <font>small</font>
             <case>normal</case>
             <align>left,vcenter</align>
-            <value>None</value>
         </textarea>
 
         <textarea name="year" from="genres">
             <position>345,325</position>
-            <value>N/A</value>
         </textarea>
 
         <textarea name="length" from="genres">
             <position>345,350</position>
-            <value>N/A</value>
         </textarea>
 
         <textarea name="rating" from="genres">
             <position>345,375</position>
-            <value>N/A</value>
         </textarea>
 
         <textarea name="StarRatinglbl" from="MovieDetailslbl">
@@ -573,7 +569,7 @@
 
        <textarea name="userrating" from="genres">
             <position>480,450</position>
-            <template>%USERRATING%/10</template>
+            <template>%(|USERRATING)%</template>
         </textarea>
 
 
@@ -584,7 +580,6 @@
 
         <textarea name="director" from="genres">
             <position>850,300</position>
-            <value>N/A</value>
         </textarea>
 
         <textarea name="castlbl" from="MovieDetailslbl">
@@ -594,7 +589,6 @@
 
         <textarea name="cast" from="genres">
             <position>850,375</position>
-            <value>Unknown</value>
         </textarea>
 
         <textarea name="Seasonlbl" from="MovieDetailslbl">
@@ -634,7 +628,7 @@
         <!--     VIDEO GALLERY                                     -->
         <!-- ===================================================== -->
         <buttonlist name="videos" from="buttonlist_gallery">
-            <position>0,260</position>
+            <position>25,260</position>
         </buttonlist>
 
         <!-- ===================================================== -->
@@ -643,11 +637,12 @@
         <textarea name="title" from="textarea_base">
             <area>820,260,440,35</area>
             <font>title</font>
+            <scroll direction="left" />
             <multiline>no</multiline>
             <cutdown>yes</cutdown>
             <case>upper</case>
             <align>left,vcenter</align>
-<!--            <template>%TITLE% %SUBTITLE%</template>-->
+            <template>%TITLE%% - |SUBTITLE%</template>
         </textarea>
 
         <textarea name="description" from="textarea_base">
@@ -656,8 +651,8 @@
             <case>normal</case>
             <align>justify</align>
             <multiline>yes</multiline>
-            <cutdown>yes</cutdown>-->
-<!--            <template>%DESCRIPTION% - %YEAR% - %STARS%</template>-->
+            <cutdown>yes</cutdown>
+<!--            <template>%##X##% - %description%</template>-->
         </textarea>
 
         <textarea name="StarRatinglbl" from="textarea_base">
@@ -672,11 +667,11 @@
             <position>930,673</position>
         </statetype>
 
-       <textarea name="userrating" from="textarea_base">
+        <textarea name="userrating" from="textarea_base">
             <area>1010,680,100,25</area>
             <font>small</font>
             <align>right,bottom</align>
-            <template>%USERRATING%/10</template>
+            <template>%(|USERRATING)%</template>
         </textarea>
 
     </window>

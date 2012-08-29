@@ -239,14 +239,14 @@
 	
 	        <textarea name="longchannel" from="textarea_base">
 	            <area>400,320,325,25</area>
-	            <font>small</font>
-	            <case>normal</case>
 	            <align>left,vcenter</align>
+	            <case>upper</case>
 	        </textarea>
 	
 	        <textarea name="startdate" from="longchannel">
 	            <position>400,370</position>
 	            <font>smaller</font>
+	            <case>normal</case>
 	            <template>Aired %startdate%, %starttime% - %endtime%</template>
 	            <alpha>128</alpha>
 	        </textarea>
@@ -261,7 +261,7 @@
 	            <template>Next recording: %rectypestatus%</template>
 	        </textarea>
 	
-	        <textarea name="inetref" from="startdate">
+<!--	        <textarea name="inetref" from="startdate">
 	            <position>400,445</position>
 	            <template>Grabber ID: %inetref%</template>
 	        </textarea>
@@ -269,7 +269,7 @@
 	        <textarea name="programid" from="startdate" depends="!inetref">
 	            <position>400,445</position>
 	            <template>Program ID: %programid%</template>
-	        </textarea>
+	        </textarea>-->
 	
 	        <textarea name="subtitle" from="textarea_base">
 	            <area>25,490,700,170</area>
@@ -315,6 +315,7 @@
        <!--     NO RECORDINGS TEXT                                -->
        <!-- ===================================================== -->
        <textarea name="norecordings" from="subtitle">
+            <area>400,260,325,180</area>
             <value>No recordings available, please schedule recordings first in order to watch them here</value>
         </textarea>
     </window>

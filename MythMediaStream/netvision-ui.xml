@@ -572,9 +572,9 @@
             <area>345,125,915,125</area>
             <font>small</font>
             <case>normal</case>
-            <align>justify</align>
+            <align>left,top</align>
             <multiline>yes</multiline>
-            <cutdown>yes</cutdown>-->
+            <cutdown>yes</cutdown>
         </textarea>
 
         <textarea name="nosites" from="description">
@@ -594,22 +594,22 @@
             <font>small</font>
             <case>normal</case>
             <align>left,vcenter</align>
-            <value>None</value>
+            <value>No Resolution details available</value>
         </textarea>
 
         <textarea name="date" from="resolution">
             <position>345,325</position>
-            <value>N/A</value>
+            <value>Date unknown</value>
         </textarea>
 
         <textarea name="length" from="resolution">
             <position>345,350</position>
-            <value>N/A</value>resolution
+            <value>Length unknown</value>resolution
         </textarea>
 
         <textarea name="rating" from="resolution">
             <position>345,375</position>
-            <value>N/A</value>
+            <value>No rating</value>
         </textarea>
 
         <textarea name="Urllbl" from="MovieDetailslbl">
@@ -619,8 +619,9 @@
 
        <textarea name="mediaurl" from="resolution">
             <position>345,450</position>
+            <scroll direction="left" />
+            <value></value>
         </textarea>
-
 
         <textarea name="Directorlbl" from="MovieDetailslbl">
             <position>850,275</position>
@@ -629,7 +630,7 @@
 
         <textarea name="author" from="resolution">
             <position>850,300</position>
-            <value>N/A</value>
+            <value>Unknown</value>
         </textarea>
 
         <textarea name="Seasonlbl" from="MovieDetailslbl">
@@ -637,9 +638,9 @@
             <value>Season and Episode</value>
         </textarea>
 
-        <textarea name="s##e##" from="resolution">
+        <textarea name="##x##" from="resolution">
             <position>850,450</position>
-            <value>s00e00</value>
+            <value></value>
         </textarea>
 
     </window>
@@ -667,7 +668,7 @@
         <!--     VIDEO GALLERY                                     -->
         <!-- ===================================================== -->
         <buttonlist name="videos" from="buttonlist_gallery">
-            <position>0,260</position>
+            <position>25,260</position>
         </buttonlist>
 
         <!-- ===================================================== -->
@@ -687,7 +688,7 @@
             <area>820,295,440,355</area>
             <font>small</font>
             <case>normal</case>
-            <align>justify</align>
+            <align>left,top</align>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>-->
 <!--            <template>%DESCRIPTION% - %YEAR% - %STARS%</template>-->
@@ -699,10 +700,10 @@
 
         <textarea name="authorlbl" from="textarea_base">
             <area>820,680,120,25</area>
-            <font>normal</font>
+            <font>title_verysmall_blue</font>
             <case>upper</case>
             <align>left,vcenter</align>
-            <value>Author:</value>
+            <value>Author</value>
         </textarea>
 
        <textarea name="author" from="textarea_base">

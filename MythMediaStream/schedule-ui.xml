@@ -13,6 +13,15 @@
             <value>PROGRAM GUIDE</value>
         </textarea>
 
+        <textarea name="datetext" from="textarea_base">
+            <area>1112,5,146,40</area>
+            <font>normal</font>
+            <case>lower</case>
+            <align>allcenter</align>
+            <multiline>no</multiline>
+            <cutdown>no</cutdown>
+        </textarea>
+
         <!-- ===================================================== -->
         <!-- PROGRAM GUIDE                                         -->
         <!-- ===================================================== -->
@@ -29,7 +38,7 @@
             <solidcolor>#000000</solidcolor>
             <selector type="highlight" linecolor="#105B8F" fillcolor="#105B8F"/>
             <showcategories>yes</showcategories>
-            <showcategorycolors>no</showcategorycolors>
+            <showcategorycolors>yes</showcategorycolors>
             <categoryalpha>80</categoryalpha>
             <recordingcolor>#E0991A</recordingcolor>
             <conflictingcolor>#F92626</conflictingcolor>
@@ -100,11 +109,7 @@
 
         <imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
 
-        <textarea name="datetext" from="screentitle2"/>
-
-        <imagetype name="TitleBackgroundUpdate" from="titlebackground3"/>
-
-        <textarea name="channelgroup" from="screentitle3" />
+        <textarea name="channelgroup" from="screentitle2"/>
 
         <buttonlist name="channellist">
             <area>120,71,1140,30</area>
@@ -179,6 +184,15 @@
             <value>PROGRAM GUIDE</value>
         </textarea>
 
+        <textarea name="datetext" from="textarea_base">
+            <area>1112,5,146,40</area>
+            <font>normal</font>
+            <case>lower</case>
+            <align>allcenter</align>
+            <multiline>no</multiline>
+            <cutdown>no</cutdown>
+        </textarea>
+
         <!-- ===================================================== -->
         <!-- PROGRAM GUIDE                                         -->
         <!-- ===================================================== -->
@@ -195,7 +209,7 @@
             <solidcolor>#000000</solidcolor>
             <selector type="highlight" linecolor="#105B8F" fillcolor="#105B8F"/>
             <showcategories>yes</showcategories>
-            <showcategorycolors>no</showcategorycolors>
+            <showcategorycolors>yes</showcategorycolors>
             <categoryalpha>80</categoryalpha>
             <recordingcolor>#E0991A</recordingcolor>
             <conflictingcolor>#F92626</conflictingcolor>
@@ -266,11 +280,7 @@
 
         <imagetype name="TitleBackgroundDateText" from="titlebackground2"/>
 
-        <textarea name="datetext" from="screentitle2"/>
-
-        <imagetype name="TitleBackgroundUpdate" from="titlebackground3"/>
-
-        <textarea name="channelgroup" from="screentitle3" />
+        <textarea name="channelgroup" from="screentitle2"/>
 
         <buttonlist name="channellist">
             <area>120,71,1140,30</area>

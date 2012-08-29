@@ -183,196 +183,6 @@
     </statetype>
 
     <!-- current playlist button list -->
-<!--    <buttonlist name="basecurrentplaylist" from="basebuttonlist2">
-        <area>35,20,1210,340</area>
-        <spacing>4</spacing>
-        <layout>vertical</layout>
-        <arrange>stack</arrange>
-        <showarrow>no</showarrow>
-        <buttonarea>0,0,1210,340</buttonarea>
-        <statetype name="buttonitem">
-            <state name="active">
-                <area>0,0,1210,35</area>
-                <imagetype name="buttonimage">
-                    <area>5,0,35,35</area>
-                    <filename>mm_nothumb.png</filename>
-                </imagetype>
-
-                <statetype name="playstate">
-                    <position>1180,0</position>
-                    <state name="playing">
-                        <imagetype name="animation">
-                            <position>0,0</position>
-                            <filepattern low="1" high="8">mm_playing_%1.png</filepattern>
-                            <delay>160</delay>
-                        </imagetype>
-                    </state>
-                    <state name="paused">
-                        <imagetype name="animation">
-                            <position>5,5</position>
-                            <filename>mm_pauseicon.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="stopped">
-                        <imagetype name="animation">
-                            <position>5,5</position>
-                            <filename>mm_stopicon.png</filename>
-                        </imagetype>
-                    </state> 
-                </statetype>
-
-                <statetype name="movestate" from="basemovingtracksstate">
-                    <position>1185,65</position>
-                </statetype>
-
-                <textarea name="title" from="buttontext">
-                    <area>150,0,520,35</area>
-                    <align>left,vcenter</align>
-                    <font>basesmall</font>
-                </textarea>
-
-                <textarea name="artist" from="buttontext">
-                    <area>700,0,350,35</area>
-                    <font>basesmall</font>
-                    <align>left,vcenter</align>
-                </textarea>
-                <textarea name="tracknum" from="artist">
-                    <area>90,0,50,35</area>
-                    <align>right,vcenter</align>
-                    <template>%1 -</template>
-                </textarea>
-                <textarea name="length" from="artist">
-                    <area>1040,0,120,35</area>
-                    <align>right,vcenter</align>
-                    <font>basesmall</font>
-                </textarea>
-            </state>
-            <state name="selectedactive" from="active">
-                <area>0,0,1210,90</area>
-                <imagetype name="buttonimage">
-                    <area>5,5,80,80</area>
-                    <filename>mm_nothumb.png</filename>
-                </imagetype>
-                <shape name="selectbar">
-                    <area>0,0,1210,90</area>
-                </shape>
-
-                <textarea name="title" from="buttontext">
-                    <area>150,0,520,35</area>
-                    <align>left,top</align>
-                    <font>basesmall</font>
-                </textarea>
-
-                <textarea name="artist" from="buttontext">
-                    <area>700,0,350,35</area>
-                    <font>basesmall</font>
-                    <align>left,top</align>
-                </textarea>
-                <textarea name="tracknum" from="artist">
-                    <area>90,0,50,35</area>
-                    <align>right,top</align>
-                    <template>%1 -</template>
-                </textarea>
-                <textarea name="length" from="artist">
-                    <area>1040,0,120,35</area>
-                    <align>right,top</align>
-                    <font>basesmall</font>
-                </textarea>
-
-                <textarea name="album" from="buttontext">
-                    <area>150,30,520,30</area>
-                    <font>basesmall</font>
-                    <align>left,top</align>
-                </textarea>
-                <textarea name="genre" from="buttontext">
-                    <area>700,30,300,30</area>
-                    <font>basesmall</font>
-                    <align>left,top</align>
-                </textarea>
-
-                <statetype name="ratingstate" from="rating_base">
-                    <position>150,63</position>
-                </statetype>
-                <textarea name="lastplayed" from="buttontext">
-                    <area>700,60,250,30</area>
-                    <font>basesmall</font>
-                </textarea>
-                <textarea name="playcount" from="buttontext">
-                    <area>940,60,220,30</area>
-                    <align>right,top</align>
-                    <font>basesmall</font>
-                    <template>Played %1 times</template>
-                </textarea>
-                <statetype name="playstate">
-                    <position>1180,30</position>
-                </statetype>
-            </state>
-            <state name="selectedinactive" from="active">
-                <area>0,0,1210,90</area>
-                <imagetype name="buttonimage">
-                    <area>5,5,80,80</area>
-                    <filename>mm_nothumb.png</filename>
-                </imagetype>
-                <shape name="selectbar">
-                    <area>0,0,1210,90</area>
-                </shape>
-
-                <textarea name="title" from="buttontext">
-                    <area>150,0,520,35</area>
-                    <align>left,top</align>
-                    <font>basesmall</font>
-                </textarea>
-                <textarea name="artist" from="buttontext">
-                    <area>700,0,350,35</area>
-                    <font>basesmall</font>
-                    <align>left,top</align>
-                </textarea>
-                <textarea name="tracknum" from="artist">
-                    <area>90,0,50,35</area>
-                    <align>right,top</align>
-                    <template>%1 -</template>
-                </textarea>
-                <textarea name="length" from="artist">
-                    <area>1040,0,120,35</area>
-                    <align>right,top</align>
-                    <font>basesmall</font>
-                </textarea>
-
-                <textarea name="album" from="buttontext">
-                    <area>150,30,520,30</area>
-                    <font>basesmall</font>
-                    <align>left,top</align>
-                </textarea>
-                <textarea name="genre" from="buttontext">
-                    <area>700,30,300,30</area>
-                    <font>basesmall</font>
-                    <align>left,top</align>
-                </textarea>
-
-                <statetype name="ratingstate" from="baseratingstate">
-                    <position>150,63</position>
-                </statetype>
-                <textarea name="lastplayed" from="buttontext">
-                    <area>700,60,250,30</area>
-                </textarea>
-                <textarea name="playcount" from="buttontext">
-                    <area>940,60,220,30</area>
-                    <align>right,top</align>
-                    <font>basesmall</font>
-                    <template>Played %1 times</template>
-                </textarea>
-                <statetype name="playstate">
-                    <position>1180,30</position>
-                </statetype>
-            </state>
-        </statetype>
-        <statetype name="upscrollarrow">
-            <position>1150,345</position>
-        </statetype>
-        <statetype name="downscrollarrow">
-            <position>1180,345</position>
-        </statetype>
-    </buttonlist>-->
 
      <buttonlist name="basecurrentplaylist" from="buttonlist_menu_details_permanent">
          <position>740,260</position>
@@ -391,6 +201,7 @@
              <state name="selectedactive">
                  <textarea name="title" from="textarea_base">
                      <area>10,0,350,40</area>
+                     <scroll direction="left" />
                      <font state="error">normal_red</font>
                      <font state="running">normal_amber</font>
                      <align>left,vcenter</align>
@@ -635,7 +446,7 @@
                     </state>
                 </statetype>
                 <statetype name="buttoncheck">
-                    <position>0,0</position>
+                    <position>20,20</position>
                     <showempty>yes</showempty>
                     <state type="full">
                         <imagetype name="marked">
@@ -654,7 +465,7 @@
             <state name="selectedactive">
                 <area>0,0,150,150</area>
                 <imagetype name="buttonimage">
-                    <area>5,5,140,140</area>
+                    <area>0,0,150,150</area>
                     <filename>images/music/MM_Music.png</filename>
                 </imagetype>
                 <statetype name="nodetype">
@@ -721,7 +532,7 @@
                     </state>
                 </statetype>
                 <statetype name="buttoncheck">
-                    <position>0,0</position>
+                    <position>4,4</position>
                     <showempty>yes</showempty>
                     <state type="full">
                         <imagetype name="marked">
@@ -729,11 +540,13 @@
                         </imagetype>
                     </state>
                 </statetype>
-<!--                <textarea name="buttontext" from="textarea_base">
+                <textarea name="buttontext" from="textarea_base">
                     <area>5,130,140,20</area>
                     <align>hcenter,vcenter</align>
-                    <font>tiny</font>
-                </textarea>-->
+                    <scroll direction="left" />
+                    <weight>bold</weight>
+                    <font state="default">tiny_blue</font>
+                </textarea>		              
             </state>
         </statetype>
     </buttonlist>

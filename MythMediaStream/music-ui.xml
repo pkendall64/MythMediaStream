@@ -212,12 +212,12 @@
         <!-- ===================================================== -->
 
         <!-- optional - shows path to current item -->
-        <textarea name="breadcrumbs" from="textarea_base">
+<!--        <textarea name="breadcrumbs" from="textarea_base">
             <area>450,5,650,45</area>
             <case>normal</case>
             <font>verysmall</font>
             <align>left,vcenter</align>
-        </textarea>
+        </textarea>-->
 
         <buttontree name="playlist_tree">
 		      <area>740,260,540,440</area>
@@ -270,15 +270,15 @@
         <!-- ===================================================== -->
 
         <!-- optional - shows path to current item -->
-        <textarea name="breadcrumbs" from="textarea_base">
+<!--        <textarea name="breadcrumbs" from="textarea_base">
             <area>450,5,650,45</area>
             <case>normal</case>
             <font>verysmall</font>
             <align>left,vcenter</align>
-        </textarea>
+        </textarea>-->
 
         <buttontree name="playlist_tree">
-            <area>0,260,800,450</area>
+            <area>25,260,800,450</area>
             <numlists>1</numlists>
             <spacing>0</spacing>
             <buttonlist name="listtemplate" from="basegallerybuttonlist" />
