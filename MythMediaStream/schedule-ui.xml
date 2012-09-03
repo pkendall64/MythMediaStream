@@ -345,7 +345,7 @@
 
     <window name="manualschedule">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
@@ -453,7 +453,7 @@
 
     <window name="viewscheduled">
         <imagetype name="fanart" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
             <position>0,0</position>        
@@ -1030,7 +1030,7 @@
 
     <window name="phrasepopup">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
@@ -1106,7 +1106,7 @@
 
     <window name="timepopup">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
@@ -1168,7 +1168,7 @@
 
     <window name="powersearchpopup">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
@@ -1230,7 +1230,7 @@
 
     <window name="editpowersearchpopup">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2">
@@ -1328,7 +1328,7 @@
 
     <window name="programlist">
         <imagetype name="fanart" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
             <position>0,0</position>        
@@ -1521,7 +1521,7 @@
 
     <window name="progdetails">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
             <position>0,0</position>        
@@ -1597,7 +1597,7 @@
 
     <window name="programfind">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
             <position>0,0</position>        
@@ -1710,7 +1710,7 @@
 
     <window name="managerecrules">
         <imagetype name="fanart" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
             <position>0,0</position>        
@@ -1893,7 +1893,7 @@
 
     <window name="customedit">
         <imagetype name="background" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
@@ -2004,7 +2004,7 @@
 
     <window name="scheduleeditor">
         <imagetype name="fanart" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettingsScheduleeditor" from="defaultscreenlayoutSettings_2A_animated">
@@ -2182,7 +2182,7 @@
 
     <window name="scheduleoptionseditor">
         <imagetype name="fanart" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettingsScheduleoptionseditor" from="defaultscreenlayoutSettings_2C_animated">
@@ -2363,7 +2363,7 @@
 
     <window name="storageoptionseditor">
         <imagetype name="fanart" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettingsStorageoptionseditor" from="defaultscreenlayoutSettings_2C_animated">
@@ -2543,7 +2543,7 @@
 
     <window name="postproceditor">
         <imagetype name="fanart" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettingsPostproceditor" from="defaultscreenlayoutSettings_2C_animated">
@@ -2733,7 +2733,7 @@
     
     <window name="metadataoptions">
         <imagetype name="fanart" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <imagetype name="backgroundoverlay" from="background_overlay_base" />
         <group name="screenlayoutSettingsMetadataoptions" from="defaultscreenlayoutSettings_2C_animated">
@@ -2968,7 +2968,7 @@
     
     <window name="schedulediff">    
         <imagetype name="fanart" from="image_wallpaper_base">
-            <filename>images/backgrounds/tv-shows.png</filename>
+            <filename>images/backgrounds/remotecontrol.png</filename>
         </imagetype>
         <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
             <position>0,0</position>        

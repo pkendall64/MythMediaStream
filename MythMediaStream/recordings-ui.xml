@@ -161,9 +161,10 @@
         <!--     PROGRAM DETAILS when coverart available           -->
         <!-- ===================================================== -->
 
-<!--        <group name="preview_details" depends="coverart">
+<!--
+        <group name="preview_details" depends="coverart">
 	        <textarea name="title" from="textarea_base">
-	            <area>450,260,275,105</area>
+	            <area>300,260,425,30</area>
 	            <font>title</font>
 	            <multiline>yes</multiline>
 	            <cutdown>yes</cutdown>
@@ -173,44 +174,53 @@
 	        </textarea>
 	
 	        <textarea name="category" from="textarea_base">
-	            <area>450,370,275,25</area>
+	            <area>300,295,425,25</area>
 	            <font>title_small</font>
 	            <multiline>no</multiline>
 	            <cutdown>yes</cutdown>
 	            <alpha>128</alpha>
 	            <case>upper</case>
 	            <align>left,vcenter</align>
+	            <value>Unknown</value>
 	        </textarea>
 	
 	        <textarea name="longchannel" from="textarea_base">
-	            <area>450,395,275,25</area>
-	            <font>small</font>
-	            <case>normal</case>
+	            <area>300,320,425,25</area>
 	            <align>left,vcenter</align>
+	            <case>upper</case>
 	        </textarea>
 	
+	        <textarea name="subtitle" from="textarea_base">
+	            <area>300,370,425,180</area>
+	            <font>small</font>
+	            <case>normal</case>
+	            <align>justify</align>
+	            <multiline>yes</multiline>
+	            <template>%00x00| - %%"|SUBTITLE|"\n%%|YEARSTARS| - %%DESCRIPTION%</template>
+	            <cutdown>yes</cutdown>
+	        </textarea>
+
 	        <textarea name="startdate" from="longchannel">
-	            <position>450,445</position>
+	            <area>300,575,425,25</area>
 	            <font>smaller</font>
+	            <case>normal</case>
+	            <multiline>yes</multiline>
+	            <align>left,top</align>
 	            <template>Aired %startdate%, %starttime% - %endtime%</template>
 	            <alpha>128</alpha>
 	        </textarea>
 	
 	        <textarea name="storagegroup" from="startdate">
-	            <position>450,470</position>
+	            <position>300,600</position>
 	            <template>Using %filesize_str% of %storagegroup% Storage</template>
 	        </textarea>
 	
-	        <textarea name="description" from="textarea_base">
-	            <area>25,520,695,140</area>
-	            <font>small</font>
-	            <case>normal</case>
-	            <align>justify</align>
-	            <multiline>yes</multiline>
-	            <template>%YEARSTARS| %%DESCRIPTION%</template>
-	            <cutdown>yes</cutdown>
+ 	        <textarea name="rectypestatus" from="startdate">
+	            <position>300,625</position>
+	            <template>Next recording: %rectypestatus%</template>
 	        </textarea>
-        </group>-->
+       </group>
+       -->
 
         <!-- ===================================================== -->
         <!--     PROGRAM DETAILS when NO coverart available        -->
@@ -261,16 +271,6 @@
 	            <template>Next recording: %rectypestatus%</template>
 	        </textarea>
 	
-<!--	        <textarea name="inetref" from="startdate">
-	            <position>400,445</position>
-	            <template>Grabber ID: %inetref%</template>
-	        </textarea>
-	
-	        <textarea name="programid" from="startdate" depends="!inetref">
-	            <position>400,445</position>
-	            <template>Program ID: %programid%</template>
-	        </textarea>-->
-	
 	        <textarea name="subtitle" from="textarea_base">
 	            <area>25,490,700,170</area>
 	            <font>small</font>
@@ -282,11 +282,14 @@
 	        </textarea>
 <!--	     </group>-->
 
-<!--        <imagetype name="coverart">
+<!--
+        <imagetype name="coverart">
             <area>25,260,250,375</area>
+            <filename>images/shared/amt-blank-poster.png</filename>
             <preserveaspect>yes</preserveaspect>
             <reflection shear="0" scale="65" length="10"/>
-        </imagetype>-->
+        </imagetype>
+        -->
 
         <imagetype name="preview" depends="!coverart">
             <area>25,260,350,197</area>

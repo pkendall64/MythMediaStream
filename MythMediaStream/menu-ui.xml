@@ -55,7 +55,7 @@
            </state>
            <state name="GAME">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/game.jpg</filename>
+                   <filename>images/backgrounds/gameconsole.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
@@ -98,7 +98,7 @@
            </state>
            <state name="TV_SCHEDULE_RECORDINGS">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
@@ -116,7 +116,7 @@
            </state>-->
            <state name="TV_PREVIOUS">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
@@ -135,37 +135,37 @@
            </state>
            <state name="TV_PROGFIND">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_WORDS">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_LISTS">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_CUSTOM_RECORD">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_MANUAL_SCHEDULE">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_RECORDING_RULES">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
@@ -184,74 +184,74 @@
            <!-- ########  tv_search.xml  ########-->
            <state name="TV_SEARCH_TITLES">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_KEYWORDS">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_PEOPLE">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_POWER">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_STORED">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <!-- ########  tv_lists.xml  ########-->
            <state name="TV_SEARCH_NEW_TITLES">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_MOVIES">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_CATEGORIES">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_CHANNELS">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_TIMES">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_DESCRIPTIONS">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="TV_SEARCH_LISTINGS">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
@@ -442,25 +442,25 @@
            <!-- ########  game_settings.xml  ########-->
            <state name="GAME_SETTINGS_GENERAL">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/game.jpg</filename>
+                   <filename>images/backgrounds/gameconsole.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="GAME_SETTINGS_PLAYERS">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/game.jpg</filename>
+                   <filename>images/backgrounds/gameconsole.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="GAME_SCAN">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/game.jpg</filename>
+                   <filename>images/backgrounds/gameconsole.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="GAME_CLEAR_DATA">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/game.jpg</filename>
+                   <filename>images/backgrounds/gameconsole.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
@@ -545,7 +545,7 @@
            </state>
            <state name="SETTINGS_GAME">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/game.jpg</filename>
+                   <filename>images/backgrounds/gameconsole.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
@@ -768,7 +768,7 @@
            <!-- ########  AltMenus Specific Icons  ########-->
            <state name="TV_UPCOMING_RECORDINGS">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/tv-shows.png</filename>
+                   <filename>images/backgrounds/remotecontrol.png</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>

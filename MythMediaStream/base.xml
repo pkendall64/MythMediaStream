@@ -2817,6 +2817,55 @@
         </statetype>
     </group>
 
+    <group name="defaultvideodetails">
+        <area>0,0,425,390</area>
+        <textarea name="title" from="textarea_base">
+            <area>0,0,425,30</area>
+            <font>title</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,bottom</align>
+        </textarea>
+
+        <textarea name="genres" from="textarea_base">
+            <area>0,35,425,25</area>
+            <font>title_small</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>128</alpha>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <value>Unknown</value>
+        </textarea>
+
+        <textarea name="director" from="textarea_base">
+            <area>0,60,425,25</area>
+            <align>left,vcenter</align>
+            <case>upper</case>
+            <template>Directed by %DIRECTOR%, %YEAR%</template>
+        </textarea>
+
+        <textarea name="description" from="textarea_base">
+            <area>0,110,425,180</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%00x00| - %%"|SUBTITLE|"\n%%|YEARSTARS| - %%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="cast" from="director">
+            <area>0,315,425,75</area>
+            <font>smaller</font>
+            <case>normal</case>
+            <multiline>yes</multiline>
+            <align>left,top</align>
+            <template>Cast: %cast%</template>
+            <alpha>128</alpha>
+        </textarea>
+    </group>
 
     <group name="defaultscreenlayoutSettings_1A_animated" from="defaultscreenlayoutSettings_1">
         <animation trigger="AboutToShow">
