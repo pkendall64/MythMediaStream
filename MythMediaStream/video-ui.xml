@@ -517,8 +517,8 @@
         <!-- ===================================================== -->
         <!--     VIDEO GALLERY                                     -->
         <!-- ===================================================== -->
-        <buttonlist name="videos" from="buttonlist_gallery">
-            <position>25,260</position>
+        <buttonlist name="videos" from="buttonlist_gallery_small">
+            <position>18,235</position>
         </buttonlist>
 
         <!-- ===================================================== -->

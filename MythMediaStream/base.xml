@@ -1359,6 +1359,83 @@
        </statetype>
    </buttonlist>
 
+   <buttonlist name="buttonlist_gallery_small">
+       <spacing>0</spacing>
+       <area>0,0,784,480</area>
+       <searchposition>758,55</searchposition>
+       <layout>grid</layout>
+       <scrollstyle>free</scrollstyle>
+       <arrange>stack</arrange>
+       <align>left,top</align>
+       <wrapstyle>items</wrapstyle>
+       <showarrow>no</showarrow>
+       <buttonarea>0,0,784,480</buttonarea>
+       <statetype name="buttonitem">
+           <state name="active">
+               <area>0,0,112,160</area> 
+               <imagetype name="buttonimage">
+                   <area>11,27,90,128</area>
+                   <alpha>128</alpha>
+                   <preserveaspect>yes</preserveaspect>
+                   <filename>images/shared/amt-blank-poster.png</filename>
+               </imagetype>
+               <statetype name="nodetype">
+                   <area>0,0,112,160</area> 
+                   <state name="subfolder">
+                       <imagetype name="icon">
+                           <area>81,135,20,20</area>
+                           <alpha>128</alpha>
+                           <filename>images/shared/DefaultFolderTransparent.png</filename>
+                           <preserveaspect>yes</preserveaspect>
+                       </imagetype>
+                   </state>
+                   <state name="upfolder">
+                       <imagetype name="icon">
+                           <area>11,27,90,128</area>
+                           <alpha>255</alpha>
+                           <filename>images/shared/DefaultFolderBack.png</filename>
+                           <preserveaspect>yes</preserveaspect>
+                       </imagetype>
+                   </state>
+               </statetype>
+           </state>
+           <state name="inactive" from ="active">
+               <alpha>0</alpha>
+           </state>
+           <state name="selectedactive">
+               <area>0,0,112,160</area>  
+               <imagetype name="buttonimage">
+                   <area>0,0,112,160</area> 
+                   <alpha>255</alpha>
+                   <preserveaspect>yes</preserveaspect>
+                   <filename>images/shared/amt-blank-poster.png</filename>
+               </imagetype>
+               <statetype name="nodetype">
+                   <area>0,0,112,160</area> 
+                   <state name="subfolder">
+                       <imagetype name="icon">
+                           <area>87,135,25,25</area>
+                           <alpha>128</alpha>
+                           <filename>images/shared/DefaultFolderTransparent.png</filename>
+                           <preserveaspect>yes</preserveaspect>
+                       </imagetype>
+                   </state>
+                   <state name="upfolder">
+                       <imagetype name="icon">
+                           <area>0,0,112,160</area> 
+                           <alpha>255</alpha>
+                           <filename>images/shared/DefaultFolderBack.png</filename>
+                           <preserveaspect>no</preserveaspect>
+                       </imagetype>
+                   </state>
+               </statetype>
+           </state>
+           <state name="selectedinactive" from="selectedactive">
+               <alpha>0</alpha>
+           </state>
+       </statetype>
+   </buttonlist>
+
 <!-- ===================================================== -->
 <!--     BUTTONLIST DIALOG                                 -->
 <!-- ===================================================== -->
