@@ -39,7 +39,7 @@
     <button>
         <type>SETTINGS_TV</type>
         <text>TV Setup</text>
-        <description>Configure</description>
+        <description>Configure playback and</description>
         <action>MENU tv_settings.xml</action>
     </button>
 
@@ -67,8 +67,8 @@
     </button>
 
     <button>
-        <type>ZONEMINDER</type>
-        <text>ZoneMinder Setup</text>
+        <type>SETTINGS_ZONEMINDER</type>
+        <text>Zoneminder</text>
         <description>Configure</description>
         <action>CONFIGPLUGIN mythzoneminder</action>
         <depends>mythzoneminder</depends>

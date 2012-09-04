@@ -72,7 +72,7 @@
     <button>
         <type>SETTINGS_GENERAL</type>
         <text>System</text>
-        <description>Tools for your</description>
+        <description>Information and Tools for your</description>
         <action>MENU mms_settings.xml</action>
     </button>
 
