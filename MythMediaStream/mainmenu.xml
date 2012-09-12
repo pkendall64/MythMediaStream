@@ -71,8 +71,8 @@
 
     <button>
         <type>SETTINGS_GENERAL</type>
-        <text>System</text>
-        <description>Information and Tools for your</description>
+        <text>Various</text>
+        <description>Information and Tools</description>
         <action>MENU mms_settings.xml</action>
     </button>
 

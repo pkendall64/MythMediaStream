@@ -82,6 +82,7 @@
    </fontdef>
 
    <fontdef name="normal_blue_bold" from="normal_blue">
+       <pixelsize>26</pixelsize>
        <weight>bold</weight>
    </fontdef>
 
@@ -425,7 +426,7 @@
        <area>0,0,100,35</area>
        <font>normal</font>
        <multiline>no</multiline>
-       <cutdown>yes</cutdown>
+       <cutdown>no</cutdown>
        <case>upper</case>
        <align>left,vcenter</align>
    </textarea>
@@ -438,18 +439,18 @@
            <area>0,0,160,40</area>
        </imagetype>
        <clock name="texthours">
-           <area>30,0,75,40</area>
+           <area>30,3,100,40</area>
            <font>normal</font>
-           <template>hh:mm</template>
+           <template>hh:mm AP</template>
            <align>right,vcenter</align>
            <multiline>no</multiline>
            <cutdown>no</cutdown>
        </clock>
        <clock name="textdaypart">
-           <area>110,0,30,40</area>
+           <area>108,2,30,40</area>
            <font>normal_blue_bold</font>
            <template>AP</template>
-           <align>hcenter,vcenter</align>
+           <align>left,vcenter</align>
            <multiline>no</multiline>
            <cutdown>no</cutdown>
        </clock>
@@ -2562,7 +2563,7 @@
             <imagetype name="2">
                 <area>,0,80,20</area>
                 <filename>images/shared/rating/songrating1.png</filename>
-            </imagetype><scroll direction="left" />
+            </imagetype>
         </state>
         <state name="3">
             <imagetype name="3">

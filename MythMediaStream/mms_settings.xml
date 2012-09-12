@@ -26,8 +26,8 @@
 
     <button>
         <type>ZONEMINDER</type>
-        <text>Cameras</text>
-        <description>Check your home Surveillance</description>
+        <text>CCTV</text>
+        <description>Check your Surveillance</description>
         <action>PLUGIN mythzoneminder</action>
         <depends>mythzoneminder</depends>
     </button>

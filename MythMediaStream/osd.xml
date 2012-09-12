@@ -3,21 +3,13 @@
 <mythuitheme>
 
     <window name="osd_message">
-        <fontdef name="medium" face="MediaStreamALT">
-            <pixelsize>28</pixelsize>
-            <stretch>extracondensed</stretch>
-            <weight>normal</weight>
-            <color>#FFFFFF</color>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
-        </fontdef>
         <area>465,0,350,70</area>
         <imagetype name="osd_messageBackground">
             <area>0,0,350,70</area>
             <filename>images/shared/InfoMessagePanel.png</filename>
         </imagetype>
         <textarea name="message_text">
-            <font>medium</font>
+            <font>normal</font>
             <case>upper</case>
             <area>10,5,330,60</area>
             <align>hcenter,vcenter</align>
@@ -27,14 +19,6 @@
     </window>
 
     <window name="osd_input">
-        <fontdef name="normal" face="MediaStreamALT">
-            <pixelsize>28</pixelsize>
-            <stretch>extracondensed</stretch>
-            <weight>normal</weight>
-            <color>#FFFFFF</color>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
-        </fontdef>
         <area>465,0,350,70</area>
         <imagetype name="osd_messageBackground">
             <area>0,0,350,70</area>
@@ -51,6 +35,7 @@
     </window>
 
     <window name="osd_debug">
+<!--
         <fontdef name="normal" face="MediaStreamALT">
             <pixelsize>24</pixelsize>
             <stretch>extracondensed</stretch>
@@ -70,6 +55,7 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
+-->
         <area>968,0,316,720</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
@@ -230,6 +216,7 @@
     </window>
 
     <window name="osd_status">
+<!--    
         <fontdef name="small" face="MediaStreamALT">
             <pixelsize>21</pixelsize>
             <color>#FFFFFF</color>
@@ -242,13 +229,14 @@
         <fontdef name="medium" from="small">
             <pixelsize>23</pixelsize>
         </fontdef>
+-->
         <area>0,500,1280,220</area>
         <imagetype name="popup_background">
             <area>0,0,1280,225</area>	
             <filename>images/shared/OSDBackground.png</filename>
         </imagetype>
         <textarea name="title">
-            <font>medium</font>
+            <font>title</font>
             <area>10,40,600,30</area>
             <align>left,top</align>
         </textarea>
@@ -344,6 +332,7 @@
     </window>
 
     <window name="program_info">
+<!--    
         <fontdef name="small" face="MediaStreamALT">
             <pixelsize>21</pixelsize>
             <color>#FFFFFF</color>
@@ -362,14 +351,14 @@
         <fontdef name="medium" from="small">
             <pixelsize>23</pixelsize>
         </fontdef>
-
+-->
         <area>0,500,1280,220</area>
         <imagetype name="popup_background">
             <area>0,0,1280,225</area>	
             <filename>images/shared/OSDBackground.png</filename>
         </imagetype>
         <textarea name="title">
-            <font>medium</font>
+            <font>title</font>
             <area>10,40,600,30</area>
             <align>left,top</align>
         </textarea>
@@ -418,7 +407,7 @@
             <state name="WatchingLiveTV">
                 <textarea name="tvstate">
                     <area>970,70,300,30</area>
-                    <font>smaller_state</font>
+                    <font>normal_blue_bold</font>
                     <multiline>no</multiline>
                     <align>right,vcenter</align>
                     <case>upper</case>
@@ -428,7 +417,7 @@
             <state name="WatchingPreRecorded">
                 <textarea name="tvstate">
                     <area>970,70,300,30</area>
-                    <font>smaller_state</font>
+                    <font>normal_blue_bold</font>
                     <multiline>no</multiline>
                     <align>right,vcenter</align>
                     <case>upper</case>
@@ -438,7 +427,7 @@
             <state name="WatchingVideo">
                 <textarea name="tvstate">
                     <area>970,70,300,30</area>
-                    <font>smaller_state</font>
+                    <font>normal_blue_bold</font>
                     <multiline>no</multiline>
                     <align>right,vcenter</align>
                     <case>upper</case>
@@ -448,7 +437,7 @@
             <state name="WatchingDVD">
                 <textarea name="tvstate">
                     <area>970,70,300,30</area>
-                    <font>smaller_state</font>
+                    <font>normal_blue_bold</font>
                     <multiline>no</multiline>
                     <align>right,vcenter</align>
                     <case>upper</case>
@@ -458,7 +447,7 @@
             <state name="WatchingBD">
                 <textarea name="tvstate">
                     <area>970,70,300,30</area>
-                    <font>smaller_state</font>
+                    <font>normal_blue_bold</font>
                     <multiline>no</multiline>
                     <align>right,vcenter</align>
                     <case>upper</case>
@@ -468,7 +457,7 @@
             <state name="WatchingRecording">
                 <textarea name="tvstate">
                     <area>970,70,300,30</area>
-                    <font>smaller_state</font>
+                    <font>normal_blue_bold</font>
                     <multiline>no</multiline>
                     <align>right,vcenter</align>
                     <case>upper</case>
@@ -709,6 +698,7 @@
     </window>
 
     <window name="browse_info">
+<!--
         <fontdef name="small" face="MediaStreamALT">
             <pixelsize>21</pixelsize>
             <color>#FFFFFF</color>
@@ -721,13 +711,14 @@
         <fontdef name="medium" from="small">
             <pixelsize>23</pixelsize>
         </fontdef>
+-->
         <area>0,500,1280,220</area>
         <imagetype name="popup_background">
             <area>0,0,1280,225</area>	
             <filename>images/shared/OSDBackground.png</filename>
         </imagetype>
         <textarea name="title">
-            <font>medium</font>
+            <font>title</font>
             <area>10,40,600,30</area>
             <align>left,top</align>
         </textarea>
@@ -1010,24 +1001,6 @@
     </window>
 
     <window name="osd_program_editor">
-        <fontdef name="small" face="MediaStreamALT">
-            <pixelsize>21</pixelsize>
-            <color>#FFFFFF</color>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
-        </fontdef>
-        <fontdef name="labelfont" face="Fluid">
-            <pixelsize>23</pixelsize>
-            <color>#105B8F</color>
-            <stretch>extracondensed</stretch>
-            <weight>normal</weight>
-        </fontdef>
-        <fontdef name="smaller" from="small">
-            <pixelsize>17</pixelsize>
-        </fontdef>
-        <fontdef name="medium" from="small">
-            <pixelsize>23</pixelsize>
-        </fontdef>
         <area>0,500,1280,220</area>
         <imagetype name="popup_background">
             <area>0,0,1280,225</area>	
@@ -1035,10 +1008,11 @@
         </imagetype>
 
         <textarea name="title">
-            <font>medium</font>
+            <font>title</font>
             <area>10,40,600,30</area>
             <align>left,top</align>
         </textarea>
+        
         <clock name="clock">
             <area>970,40,300,30</area>
             <font>small</font>
@@ -1048,9 +1022,9 @@
 
         <textarea name="seekamountlbl">
             <area>10,70,170,25</area>
-            <font>labelfont</font>
+            <font>title_verysmall_blue</font>
             <align>left,vcenter</align>
-            <value>Seek Amount:</value>
+            <value>Seek Amount</value>
         </textarea>
 
         <textarea name="seekamount" from="title">
@@ -1061,7 +1035,7 @@
 
         <textarea name="framedisplaylbl" from="seekamountlbl">
             <position>10,95</position>
-            <value>Frame Number:</value>
+            <value>Frame Number</value>
         </textarea>
 
         <textarea name="framedisplay" from="seekamount">
@@ -1077,6 +1051,7 @@
             <align>hcenter,bottom</align>
             <template>%TIMEDISPLAY% %VALUE%%UNITS%</template>
         </textarea>
+        
         <editbar name="editbar">
             <area>100,175,1080,20</area>
             <imagetype name="cut">
@@ -1113,6 +1088,7 @@
     </window>
 
     <window name="MythPopupBox">
+<!--
         <fontdef name="normal" face="MediaStreamALT">
             <pixelsize>25</pixelsize>
             <stretch>extracondensed</stretch>
@@ -1129,6 +1105,7 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
+-->
 
         <area>968,0,316,720</area>
         <animation trigger="AboutToShow">

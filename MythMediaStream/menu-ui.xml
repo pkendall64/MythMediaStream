@@ -877,25 +877,25 @@
            <!-- ZONEMINDER -->
            <state name="ZM_CONSOLE">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/default.png</filename>
+                   <filename>images/backgrounds/cctv.jpg</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="ZM_LIVE_VIEWER">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/default.png</filename>
+                   <filename>images/backgrounds/cctv.jpg</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="ZM_EVENT_VIEWER">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/default.png</filename>
+                   <filename>images/backgrounds/cctv.jpg</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
            <state name="ZONEMINDER">
                <imagetype name="watermark">
-                   <filename>images/backgrounds/default.png</filename>
+                   <filename>images/backgrounds/cctv.jpg</filename>
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
