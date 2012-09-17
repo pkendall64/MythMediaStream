@@ -446,13 +446,9 @@
            <multiline>no</multiline>
            <cutdown>no</cutdown>
        </clock>
-       <clock name="textdaypart">
-           <area>108,2,30,40</area>
-           <font>normal_blue_bold</font>
+       <clock name="textdaypart" from="texthours">
+           <font>normal_blue</font>
            <template>AP</template>
-           <align>left,vcenter</align>
-           <multiline>no</multiline>
-           <cutdown>no</cutdown>
        </clock>
    </textarea>
 
