@@ -179,7 +179,7 @@
         </group>
 
        <group name="playliststatusgroup" from="baseplayliststatusgroup">
-            <position>345,600</position>
+            <position>345,610</position>
        </group>
 
        <group name="playlistvisualizergroup" from="baseplaylistvisualizergroup">
@@ -237,7 +237,7 @@
         </group>
 
         <group name="playliststatusgroup" from="baseplayliststatusgroup">
-            <position>345,600</position>
+            <position>345,610</position>
         </group>
 
        <group name="playlistvisualizergroup" from="baseplaylistvisualizergroup">

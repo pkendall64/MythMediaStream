@@ -366,7 +366,7 @@
     <buttonlist name="basegallerybuttonlist">
         <area>0,0,800,450</area>
         <layout>grid</layout>
-        <spacing>0</spacing>
+        <spacing>3</spacing>
         <searchposition>758,55</searchposition>
         <scrollstyle>free</scrollstyle>
         <arrange>stack</arrange>
@@ -376,77 +376,76 @@
         <buttonarea>0,0,800,450</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
-                <area>0,0,150,150</area>
                 <imagetype name="buttonimage">
                     <alpha>128</alpha>
-                    <area>20,20,110,110</area>
+                    <area>0,0,105,105</area>
                     <filename>images/music/MM_Music.png</filename>
                 </imagetype>
                 <statetype name="nodetype">
                     <state name="default" />
                     <state name="alltracks">
                         <imagetype name="alltracks">
-                            <area>20,20,110,110</area>
+                            <area>0,0,105,105</area>
                             <filename>images/music/MM_Alltracks.png</filename>
                         </imagetype>
                     </state>
                     <state name="genres">
                         <imagetype name="genres">
-                            <area>20,20,110,110</area>
+                            <area>0,0,105,105</area>
                             <filename>images/music/MM_Genres.png</filename>
                         </imagetype>
                     </state>
                     <state name="albums">
                         <imagetype name="albums">
-                            <area>20,20,110,110</area>
+                             <area>0,0,105,105</area>
                              <filename>images/music/MM_Albums.png</filename>
                        </imagetype>
                     </state>
                     <state name="artists">
                         <imagetype name="artists">
-                            <area>20,20,110,110</area>
+                            <area>0,0,105,105</area>
                             <filename>images/music/MM_Artists.png</filename>
                         </imagetype>
                     </state>
                     <state name="compartists">
                         <imagetype name="compartists">
-                            <area>20,20,110,110</area>
+                            <area>0,0,105,105</area>
                             <filename>images/music/MM_Compartists.png</filename>
                         </imagetype>
                     </state>
                     <state name="ratings">
                         <imagetype name="ratings">
-                            <area>20,20,110,110</area>
+                            <area>0,0,105,105</area>
                             <filename>images/music/MM_Ratings.png</filename>
                         </imagetype>
                     </state>
                     <state name="years">
                         <imagetype name="years">
-                            <area>20,20,110,110</area>
+                            <area>0,0,105,105</area>
                             <filename>images/music/MM_Years.png</filename>
                         </imagetype>
                     </state>
                     <state name="compilations">
                         <imagetype name="compilations">
-                            <area>20,20,110,110</area>
+                            <area>0,0,105,105</area>
                             <filename>images/music/MM_Compilations.png</filename>
                         </imagetype>
                     </state>
                     <state name="playlists">
                         <imagetype name="playlists">
-                            <area>20,20,110,110</area>
+                            <area>0,0,105,105</area>
                             <filename>images/music/MM_Playlists.png</filename>
                         </imagetype>
                     </state>
                     <state name="smartplaylists">
                         <imagetype name="smartplaylists">
-                            <area>20,20,110,110</area>
+                           <area>0,0,105,105</area>
                             <filename>images/music/MM_Smartplaylists.png</filename>
                         </imagetype>
                     </state>
                 </statetype>
                 <statetype name="buttoncheck">
-                    <position>20,20</position>
+                    <position>3,3</position>
                     <showempty>yes</showempty>
                     <state type="full">
                         <imagetype name="marked">
@@ -454,85 +453,89 @@
                         </imagetype>
                     </state>
                 </statetype>
+                <imagetype name="buttontextbgd" >
+                    <area>0,80,105,26</area>
+                    <filename>images/shared/OSDBackground.png</filename>
+                </imagetype>
                 <textarea name="buttontext" from="textarea_base">
-                    <area>5,130,140,20</area>
+                    <area>5,85,95,20</area>
                     <align>hcenter,vcenter</align>
                     <font state="default">tiny</font>
                     <font state="error">tiny_red</font>
                     <font state="running">tiny_amber</font>
-                </textarea>		              
+                </textarea>	              
             </state>
             <state name="selectedactive">
-                <area>0,0,150,150</area>
+                <area>-20,-20,105,105</area>
                 <imagetype name="buttonimage">
-                    <area>0,0,150,150</area>
+                    <area>0,0,145,145</area>
                     <filename>images/music/MM_Music.png</filename>
                 </imagetype>
                 <statetype name="nodetype">
                     <state name="default" />
                     <state name="alltracks">
                         <imagetype name="alltracks">
-                            <area>0,0,150,150</area>
+                            <area>0,0,145,145</area>
                             <filename>images/music/MM_Alltracks.png</filename>
                         </imagetype>
                     </state>
                     <state name="genres">
                         <imagetype name="genres">
-                            <area>0,0,150,150</area>
+                            <area>0,0,145,145</area>
                             <filename>images/music/MM_Genres.png</filename>
                         </imagetype>
                     </state>
                     <state name="albums">
                         <imagetype name="albums">
-                            <area>0,0,150,150</area>
+                             <area>0,0,145,145</area>
                              <filename>images/music/MM_Albums.png</filename>
                         </imagetype>
                     </state>
                     <state name="artists">
                         <imagetype name="artists">
-                            <area>0,0,150,150</area>
+                            <area>0,0,145,145</area>
                             <filename>images/music/MM_Artists.png</filename>
                         </imagetype>
                     </state>
                     <state name="compartists">
                         <imagetype name="compartists">
-                            <area>0,0,150,150</area>
+                            <area>0,0,145,145</area>
                             <filename>images/music/MM_Compartists.png</filename>
                         </imagetype>
                     </state>
                     <state name="ratings">
                         <imagetype name="ratings">
-                            <area>0,0,150,150</area>
+                            <area>0,0,145,145</area>
                             <filename>images/music/MM_Ratings.png</filename>
                         </imagetype>
                     </state>
                     <state name="years">
                         <imagetype name="years">
-                            <area>0,0,150,150</area>
+                            <area>0,0,145,145</area>
                             <filename>images/music/MM_Years.png</filename>
                         </imagetype>
                     </state>
                     <state name="compilations">
                         <imagetype name="compilations">
-                            <area>0,0,150,150</area>
+                            <area>0,0,145,145</area>
                             <filename>images/music/MM_Compilations.png</filename>
                         </imagetype>
                     </state>
                     <state name="playlists">
                         <imagetype name="playlists">
-                            <area>0,0,150,150</area>
+                            <area>0,0,145,145</area>
                             <filename>images/music/MM_Playlists.png</filename>
                         </imagetype>
                     </state>
                     <state name="smartplaylists">
                         <imagetype name="smartplaylists">
-                            <area>0,0,150,150</area>
+                            <area>0,0,145,145</area>
                             <filename>images/music/MM_Smartplaylists.png</filename>
                         </imagetype>
                     </state>
                 </statetype>
                 <statetype name="buttoncheck">
-                    <position>4,4</position>
+                    <position>5,5</position>
                     <showempty>yes</showempty>
                     <state type="full">
                         <imagetype name="marked">
@@ -540,13 +543,18 @@
                         </imagetype>
                     </state>
                 </statetype>
+                <imagetype name="buttontextbgd" >
+                    <area>0,120,145,26</area>
+                    <filename>images/shared/OSDBackground.png</filename>
+                </imagetype>
                 <textarea name="buttontext" from="textarea_base">
-                    <area>5,130,140,20</area>
+                    <area>5,125,135,20</area>
                     <align>hcenter,vcenter</align>
                     <scroll direction="left" />
-                    <weight>bold</weight>
-                    <font state="default">tiny_blue</font>
-                </textarea>		              
+                    <font state="default">tiny</font>
+                    <font state="error">tiny_red</font>
+                    <font state="running">tiny_amber</font>
+                </textarea>	              
             </state>
         </statetype>
     </buttonlist>
@@ -641,22 +649,40 @@
             <position>60,130</position>
         </statetype>
 
-        <textarea name="lastplayed" from="artist">
-            <position>0,190</position>
-            <font>verysmall</font>
-            <case>Normal</case>
-            <alpha>128</alpha>
-            <template>Last played: %lastplayed% (played: %playcount% times)</template>
+        <textarea name="playedlbl" from="textarea_base">
+            <area>0,185,100,25</area>
+            <font>title_verysmall_blue</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>255</alpha>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <value>Last</value>
+        </textarea>
+
+        <textarea name="usinglbl" from="playedlbl">
+            <position>0,215</position>
+            <value>Next</value>
+        </textarea>
+
+        <textarea name="lastplayed"  from="textarea_base">
+            <area>70,185,275,25</area>
+            <font>normal</font>
+            <case>normal</case>
+            <multiline>no</multiline>
+            <alpha>255</alpha>
+            <template>%lastplayed% (played: %playcount% times)</template>
         </textarea>
         
         <textarea name="nexttitle" from="lastplayed">
-            <position>0,215</position>
-            <case>Normal</case>
-            <template>Next: %NEXTTITLE% by %NEXTARTIST%</template>
+            <area>70,212,275,60</area>
+            <multiline>yes</multiline>
+            <align>top,left</align>
+            <template>%NEXTTITLE% by %NEXTARTIST%</template>
         </textarea>
 
         <group name="statusicons" from="basestatusicons">
-            <position>0,250</position>
+            <position>0,280</position>
         </group>
 
 <!--

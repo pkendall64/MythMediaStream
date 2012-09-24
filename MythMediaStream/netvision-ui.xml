@@ -110,32 +110,34 @@
             <align>left,top</align>
         </textarea>
 
-        <textarea name="date" from="textarea_base">
-            <area>400,395,325,25</area>
-            <font>smaller</font>
-            <case>normal</case>
+        <textarea name="datelbl" from="textarea_base" depends="date">
+            <area>400,400,100,25</area>
+            <font>title_verysmall_blue</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>255</alpha>
+            <case>upper</case>
             <align>left,vcenter</align>
-            <template>Published on %date%</template>
-            <alpha>128</alpha>
+            <value>Date</value>
         </textarea>
         
-        <textarea name="resolution" from="textarea_base">
-            <area>400,445,325,25</area>
-            <font>smaller</font>
-            <case>normal</case>
-            <align>left,vcenter</align>
-            <template>%RESOLUTION|, %%filesize_str%</template>
-            <alpha>128</alpha>
+        <textarea name="resolutionlbl" from="datelbl" depends="resolution">
+            <position>400,430</position>
+            <value>File</value>
         </textarea>
 
-        <textarea name="countries" from="textarea_base">
-            <area>400,420,325,25</area>
-            <font>smaller</font>
+        <textarea name="date" from="textarea_base">
+            <area>470,400,275,25</area>
+            <font>normal</font>
             <case>normal</case>
-            <align>left,vcenter</align>
-            <template>Available in %countries%</template>
-            <alpha>128</alpha>
+            <multiline>no</multiline>
+            <alpha>255</alpha>
         </textarea>
+        
+        <textarea name="resolution" from="date">
+            <position>470,430</position>
+            <template>%RESOLUTION|, %%filesize_str| %%(|length|)%</template>
+        </textarea>	
 
         <textarea name="description" from="textarea_base">
             <area>25,490,700,170</area>
@@ -450,32 +452,34 @@
             <align>left,top</align>
         </textarea>
 
-        <textarea name="date" from="textarea_base">
-            <area>400,395,325,25</area>
-            <font>smaller</font>
-            <case>normal</case>
+        <textarea name="datelbl" from="textarea_base" depends="date">
+            <area>400,400,100,25</area>
+            <font>title_verysmall_blue</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>255</alpha>
+            <case>upper</case>
             <align>left,vcenter</align>
-            <template>Published on %date%</template>
-            <alpha>128</alpha>
+            <value>Date</value>
         </textarea>
         
-        <textarea name="resolution" from="textarea_base">
-            <area>400,445,325,25</area>
-            <font>smaller</font>
-            <case>normal</case>
-            <align>left,vcenter</align>
-            <template>%RESOLUTION|, %%filesize_str| %%(|length|)%</template>
-            <alpha>128</alpha>
+        <textarea name="resolutionlbl" from="datelbl" depends="resolution">
+            <position>400,430</position>
+            <value>File</value>
         </textarea>
 
-        <textarea name="countries" from="textarea_base">
-            <area>400,420,325,25</area>
-            <font>smaller</font>
+        <textarea name="date" from="textarea_base">
+            <area>470,400,275,25</area>
+            <font>normal</font>
             <case>normal</case>
-            <align>left,vcenter</align>
-            <template>Available in %countries%</template>
-            <alpha>128</alpha>
+            <multiline>no</multiline>
+            <alpha>255</alpha>
         </textarea>
+        
+        <textarea name="resolution" from="date">
+            <position>470,430</position>
+            <template>%RESOLUTION|, %%filesize_str| %%(|length|)%</template>
+        </textarea>	
 
         <textarea name="description" from="textarea_base">
             <area>25,490,700,170</area>
@@ -546,7 +550,7 @@
         </textarea>
 
         <buttonlist name="videos" from="buttonlist_browse">
-            <position>0,505</position>
+            <position>0,515</position>
         </buttonlist>
 
         <!-- ===================================================== -->
@@ -667,8 +671,8 @@
         <!-- ===================================================== -->
         <!--     VIDEO GALLERY                                     -->
         <!-- ===================================================== -->
-        <buttonlist name="videos" from="buttonlist_gallery">
-            <position>25,260</position>
+        <buttonlist name="videos" from="buttonlist_gallery_small">
+            <position>45,250</position>
         </buttonlist>
 
         <!-- ===================================================== -->

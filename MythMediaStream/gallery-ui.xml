@@ -45,12 +45,22 @@
             <reflection shear="0" scale="65" length="15"/>
         </imagetype>
 
+        <textarea name="breadcrumbslbl" from="textarea_base" depends="breadcrumbs">
+            <area>40,690,100,25</area>
+            <font>title_verysmall_blue</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>255</alpha>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <value>Path</value>
+        </textarea>
+
         <textarea name="breadcrumbs" from="textarea_base">
-            <area>40,690,660,25</area>
-            <font>small</font>
+            <area>110,690,1090,25</area>
+            <font>normal</font>
             <case>normal</case>
-            <align>justify</align>
-            <multiline>yes</multiline>
+            <multiline>no</multiline>
             <cutdown>yes</cutdown>
         </textarea>
 

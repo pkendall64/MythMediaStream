@@ -86,7 +86,8 @@
 
         <textarea name="system" from="textarea_base">
             <area>155,677,175,25</area>
-            <font>title_small</font>
+            <font>normal</font>
+            <case>normal</case>
             <multiline>no</multiline>
             <alpha>255</alpha>
             <value>Unknown</value>

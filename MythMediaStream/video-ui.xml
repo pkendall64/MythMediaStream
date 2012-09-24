@@ -206,10 +206,10 @@
             <value>Rating</value>
         </textarea>
         
-
         <textarea name="userrating" from="textarea_base">
             <area>375,677,175,25</area>
-            <font>title_small</font>
+            <font>normal</font>
+            <case>normal</case>
             <multiline>no</multiline>
             <alpha>255</alpha>
             <template>%USERRATING| - %%RATING%</template>
@@ -314,7 +314,8 @@
 
         <textarea name="director" from="textarea_base">
             <area>115,670,265,25</area>
-            <font>title_small</font>
+            <font>normal</font>
+            <case>normal</case>
             <multiline>no</multiline>
             <alpha>255</alpha>
             <value></value>
@@ -366,7 +367,7 @@
         <!--     VIDEO LIST                                        -->
         <!-- ===================================================== -->
         <buttonlist name="videos" from="buttonlist_browse">
-            <position>0,505</position>
+            <position>0,515</position>
         </buttonlist>
 
         <!-- ===================================================== -->
@@ -518,7 +519,7 @@
         <!--     VIDEO GALLERY                                     -->
         <!-- ===================================================== -->
         <buttonlist name="videos" from="buttonlist_gallery_small">
-            <position>18,235</position>
+            <position>45,250</position>
         </buttonlist>
 
         <!-- ===================================================== -->
@@ -559,7 +560,8 @@
 
         <textarea name="userrating" from="textarea_base">
             <area>1010,680,100,25</area>
-            <font>small</font>
+            <font>normal</font>
+            <case>normal</case>
             <align>right,bottom</align>
             <template>%(|USERRATING)%</template>
         </textarea>

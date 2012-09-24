@@ -154,16 +154,21 @@
 
 
         <!-- ===================================================== -->
-        <!--     PROGRAM DETAILS                                   -->
-        <!-- ===================================================== -->
-
-        <!-- ===================================================== -->
         <!--     PROGRAM DETAILS when coverart available           -->
+        <!--     Fix me, textarea widgets don`t update when        -->
+        <!--     switching between coverart and preview            -->
         <!-- ===================================================== -->
-
 <!--
-        <group name="preview_details" depends="coverart">
-	        <textarea name="title" from="textarea_base">
+        <group name="coverart_details" depends="coverart">
+
+	        <imagetype name="coverart">
+	            <area>25,260,250,375</area>
+	            <filename>images/shared/amt-blank-poster.png</filename>
+	            <preserveaspect>no</preserveaspect>
+	            <reflection shear="0" scale="65" length="10"/>
+	        </imagetype>
+
+	        <textarea name="titlesubtitle" from="textarea_base">
 	            <area>300,260,425,30</area>
 	            <font>title</font>
 	            <multiline>yes</multiline>
@@ -181,7 +186,6 @@
 	            <alpha>128</alpha>
 	            <case>upper</case>
 	            <align>left,vcenter</align>
-	            <value>Unknown</value>
 	        </textarea>
 	
 	        <textarea name="longchannel" from="textarea_base">
@@ -191,7 +195,7 @@
 	        </textarea>
 	
 	        <textarea name="subtitle" from="textarea_base">
-	            <area>300,370,425,180</area>
+	            <area>300,370,425,200</area>
 	            <font>small</font>
 	            <case>normal</case>
 	            <align>justify</align>
@@ -200,33 +204,53 @@
 	            <cutdown>yes</cutdown>
 	        </textarea>
 
-	        <textarea name="startdate" from="longchannel">
-	            <area>300,575,425,25</area>
-	            <font>smaller</font>
-	            <case>normal</case>
-	            <multiline>yes</multiline>
-	            <align>left,top</align>
-	            <template>Aired %startdate%, %starttime% - %endtime%</template>
-	            <alpha>128</alpha>
+	        <textarea name="airedlbl" from="textarea_base" depends="preview">
+	            <area>300,595,100,25</area>
+	            <font>title_verysmall_blue</font>
+	            <multiline>no</multiline>
+	            <cutdown>yes</cutdown>
+	            <alpha>255</alpha>
+	            <case>upper</case>
+	            <align>left,vcenter</align>
+	            <value>Aired</value>
 	        </textarea>
-	
-	        <textarea name="storagegroup" from="startdate">
-	            <position>300,600</position>
-	            <template>Using %filesize_str% of %storagegroup% Storage</template>
-	        </textarea>
-	
- 	        <textarea name="rectypestatus" from="startdate">
+
+	        <textarea name="usinglbl" from="airedlbl" depends="preview">
 	            <position>300,625</position>
-	            <template>Next recording: %rectypestatus%</template>
+	            <value>Using</value>
 	        </textarea>
-       </group>
-       -->
+	
+	        <textarea name="startdate" from="textarea_base">
+	            <area>370,595,275,25</area>
+	            <font>title_small</font>
+	            <case>normal</case>
+	            <multiline>no</multiline>
+	            <alpha>255</alpha>
+	            <template>%startdate%, %starttime% - %endtime%</template>
+	        </textarea>
+
+	        <textarea name="storagegroup" from="startdate">
+	            <position>370,625</position>
+	            <template>%filesize_str% of %storagegroup% Storage</template>
+	        </textarea>	
+	        
+	    </group>
+-->
 
         <!-- ===================================================== -->
         <!--     PROGRAM DETAILS when NO coverart available        -->
+        <!--     Fix me, textarea widgets don`t update when        -->
+        <!--     switching between coverart and preview            -->
         <!-- ===================================================== -->
-
-<!--        <group name="coverart_details" depends="!coverart">-->
+<!--
+        <group name="preview_details" depends="preview" depends="!coverart">
+-->
+	        <imagetype name="preview">
+	            <area>25,260,350,197</area>
+	            <preserveaspect>no</preserveaspect>
+	            <reflection shear="0" scale="65" length="18"/>
+	        </imagetype>
+	        
 	        <textarea name="titlesubtitle" from="textarea_base">
 	            <area>400,260,325,30</area>
 	            <font>title</font>
@@ -253,24 +277,6 @@
 	            <case>upper</case>
 	        </textarea>
 	
-	        <textarea name="startdate" from="longchannel">
-	            <position>400,370</position>
-	            <font>smaller</font>
-	            <case>normal</case>
-	            <template>Aired %startdate%, %starttime% - %endtime%</template>
-	            <alpha>128</alpha>
-	        </textarea>
-	
-	        <textarea name="storagegroup" from="startdate">
-	            <position>400,395</position>
-	            <template>Using %filesize_str% of %storagegroup% Storage</template>
-	        </textarea>
-	        
-	        <textarea name="rectypestatus" from="startdate">
-	            <position>400,420</position>
-	            <template>Next recording: %rectypestatus%</template>
-	        </textarea>
-	
 	        <textarea name="subtitle" from="textarea_base">
 	            <area>25,490,700,170</area>
 	            <font>small</font>
@@ -280,30 +286,63 @@
 	            <template>%00x00| - %%"|SUBTITLE|"\n%%|YEARSTARS| - %%DESCRIPTION%</template>
 	            <cutdown>yes</cutdown>
 	        </textarea>
-<!--	     </group>-->
+	        
+	        <textarea name="airedlbl" from="textarea_base" depends="preview">
+	            <area>400,370,100,25</area>
+	            <font>title_verysmall_blue</font>
+	            <multiline>no</multiline>
+	            <cutdown>yes</cutdown>
+	            <alpha>255</alpha>
+	            <case>upper</case>
+	            <align>left,vcenter</align>
+	            <value>Aired</value>
+	        </textarea>
+
+	        <textarea name="usinglbl" from="airedlbl" depends="preview">
+	            <position>400,400</position>
+	            <value>Using</value>
+	        </textarea>
+	
+	        <textarea name="nextlbl" from="airedlbl" depends="preview">
+	            <position>400,430</position>
+	            <value>Next</value>
+	        </textarea>
+	
+	        <textarea name="startdate" from="textarea_base">
+	            <area>470,370,275,25</area>
+	            <font>normal</font>
+	            <case>normal</case>
+	            <multiline>no</multiline>
+	            <alpha>255</alpha>
+	            <template>%startdate%, %starttime% - %endtime%</template>
+	        </textarea>
+
+	        <textarea name="storagegroup" from="startdate">
+	            <position>470,400</position>
+	            <template>%filesize_str% of %storagegroup% Storage</template>
+	        </textarea>	
+
+	        <textarea name="rectypestatus" from="startdate">
+	            <position>470,430</position>
+	            <template>%rectypestatus%</template>
+	        </textarea>	
+<!--	        
+	     </group>
+-->
 
 <!--
-        <imagetype name="coverart">
-            <area>25,260,250,375</area>
-            <filename>images/shared/amt-blank-poster.png</filename>
-            <preserveaspect>yes</preserveaspect>
-            <reflection shear="0" scale="65" length="10"/>
-        </imagetype>
-        -->
-
         <imagetype name="preview" depends="!coverart">
-            <area>25,260,350,197</area>
+            <area>15,270,270,152</area>
             <preserveaspect>no</preserveaspect>
             <reflection shear="0" scale="65" length="18"/>
         </imagetype>
 
-        <imagetype name="defaultimage" depends="!preview">
-            <area>25,260,350,350</area>
+        <imagetype name="folderimage" depends="preview" depends="!coverart">
+            <area>25,420,250,250</area>
+            <filename>images/shared/DefaultFolderTransparent.png</filename>
             <preserveaspect>no</preserveaspect>
-            <filename>images/shared/defaultHardDiskBig.png</filename>
-            <reflection shear="0" scale="65" length="18"/>
         </imagetype>
-
+-->
         <group name="infoicons" from="defaultinfoicons">
             <position>0,660</position>
         </group>
