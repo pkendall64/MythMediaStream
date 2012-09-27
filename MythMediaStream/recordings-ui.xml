@@ -343,7 +343,7 @@
             <preserveaspect>no</preserveaspect>
         </imagetype>
 -->
-        <group name="infoicons" from="defaultinfoicons">
+        <group name="infoicons" from="defaultinfoicons" depends="preview">
             <position>0,660</position>
         </group>
 
@@ -356,8 +356,9 @@
        <!-- ===================================================== -->
        <!--     NO RECORDINGS TEXT                                -->
        <!-- ===================================================== -->
-       <textarea name="norecordings" from="subtitle">
-            <area>400,260,325,180</area>
+       <textarea name="norecordings" from="textarea_base">
+            <area>25,260,700,180</area>
+            <case>normal</case>
             <value>No recordings available, please schedule recordings first in order to watch them here</value>
         </textarea>
     </window>

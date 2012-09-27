@@ -87,7 +87,7 @@
         <imagetype name="preview">
             <area>25,260,350,197</area>
             <preserveaspect>no</preserveaspect>
-            <filename>images/shared/defaultNetworkBigWide.png</filename>
+<!--            <filename>images/shared/defaultNetworkBigWide.png</filename>-->
             <reflection shear="0" scale="65" length="18"/>
         </imagetype>
 
@@ -149,13 +149,24 @@
             <template>%00x00| - %%"|SUBTITLE|"\n%%|RATING| - %%DESCRIPTION%</template>
         </textarea>
 
+        <textarea name="urllbl" from="textarea_base" depends="mediaurl">
+            <area>25,677,100,25</area>
+            <font>title_verysmall_blue</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>255</alpha>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <value>URL</value>
+        </textarea>
+
         <textarea name="mediaurl" from="textarea_base">
-            <area>255,685,470,25</area>
-            <font>small</font>
+            <area>95,677,630,25</area>
+            <font>normal</font>
             <case>normal</case>
             <align>left,vcenter</align>
             <scroll direction="left" />
-            <alpha>64</alpha>
+            <alpha>255</alpha>
         </textarea>
 
         <textarea name="nosites" from="description">
@@ -165,27 +176,30 @@
         <!-- ===================================================== -->
         <!--   INFO ICONS                                          -->
         <!-- ===================================================== -->
-        <!-- now just for decoration, hopefully we will get here real status information-->
-        
-       <imagetype name="defaultsub">
-           <area>25,670,74,50</area>
-           <alpha>64</alpha>
-           <preserveaspect>no</preserveaspect>
-           <filename>images/flags/onscreensub.png</filename>
-       </imagetype>
-       <imagetype name="defaultvideo">
-           <area>95,670,74,50</area>
-           <preserveaspect>no</preserveaspect>
-           <alpha>64</alpha>
-           <filename>images/flags/576i.png</filename>
-       </imagetype>
-       <imagetype name="defaultaudio">
-           <area>170,670,74,50</area>
-           <preserveaspect>no</preserveaspect>
-           <alpha>64</alpha>
-           <filename>images/flags/dd20.png</filename>
-       </imagetype>
 
+<!-- now just for decoration, hopefully we will get here real status information-->
+<!-- 
+       <group name="defaultinfoicons" depends="preview"> 
+	       <imagetype name="defaultsub">
+	           <area>25,670,74,50</area>
+	           <alpha>64</alpha>
+	           <preserveaspect>no</preserveaspect>
+	           <filename>images/flags/onscreensub.png</filename>
+	       </imagetype>
+	       <imagetype name="defaultvideo">
+	           <area>95,670,74,50</area>
+	           <preserveaspect>no</preserveaspect>
+	           <alpha>64</alpha>
+	           <filename>images/flags/576i.png</filename>
+	       </imagetype>
+	       <imagetype name="defaultaudio">
+	           <area>170,670,74,50</area>
+	           <preserveaspect>no</preserveaspect>
+	           <alpha>64</alpha>
+	           <filename>images/flags/dd20.png</filename>
+	       </imagetype>
+       </group>
+-->
   </window>
 
   <window name="treeeditor">
@@ -429,7 +443,7 @@
         <imagetype name="preview">
             <area>25,260,350,197</area>
             <preserveaspect>no</preserveaspect>
-            <filename>images/shared/defaultNetworkBigWide.png</filename>
+<!--            <filename>images/shared/defaultNetworkBigWide.png</filename>-->
             <reflection shear="0" scale="65" length="18"/>
         </imagetype>
 
@@ -491,13 +505,24 @@
             <template>%00x00| - %%"|SUBTITLE|"\n%%|RATING| - %%DESCRIPTION%</template>
         </textarea>
 
+        <textarea name="urllbl" from="textarea_base" depends="mediaurl">
+            <area>25,677,100,25</area>
+            <font>title_verysmall_blue</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>255</alpha>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <value>URL</value>
+        </textarea>
+
         <textarea name="mediaurl" from="textarea_base">
-            <area>255,685,470,25</area>
-            <font>small</font>
+            <area>95,677,630,25</area>
+            <font>normal</font>
             <case>normal</case>
             <align>left,vcenter</align>
             <scroll direction="left" />
-            <alpha>64</alpha>
+            <alpha>255</alpha>
         </textarea>
 
         <textarea name="nosites" from="description">
@@ -507,27 +532,29 @@
         <!-- ===================================================== -->
         <!--   INFO ICONS                                          -->
         <!-- ===================================================== -->
-        <!-- now just for decoration, hopefully we will get here real status information-->
-        
-       <imagetype name="defaultsub">
-           <area>25,670,74,50</area>
-           <alpha>64</alpha>
-           <preserveaspect>no</preserveaspect>
-           <filename>images/flags/onscreensub.png</filename>
-       </imagetype>
-       <imagetype name="defaultvideo">
-           <area>95,670,74,50</area>
-           <preserveaspect>no</preserveaspect>
-           <alpha>64</alpha>
-           <filename>images/flags/576i.png</filename>
-       </imagetype>
-       <imagetype name="defaultaudio">
-           <area>170,670,74,50</area>
-           <preserveaspect>no</preserveaspect>
-           <alpha>64</alpha>
-           <filename>images/flags/dd20.png</filename>
-       </imagetype>
-
+<!-- now just for decoration, hopefully we will get here real status information-->
+<!--
+       <group name="defaultinfoicons" depends="mediaurl">        
+	       <imagetype name="defaultsub">
+	           <area>25,670,74,50</area>
+	           <alpha>64</alpha>
+	           <preserveaspect>no</preserveaspect>
+	           <filename>images/flags/onscreensub.png</filename>
+	       </imagetype>
+	       <imagetype name="defaultvideo">
+	           <area>95,670,74,50</area>
+	           <preserveaspect>no</preserveaspect>
+	           <alpha>64</alpha>
+	           <filename>images/flags/576i.png</filename>
+	       </imagetype>
+	       <imagetype name="defaultaudio">
+	           <area>170,670,74,50</area>
+	           <preserveaspect>no</preserveaspect>
+	           <alpha>64</alpha>
+	           <filename>images/flags/dd20.png</filename>
+	       </imagetype>
+        </group>
+-->
     </window>
 
     <window name="browser">
@@ -585,7 +612,7 @@
             <value>You haven't added any Sites/RSS Feeds yet! To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
         </textarea>
 
-        <textarea name="MovieDetailslbl" from="textarea_base">
+        <textarea name="MovieDetailslbl" from="textarea_base" depends="date">
             <area>345,275,400,25</area>
             <font>title_small</font>
             <case>upper</case>
@@ -593,56 +620,58 @@
             <value>Movie Details</value>
         </textarea>
 
-        <textarea name="resolution" from="textarea_base">
+        <textarea name="date" from="textarea_base">
             <area>345,300,495,25</area>
             <font>small</font>
             <case>normal</case>
             <align>left,vcenter</align>
-            <value>No Resolution details available</value>
         </textarea>
 
-        <textarea name="date" from="resolution">
+        <textarea name="length" from="date">
             <position>345,325</position>
-            <value>Date unknown</value>
+            <template>%Length: |length|%</template>
         </textarea>
 
-        <textarea name="length" from="resolution">
+        <textarea name="resolution" from="date">
             <position>345,350</position>
-            <value>Length unknown</value>resolution
+            <template>%Resolution: |resolution|%</template>
         </textarea>
 
-        <textarea name="rating" from="resolution">
-            <position>345,375</position>
-            <value>No rating</value>
-        </textarea>
-
-        <textarea name="Urllbl" from="MovieDetailslbl">
+        <textarea name="Ratinglbl" from="MovieDetailslbl" depends="rating">
             <position>345,425</position>
-            <value>Movie URL</value>
+            <value>User rating</value>
         </textarea>
 
-       <textarea name="mediaurl" from="resolution">
+       <textarea name="rating" from="date">
             <position>345,450</position>
-            <scroll direction="left" />
-            <value></value>
         </textarea>
 
-        <textarea name="Directorlbl" from="MovieDetailslbl">
+        <textarea name="Directorlbl" from="MovieDetailslbl" depends="author">
             <position>850,275</position>
             <value>Author</value>
         </textarea>
 
-        <textarea name="author" from="resolution">
+        <textarea name="author" from="date">
             <position>850,300</position>
-            <value>Unknown</value>
         </textarea>
 
-        <textarea name="Seasonlbl" from="MovieDetailslbl">
+        <textarea name="Urllbl" from="MovieDetailslbl" depends="mediaurl">
+            <position>850,350</position>
+            <value>Movie URL</value>
+        </textarea>
+
+       <textarea name="mediaurl" from="date">
+            <position>850,375</position>
+            <scroll direction="left" />
+            <value></value>
+        </textarea>
+
+        <textarea name="Seasonlbl" from="MovieDetailslbl" depends="##x##">
             <position>850,425</position>
             <value>Season and Episode</value>
         </textarea>
 
-        <textarea name="##x##" from="resolution">
+        <textarea name="##x##" from="date">
             <position>850,450</position>
             <value></value>
         </textarea>
@@ -672,7 +701,7 @@
         <!--     VIDEO GALLERY                                     -->
         <!-- ===================================================== -->
         <buttonlist name="videos" from="buttonlist_gallery_small">
-            <position>45,250</position>
+            <position>55,250</position>
         </buttonlist>
 
         <!-- ===================================================== -->
@@ -702,7 +731,7 @@
             <value>You haven't added any Sites/RSS Feeds yet!  To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
         </textarea>
 
-        <textarea name="authorlbl" from="textarea_base">
+        <textarea name="authorlbl" from="textarea_base" depends="author">
             <area>820,680,120,25</area>
             <font>title_verysmall_blue</font>
             <case>upper</case>
@@ -712,7 +741,8 @@
 
        <textarea name="author" from="textarea_base">
             <area>900,680,370,25</area>
-            <font>small</font>
+            <font>normal</font>
+            <case>normal</case>
             <align>left,vcenter</align>
         </textarea>
 

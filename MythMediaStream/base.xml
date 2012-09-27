@@ -820,6 +820,198 @@
        </statetype>  
    </button>
 
+    <!-- previous track button -->
+    <button name="baseprevbutton">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDPrevTrackNF.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <alpha>128</alpha>
+                    <filename>images/shared/OSDPrevTrackFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDPrevTrackFO.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </button>
+
+    <!-- rewind button -->
+    <button name="baserewbutton">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDRewindNF.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <alpha>128</alpha>
+                    <filename>images/shared/OSDRewindFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDRewindFO.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </button>
+
+    <!-- pause button -->
+    <button name="basepausebutton">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDPauseNF.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <alpha>128</alpha>
+                    <filename>images/shared/OSDPauseFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDPauseFO.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </button>
+
+    <!-- play button -->
+    <button name="baseplaybutton">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDPlayNF.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <alpha>128</alpha>
+                    <filename>images/shared/OSDPlayFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDPlayFO.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </button>
+
+    <!-- stop button -->
+    <button name="basestopbutton">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDStopNF.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <alpha>128</alpha>
+                    <filename>images/shared/OSDStopFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDStopFO.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </button>
+
+    <!-- fast forward button -->
+    <button name="baseffbutton">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDForwardNF.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <alpha>128</alpha>
+                    <filename>images/shared/OSDForwardFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDForwardFO.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </button>
+
+    <!-- next track button -->
+    <button name="basenextbutton">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDNextTrackNF.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <alpha>128</alpha>
+                    <filename>images/shared/OSDNextTrackFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDNextTrackFO.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </button>
+
+    <!-- delete button -->
+    <button name="basedeletebutton">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDRepeatNF.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <alpha>128</alpha>
+                    <filename>images/shared/OSDRepeatFO.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>images/shared/OSDRepeatFO.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </button>
+
 
 <!-- ===================================================== -->
 <!--     BUTTONLIST MENU                                   -->
@@ -2906,14 +3098,13 @@
             <alpha>128</alpha>
             <case>upper</case>
             <align>left,vcenter</align>
-            <value>Unknown</value>
-        </textarea>
+       </textarea>
 
         <textarea name="director" from="textarea_base">
             <area>0,60,425,25</area>
             <align>left,vcenter</align>
             <case>upper</case>
-            <template>Directed by %DIRECTOR%, %YEAR%</template>
+            <template>%Directed by |DIRECTOR|, %%YEAR%</template>
         </textarea>
 
         <textarea name="description" from="textarea_base">
@@ -2932,7 +3123,7 @@
             <case>normal</case>
             <multiline>yes</multiline>
             <align>left,top</align>
-            <template>Cast: %cast%</template>
+            <template>%cast%</template>
             <alpha>128</alpha>
         </textarea>
     </group>

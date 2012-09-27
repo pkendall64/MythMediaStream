@@ -34,7 +34,7 @@
         <!-- ===================================================== -->
         <imagetype name="coverart">
             <area>25,260,250,375</area>
-            <filename>images/shared/amt-blank-poster.png</filename>
+<!--            <filename>images/shared/amt-blank-poster.png</filename>-->
             <preserveaspect>yes</preserveaspect>
             <reflection shear="0" scale="65" length="10"/>
         </imagetype>
@@ -73,7 +73,7 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="systemlbl" from="textarea_base">
+        <textarea name="systemlbl" from="textarea_base" depends="system">
             <area>25,677,200,25</area>
             <font>title_verysmall_blue</font>
             <multiline>no</multiline>
@@ -90,7 +90,7 @@
             <case>normal</case>
             <multiline>no</multiline>
             <alpha>255</alpha>
-            <value>Unknown</value>
+            <value></value>
         </textarea>
 
 <!--

@@ -2,174 +2,6 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
 
-    <!-- previous track button -->
-    <button name="baseprevbutton">
-        <position>0,0</position>
-        <statetype name="buttonstate">
-            <state name="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDPrevTrackNF.png</filename>
-                </imagetype>
-            </state>
-            <state name="selected" from="active">
-                <imagetype name="background">
-                    <alpha>128</alpha>
-                    <filename>images/shared/OSDPrevTrackFO.png</filename>
-                </imagetype>
-            </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDPrevTrackFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-    </button>
-
-    <!-- rewind button -->
-    <button name="baserewbutton">
-        <position>0,0</position>
-        <statetype name="buttonstate">
-            <state name="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDRewindNF.png</filename>
-                </imagetype>
-            </state>
-            <state name="selected" from="active">
-                <imagetype name="background">
-                    <alpha>128</alpha>
-                    <filename>images/shared/OSDRewindFO.png</filename>
-                </imagetype>
-            </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDRewindFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-    </button>
-
-    <!-- pause button -->
-    <button name="basepausebutton">
-        <position>0,0</position>
-        <statetype name="buttonstate">
-            <state name="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDPauseNF.png</filename>
-                </imagetype>
-            </state>
-            <state name="selected" from="active">
-                <imagetype name="background">
-                    <alpha>128</alpha>
-                    <filename>images/shared/OSDPauseFO.png</filename>
-                </imagetype>
-            </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDPauseFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-    </button>
-
-    <!-- play button -->
-    <button name="baseplaybutton">
-        <position>0,0</position>
-        <statetype name="buttonstate">
-            <state name="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDPlayNF.png</filename>
-                </imagetype>
-            </state>
-            <state name="selected" from="active">
-                <imagetype name="background">
-                    <alpha>128</alpha>
-                    <filename>images/shared/OSDPlayFO.png</filename>
-                </imagetype>
-            </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDPlayFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-    </button>
-
-    <!-- stop button -->
-    <button name="basestopbutton">
-        <position>0,0</position>
-        <statetype name="buttonstate">
-            <state name="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDStopNF.png</filename>
-                </imagetype>
-            </state>
-            <state name="selected" from="active">
-                <imagetype name="background">
-                    <alpha>128</alpha>
-                    <filename>images/shared/OSDStopFO.png</filename>
-                </imagetype>
-            </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDStopFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-    </button>
-
-    <!-- fast forward button -->
-    <button name="baseffbutton">
-        <position>0,0</position>
-        <statetype name="buttonstate">
-            <state name="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDForwardNF.png</filename>
-                </imagetype>
-            </state>
-            <state name="selected" from="active">
-                <imagetype name="background">
-                    <alpha>128</alpha>
-                    <filename>images/shared/OSDForwardFO.png</filename>
-                </imagetype>
-            </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDForwardFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-    </button>
-
-    <!-- next track button -->
-    <button name="basenextbutton">
-        <position>0,0</position>
-        <statetype name="buttonstate">
-            <state name="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDNextTrackNF.png</filename>
-                </imagetype>
-            </state>
-            <state name="selected" from="active">
-                <imagetype name="background">
-                    <alpha>128</alpha>
-                    <filename>images/shared/OSDNextTrackFO.png</filename>
-                </imagetype>
-            </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="active">
-                <imagetype name="background">
-                    <filename>images/shared/OSDNextTrackFO.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-    </button>
-
     <!-- moving track statetype -->
     <statetype name="basemovingtracksstate">
         <position>0,0</position>
@@ -377,7 +209,7 @@
         <statetype name="buttonitem">
             <state name="active">
                 <imagetype name="buttonimage">
-                    <alpha>128</alpha>
+                    <alpha>255</alpha>
                     <area>0,0,105,105</area>
                     <filename>images/music/MM_Music.png</filename>
                 </imagetype>
@@ -444,6 +276,11 @@
                         </imagetype>
                     </state>
                 </statetype>
+                <imagetype name="buttontextbgd" >
+                    <area>0,0,105,105</area>
+                    <filename>images/shared/DiffuseMirrorBlackVertical.png</filename>
+                    <preseveaspect>no</preseveaspect>
+                </imagetype>
                 <statetype name="buttoncheck">
                     <position>3,3</position>
                     <showempty>yes</showempty>
@@ -453,12 +290,10 @@
                         </imagetype>
                     </state>
                 </statetype>
-                <imagetype name="buttontextbgd" >
-                    <area>0,80,105,26</area>
-                    <filename>images/shared/OSDBackground.png</filename>
-                </imagetype>
                 <textarea name="buttontext" from="textarea_base">
                     <area>5,85,95,20</area>
+                    <alpha>128</alpha>
+                    <case>normal</case>
                     <align>hcenter,vcenter</align>
                     <font state="default">tiny</font>
                     <font state="error">tiny_red</font>
@@ -549,6 +384,8 @@
                 </imagetype>
                 <textarea name="buttontext" from="textarea_base">
                     <area>5,125,135,20</area>
+                    <alpha>255</alpha>
+                    <case>normal</case>
                     <align>hcenter,vcenter</align>
                     <scroll direction="left" />
                     <font state="default">tiny</font>

@@ -186,7 +186,7 @@
             <area>300,260,425,390</area>
         </group>
 	        
-        <textarea name="starslbl" from="textarea_base">
+        <textarea name="starslbl" from="textarea_base" depends="userrating">
             <area>25,677,100,25</area>
             <font>title_verysmall_blue</font>
             <multiline>no</multiline>
@@ -201,7 +201,7 @@
             <position>90,670</position>
         </statetype>
 
-        <textarea name="ratinglbl" from="starslbl">
+        <textarea name="ratinglbl" from="starslbl" depends="userrating">
             <position>300,677</position>
             <value>Rating</value>
         </textarea>
@@ -305,7 +305,7 @@
         </group>
  -->
  
-        <textarea name="directorlabel" from="textarea_base">
+        <textarea name="directorlabel" from="textarea_base" depends="director">
             <area>25,670,85,25</area>
             <font>title_verysmall_blue</font>
             <align>left,vcenter</align>
@@ -321,14 +321,14 @@
             <value></value>
         </textarea>
 
-        <textarea name="ratinglabel" from="directorlabel">
+        <textarea name="ratinglabel" from="directorlabel" depends="director">
             <position>390,670</position>
             <value>Rating</value>
         </textarea>
 
         <textarea name="userrating" from="director">
             <position>460,670</position>
-            <template>%USERRATING%/10 - %RATING%</template>
+            <template>%USERRATING| /10 -% %RATING%</template>
         </textarea>
 
         <statetype name="userratingstate" from="rating_base">
@@ -422,7 +422,7 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>    
        </textarea>
 
-        <textarea name="MovieDetailslbl" from="textarea_base">
+        <textarea name="MovieDetailslbl" from="textarea_base" depends="genres">
             <area>345,275,400,25</area>
             <font>title_small</font>
             <case>upper</case>
@@ -449,7 +449,7 @@
             <position>345,375</position>
         </textarea>
 
-        <textarea name="StarRatinglbl" from="MovieDetailslbl">
+        <textarea name="StarRatinglbl" from="MovieDetailslbl" depends="userrating">
             <position>345,425</position>
             <value>Star rating</value>
         </textarea>
@@ -464,7 +464,7 @@
         </textarea>
 
 
-        <textarea name="Directorlbl" from="MovieDetailslbl">
+        <textarea name="Directorlbl" from="MovieDetailslbl" depends="director">
             <position>850,275</position>
             <value>Director</value>
         </textarea>
@@ -473,7 +473,7 @@
             <position>850,300</position>
         </textarea>
 
-        <textarea name="castlbl" from="MovieDetailslbl">
+        <textarea name="castlbl" from="MovieDetailslbl" depends="cast">
             <position>850,350</position>
             <value>Cast</value>
         </textarea>
@@ -482,7 +482,7 @@
             <position>850,375</position>
         </textarea>
 
-        <textarea name="Seasonlbl" from="MovieDetailslbl">
+        <textarea name="Seasonlbl" from="MovieDetailslbl" depends="##x##">
             <position>850,425</position>
             <value>Season and Episode</value>
         </textarea>
@@ -546,7 +546,7 @@
 <!--            <template>%##X##% - %description%</template>-->
         </textarea>
 
-        <textarea name="StarRatinglbl" from="textarea_base">
+        <textarea name="StarRatinglbl" from="textarea_base" depends="userrating">
             <area>820,680,120,25</area>
             <font>title_verysmall_blue</font>
             <case>upper</case>

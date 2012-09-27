@@ -83,8 +83,8 @@
         </buttonlist>
 
         <imagetype name="NetworkImage">
-            <area>25,260,275,415</area>
-            <filename>images/shared/DefaultNetworkLong.png</filename>
+            <area>25,260,350,350</area>
+            <filename>images/shared/DefaultNetwork.png</filename>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
 

@@ -623,20 +623,20 @@
         </imagetype>
 
         <!-- buttons -->
-        <button name="play_button" from="button_base">
-            <position>720,13</position>
+        <button name="play_button" from="baseplaybutton">
+            <position>470,0</position>
         </button>
 
-        <button name="delete_button" from="button_base">
-            <position>860,13</position>
+        <button name="delete_button" from="basedeletebutton">
+            <position>520,0</position>
         </button>
 
-        <button name="prev_button" from="button_base">
-            <position>1000,13</position>
+        <button name="prev_button" from="baseprevbutton">
+            <position>570,0</position>
         </button>
 
-        <button name="next_button" from="button_base">
-            <position>1140,13</position>
+        <button name="next_button" from="basenextbutton">
+            <position>620,0</position>
         </button>
 
     </window>
