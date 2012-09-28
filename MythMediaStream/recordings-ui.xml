@@ -356,9 +356,7 @@
        <!-- ===================================================== -->
        <!--     NO RECORDINGS TEXT                                -->
        <!-- ===================================================== -->
-       <textarea name="norecordings" from="textarea_base">
-            <area>25,260,700,180</area>
-            <case>normal</case>
+       <textarea name="norecordings" from="subtitle">
             <value>No recordings available, please schedule recordings first in order to watch them here</value>
         </textarea>
     </window>

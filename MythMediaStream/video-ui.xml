@@ -183,7 +183,7 @@
         </imagetype>
 
         <group name="videodetails" from="defaultvideodetails">
-            <area>300,260,425,390</area>
+            <position>300,260</position>
         </group>
 	        
         <textarea name="starslbl" from="textarea_base" depends="userrating">
@@ -222,12 +222,6 @@
         </imagetype>
 
        <textarea name="novideos" from="description">
-            <area>300,370,425,180</area>
-            <font>small</font>
-            <case>normal</case>
-            <align>justify</align>
-            <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>    
        </textarea>
 
@@ -399,97 +393,9 @@
             </state>
         </statetype>
 
-        <textarea name="title" from="textarea_base">
-            <area>345,80,915,40</area>
-            <font>title_big</font>
-            <multiline>no</multiline>
-            <cutdown>yes</cutdown>
-            <case>upper</case>
-            <align>left,vcenter</align>
-            <template>%TITLE% %SUBTITLE%</template>
-        </textarea>
-
-        <textarea name="description" from="textarea_base">
-            <area>345,125,915,125</area>
-            <font>small</font>
-            <case>normal</case>
-            <align>justify</align>
-            <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
-        </textarea>
-
-        <textarea name="novideos" from="description">
-            <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>    
-       </textarea>
-
-        <textarea name="MovieDetailslbl" from="textarea_base" depends="genres">
-            <area>345,275,400,25</area>
-            <font>title_small</font>
-            <case>upper</case>
-            <align>left,vcenter</align>
-            <value>Movie Details</value>
-        </textarea>
-
-        <textarea name="genres" from="textarea_base">
-            <area>345,300,400,25</area>
-            <font>small</font>
-            <case>normal</case>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="year" from="genres">
-            <position>345,325</position>
-        </textarea>
-
-        <textarea name="length" from="genres">
-            <position>345,350</position>
-        </textarea>
-
-        <textarea name="rating" from="genres">
-            <position>345,375</position>
-        </textarea>
-
-        <textarea name="StarRatinglbl" from="MovieDetailslbl" depends="userrating">
-            <position>345,425</position>
-            <value>Star rating</value>
-        </textarea>
-
-        <statetype name="userratingstate" from="rating_base">
-            <position>345,445</position>
-        </statetype>
-
-       <textarea name="userrating" from="genres">
-            <position>480,450</position>
-            <template>%(|USERRATING)%</template>
-        </textarea>
-
-
-        <textarea name="Directorlbl" from="MovieDetailslbl" depends="director">
-            <position>850,275</position>
-            <value>Director</value>
-        </textarea>
-
-        <textarea name="director" from="genres">
-            <position>850,300</position>
-        </textarea>
-
-        <textarea name="castlbl" from="MovieDetailslbl" depends="cast">
-            <position>850,350</position>
-            <value>Cast</value>
-        </textarea>
-
-        <textarea name="cast" from="genres">
-            <position>850,375</position>
-        </textarea>
-
-        <textarea name="Seasonlbl" from="MovieDetailslbl" depends="##x##">
-            <position>850,425</position>
-            <value>Season and Episode</value>
-        </textarea>
-
-        <textarea name="##x##" from="genres">
-            <position>850,450</position>
-        </textarea>
+        <group name="videodetailsbrowser" from="defaultvideodetailsbrowser">
+            <position>345,80</position>
+        </group>
 
     </window>
 
@@ -958,7 +864,7 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="MovieDetailslbl" from="textarea_base">
+        <textarea name="MovieDetailslbl" from="textarea_base" depends="genres">
             <area>380,335,400,25</area>
             <font>title_small</font>
             <case>upper</case>
@@ -989,7 +895,7 @@
             <value>N/A</value>
         </textarea>
 
-        <textarea name="StarRatinglbl" from="MovieDetailslbl">
+        <textarea name="StarRatinglbl" from="MovieDetailslbl" depends="userrating">
             <position>380,485</position>
             <value>Star rating</value>
         </textarea>
@@ -1003,27 +909,26 @@
             <template>%USERRATING%/10</template>
         </textarea>
 
-        <textarea name="Directorlbl" from="MovieDetailslbl">
+        <textarea name="Directorlbl" from="MovieDetailslbl" depends="director">
             <area>750,335,120,25</area>
             <value>Director</value>
         </textarea>
 
         <textarea name="director" from="genres">
             <area>750,360,420,25</area>
-            <value>N/A</value>
         </textarea>
 
-        <textarea name="castlbl" from="MovieDetailslbl">
+        <textarea name="castlbl" from="MovieDetailslbl" depends="cast">
             <position>750,410</position>
             <value>Cast</value>
         </textarea>
 
         <textarea name="cast" from="genres">
             <position>750,435</position>
-            <value>Unknown</value>
+            <scroll direction="left" />
         </textarea>
 
-        <textarea name="Seasonlbl" from="MovieDetailslbl">
+        <textarea name="Seasonlbl" from="MovieDetailslbl" depends="##x##">
             <position>750,485</position>
             <value>Season and Episode</value>
         </textarea>

@@ -278,18 +278,18 @@
         </textarea>-->
 
         <buttontree name="playlist_tree">
-            <area>35,260,800,450</area>
+            <area>25,260,950,450</area>
             <numlists>1</numlists>
             <spacing>0</spacing>
             <buttonlist name="listtemplate" from="basegallerybuttonlist" />
         </buttontree>
 
         <group name="infopanel" from="baseinfopanel">
-            <position>820,260</position>>
+            <position>910,260</position>>
         </group>
 
         <group name="playliststatusgroup" from="baseplayliststatusgroup">
-            <position>820,600</position>
+            <position>910,600</position>
         </group>
 
     </window>

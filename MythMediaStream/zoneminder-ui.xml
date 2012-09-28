@@ -512,11 +512,11 @@
 	        </buttonlist>
 	
            <buttonlist name="layout3_eventlist" from="buttonlist_gallery">
-               <area>250,300,510,440</area>
-               <buttonarea>0,0,510,420</buttonarea>
+               <area>250,290,510,460</area>
+               <buttonarea>0,0,510,440</buttonarea>
 			       <statetype name="buttonitem">
 			           <state name="active">
-			               <area>0,0,250,140</area> 
+			               <area>0,0,245,138</area> 
 			               <imagetype name="buttonimage">
 			                   <area>25,10,200,120</area>
 			                   <alpha>128</alpha>
@@ -524,21 +524,27 @@
 			                   <filename>images/backgrounds/tv-monoscopio_16x9.png</filename>
 			               </imagetype>
 	                    <textarea name="buttontext" from="textarea_base">
-	                        <area>0,120,250,20</area>
+	                        <area>0,120,245,20</area>
 	                        <font>tiny</font>
 	                        <align>allcenter</align>
-	                        <alpha>255</alpha>
+	                        <alpha>128</alpha>
 	                    </textarea>
 			           </state>
 			           <state name="inactive" from ="active"/>
 			           <state name="selectedactive">
-			               <area>0,0,250,140</area> 
+			               <area>0,0,245,138</area> 
 			               <imagetype name="buttonimage">
-			                   <area>0,0,250,140</area>
+			                   <area>0,0,245,138</area>
 			                   <alpha>255</alpha>
 			                   <preserveaspect>yes</preserveaspect>
 			                   <filename>images/backgrounds/tv-monoscopio_16x9.png</filename>
 			               </imagetype>
+	                    <textarea name="buttontext" from="textarea_base">
+	                        <area>0,120,245,20</area>
+	                        <font>tiny</font>
+	                        <align>allcenter</align>
+	                        <alpha>255</alpha>
+	                    </textarea>
 			           </state>
 			           <state name="selectedinactive" from="selectedactive">
 			               <alpha>128</alpha>
@@ -567,9 +573,9 @@
     </window>
 
     <window name="zmplayer">
-        <imagetype name="browserbgd" from="image_wallpaper_base">
-            <filename>images/backgrounds/cctv.jpg</filename>
-        </imagetype>
+<!--        <imagetype name="browserbgd" from="image_wallpaper_base">
+            <filename>images/backgrounds/default.png</filename>
+        </imagetype>-->
         <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
             <area>0,0,1280,60</area>
             <filename>images/shared/ZMOverlay.png</filename>
@@ -642,10 +648,11 @@
     </window>
 
     <window name="zmliveplayer">
-
+<!--
         <imagetype name="browserbgd" from="image_wallpaper_base">
-            <filename>images/backgrounds/cctv.jpg</filename>
+            <filename>images/backgrounds/default.png</filename>
         </imagetype>
+-->
         <imagetype name="BackgroundOverlay" from="image_wallpaper_base">
             <area>0,0,1280,60</area>
             <filename>images/shared/ZMOverlay.png</filename>
