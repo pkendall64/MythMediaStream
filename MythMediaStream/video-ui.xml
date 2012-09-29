@@ -221,7 +221,13 @@
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
-       <textarea name="novideos" from="description">
+       <textarea name="novideos"  from="textarea_base">
+            <area>300,370,425,180</area>
+            <font>small</font>
+            <case>normal</case>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>    
        </textarea>
 
@@ -291,14 +297,6 @@
 	            <cutdown>yes</cutdown>
 	        </textarea>
 	
-<!--        </group>-->
-
-<!-- 
-        <group name="videodetails" from="defaultvideodetails" depends="!banner">
-           <<area>300,260,425,390</area>
-        </group>
- -->
- 
         <textarea name="directorlabel" from="textarea_base" depends="director">
             <area>25,670,85,25</area>
             <font>title_verysmall_blue</font>
