@@ -439,7 +439,7 @@
            <area>0,0,160,40</area>
        </imagetype>
        <clock name="texthours">
-           <area>55,3,48,40</area>
+           <area>55,3,46,40</area>
            <font>normal</font>
            <template>hh:mm AP</template>
            <align>left,vcenter</align>
