@@ -323,7 +323,7 @@
 	            <position>470,430</position>
 	            <template>%rectypestatus%</template>
 	        </textarea>	
-<	     </group>
+	     </group>
 
 <!--
         <imagetype name="preview" depends="!coverart">
