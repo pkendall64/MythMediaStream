@@ -158,7 +158,6 @@
         <!--     Fix me, textarea widgets don`t update when        -->
         <!--     switching between coverart and preview            -->
         <!-- ===================================================== -->
-<!--
         <group name="coverart_details" depends="coverart">
 
 	        <imagetype name="coverart">
@@ -235,16 +234,14 @@
 	        </textarea>	
 	        
 	    </group>
--->
 
         <!-- ===================================================== -->
         <!--     PROGRAM DETAILS when NO coverart available        -->
         <!--     Fix me, textarea widgets don`t update when        -->
         <!--     switching between coverart and preview            -->
         <!-- ===================================================== -->
-<!--
+
         <group name="preview_details" depends="preview" depends="!coverart">
--->
 	        <imagetype name="preview">
 	            <area>25,260,350,197</area>
 	            <preserveaspect>no</preserveaspect>
@@ -326,9 +323,7 @@
 	            <position>470,430</position>
 	            <template>%rectypestatus%</template>
 	        </textarea>	
-<!--	        
-	     </group>
--->
+<	     </group>
 
 <!--
         <imagetype name="preview" depends="!coverart">
