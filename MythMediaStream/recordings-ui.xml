@@ -221,7 +221,7 @@
 	
 	        <textarea name="startdate" from="textarea_base">
 	            <area>370,595,275,25</area>
-	            <font>title_small</font>
+	            <font>normal</font>
 	            <case>normal</case>
 	            <multiline>no</multiline>
 	            <alpha>255</alpha>
