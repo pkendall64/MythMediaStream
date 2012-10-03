@@ -24,6 +24,13 @@
             <cutdown>no</cutdown>
         </textarea>
 
+       <!-- ===================================================== -->
+       <!--     NO RECORDINGS TEXT                                -->
+       <!-- ===================================================== -->
+        <textarea name="norecordings" from="subtitle">
+            <value>No recordings available, please schedule recordings first in order to watch them here</value>
+        </textarea>
+
         <!-- ===================================================== -->
         <!--     RECORDING LIST IN THE GROUP                       -->
         <!-- ===================================================== -->
@@ -348,12 +355,6 @@
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
-       <!-- ===================================================== -->
-       <!--     NO RECORDINGS TEXT                                -->
-       <!-- ===================================================== -->
-       <textarea name="norecordings" from="subtitle">
-            <value>No recordings available, please schedule recordings first in order to watch them here</value>
-        </textarea>
     </window>
 
     <window name="groupfilter">
