@@ -35,27 +35,6 @@
     </window>
 
     <window name="osd_debug">
-<!--
-        <fontdef name="normal" face="MediaStreamALT">
-            <pixelsize>24</pixelsize>
-            <stretch>extracondensed</stretch>
-            <weight>normal</weight>
-            <color>#FFFFFF</color>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
-        </fontdef>
-        <fontdef name="normal_tiny" from="normal">
-            <pixelsize>16</pixelsize>
-        </fontdef>
-        <fontdef name="title_small" face="Fluid">
-            <color>#FFFFFF</color>
-            <pixelsize>25</pixelsize>
-            <stretch>extracondensed</stretch>
-            <weight>normal</weight>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
-        </fontdef>
--->
         <area>968,0,316,720</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
@@ -216,20 +195,6 @@
     </window>
 
     <window name="osd_status">
-<!--    
-        <fontdef name="small" face="MediaStreamALT">
-            <pixelsize>21</pixelsize>
-            <color>#FFFFFF</color>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
-        </fontdef>
-        <fontdef name="smaller" from="small">
-            <pixelsize>17</pixelsize>
-        </fontdef>
-        <fontdef name="medium" from="small">
-            <pixelsize>23</pixelsize>
-        </fontdef>
--->
         <area>0,500,1280,220</area>
         <imagetype name="popup_background">
             <area>0,0,1280,225</area>	
@@ -247,6 +212,14 @@
             <align>right,top</align>
         </clock>
 
+<!-- Fix me, it would be cool to have control buttons on the OSD status for playing, pausing, etc
+
+        <group name="OSDcontrols" from="defaultcontrols">
+            <position>465,70</position>
+        </group>
+-->
+
+<!-- Fix me, control buttons as images to serve as placeholder for control buttons  -->
 
         <imagetype name="OSDPrevTrackNF">
             <area>436,70,50,50</area>	
@@ -332,26 +305,6 @@
     </window>
 
     <window name="program_info">
-<!--    
-        <fontdef name="small" face="MediaStreamALT">
-            <pixelsize>21</pixelsize>
-            <color>#FFFFFF</color>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
-        </fontdef>
-        <fontdef name="smaller" from="small">
-            <pixelsize>17</pixelsize>
-        </fontdef>
-        <fontdef name="smaller_state" from="small">
-            <color>#105B8F</color>
-            <stretch>extracondensed</stretch>
-            <weight>normal</weight>
-            <pixelsize>25</pixelsize>
-        </fontdef>
-        <fontdef name="medium" from="small">
-            <pixelsize>23</pixelsize>
-        </fontdef>
--->
         <area>0,500,1280,220</area>
         <imagetype name="popup_background">
             <area>0,0,1280,225</area>	
@@ -698,20 +651,6 @@
     </window>
 
     <window name="browse_info">
-<!--
-        <fontdef name="small" face="MediaStreamALT">
-            <pixelsize>21</pixelsize>
-            <color>#FFFFFF</color>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
-        </fontdef>
-        <fontdef name="smaller" from="small">
-            <pixelsize>17</pixelsize>
-        </fontdef>
-        <fontdef name="medium" from="small">
-            <pixelsize>23</pixelsize>
-        </fontdef>
--->
         <area>0,500,1280,220</area>
         <imagetype name="popup_background">
             <area>0,0,1280,225</area>	
@@ -1088,25 +1027,6 @@
     </window>
 
     <window name="MythPopupBox">
-<!--
-        <fontdef name="normal" face="MediaStreamALT">
-            <pixelsize>25</pixelsize>
-            <stretch>extracondensed</stretch>
-            <weight>normal</weight>
-            <color>#FFFFFF</color>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
-        </fontdef>
-        <fontdef name="title_small" face="Fluid">
-            <color>#FFFFFF</color>
-            <pixelsize>25</pixelsize>
-            <stretch>extracondensed</stretch>
-            <weight>normal</weight>
-            <shadowoffset>1,1</shadowoffset>
-            <shadowcolor>#000000</shadowcolor>
-        </fontdef>
--->
-
         <area>968,0,316,720</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">

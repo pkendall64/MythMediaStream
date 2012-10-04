@@ -2851,6 +2851,39 @@
         </imagetype>
     </group>
 
+    <group name="defaultcontrols">
+        <area>0,0,350,40</area>
+
+        <button name="prev" from="baseprevbutton">
+            <position>0,0</position>
+        </button>
+
+        <button name="rew" from="baserewbutton">
+            <position>50,0</position>
+        </button>
+
+        <button name="pause" from="basepausebutton">
+            <position>100,0</position>
+        </button>
+
+        <button name="play" from="baseplaybutton">
+            <position>150,0</position>
+        </button>
+
+        <button name="stop" from="basestopbutton">
+            <position>200,0</position>
+        </button>
+
+        <button name="ff" from="baseffbutton">
+            <position>250,0</position>
+        </button>
+
+        <button name="next" from="basenextbutton">
+            <position>300,0</position>
+        </button>
+
+    </group>
+
     <group name="defaultinfoicons" >
         <area>0,0,495,50</area>
         <!-- ===================================================== -->
@@ -3128,7 +3161,6 @@
         </textarea>
     </group>
 
-<!-- 345,80,915,475-->
     <group name="defaultvideodetailsbrowser">
         <area>0,0,915,475</area>
 
