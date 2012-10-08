@@ -13,8 +13,7 @@
         <type>SETTINGS_VIDEO</type>
         <text>Movies</text>
         <description>Configure playback of</description>
-        <action>CONFIGPLUGIN mythvideo</action>
-        <depends>mythvideo</depends>
+        <action>MENU video_settings.xml</action>
     </button>
 
     <button>
