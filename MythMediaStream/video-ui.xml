@@ -1051,7 +1051,6 @@
 
     </window>
 
-
     <window name="playersettings">
         <imagetype name="fanart" from="image_wallpaper_base">
             <filename>images/backgrounds/video-settings.jpg</filename>

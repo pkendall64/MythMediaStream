@@ -554,4 +554,200 @@
 
     </window>
 
+<!-- Can't find this screen in the menu -->
+    <window name="burningsettings">
+
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/music-settings.jpg</filename>
+        </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2B_animated">
+            <position>0,0</position>
+        </group> 
+
+        <group name="burningsettings1group" from="defaultscreencontent_1B_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Configure Music Burn options</value>
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Burn Settings</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+           <!-- labels -->
+	        <textarea name="cdwriterenabled_label" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Enable CD Writing:</value>
+	        </textarea>
+
+	        <textarea name="cdwriterdevice_label" from="cdwriterenabled_label">
+               <position>250,245</position>
+	            <value>CD-Writer Device:</value>
+	        </textarea>
+
+	        <textarea name="cddisksize_label" from="cdwriterenabled_label">
+               <position>250,280</position>
+	            <value>Disk Size:</value>
+	        </textarea>
+	        
+	        <textarea name="cdwritespeed_label" from="cdwriterenabled_label">
+               <position>250,315</position>
+	            <value>CD Write Speed:</value>
+	        </textarea>
+	        
+	        <textarea name="cdblanktype_label" from="cdwriterenabled_label">
+               <position>250,350</position>
+	            <value>CD Blanking Type:</value>
+	        </textarea>
+	        
+	        <textarea name="cdcreatedir_label" from="cdwriterenabled_label">
+               <position>250,420</position>
+	            <value>Enable directories on MP3 Creation:</value>
+	        </textarea>
+	        
+	        <!-- widgets -->
+	        <checkbox name="cdwriterenabled" from="checkbox_base">
+	            <position>735,175</position>
+	        </checkbox>
+	        
+	        <textedit name="cdwriterdevice" from="textedit_menu">
+	            <position>420,245</position>
+	        </textedit>
+	        
+	        <buttonlist name="cddisksize" from="selector_base">
+	            <position>420,280</position>
+	        </buttonlist>
+	        
+	        <buttonlist name="cdwritespeed" from="selector_base">
+	            <position>420,315</position>
+	        </buttonlist>
+	        
+	        <buttonlist name="cdblanktype" from="selector_base">
+	            <position>420,350</position>
+	        </buttonlist>
+	        
+	        <checkbox name="cdcreatedir" from="checkbox_base">
+	            <position>735,420</position>
+	        </checkbox>
+
+	        <textarea name="helptext" from="textarea_base">
+	            <area>250,560,510,150</area>
+	            <cutdown>yes</cutdown>
+	            <font>smaller</font>
+	            <case>normal</case>
+	            <alpha>128</alpha>
+	            <align>hcenter,bottom</align>
+	            <multiline>yes</multiline>
+	        </textarea>
+        </group>
+
+<!--
+     <textarea name="title" from="basetextarea">
+            <area>15,5,800,40</area>
+            <font>baselarge</font>
+            <value>Burn Settings</value>
+        </textarea>
+
+        <textarea name="cdwriterenabled_label" from="basetextarea">
+            <area>240,160,400,40</area>
+            <align>right,vcenter</align>
+            <value>Enable CD Writing:</value>
+        </textarea>
+        <textarea name="cdwriterdevice_label" from="basetextarea">
+            <area>240,210,400,40</area>
+            <align>right,vcenter</align>
+            <value>CD-Writer Device:</value>
+        </textarea>
+        <textarea name="cddisksize_label" from="basetextarea">
+            <area>240,260,400,40</area>
+            <align>right,vcenter</align>
+            <value>Disk Size:</value>
+        </textarea>
+        <textarea name="cdwritespeed_label" from="basetextarea">
+            <area>240,310,400,40</area>
+            <align>right,vcenter</align>
+            <value>CD Write Speed:</value>
+        </textarea>
+        <textarea name="cdblanktype_label" from="basetextarea">
+            <area>240,360,400,40</area>
+            <align>right,vcenter</align>
+            <value>CD Blanking Type:</value>
+        </textarea>
+        <textarea name="cdcreatedir_label" from="basetextarea">
+            <area>240,410,400,40</area>
+            <align>right,vcenter</align>
+            <value>Enable directories on MP3 Creation:</value>
+        </textarea>
+
+        <checkbox name="cdwriterenabled" from="basecheckbox">
+            <position>650,165</position>
+        </checkbox>
+        <textedit name="cdwriterdevice" from="basetextedit">
+            <position>650,210</position>
+        </textedit>
+        <buttonlist name="cddisksize" from="baseselector">
+            <position>650,260</position>
+        </buttonlist>
+        <buttonlist name="cdwritespeed" from="baseselector">
+            <position>650,310</position>
+        </buttonlist>
+        <buttonlist name="cdblanktype" from="baseselector">
+            <position>650,360</position>
+        </buttonlist>
+        <checkbox name="cdcreatedir" from="basecheckbox">
+            <position>650,415</position>
+        </checkbox>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>205,540,870,80</area>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="basebutton">
+            <position>480,650</position>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <position>650,650</position>
+            <value>Cancel</value>
+        </button>
+-->
+        <group name="burningsettingsbutton1group" from="defaultscreencontent_2B_animated">
+           <area>788,0,720,988</area>      
+	        <button name="save" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>Save</value>
+	        </button>
+	
+	        <button name="cancel" from="button_base_menu">
+	            <position>2,210</position>
+	            <value>Cancel</value>
+	        </button>
+        </group>
+
+    </window>
+
+
+
 </mythuitheme>

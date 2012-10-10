@@ -1090,6 +1090,39 @@
        </statetype>
    </buttonlist>
 
+   <buttonlist name="buttonlist_normal">
+       <area>0,0,275,100</area>
+       <searchposition>758,55</searchposition>
+       <align>top,hcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <showarrow>no</showarrow>
+       <buttonarea>0,0,275,100</buttonarea>
+       <statetype name="buttonitem">
+           <!--ACTIVE-->
+           <state name="active">
+               <textarea name="buttontext" from="textarea_base">
+                   <area>0,0,275,25</area>
+                   <case>normal</case>
+                   <alpha>128</alpha>
+               </textarea>
+           </state>
+           <!--SELECTED ACTIVE-->
+           <state name="selectedactive">
+               <textarea name="buttontext" from="textarea_base">
+                   <area>0,0,275,25</area>
+                   <case>normal</case>
+                   <alpha>255</alpha>
+               </textarea>
+           </state>
+           <!--INACTIVE-->
+           <state name="inactive" from="active"/>
+           <!--SELECTED INACTIVE-->
+           <state name="selectedinactive" from="selectedactive"/>
+       </statetype>
+   </buttonlist>
+
    <buttonlist name="buttonlist_menu">
        <area>0,0,540,420</area>
        <searchposition>758,55</searchposition>

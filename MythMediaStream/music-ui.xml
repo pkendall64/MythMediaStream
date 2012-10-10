@@ -182,7 +182,7 @@
             <position>345,610</position>
        </group>
 
-       <group name="playlistvisualizergroup" from="baseplaylistvisualizergroup">
+       <group name="streamlistvisualizergroup" from="baseplaylistvisualizergroup">
             <position>25,600</position>
        </group>
 
