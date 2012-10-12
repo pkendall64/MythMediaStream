@@ -571,7 +571,7 @@
     <group name="baseinfostreampanel">
         <area>0,0,360,300</area>
 
-         <textarea name="infolbl" from="textarea_base">
+         <textarea name="infolbl" from="textarea_base" depends="title">
             <area>0,0,355,30</area>
             <alpha>128</alpha>
             <value>Now playing</value>
@@ -592,15 +592,15 @@
             <font>small</font>
         </textarea>
 
-        <textarea name="channel" from="artist">
+        <textarea name="channel" from="artist" depends="title">
             <position>0,85</position>
         </textarea>
 
-        <textarea name="genre" from="artist">
+        <textarea name="genre" from="artist" depends="title">
             <position>0,110</position>
         </textarea>
 
-        <textarea name="playedlbl" from="textarea_base">
+        <textarea name="playedlbl" from="textarea_base" depends="playedtrackslist">
             <area>0,160,100,25</area>
             <font>title_verysmall_blue</font>
             <multiline>no</multiline>
