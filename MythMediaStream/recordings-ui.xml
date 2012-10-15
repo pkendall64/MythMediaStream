@@ -27,9 +27,6 @@
        <!-- ===================================================== -->
        <!--     NO RECORDINGS TEXT                                -->
        <!-- ===================================================== -->
-        <textarea name="norecordings" from="subtitle">
-            <value>No recordings available, please schedule recordings first in order to watch them here</value>
-        </textarea>
 
         <!-- ===================================================== -->
         <!--     RECORDING LIST IN THE GROUP                       -->
@@ -239,6 +236,10 @@
 	            <position>370,625</position>
 	            <template>%filesize_str% of %storagegroup% Storage</template>
 	        </textarea>	
+
+	        <textarea name="norecordings" from="subtitle">
+	            <value>No recordings available, please schedule recordings first in order to watch them here</value>
+	        </textarea>
 	        
 	    </group>
 
@@ -330,6 +331,11 @@
 	            <position>470,430</position>
 	            <template>%rectypestatus%</template>
 	        </textarea>	
+
+	        <textarea name="norecordings" from="subtitle">
+	            <value>No recordings available, please schedule recordings first in order to watch them here</value>
+	        </textarea>
+
 	     </group>
 
 <!--
