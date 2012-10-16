@@ -38,8 +38,6 @@
                     <textarea name="titlesubtitle" from="textarea_base">
                         <area>10,0,490,40</area>
                         <alpha>128</alpha>
-<!--                        <font state="error">normal_red</font>
-                        <font state="running">normal_amber</font>-->
                         <align>left,vcenter</align>
                         <template>%TITLE|  %%00x00| - %%SUBTITLE%</template>
                     </textarea>
@@ -332,32 +330,14 @@
 	            <template>%rectypestatus%</template>
 	        </textarea>	
 
-	        <textarea name="norecordings" from="subtitle">
-	            <value>No recordings available, please schedule recordings first in order to watch them here</value>
-	        </textarea>
-
 	     </group>
 
-<!--
-        <imagetype name="preview" depends="!coverart">
-            <area>15,270,270,152</area>
-            <preserveaspect>no</preserveaspect>
-            <reflection shear="0" scale="65" length="18"/>
-        </imagetype>
-
-        <imagetype name="folderimage" depends="preview" depends="!coverart">
-            <area>25,420,250,250</area>
-            <filename>images/shared/DefaultFolderTransparent.png</filename>
-            <preserveaspect>no</preserveaspect>
-        </imagetype>
--->
         <group name="infoicons" from="defaultinfoicons" depends="preview">
             <position>0,660</position>
         </group>
 
         <imagetype name="banner">
             <area>558,670,162,30</area>
-<!--            <mask>images/shared/BannerMask.png</mask>-->
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
