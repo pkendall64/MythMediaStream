@@ -58,6 +58,50 @@
          </statetype>
      </buttonlist>
 
+    <!-- current streamlist button list -->
+
+     <buttonlist name="basecurrentstreamlist" from="buttonlist_menu_details_permanent">
+         <position>740,260</position>
+         <searchposition>758,55</searchposition>
+         <statetype name="buttonitem">
+             <state name="active">
+                 <textarea name="station" from="textarea_base">
+                     <area>10,0,490,40</area>
+                     <alpha>128</alpha>
+                     <font state="error">normal_red</font>
+                     <font state="running">normal_amber</font>
+                     <align>left,vcenter</align>
+                     <template>%STATION% - %CHANNEL%</template>
+                 </textarea>
+             </state>
+             <state name="selectedactive">
+                 <textarea name="station" from="textarea_base">
+                     <area>10,0,350,40</area>
+                     <scroll direction="left" />
+                     <font state="error">normal_red</font>
+                     <font state="running">normal_amber</font>
+                     <align>left,vcenter</align>
+                     <template>%STATION% - %CHANNEL%</template>
+                 </textarea>
+                 <textarea name="genre" from="station">
+                     <area>385,7,120,33</area>
+                     <font>verysmall</font>
+                     <font state="error">verysmall_red</font>
+                     <font state="running">verysmall_amber</font>
+                     <case>Normal</case>
+                     <align>left,vcenter</align>
+                     <template>%genre%</template>
+                 </textarea>
+             </state>
+	          <state name="inactive" from="active">
+	              <alpha>192</alpha>
+	          </state>
+	          <state name="selectedinactive" from="selectedactive">
+	              <alpha>128</alpha>
+             </state>
+         </statetype>
+     </buttonlist>
+
     <!-- playlist progress bar  -->
     <progressbar name="baseplaylistprogress">
         <position>0,0</position>
@@ -279,7 +323,7 @@
                 <imagetype name="buttontextbgd" >
                     <area>0,0,105,105</area>
                     <filename>images/shared/DiffuseMirrorBlackVertical.png</filename>
-                    <preseveaspect>no</preseveaspect>
+                    <preserveaspect>no</preserveaspect>
                 </imagetype>
                 <statetype name="buttoncheck">
                     <position>3,3</position>
@@ -522,27 +566,88 @@
             <position>0,280</position>
         </group>
 
-<!--
-        <textabaseinfopanelrea name="time" from="basetextarea">
-            <area>230,205,185,35</area>
-            <font>basesmall</font>
+    </group>
+
+    <group name="baseinfostreampanel">
+        <area>0,0,360,300</area>
+
+         <textarea name="infolbl" from="textarea_base" depends="title">
+            <area>0,0,355,30</area>
+            <alpha>128</alpha>
+            <value>Now playing</value>
         </textarea>
 
-        <video name="visualizer">
-            <area>1085,23,156,155,</area>
-        </video>
-
-        <textarea name="visualizername" from="basetextarea">
-            <area>1085,180,156,35</area>
-            <font>basesmall</font>
-            <align>center</align>
+       <textarea name="title" from="textarea_base">
+            <area>0,25,355,40</area>
+            <font>title</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <case>upper</case>
+            <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="volume" from="basevolume">
-            <position>70,227</position>
+        <textarea name="artist" from="textarea_base">
+            <area>0,60,355,30</area>
+            <case>upper</case>
+            <font>small</font>
         </textarea>
 
--->
+        <textarea name="channel" from="artist" depends="title">
+            <position>0,85</position>
+        </textarea>
+
+        <textarea name="genre" from="artist" depends="title">
+            <position>0,110</position>
+        </textarea>
+
+        <textarea name="playedlbl" from="textarea_base" depends="playedtrackslist">
+            <area>0,160,100,25</area>
+            <font>title_verysmall_blue</font>
+            <multiline>no</multiline>
+            <cutdown>yes</cutdown>
+            <alpha>255</alpha>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <value>Last</value>
+        </textarea>
+        
+        <buttonlist name="playedtrackslist">
+		       <area>70,160,300,90</area>
+		       <searchposition>758,55</searchposition>
+		       <align>top,hcenter</align>
+		       <layout>vertical</layout>
+		       <wrapstyle>selection</wrapstyle>
+		       <arrange>stack</arrange>
+		       <showarrow>no</showarrow>
+		       <buttonarea>0,0,300,90</buttonarea>
+		       <statetype name="buttonitem">
+		           <!--ACTIVE-->
+		           <state name="active">
+		               <textarea name="title" from="textarea_base">
+		                   <area>0,0,300,30</area>
+		                   <case>normal</case>
+		                   <cutdown>yes</cutdown>
+		                   <alpha>255</alpha>
+		                   <template>%title% by %artist%</template>
+		               </textarea>
+		           </state>
+		           <state name="selectedactive">
+		               <textarea name="title" from="textarea_base">
+		                   <area>0,0,300,30</area>
+		                   <case>normal</case>
+		                   <cutdown>yes</cutdown>
+		                   <alpha>128</alpha>
+		                   <template>%title% by %artist%</template>
+		               </textarea>
+		           </state>
+		           <state name="inactive" from="active"/>
+		           <state name="selectedinactive" from="active"/>
+		       </statetype>
+		  </buttonlist>
+
+        <group name="statusicons" from="basestatusicons">
+            <position>0,280</position>
+        </group>
 
     </group>
 
@@ -556,6 +661,25 @@
         </textarea>
 
         <progressbar name="playlistprogress" from="baseplaylistprogress">
+            <position>0,30</position>
+        </progressbar>
+
+        <group name="musiccontrols" from="basemusiccontrols">
+            <position>0,50</position>
+        </group>
+
+    </group>
+
+    <group name="basestreamliststatusgroup">
+        <area>0,0,360,110</area>
+
+        <textarea name="bufferstatus" from="textarea_base">
+            <area>0,0,350,30</area>
+            <font>small</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <progressbar name="bufferprogress" from="baseplaylistprogress">
             <position>0,30</position>
         </progressbar>
 

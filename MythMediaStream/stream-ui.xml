@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
+<mythuitheme>
+
+    <window name="streamview"  include="music-base.xml">
+         <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/MediaStreamMusicBGD.png</filename>
+        </imagetype>
+        <group name="screenlayoutTVlist" from="defaultscreenlayoutTVlist_1">
+            <position>0,0</position>        
+        </group>
+        <textarea name="ScreenTitleVideoManager" from="screentitle">
+            <value>Streamlist View</value>
+        </textarea>
+        <textarea name="playlistposition" from="textarea_base">
+            <area>1112,5,146,40</area>
+            <font>normal</font>
+            <case>lower</case>
+            <align>allcenter</align>
+            <multiline>no</multiline>
+            <cutdown>no</cutdown>
+        </textarea>
+
+        <!-- ===================================================== -->
+        <!--     STREAM LIST                                       -->
+        <!-- ===================================================== -->
+
+        <textarea name="nostreams" from="textarea_base">
+            <area>345,270,355,60</area>
+            <multiline>yes</multiline>
+            <font>small</font>
+            <case>Normal</case>
+            <value>Press MENU to add some radio streams to play.</value>
+        </textarea>
+
+        <buttonlist name="streamlist" from="basecurrentstreamlist">
+            <position>740,260</position>
+        </buttonlist>
+
+        <imagetype name="coverart">
+            <area>25,260,275,275</area>
+            <filename>images/shared/DefaultNetwork.png</filename>
+            <reflection shear="0" scale="65" length="15"/>
+        </imagetype>
+
+        <group name="infostreampanel" from="baseinfostreampanel">
+            <position>345,260</position>>
+        </group>
+
+       <group name="streamliststatusgroup" from="basestreamliststatusgroup">
+            <position>345,610</position>
+       </group>
+
+       <group name="streamlistvisualizergroup" from="baseplaylistvisualizergroup">
+            <position>25,600</position>
+       </group>
+
+    </window>
+
+    <window name="editstreammetadata">
+
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/music-settings.jpg</filename>
+        </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_2A_animated">
+            <position>0,0</position>
+        </group> 
+
+        <group name="editstreammetadata1group" from="defaultscreencontent_1A_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Edit meta data of your radio streams</value>
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Music Stream Settings</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+
+           <!-- labels -->
+	        <textarea name="stationlabel" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Station:</value>
+	        </textarea>
+
+	        <textarea name="channellabel" from="stationlabel">
+	            <position>250,210</position>
+	            <value>Channel:</value>
+	        </textarea>
+
+	        <textarea name="urllabel" from="stationlabel">
+	            <position>250,280</position>
+	            <value>URL:</value>
+	        </textarea>
+
+	        <textarea name="logourllabel" from="stationlabel">
+	            <position>250,385</position>
+	            <value>Channel Logo:</value>
+	        </textarea>
+
+	        <textarea name="genrelabel" from="stationlabel">
+	            <position>250,490</position>
+	            <value>Genre:</value>
+	        </textarea>
+
+	        <textarea name="formatlabel" from="stationlabel">
+	            <position>250,525</position>
+	            <value>Metadata Format:</value>
+	        </textarea>
+
+           <!-- widgets -->
+
+	        <textedit name="stationedit" from="textedit_menu">
+	            <position>420,175</position>
+	        </textedit>
+ 
+	        <textedit name="channeledit" from="textedit_menu">
+	            <position>420,210</position>
+	        </textedit>
+ 
+	        <textedit name="urledit" from="textedit_menu_wide">
+	            <position>250,315</position>
+	        </textedit>
+          
+	        <textedit name="logourledit" from="textedit_menu_wide">
+	            <position>250,420</position>
+	        </textedit>
+ 
+	        <textedit name="genreedit" from="textedit_menu">
+	            <position>420,490</position>
+	        </textedit>
+ 
+	        <textedit name="formatedit" from="textedit_menu">
+	            <position>420,525</position>
+	        </textedit>
+
+      </group>
+
+        <group name="editstreammetadatabuttons1group" from="defaultscreencontent_2A_animated">
+           <area>788,0,720,988</area>      
+	        <textarea name="actionslbl" from="textarea_base">
+	            <area>2,140,180,35</area>
+	            <alpha>128</alpha>
+	            <font>title_small</font>         
+	            <align>right,bottom</align>
+	            <value>Actions</value>
+	        </textarea>
+
+	        <button name="searchbutton" from="button_base_menu">
+	            <position>2,175</position>
+	            <value>Search for Stream</value>
+	        </button>
+
+	        <textarea name="navigationlbl" from="textarea_base">
+	            <area>2,245,180,35</area>
+	            <alpha>128</alpha>
+	            <font>title_small</font>         
+	            <align>right,bottom</align>
+	            <value>Navigation</value>
+	        </textarea>
+
+	        <button name="savebutton" from="button_base_menu">
+	            <position>2,280</position>
+	            <value>Save</value>
+	        </button>
+	
+	        <button name="cancelbutton" from="button_base_menu">
+	            <position>2,315</position>
+	            <value>Cancel</value>
+	        </button>
+
+	        <imagetype name="coverart" depends="logourledit">
+	            <area>25,385,140,140</area>
+	            <filename>images/shared/DefaultNetwork.png</filename>
+	            <reflection shear="0" scale="65" length="15"/>
+	        </imagetype>
+
+        </group>
+
+    </window>
+
+    <window name="searchstream">
+
+        <imagetype name="fanart" from="image_wallpaper_base">
+            <filename>images/backgrounds/music-settings.jpg</filename>
+        </imagetype>
+        <imagetype name="backgroundoverlay" from="background_overlay_base" />
+        <group name="screenlayoutSettings" from="defaultscreenlayoutSettings_1A_animated">
+            <position>0,0</position>
+        </group> 
+
+        <group name="editstreammetadata1group" from="defaultscreencontent_1A_animated">
+           <area>0,0,720,988</area>
+	        <!-- ================================================== -->
+	        <!-- Screen description                                 -->
+	        <!-- ================================================== -->
+	        <textarea name="pagetitledesc" from="textarea_base">
+	            <area>250,10,515,65</area>
+	            <font>menu_description</font>
+	            <case>upper</case>
+	            <align>right,bottom</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Find your radio streams</value>
+	        </textarea>
+	
+	        <textarea name="title" from="textarea_base">
+	            <area>250,75,515,65</area>
+	            <font>menu_active</font>
+	            <case>upper</case>
+	            <align>right,vcenter</align>
+	            <cutdown>yes</cutdown>
+	            <multiline>yes</multiline>
+	            <value>Music Stream Search</value>
+	        </textarea>
+	
+	        <!-- ================================================== -->
+	        <!-- screen content                                     -->
+	        <!-- ================================================== -->
+
+           <!-- labels -->
+	        <textarea name="stationlabel" from="textarea_base">
+	            <area>250,175,510,35</area>
+	            <value>Station:</value>
+	        </textarea>
+
+	        <textarea name="genrelabel" from="stationlabel">
+	            <position>250,210</position>
+	            <value>Genre:</value>
+	        </textarea>
+
+	        <textarea name="channellabel" from="stationlabel">
+	            <position>250,245</position>
+	            <value>Channel:</value>
+	        </textarea>
+
+	        <textarea name="matcheslabel" from="stationlabel">
+	            <position>250,280</position>
+	            <value>Matches:</value>
+	        </textarea>
+
+           <!-- widgets -->
+
+	        <buttonlist name="stationlist" from="selector_base">
+	            <position>420,175</position>
+	        </buttonlist>
+
+	        <buttonlist name="genrelist" from="selector_base">
+	            <position>420,210</position>
+	        </buttonlist>
+	
+	        <textedit name="channeledit" from="textedit_menu">
+	            <position>420,245</position>
+	        </textedit>
+
+	        <textarea name="matchestext" from="stationlabel">
+	            <position>420,280</position>
+	            <alpha>128</alpha>
+	            <case>normal</case>
+	        </textarea>
+
+	        <buttonlist name="streamlist" from="buttonlist_dialog_wide_check_permanent">
+	            <area>250,320,510,380</area>
+	            <buttonarea>0,0,510,360</buttonarea>
+	            <statetype name="buttonitem">
+	                <state name="active">
+			              <statetype name="selectedstate">
+			                   <state type="off">
+			                       <imagetype name="LedOff">
+			                           <area>480,5,30,30</area>
+			                           <filename>images/shared/LEDOff.png</filename>
+			                       </imagetype>
+			                   </state>
+			                   <state type="on">
+			                       <imagetype name="LEDOn">
+			                           <area>480,5,30,30</area>
+			                           <filename>images/shared/LEDOn.png</filename>
+			                       </imagetype>
+			                   </state>
+			              </statetype>
+	                    <textarea name="station" from="textarea_base">
+		                   <area>10,0,470,40</area>
+		                   <case>normal</case>
+		                   <alpha>128</alpha>
+		                   <multiline>no</multiline>
+		                   <cutdown>yes</cutdown>
+		                   <align>left,vcenter</align>
+	                      <template>%STATION% - %Channel% - %genre%</template>
+	                    </textarea>
+	                </state>
+	                <state name="selectedactive">
+			              <statetype name="selectedstate">
+			                   <state type="off">
+			                       <imagetype name="LedOff">
+			                           <area>480,5,30,30</area>
+			                           <filename>images/shared/LEDOff.png</filename>
+			                       </imagetype>
+			                   </state>
+			                   <state type="on">
+			                       <imagetype name="LEDOn">
+			                           <area>480,5,30,30</area>
+			                           <filename>images/shared/LEDOn.png</filename>
+			                       </imagetype>
+			                   </state>
+			              </statetype>
+	                    <textarea name="station" from="textarea_base">
+		                   <area>10,0,470,40</area>
+		                   <case>normal</case>
+		                   <scroll direction="left" />
+		                   <alpha>255</alpha>
+		                   <multiline>no</multiline>
+		                   <cutdown>no</cutdown>
+		                   <align>left,vcenter</align>
+	                      <template>%STATION% - %Channel% - %genre%</template>
+	                    </textarea>
+	                </state>
+		             <state name="selectedinactive" from="active"/>
+		             <state name="inactive" from="active">
+		                 <alpha>128</alpha>
+		             </state>
+	            </statetype>
+	            <statetype name="upscrollarrow">
+	                <position>10,364</position>	
+	            </statetype>
+	            <statetype name="downscrollarrow">
+	                <position>30,364</position>	
+	            </statetype>
+	        </buttonlist>
+	 
+        </group>
+
+
+        <!-- widgets -->
+<!--
+        <buttonlist name="streamlist" from="basebuttonlist2">
+            <area>30,225,1220,480</area>
+            <spacing>0</spacing>
+            <layout>vertical</layout>
+            <arrange>stack</arrange>
+            <showarrow>no</showarrow>
+            <searchposition>-1,50</searchposition>
+            <buttonarea>0,0,1220,480</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,46</area>
+                    <imagetype name="buttonimage">
+                        <area>5,5,36,36</area>
+                        <filename>mm_icecast.png</filename>
+                    </imagetype>
+
+                    <statetype name="selectedstate">
+                        <position>1185,10</position>
+                        <state name="off"></state>
+                        <state name="on">
+                            <imagetype name="statusimage">
+                                <filename>playlist_yes.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+
+                    <textarea name="station" from="buttontext">
+                        <area>50,0,600,46</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <template>%STATION% - %Channel%</template>
+                    </textarea>
+
+                    <textarea name="genre" from="buttontext">
+                        <area>660,0,550,46</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                    </textarea>
+
+                </state>
+                <state name="selectedactive" from="active">
+                    <imagetype name="buttonimage">
+                        <area>5,5,36,36</area>
+                        <filename>mm_icecast.png</filename>
+                    </imagetype>
+                    <shape name="selectbar">
+                        <area>0,0,1220,46</area>
+                    </shape>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <shape name="selectbar">
+                        <area>0,0,1220,46</area>
+                    </shape>
+                </state>
+            </statetype>
+
+            <statetype name="upscrollarrow">
+                <position>1160,465</position>
+            </statetype>
+
+            <statetype name="downscrollarrow">
+                <position>1190,465</position>
+            </statetype>
+        </buttonlist>
+-->
+
+    </window>
+
+</mythuitheme>
