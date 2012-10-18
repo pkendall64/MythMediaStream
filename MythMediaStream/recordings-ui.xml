@@ -154,21 +154,20 @@
             <align>hcenter,vcenter</align>
         </textarea>
 
-
         <!-- ===================================================== -->
         <!--     PROGRAM DETAILS when coverart available           -->
         <!--     Fix me, textarea widgets don`t update when        -->
         <!--     switching between coverart and preview            -->
-        <!-- ===================================================== -->
+        <!-- ===================================================== -->        
+<!-- -->
         <group name="coverart_details" depends="coverart">
 
 	        <imagetype name="coverart">
 	            <area>25,260,250,375</area>
-	            <filename>images/shared/amt-blank-poster.png</filename>
 	            <preserveaspect>no</preserveaspect>
 	            <reflection shear="0" scale="65" length="10"/>
 	        </imagetype>
-
+	
 	        <textarea name="titlesubtitle" from="textarea_base">
 	            <area>300,260,425,30</area>
 	            <font>title</font>
@@ -240,20 +239,21 @@
 	        </textarea>
 	        
 	    </group>
-
+<!-- -->
         <!-- ===================================================== -->
         <!--     PROGRAM DETAILS when NO coverart available        -->
         <!--     Fix me, textarea widgets don`t update when        -->
         <!--     switching between coverart and preview            -->
         <!-- ===================================================== -->
-
-        <group name="preview_details" depends="preview" depends="!coverart">
+<!-- -->
+        <group name="preview_details" depends="!coverart">
+	        
 	        <imagetype name="preview">
 	            <area>25,260,350,197</area>
 	            <preserveaspect>no</preserveaspect>
 	            <reflection shear="0" scale="65" length="18"/>
 	        </imagetype>
-	        
+	
 	        <textarea name="titlesubtitle" from="textarea_base">
 	            <area>400,260,325,30</area>
 	            <font>title</font>
@@ -331,7 +331,7 @@
 	        </textarea>	
 
 	     </group>
-
+<!-- -->
         <group name="infoicons" from="defaultinfoicons" depends="preview">
             <position>0,660</position>
         </group>
