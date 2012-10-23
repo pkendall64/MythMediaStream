@@ -34,7 +34,7 @@
     </button>
 
     <button>
-        <type>MUSIC_PLAY</type>
+        <type>MUSIC_STREAM</type>
         <text>Radio</text>
         <description>Listen to Internet</description>
         <action>JUMP Play radio stream</action>
