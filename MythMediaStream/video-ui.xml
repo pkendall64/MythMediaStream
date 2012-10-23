@@ -434,10 +434,10 @@
             <font>title</font>
             <scroll direction="left" />
             <multiline>no</multiline>
-            <cutdown>yes</cutdown>
+            <cutdown>no</cutdown>
             <case>upper</case>
             <align>left,vcenter</align>
-            <template>%TITLE%% - |SUBTITLE%</template>
+<!--            <template>%TITLE%% - |SUBTITLE%</template>-->
         </textarea>
 
         <textarea name="description" from="textarea_base">
@@ -447,7 +447,7 @@
             <align>justify</align>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
-<!--            <template>%##X##% - %description%</template>-->
+            <template>%&#34;|SUBTITLE|&#34;\n%%DESCRIPTION%</template>
         </textarea>
 
         <textarea name="StarRatinglbl" from="textarea_base" depends="userrating">
