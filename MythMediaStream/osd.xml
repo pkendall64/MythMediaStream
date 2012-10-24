@@ -30,7 +30,7 @@
             <align>hcenter,vcenter</align>
             <multiline>no</multiline>
             <cutdown>yes</cutdown>
-            <template>Switch to Channel: %1</template>
+            <template>Key pressed: %1</template>
         </textarea>
     </window>
 
@@ -327,6 +327,7 @@
             <template>%TIME%</template>
             <align>right,top</align>
         </clock>
+        
         <imagetype name="iconpath" depends="!coverart">
             <area>30,100,100,100</area>
             <preserveaspect>no</preserveaspect>

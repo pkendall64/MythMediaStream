@@ -629,6 +629,12 @@
                    <area>0,0,1280,720</area>
                </imagetype>
            </state>
+           <state name="MUSIC_STREAM">
+               <imagetype name="watermark">
+                   <filename>images/backgrounds/radio-stream-bg.jpg</filename>
+                   <area>0,0,1280,720</area>
+               </imagetype>
+           </state>
            <state name="MUSIC_PLAYLIST">
                <imagetype name="watermark">
                    <filename>images/backgrounds/MediaStreamMusicBGD.png</filename>

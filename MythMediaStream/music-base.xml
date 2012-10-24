@@ -424,7 +424,8 @@
                 </statetype>
                 <imagetype name="buttontextbgd" >
                     <area>0,120,145,26</area>
-                    <filename>images/shared/OSDBackground.png</filename>
+                    <filename>images/shared/DiffuseMirrorBlackVertical.png</filename>
+                    <preserveaspect>no</preserveaspect>
                 </imagetype>
                 <textarea name="buttontext" from="textarea_base">
                     <area>5,125,135,20</area>
@@ -600,7 +601,7 @@
             <position>0,110</position>
         </textarea>
 
-        <textarea name="playedlbl" from="textarea_base" depends="playedtrackslist">
+        <textarea name="playedlbl" from="textarea_base"> <!-- depends="playedtrackslist"> -->
             <area>0,160,100,25</area>
             <font>title_verysmall_blue</font>
             <multiline>no</multiline>
