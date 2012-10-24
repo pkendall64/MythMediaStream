@@ -202,17 +202,31 @@
         </statetype>
 
         <textarea name="ratinglbl" from="starslbl" depends="userrating">
-            <position>300,677</position>
+            <position>230,677</position>
             <value>Rating</value>
         </textarea>
         
         <textarea name="userrating" from="textarea_base">
-            <area>375,677,175,25</area>
+            <area>305,677,175,25</area>
             <font>normal</font>
             <case>normal</case>
             <multiline>no</multiline>
             <alpha>255</alpha>
             <template>%USERRATING| - %%RATING%</template>
+        </textarea>
+
+        <textarea name="episodelbl" from="ratinglbl" depends="##x##">
+            <area>425,677,120,25</area>
+            <value>Episode</value>
+        </textarea>
+
+        <textarea name="##x##" from="textarea_base">
+            <area>430,677,110,25</area>
+            <font>normal</font>
+            <case>normal</case>
+            <multiline>no</multiline>
+            <alpha>255</alpha>
+            <align>right,bottom</align>
         </textarea>
 
          <imagetype name="banner">
@@ -437,7 +451,6 @@
             <cutdown>no</cutdown>
             <case>upper</case>
             <align>left,vcenter</align>
-<!--            <template>%TITLE%% - |SUBTITLE%</template>-->
         </textarea>
 
         <textarea name="description" from="textarea_base">
@@ -463,11 +476,24 @@
         </statetype>
 
         <textarea name="userrating" from="textarea_base">
-            <area>1010,680,100,25</area>
+            <area>1050,680,30,25</area>
             <font>normal</font>
             <case>normal</case>
             <align>right,bottom</align>
             <template>%(|USERRATING)%</template>
+        </textarea>
+
+        <textarea name="episodelbl" from="textarea_base" depends="##x##">
+            <area>1140,680,120,25</area>
+            <font>title_verysmall_blue</font>
+            <case>upper</case>
+            <align>left,vcenter</align>
+            <value>Episode</value>
+        </textarea>
+
+        <textarea name="##x##" from="userrating">
+            <area>1150,680,110,25</area>
+            <align>right,bottom</align>
         </textarea>
 
     </window>
