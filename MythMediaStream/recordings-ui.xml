@@ -159,15 +159,34 @@
         <!--     Fix me, textarea widgets don`t update when        -->
         <!--     switching between coverart and preview            -->
         <!-- ===================================================== -->        
-<!-- -->
+<!--
         <group name="coverart_details" depends="coverart">
+-->
+
+
+	        <imagetype name="previewbgd" depends="preview">
+	            <area>24,260,252,380</area>
+	            <preserveaspect>no</preserveaspect>
+               <filename>images/shared/amt-blank-poster.png</filename>
+<!--	            <reflection shear="0" scale="65" length="10"/>-->
+	        </imagetype>
 
 	        <imagetype name="coverart">
-	            <area>25,260,250,375</area>
+	            <area>24,260,252,380</area>
 	            <preserveaspect>no</preserveaspect>
+<!--               <filename>images/shared/amt-blank-poster.png</filename>-->
 	            <reflection shear="0" scale="65" length="10"/>
 	        </imagetype>
-	
+
+	        <imagetype name="preview" depends="!coverart">
+	            <area>25,260,250,141</area>
+	            <grayscale>true</grayscale>
+	            <mask>images/shared/RecordingsPreviewMask.png</mask>
+	            <preserveaspect>no</preserveaspect>
+	            <alpha>192</alpha>
+	            <reflection shear="0" scale="100" length="100" spacing="0"/>
+	        </imagetype>
+
 	        <textarea name="titlesubtitle" from="textarea_base">
 	            <area>300,260,425,30</area>
 	            <font>title</font>
@@ -175,7 +194,7 @@
 	            <cutdown>yes</cutdown>
 	            <case>upper</case>
 	            <align>left,bottom</align>
-	            <template>%TITLE%%|\n00x00| -% %"|SUBTITLE|"%</template>
+	            <template>%TITLE%</template>
 	        </textarea>
 	
 	        <textarea name="category" from="textarea_base">
@@ -237,17 +256,17 @@
 	        <textarea name="norecordings" from="subtitle">
 	            <value>No recordings available, please schedule recordings first in order to watch them here</value>
 	        </textarea>
-	        
+<!--	        
 	    </group>
-<!-- -->
+-->
         <!-- ===================================================== -->
         <!--     PROGRAM DETAILS when NO coverart available        -->
         <!--     Fix me, textarea widgets don`t update when        -->
         <!--     switching between coverart and preview            -->
         <!-- ===================================================== -->
-<!-- -->
+<!--
         <group name="preview_details" depends="!coverart">
-	        
+
 	        <imagetype name="preview">
 	            <area>25,260,350,197</area>
 	            <preserveaspect>no</preserveaspect>
@@ -331,7 +350,7 @@
 	        </textarea>	
 
 	     </group>
-<!-- -->
+-->
         <group name="infoicons" from="defaultinfoicons" depends="preview">
             <position>0,660</position>
         </group>
