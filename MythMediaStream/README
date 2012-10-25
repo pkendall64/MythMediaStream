@@ -7,12 +7,25 @@ cp -a MythMediaStream* ~/.mythtv/themes/
 
 This theme is designed to work with a custom menu called MythMediaStreamMenu. To select this menu, go to the 'theme & screensettings' menu in your frontend and set your Menu theme to 'MythMediaStream'.
 
+v026.2
+Added background for radio streams
+Added titles in mythvideo gallery and browser when no coverart available
+Small fixes in OSD message window and music-base.xml
+Added season and episode information when available in mythvideo gallery and managed windows
+
+v026.1
+Added windows support for radio streams
+Added menu items new in 0.26 or missing in 0.25
+
+v025.7
+Fixed lay-out of the clock which was wrong up due to resolution difference on development system
+
 v025.6
-Fixed lay-out of the clock which was mashed up due to resolution difference on development system
+Fixed lay-out of the clock which was wrong up due to resolution difference on development system
 
 
 v025.5
-Added support for mythgame and mythzoneminder plugins
+Added windows for mythgame and mythzoneminder plugins
 Added various depends statements to make the lay-out of screens smoother
 Minor changes and cleanup to recordings, video, netvision and music screens
 Changed format of the clock to honor AM/PM time
