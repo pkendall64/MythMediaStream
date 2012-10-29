@@ -666,7 +666,7 @@
             <font>smaller</font>
             <area>10,70,700,30</area>
             <align>left,top</align>
-            <template>%STARTTIME%-%ENDTIME% : %LENMINS% - %LONGCHANNEL%</template>
+            <template>%LONGCHANNEL|: %%STARTDATE| %%YEAR|, %%STARTTIME| - %%ENDTIME|, %%LENMINS%/template>
         </textarea>
         <clock name="clock">
             <area>970,40,300,30</area>
