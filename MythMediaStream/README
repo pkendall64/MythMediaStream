@@ -7,6 +7,11 @@ cp -a MythMediaStream* ~/.mythtv/themes/
 
 This theme is designed to work with a custom menu called MythMediaStreamMenu. To select this menu, go to the 'theme & screensettings' menu in your frontend and set your Menu theme to 'MythMediaStream'.
 
+v026.3
+Changed recordings screen lay-out to match the screen lay-out of video manager.
+Added year to recording info in recordings screen
+Added year to status info screen in OSD
+
 v026.2
 Added background for radio streams
 Added titles in mythvideo gallery and browser when no coverart available

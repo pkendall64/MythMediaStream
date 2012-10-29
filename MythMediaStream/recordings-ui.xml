@@ -231,12 +231,12 @@
 	        </textarea>
 	
 	        <textarea name="startdate" from="textarea_base">
-	            <area>370,595,275,25</area>
+	            <area>370,595,355,25</area>
 	            <font>normal</font>
 	            <case>normal</case>
 	            <multiline>no</multiline>
 	            <alpha>255</alpha>
-	            <template>%startdate%, %starttime% - %endtime%</template>
+	            <template>%startdate%%| year%, %starttime% - %endtime%</template>
 	        </textarea>
 
 	        <textarea name="storagegroup" from="startdate">
