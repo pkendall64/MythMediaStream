@@ -171,7 +171,7 @@
 
 	        <imagetype name="preview" depends="!coverart">
 	            <area>26,261,248,141</area>
-	            <grayscale>true</grayscale>
+<!--	            <grayscale>true</grayscale> -->
 	            <mask>images/shared/RecordingsPreviewMask.png</mask>
 	            <preserveaspect>no</preserveaspect>
 	            <alpha>224</alpha>
