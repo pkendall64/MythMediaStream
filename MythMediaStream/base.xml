@@ -1718,7 +1718,7 @@
    <buttonlist name="selector_base">
        <area>0,0,340,35</area>
        <align>left,vcenter</align>
-       <layout>vertical</layout>
+       <layout>horizontal</layout>
        <wrapstyle>selection</wrapstyle>
        <arrange>stack</arrange>
        <buttonarea>0,0,340,35</buttonarea>
@@ -1800,7 +1800,7 @@
    <buttonlist name="selector_base_plain">
        <area>0,0,340,35</area>
        <align>left,vcenter</align>
-       <layout>vertical</layout>
+       <layout>horizontal</layout>
        <wrapstyle>selection</wrapstyle>
        <arrange>stack</arrange>
        <buttonarea>0,0,340,35</buttonarea>
@@ -1882,7 +1882,7 @@
    <buttonlist name="selector_base_small">
        <area>0,0,170,35</area>
        <align>left,vcenter</align>
-       <layout>vertical</layout>
+       <layout>horizontal</layout>
        <wrapstyle>selection</wrapstyle>
        <arrange>stack</arrange>
        <buttonarea>0,0,170,35</buttonarea>
@@ -1964,7 +1964,7 @@
    <buttonlist name="selector_base_tiny">
        <area>0,0,85,35</area>
        <align>left,vcenter</align>
-       <layout>vertical</layout>
+       <layout>horizontal</layout>
        <wrapstyle>selection</wrapstyle>
        <arrange>stack</arrange>
        <buttonarea>0,0,85,35</buttonarea>
@@ -2046,7 +2046,7 @@
    <buttonlist name="selector_base_wide">
        <area>0,0,510,35</area>
        <align>left,vcenter</align>
-       <layout>vertical</layout>
+       <layout>horizontal</layout>
        <wrapstyle>selection</wrapstyle>
        <arrange>stack</arrange>
        <buttonarea>0,0,510,35</buttonarea>
@@ -2680,6 +2680,7 @@
 <!-- ===================================================== -->
     <spinbox name="spinbox_base">
         <area>0,0,340,35</area>
+        <layout>horizontal</layout>
         <statetype name="buttonitem">
             <state name="active">
                 <textarea name="buttontext">
@@ -2735,6 +2736,7 @@
 
     <spinbox name="spinbox_menu">
         <area>0,0,340,35</area>
+        <layout>horizontal</layout>
         <statetype name="buttonitem">
             <state name="active">
                 <imagetype name="MenuItemNF">
