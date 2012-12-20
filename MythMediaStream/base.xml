@@ -447,8 +447,8 @@
            <cutdown>no</cutdown>
        </clock>
        <clock name="textdaypart" from="texthours">
-           <area>30,3,100,40</area>
-           <align>right,vcenter</align>
+           <area>105,3,22,40</area>
+           <align>left,vcenter</align>
            <font>normal_blue_bold</font>
            <template>AP</template>
        </clock>

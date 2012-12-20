@@ -7,6 +7,10 @@ cp -a MythMediaStream* ~/.mythtv/themes/
 
 This theme is designed to work with a custom menu called MythMediaStreamMenu. To select this menu, go to the 'theme & screensettings' menu in your frontend and set your Menu theme to 'MythMediaStream'.
 
+v026.4
+Fixed navigation inconsistency for widgets used in the various settings windows.
+Adjusted size and position of daytime part in clock so it won't overwrite the time when german language is set
+
 v026.3
 Changed recordings screen lay-out to match the screen lay-out of video manager.
 Added year to recording info in recordings screen
@@ -23,10 +27,10 @@ Added windows support for radio streams
 Added menu items new in 0.26 or missing in 0.25
 
 v025.7
-Fixed lay-out of the clock which was wrong up due to resolution difference on development system
+Fixed lay-out of the clock which was wrong due to resolution difference on development system
 
 v025.6
-Fixed lay-out of the clock which was wrong up due to resolution difference on development system
+Fixed lay-out of the clock which was wrong due to resolution difference on development system
 
 
 v025.5

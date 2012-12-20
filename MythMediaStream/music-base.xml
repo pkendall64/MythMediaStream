@@ -548,7 +548,7 @@
         </textarea>
 
         <textarea name="lastplayed"  from="textarea_base">
-            <area>70,185,275,25</area>
+            <area>70,185,275,27</area>
             <font>normal</font>
             <case>normal</case>
             <multiline>no</multiline>
