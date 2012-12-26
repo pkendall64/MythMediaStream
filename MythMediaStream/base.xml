@@ -2001,7 +2001,7 @@
                    <alpha>255</alpha>
                    <scroll direction="left" />
                    <multiline>no</multiline>
-                   <cutdown>yes</cutdown>
+                   <cutdown>no</cutdown>
                    <align>hcenter,vcenter</align>
                </textarea>
            </state>

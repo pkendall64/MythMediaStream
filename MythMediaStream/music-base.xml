@@ -16,11 +16,20 @@
 
     <!-- current playlist button list -->
 
-     <buttonlist name="basecurrentplaylist" from="buttonlist_menu_details_permanent">
-         <position>740,260</position>
-         <searchposition>758,55</searchposition>
+     <buttonlist name="basecurrentplaylist">
+	      <area>0,0,540,420</area>
+	      <searchposition>758,55</searchposition>
+	      <align>top,hcenter</align>
+	      <layout>vertical</layout>
+	      <wrapstyle>selection</wrapstyle>
+	      <arrange>stack</arrange>
+	      <buttonarea>0,0,540,400</buttonarea>
          <statetype name="buttonitem">
              <state name="active">
+                <imagetype name="MenuItemNF">
+                    <area>0,0,540,40</area>
+	                 <filename>images/shared/MenuItemNF.png</filename>
+                 </imagetype>
                  <textarea name="title" from="textarea_base">
                      <area>10,0,490,40</area>
                      <alpha>128</alpha>
@@ -31,7 +40,19 @@
                  </textarea>
              </state>
              <state name="selectedactive">
-                 <textarea name="title" from="textarea_base">
+                 <imagetype name="MenuItemNF">
+                     <area>0,0,540,40</area>
+                     <filename>images/shared/MenuItemNF.png</filename>
+                </imagetype>
+                <imagetype name="MenuItemFO">
+                     <area>0,0,540,40</area>
+                     <filename>images/shared/MenuItemFO.png</filename>
+                </imagetype>
+                <imagetype name="MediaItemDetailBG">
+                     <area>370,5,170,30</area>
+                     <filename>images/shared/MediaItemDetailBG.png</filename>
+                </imagetype>
+                <textarea name="title" from="textarea_base">
                      <area>10,0,350,40</area>
                      <scroll direction="left" />
                      <font state="error">normal_red</font>
@@ -55,6 +76,32 @@
 	          <state name="selectedinactive" from="selectedactive">
 	              <alpha>128</alpha>
              </state>
+         </statetype>
+	      <statetype name="upscrollarrow">
+	          <position>10,404</position>	
+	          <state type="off">
+	              <imagetype name="upoff">
+	                  <filename>images/shared/ArrowUpNF.png</filename>
+	              </imagetype>
+	          </state>
+	          <state type="full">
+	              <imagetype name="upon">
+	                   <filename>images/shared/ArrowUpFO.png</filename>
+	              </imagetype>
+	          </state>
+	      </statetype>
+	      <statetype name="downscrollarrow">
+	          <position>30,404</position>	
+	          <state type="off">
+	              <imagetype name="upoff">
+	                  <filename>images/shared/ArrowDownNF.png</filename>
+	              </imagetype>
+	          </state>
+	          <state type="full">
+	              <imagetype name="upon">
+	                  <filename>images/shared/ArrowDownFO.png</filename>
+	              </imagetype>
+	          </state>
          </statetype>
      </buttonlist>
 
