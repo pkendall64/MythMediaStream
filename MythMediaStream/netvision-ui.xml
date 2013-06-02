@@ -51,7 +51,7 @@
                         <font>verysmall</font>
                         <font state="error">verysmall_red</font>
                         <font state="running">verysmall_amber</font>
-                        <case>Normal</case>
+                        <case>normal</case>
                         <align>left,vcenter</align>
                     </textarea>
                     <statetype name="downloadable">
@@ -436,7 +436,7 @@
             <cutdown>no</cutdown>
         </textarea>
 
-        <buttontree name="videos"from="buttontree_menu">
+        <buttontree name="videos" from="buttontree_menu">
             <position>740,260</position>
         </buttontree>
 
@@ -723,7 +723,7 @@
             <case>normal</case>
             <align>left,top</align>
             <multiline>yes</multiline>
-            <cutdown>yes</cutdown>-->
+            <cutdown>yes</cutdown>
 <!--            <template>%DESCRIPTION% - %YEAR% - %STARS%</template>-->
         </textarea>
 

@@ -30,7 +30,7 @@
             <area>345,270,355,60</area>
             <multiline>yes</multiline>
             <font>small</font>
-            <case>Normal</case>
+            <case>normal</case>
             <value>Press MENU to add some radio streams to play.</value>
         </textarea>
 
@@ -45,7 +45,7 @@
         </imagetype>
 
         <group name="infostreampanel" from="baseinfostreampanel">
-            <position>345,260</position>>
+            <position>345,260</position>
         </group>
 
        <group name="streamliststatusgroup" from="basestreamliststatusgroup">

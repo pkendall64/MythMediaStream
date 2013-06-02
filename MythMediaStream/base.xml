@@ -245,7 +245,7 @@
 
    <fontdef name="menumain" from="title">
       <pixelsize>28</pixelsize>
-      <stretch>normal</stretch>
+      <stretch>unstretched</stretch>
       <weight>normal</weight>
       <color>#FFFFFF</color>
       <shadowcolor>#000000</shadowcolor>
@@ -2826,61 +2826,61 @@
         <showempty>yes</showempty>
         <state name="0">
             <imagetype name="0">
-                <area>,0,80,20</area>
+                <area>0,0,80,20</area>
                 <filename>images/shared/rating/songrating0.png</filename>
             </imagetype>
         </state>
         <state name="1">
             <imagetype name="1">
-                <area>,0,80,20</area>
+                <area>0,0,80,20</area>
                 <filename>images/shared/rating/songrating1.png</filename>
             </imagetype>
         </state>
         <state name="2">
             <imagetype name="2">
-                <area>,0,80,20</area>
+                <area>0,0,80,20</area>
                 <filename>images/shared/rating/songrating1.png</filename>
             </imagetype>
         </state>
         <state name="3">
             <imagetype name="3">
-                <area>,0,80,20</area>
+                <area>0,0,80,20</area>
                 <filename>images/shared/rating/songrating2.png</filename>
             </imagetype>
         </state>
         <state name="4">
             <imagetype name="4">
-                <area>,0,80,20</area>
+                <area>0,0,80,20</area>
                 <filename>images/shared/rating/songrating2.png</filename>
             </imagetype>
         </state>
         <state name="5">
             <imagetype name="5">
-                <area>,0,80,20</area>
+                <area>0,0,80,20</area>
                 <filename>images/shared/rating/songrating3.png</filename>
             </imagetype>
         </state>
         <state name="6">
             <imagetype name="6">
-                <area>,0,80,20</area>
+                <area>0,0,80,20</area>
                 <filename>images/shared/rating/songrating3.png</filename>
             </imagetype>
         </state>
         <state name="7">
             <imagetype name="7">
-                <area>,0,80,20</area>
+                <area>0,0,80,20</area>
                 <filename>images/shared/rating/songrating4.png</filename>
             </imagetype>
         </state>
         <state name="8">
             <imagetype name="8">
-                <area>,0,80,20</area>
+                <area>0,0,80,20</area>
                 <filename>images/shared/rating/songrating4.png</filename>
             </imagetype>
         </state>
         <state name="9">
             <imagetype name="9">
-                <area>,0,80,20</area>
+                <area>0,0,80,20</area>
                 <filename>images/shared/rating/songrating5.png</filename>
             </imagetype>
         </state>
@@ -3354,7 +3354,7 @@
     <group name="defaultscreenlayoutSettings_1A_animated" from="defaultscreenlayoutSettings_1">
         <animation trigger="AboutToShow">
             <section duration="1000" centre="middle">
-                <position start="-988,0" end="0,0" easingcurve="InOutBack" reversible="false" />
+                <position start="-988,0" end="0,0" easingcurve="InOutBack" />
             </section>
         </animation>
     </group>
@@ -3362,7 +3362,7 @@
     <group name="defaultscreenlayoutSettings_1B_animated" from="defaultscreenlayoutSettings_1">
         <animation trigger="AboutToShow">
             <section duration="1000" centre="middle">
-                <position start="-988,0" end="0,0" easingcurve="InOutBack" reversible="false" />
+                <position start="-988,0" end="0,0" easingcurve="InOutBack" />
             </section>
         </animation>
         <animation trigger="AboutToHide">
@@ -3385,7 +3385,7 @@
             <area>788,0,200,720</area>
 	         <animation trigger="AboutToShow">
 	             <section duration="2000" centre="middle">
-	                 <position start="588,0" end="788,0" easingcurve="InOutBack" reversible="false" />
+	                 <position start="588,0" end="788,0" easingcurve="InOutBack" />
 	             </section>
 	         </animation>
             <filename>images/shared/HomeBladeSub.png</filename>
@@ -3397,7 +3397,7 @@
             <area>788,0,200,720</area>
 	         <animation trigger="AboutToShow">
 	             <section duration="2000" centre="middle">
-	                 <position start="588,0" end="788,0" easingcurve="InOutBack" reversible="false" />
+	                 <position start="588,0" end="788,0" easingcurve="InOutBack" />
 	             </section>
 	         </animation>
 	         <animation trigger="AboutToHide">

@@ -119,7 +119,7 @@ MythTV Archive GUI theme
 	            <position>350,690</position>
 	        </textarea>
 	
-	        <progressbar name="size_bar"from="progressbar_base">
+	        <progressbar name="size_bar" from="progressbar_base">
 	            <area>260,480,490,10</area>
 	            <layout>horizontal</layout>
 	            <style>reveal</style>

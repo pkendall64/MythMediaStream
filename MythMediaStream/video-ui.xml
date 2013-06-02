@@ -151,7 +151,7 @@
                     <textarea name="length" from="textarea_base">
                         <area>405,5,120,35</area>
                         <font>verysmall</font>
-                        <case>Normal</case>
+                        <case>normal</case>
                         <align>left,vcenter</align>
                     </textarea>
                     <statetype name="watchedstate">
@@ -1419,22 +1419,22 @@
 	        </textarea>
 	
 	        <textarea name="trailercheck_text" from="autometacheck_text">
-	            <position>250,245</position>>
+	            <position>250,245</position>
 	            <value>Enable Random Trailer Playback</value>
 	        </textarea>
 	
 	        <textarea name="unknownfilecheck_text" from="autometacheck_text">
-	            <position>250,315</position>>
+	            <position>250,315</position>
 	            <value>Display unknown file types</value>
 	        </textarea>
 	
 	        <textarea name="treeloadsmetacheck_text" from="autometacheck_text">
-	            <position>250,385</position>>
+	            <position>250,385</position>
 	            <value>Enable metadata in file browse mode</value>
 	        </textarea>
 	
 	        <textarea name="trailerplay_text" from="autometacheck_text">
-	            <position>250,455</position>>
+	            <position>250,455</position>
 	            <value>Trailers to Play:</value>
 	        </textarea>
 	

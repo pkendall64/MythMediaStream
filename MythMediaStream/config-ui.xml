@@ -334,7 +334,7 @@
             <align>allcenter</align>
             <font>normal</font>
             <multiline>true</multiline>
-        </textarea>-->
+        </textarea>
 
         <buttonlist name="languages" from="countries">
             <helptext>Select your preferred language</helptext>

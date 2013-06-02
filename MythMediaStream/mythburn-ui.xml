@@ -371,7 +371,7 @@ MythArchive GUI theme
 	                    <textarea name="size" from="buttontext">
 	                        <area>385,7,125,33</area>
 	                        <font>verysmall</font>
-	                        <case>Normal</case>
+	                        <case>normal</case>
 	                        <align>left,vcenter</align>
 	                    </textarea>
 	                    <statetype name="movestate">
@@ -423,7 +423,7 @@ MythArchive GUI theme
 	            <value>No files are selected for archive</value>
 	        </textarea>
 	
-	        <progressbar name="size_bar"from="progressbar_base">
+	        <progressbar name="size_bar" from="progressbar_base">
 	            <area>260,705,490,10</area>
 	            <layout>horizontal</layout>
 	            <style>reveal</style>

@@ -1319,7 +1319,7 @@
         </group>
         
         <group name="editpowersearchpopupbuttongroup">
-	           <area>788,0,988,720</area>-->
+	        <area>788,0,988,720</area>
 	        <button name="ok_button" from="button_base_menu">
 	            <position>2,175</position>
 	            <value>Ok</value>
@@ -1974,7 +1974,7 @@
 	            <value>Additional Tables:</value>
 	        </textarea>
 	
-	        <textedit name="subtitle"from="textedit_menu_wide">
+	        <textedit name="subtitle" from="textedit_menu_wide">
 	            <position>250,630</position>
 	        </textedit>
         </group>

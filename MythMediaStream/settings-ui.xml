@@ -137,7 +137,7 @@
 	                            <textarea name="uptodatetext" from="textarea_base">
 	                                <area>380,7,110,33</area>
 	                                <font>verysmall</font>
-	                                <case>Normal</case>
+	                                <case>normal</case>
 	                                <align>left,vcenter</align>
 	                                <value>Up to date</value>
 	                            </textarea>
@@ -146,7 +146,7 @@
 	                            <textarea name="updateavailabletext" from="textarea_base">
 	                                <area>380,7,110,33</area>
 	                                <font>verysmall</font>
-	                                <case>Normal</case>
+	                                <case>normal</case>
 	                                <align>left,vcenter</align>
 	                                <value>Update available</value>
 	                            </textarea>
@@ -159,7 +159,7 @@
 	                            <textarea name="defaultext" from="textarea_base">
 	                                <area>380,7,110,33</area>
 	                                <font>verysmall</font>
-	                                <case>Normal</case>
+	                                <case>normal</case>
 	                                <align>left,vcenter</align>
 	                                <value>Locally installed</value>
 	                            </textarea>
@@ -213,7 +213,7 @@
 	            <value>Download status</value>
 	        </textarea>
 	
-	        <progressbar name="downloadprogressbar"from="progressbar_base">
+	        <progressbar name="downloadprogressbar" from="progressbar_base">
 	            <area>520,585,220,10</area>
 	            <layout>horizontal</layout>
 	            <style>reveal</style>

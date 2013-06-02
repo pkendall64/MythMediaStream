@@ -21,7 +21,7 @@
 
         <textarea name="status" from="textarea_base">
             <area>950,5,320,25</area>
-            <case>small</case>
+            <font>small</font>
             <alpha>128</alpha>
         </textarea>
 

@@ -90,7 +90,7 @@
                         <font>verysmall</font>
                         <font state="error">verysmall_red</font>
                         <font state="running">verysmall_amber</font>
-                        <case>Normal</case>
+                        <case>normal</case>
                         <align>left,vcenter</align>
                     </textarea>
                     <statetype name="watched">

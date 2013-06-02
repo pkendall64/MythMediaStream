@@ -65,7 +65,7 @@
                      <font>verysmall</font>
                      <font state="error">verysmall_red</font>
                      <font state="running">verysmall_amber</font>
-                     <case>Normal</case>
+                     <case>normal</case>
                      <align>left,vcenter</align>
                      <template>%length%</template>
                  </textarea>
@@ -135,7 +135,7 @@
                      <font>verysmall</font>
                      <font state="error">verysmall_red</font>
                      <font state="running">verysmall_amber</font>
-                     <case>Normal</case>
+                     <case>normal</case>
                      <align>left,vcenter</align>
                      <template>%genre%</template>
                  </textarea>
@@ -741,7 +741,7 @@
         <area>0,0,275,110</area>
 
         <video name="visualizer">
-            <area>165,0,110,110,</area>
+            <area>165,0,110,110</area>
         </video>
 
         <textarea name="visualizername" from="textarea_base">

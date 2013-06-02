@@ -170,12 +170,12 @@
             <area>345,270,355,60</area>
             <multiline>yes</multiline>
             <font>small</font>
-            <case>Normal</case>
+            <case>normal</case>
             <value>You haven't selected any tracks to play</value>
         </textarea>
 
         <group name="infopanel" from="baseinfopanel">
-            <position>345,260</position>>
+            <position>345,260</position>
         </group>
 
        <group name="playliststatusgroup" from="baseplayliststatusgroup">
@@ -233,7 +233,7 @@
         </imagetype>
         
         <group name="infopanel" from="baseinfopanel">
-            <position>345,260</position>>
+            <position>345,260</position>
         </group>
 
         <group name="playliststatusgroup" from="baseplayliststatusgroup">
@@ -285,7 +285,7 @@
         </buttontree>
 
         <group name="infopanel" from="baseinfopanel">
-            <position>910,260</position>>
+            <position>910,260</position>
         </group>
 
         <group name="playliststatusgroup" from="baseplayliststatusgroup">
@@ -440,7 +440,7 @@
 	        </group>
 	
 	        <video name="visualizer">
-	            <area>645,610,100,100,</area>
+	            <area>645,610,100,100</area>
 	        </video>
 
         </group>
@@ -449,7 +449,7 @@
 
     <window name="visualizerview">
         <video name="visualizer">
-            <area>0,0,1280,720,</area>
+            <area>0,0,1280,720</area>
         </video>
     </window>
 
